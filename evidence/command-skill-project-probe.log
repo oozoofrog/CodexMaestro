@@ -1,0 +1,17 @@
+START index=0 directory=/Users/oozoofrog/.codex/skills
+END index=0 count=10 duration=0.005559708 seconds
+START index=1 directory=/Users/oozoofrog/.agents/skills
+END index=1 count=4 duration=0.001304708 seconds
+START index=2 directory=/Users/oozoofrog/Projects/CodexMaestro/.codex/skills
+END index=2 count=0 duration=3.375e-05 seconds
+START index=3 directory=/Users/oozoofrog/Projects/CodexMaestro/.agents/skills
+END index=3 count=0 duration=1.575e-05 seconds
+START index=4 directory=/Users/oozoofrog/Projects/RunnersHeart/.codex/skills
+END index=4 count=0 duration=1.5875e-05 seconds
+START index=5 directory=/Users/oozoofrog/Projects/RunnersHeart/.agents/skills
+END index=5 count=0 duration=1.1625e-05 seconds
+START index=6 directory=/Users/oozoofrog/Projects/LocalAIStudio/.codex/skills
+END index=6 count=0 duration=1.0792e-05 seconds
+START index=7 directory=/Users/oozoofrog/Projects/LocalAIStudio/.agents/skills
+END index=7 count=0 duration=1.2292e-05 seconds
+COMBINED count=14 duration=0.00271475 seconds

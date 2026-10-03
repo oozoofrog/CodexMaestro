@@ -1,0 +1,9 @@
+warning: 'codexmaestro': Source files for target MaestroCoreTests should be located under 'Tests/MaestroCoreTests', 'Tests', or a custom sources path can be set with the 'path' property in Package.swift
+warning: 'codexmaestro': Source files for target MaestroCoreTests should be located under 'Tests/MaestroCoreTests', 'Tests', or a custom sources path can be set with the 'path' property in Package.swift
+Building for debugging...
+[1 / 13] MaestroCore
+[2 / 7] CodexMaestro-product
+[9 / 14] CodexMaestro-product
+[10 / 14] CodexMaestro-product
+[12 / 14] CodexMaestro-product
+Build complete! (1.66초)

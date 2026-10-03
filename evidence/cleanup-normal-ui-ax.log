@@ -1,0 +1,111 @@
+NORMAL_PROJECT_DOUBLECLICK
+Window: "Codex Maestro", App: Codex Maestro.
+0 standard window Codex Maestro, ID: maestro, Secondary Actions: Raise
+	1 container
+		2 split group
+			3 container
+				4 button 최근 작업
+				5 button 열린 세션, 11
+				6 button 전체, 607
+				7 text 프로젝트
+				8 scroll area Secondary Actions: Scroll Up, Scroll Down
+					9 list Secondary Actions: AXScrollToTop, AXScrollToBottom
+						10 button Description: CodexMaestro, 9, Secondary Actions: 컨텍스트 보기, Help: /Volumes/eyedisk/develop/CodexMaestro, /Volumes/eyedisk/develop/CodexMaestro, /Volumes/eyedisk/develop/CodexMaestro
+						11 button Description: ColorResonance, 4, Secondary Actions: 컨텍스트 보기, Help: /Volumes/eyedisk/develop/ColorResonance, /Volumes/eyedisk/develop/ColorResonance, /Volumes/eyedisk/develop/ColorResonance
+						12 button Description: oozoofrog, 134, Help: /Users/oozoofrog, /Users/oozoofrog, /Users/oozoofrog, Secondary Actions: 컨텍스트 보기
+						13 button Description: jev-context-manager, 5, Secondary Actions: 컨텍스트 보기, Help: /Volumes/eyedisk/develop/oozoofrog/jev-context-manager, /Volumes/eyedisk/develop/oozoofrog/jev-context-manager, /Volumes/eyedisk/develop/oozoofrog/jev-context-manager
+						14 button Description: RunnersHeart, 149, Secondary Actions: 컨텍스트 보기, Help: /Volumes/eyedisk/develop/oozoofrog/RunnersHeart, /Volumes/eyedisk/develop/oozoofrog/RunnersHeart, /Volumes/eyedisk/develop/oozoofrog/RunnersHeart
+						15 button Description: Papers, 46, Secondary Actions: 컨텍스트 보기, Help: /Volumes/eyedisk/develop/oozoofrog/Papers, /Volumes/eyedisk/develop/oozoofrog/Papers, /Volumes/eyedisk/develop/oozoofrog/Papers
+						16 button Description: codex-skills, 16, Secondary Actions: 컨텍스트 보기, Help: /Volumes/eyedisk/develop/oozoofrog/codex-skills, /Volumes/eyedisk/develop/oozoofrog/codex-skills, /Volumes/eyedisk/develop/oozoofrog/codex-skills
+						17 button Description: 용량 관리, 140, Help: /, /, /, Secondary Actions: 컨텍스트 보기
+						18 button Description: smallpicture, 1, Secondary Actions: 컨텍스트 보기, Help: /Users/oozoofrog/Documents/ChatGPT/smallpicture, /Users/oozoofrog/Documents/ChatGPT/smallpicture, /Users/oozoofrog/Documents/ChatGPT/smallpicture
+						19 button Description: MiniStats, 4, Secondary Actions: 컨텍스트 보기, Help: /Volumes/eyedisk/develop/oozoofrog/MiniStats, /Volumes/eyedisk/develop/oozoofrog/MiniStats, /Volumes/eyedisk/develop/oozoofrog/MiniStats
+						20 button Description: Host, 7, Secondary Actions: 컨텍스트 보기, Help: /Volumes/eyedisk/develop/oozoofrog/Host, /Volumes/eyedisk/develop/oozoofrog/Host, /Volumes/eyedisk/develop/oozoofrog/Host
+						21 button Description: dev, 1, Help: /Volumes/eyedisk/dev, /Volumes/eyedisk/dev, /Volumes/eyedisk/dev, Secondary Actions: 컨텍스트 보기
+						22 button Description: good-days, 3, Secondary Actions: 컨텍스트 보기, Help: /Volumes/eyedisk/develop/good-days, /Volumes/eyedisk/develop/good-days, /Volumes/eyedisk/develop/good-days
+						23 button Description: Textify, 4, Secondary Actions: 컨텍스트 보기, Help: /Volumes/eyedisk/develop/oozoofrog/Textify, /Volumes/eyedisk/develop/oozoofrog/Textify, /Volumes/eyedisk/develop/oozoofrog/Textify
+						24 button Description: Tesella, 0, Secondary Actions: 컨텍스트 보기, Help: /Volumes/eyedisk/develop/oozoofrog/Tesella, /Volumes/eyedisk/develop/oozoofrog/Tesella, /Volumes/eyedisk/develop/oozoofrog/Tesella
+						25 button Description: wordgame, 1, Secondary Actions: 컨텍스트 보기, Help: /Volumes/eyedisk/develop/oozoofrog/wordgame, /Volumes/eyedisk/develop/oozoofrog/wordgame, /Volumes/eyedisk/develop/oozoofrog/wordgame
+						26 button Description: skills, 2, Help: /Users/oozoofrog/.codex/skills, /Users/oozoofrog/.codex/skills, /Users/oozoofrog/.codex/skills, Secondary Actions: 컨텍스트 보기
+						27 button Description: Mosaics, 1, Secondary Actions: 컨텍스트 보기, Help: /Volumes/eyedisk/develop/oozoofrog/Mosaics, /Volumes/eyedisk/develop/oozoofrog/Mosaics, /Volumes/eyedisk/develop/oozoofrog/Mosaics
+						28 button Description: 동물 스무고개  게임, 2, Secondary Actions: 컨텍스트 보기, Help: /Users/oozoofrog/Documents/ChatGPT/동물 스무고개  게임, /Users/oozoofrog/Documents/ChatGPT/동물 스무고개  게임, /Users/oozoofrog/Documents/ChatGPT/동물 스무고개  게임
+						29 button Description: 미로 게임, 7, Help: /Users/oozoofrog/Documents/미로 게임, /Users/oozoofrog/Documents/미로 게임, /Users/oozoofrog/Documents/미로 게임, Secondary Actions: 컨텍스트 보기
+						30 button Description: 고릴라, 9, Help: /Users/oozoofrog/Documents/고릴라, /Users/oozoofrog/Documents/고릴라, /Users/oozoofrog/Documents/고릴라, Secondary Actions: 컨텍스트 보기
+						31 button Description: 사람얼굴 바꾸기, 1, Secondary Actions: 컨텍스트 보기, Help: /Users/oozoofrog/Documents/사람얼굴 바꾸기, /Users/oozoofrog/Documents/사람얼굴 바꾸기, /Users/oozoofrog/Documents/사람얼굴 바꾸기
+						32 button Description: 바나나, 1, Help: /Users/oozoofrog/Documents/바나나, /Users/oozoofrog/Documents/바나나, /Users/oozoofrog/Documents/바나나, Secondary Actions: 컨텍스트 보기
+						33 button Description: FrogRemotePlayer, 3, Secondary Actions: 컨텍스트 보기, Help: /Users/oozoofrog/Documents/ChatGPT/FrogRemotePlayer, /Users/oozoofrog/Documents/ChatGPT/FrogRemotePlayer, /Users/oozoofrog/Documents/ChatGPT/FrogRemotePlayer
+						34 button Description: FrogTorrent, 9, Secondary Actions: 컨텍스트 보기, Help: /Users/oozoofrog/Documents/ChatGPT/FrogTorrent, /Users/oozoofrog/Documents/ChatGPT/FrogTorrent, /Users/oozoofrog/Documents/ChatGPT/FrogTorrent
+						35 button Description: kis-trading-app, 19, Secondary Actions: 컨텍스트 보기, Help: /Volumes/eyedisk/develop/oozoofrog/kis-trading-app, /Volumes/eyedisk/develop/oozoofrog/kis-trading-app, /Volumes/eyedisk/develop/oozoofrog/kis-trading-app
+						36 button Description: Cheat Dreams, 0, Secondary Actions: 컨텍스트 보기, Help: /Users/oozoofrog/Documents/Cheat Dreams, /Users/oozoofrog/Documents/Cheat Dreams, /Users/oozoofrog/Documents/Cheat Dreams
+						37 button Description: PragmataTrainerMenuBar, 21, Secondary Actions: 컨텍스트 보기, Help: /Volumes/eyedisk/develop/oozoofrog/PragmataTrainerMenuBar, /Volumes/eyedisk/develop/oozoofrog/PragmataTrainerMenuBar, /Volumes/eyedisk/develop/oozoofrog/PragmataTrainerMenuBar
+						38 button Description: 퇴마요새, 1, Secondary Actions: 컨텍스트 보기, Help: /Users/oozoofrog/.codex/.chatgpt-projects/g-p-6aa0084b99a881919ce884fae70b8711, /Users/oozoofrog/.codex/.chatgpt-projects/g-p-6aa0084b99a881919ce884fae70b8711, /Users/oozoofrog/.codex/.chatgpt-projects/g-p-6aa0084b99a881919ce884fae70b8711
+						39 button Description: 리센느 뮤직비디오, 1, Help: /Users/oozoofrog/Movies/ReScene, /Users/oozoofrog/Movies/ReScene, /Users/oozoofrog/Movies/ReScene, Secondary Actions: 컨텍스트 보기
+						40 button Description: LocalAIHub, 6, Help: /Volumes/eyedisk/AI/LocalAIHub, /Volumes/eyedisk/AI/LocalAIHub, /Volumes/eyedisk/AI/LocalAIHub, Secondary Actions: 컨텍스트 보기
+					41 scroll bar (settable, float) 0
+						42 value indicator (settable, float) 0
+						43 increment arrow button
+						44 decrement arrow button
+						45 increment page button
+						46 decrement page button
+			47 splitter (disabled, settable, float) 230
+			48 container
+				49 button Description: 작업 흐름으로 돌아가기, ID: chevron.left
+				50 text CodexMaestro 컨텍스트
+				51 button Description: 컨텍스트 다시 읽기, ID: arrow.clockwise
+				52 button CodexMaestro
+				53 menu button 개선 요청
+				54 split group
+					55 container
+						56 image Description: 검색, ID: magnifyingglass
+						57 text field (settable) 기록 검색
+						58 scroll area Secondary Actions: Scroll Up, Scroll Down
+							59 button Description: Codex 관리 도구 만들기, 세션, Secondary Actions: 펼치기
+							60 button Description: 제목 없는 세션, 세션, Secondary Actions: 펼치기
+							61 button Description: CodexMaestro, 프로젝트, Secondary Actions: 펼치기
+							62 button Description: 제목 없는 세션, 세션, Secondary Actions: 펼치기
+							63 button Description: 제목 없는 세션, 세션, Secondary Actions: 펼치기
+							64 button Description: Codex Maestro 연결 기능 기획, 세션, Secondary Actions: 펼치기
+							65 button Description: 앱 디자인을 Apple 스타일로 시안화, 세션, Secondary Actions: 펼치기
+							66 button Description: 제목 없는 세션, 세션, Secondary Actions: 펼치기
+							67 button Description: Codex 개인 설정에 ASD-SDE100 추가, 세션, Secondary Actions: 펼치기
+							68 button Description: 앱 기능을 ASD-STE100으로 설명, 세션, Secondary Actions: 펼치기
+							69 scroll bar (settable, float) 0
+								70 value indicator (settable, float) 0
+								71 increment arrow button
+								72 decrement arrow button
+								73 increment page button
+								74 decrement page button
+						75 button Description: 축소, ID: minus
+						76 text 90%
+						77 button Description: 확대, ID: plus
+						78 text 9개 항목
+					79 splitter (disabled, settable, float) 828
+					80 container
+						81 image Description: 이동, ID: folder
+						82 text CodexMaestro
+						83 button 펼치기
+						84 scroll area
+							85 text /Volumes/eyedisk/develop/CodexMaestro 37글자 · 기록 크기 Codex catalog
+				86 text 저장된 기록 9개 세션 · 14,290개 항목
+				87 button Description: 출처와 확인 범위, ID: info.circle
+		88 text Codex 연결 실행 2 · 입력 대기 0
+		89 image Description: 새로 고침, Help: 갱신 오후 11:49:04, ID: arrow.clockwise
+	90 toolbar
+		91 button Description: 사이드바 숨기기, Secondary Actions: Increment, Decrement, Delete, Cancel, Move next, Remove from toolbar
+		92 button Description: 연결, Secondary Actions: Increment, Decrement, Delete, Cancel, Move previous, Move next, Remove from toolbar
+		93 button Description: 새로고침, Help: 새로고침 · ⌘R, Secondary Actions: Increment, Decrement, Delete, Cancel, Move previous, Move next, Remove from toolbar
+		94 button Description: 상세 패널 숨기기, Secondary Actions: Increment, Decrement, Delete, Cancel, Move previous, Move next, Remove from toolbar
+		95 menu button 작업공간 설정, Description: More, Help: 화면 모드와 작업공간 설정
+	96 close button
+	97 full screen button Help: this button also has an action to zoom the window, Secondary Actions: zoom the window
+	98 minimize button
+	99 text Codex Maestro
+100 menu bar
+	101 Codex Maestro
+	102 File
+	103 Edit
+	104 View
+	105 Window
+	106 Help
+
+The focused UI element is 0 standard window Codex Maestro, ID: maestro, Secondary Actions: Raise

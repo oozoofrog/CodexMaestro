@@ -1,0 +1,493 @@
+DEMO_INITIAL
+Window: "Codex Maestro", App: Codex Maestro.
+0 standard window Codex Maestro, ID: maestro, Secondary Actions: Raise
+	1 container
+		2 split group
+			3 container
+				4 button 최근 작업
+				5 button 열린 세션, 6
+				6 button 전체, 6
+				7 text 프로젝트
+				8 scroll area
+					9 list Secondary Actions: AXScrollToTop, AXScrollToBottom
+						10 button Description: CodexMaestro, 3, Help: ~/Projects/CodexMaestro, ~/Projects/CodexMaestro, ~/Projects/CodexMaestro, Secondary Actions: 컨텍스트 보기
+						11 button Description: RunnersHeart, 2, Help: ~/Projects/RunnersHeart, ~/Projects/RunnersHeart, ~/Projects/RunnersHeart, Secondary Actions: 컨텍스트 보기
+						12 button Description: Local AI Studio, 1, Help: ~/Projects/LocalAIStudio, ~/Projects/LocalAIStudio, ~/Projects/LocalAIStudio, Secondary Actions: 컨텍스트 보기
+			13 splitter (disabled, settable, float) 230
+			14 container
+				15 text 작업 흐름
+				16 button Description: 작업 흐름, ID: point.3.connected.trianglepath.dotted
+				17 button Description: 세션 목록 보기, ID: list.bullet
+				18 image Description: 검색, ID: magnifyingglass
+				19 text field (settable) Placeholder: 검색, ID: session-search
+				20 scroll area
+					21 button Description: CodexMaestro 프로젝트 · 3개 세션, Secondary Actions: 컨텍스트 열기
+					22 button Description: CodexMaestro 프로젝트 · 3개 세션, ID: folder, Secondary Actions: 컨텍스트 열기
+					23 button Description: CodexMaestro 프로젝트 · 3개 세션, Secondary Actions: 컨텍스트 열기
+					24 button Description: CodexMaestro 프로젝트 연결 만들기, Help: 이 프로젝트에서 연결 만들기, ID: link
+					25 button Description: RunnersHeart 프로젝트 · 2개 세션, Secondary Actions: 컨텍스트 열기
+					26 button Description: RunnersHeart 프로젝트 · 2개 세션, ID: folder, Secondary Actions: 컨텍스트 열기
+					27 button Description: RunnersHeart 프로젝트 · 2개 세션, Secondary Actions: 컨텍스트 열기
+					28 button Description: RunnersHeart 프로젝트 연결 만들기, Help: 이 프로젝트에서 연결 만들기, ID: link
+					29 button Description: Local AI Studio 프로젝트 · 1개 세션, Secondary Actions: 컨텍스트 열기
+					30 button Description: Local AI Studio 프로젝트 · 1개 세션, ID: folder, Secondary Actions: 컨텍스트 열기
+					31 button Description: Local AI Studio 프로젝트 · 1개 세션, Secondary Actions: 컨텍스트 열기
+					32 button Description: Local AI Studio 프로젝트 연결 만들기, Help: 이 프로젝트에서 연결 만들기, ID: link
+					33 container Description: 워크스페이스 토폴로지 설계, Secondary Actions: 컨텍스트 열기
+						34 text 워크스페이스 토폴로지 설계 실행 중
+						35 button Description: 워크스페이스 토폴로지 설계 연결 만들기, Help: 이 세션에서 연결 만들기, ID: link
+					36 container Description: 러닝 코칭 피드백 개선, Secondary Actions: 컨텍스트 열기
+						37 text 러닝 코칭 피드백 개선 실행 중
+						38 button Description: 러닝 코칭 피드백 개선 연결 만들기, Help: 이 세션에서 연결 만들기, ID: link
+					39 container Description: 로컬 모델 실행 검증, Secondary Actions: 컨텍스트 열기
+						40 text 로컬 모델 실행 검증 대기 중
+						41 button Description: 로컬 모델 실행 검증 연결 만들기, Help: 이 세션에서 연결 만들기, ID: link
+					42 container Description: Codex 세션 브리지 구현, Secondary Actions: 컨텍스트 열기
+						43 text Codex 세션 브리지 구현 실행 중
+						44 button Description: Codex 세션 브리지 구현 연결 만들기, Help: 이 세션에서 연결 만들기, ID: link
+					45 container Description: Watch 동기화 상태 점검, Secondary Actions: 컨텍스트 열기
+						46 text Watch 동기화 상태 점검 대기 중
+						47 button Description: Watch 동기화 상태 점검 연결 만들기, Help: 이 세션에서 연결 만들기, ID: link
+					48 container Description: IPC 연결과 복구 검증, Secondary Actions: 컨텍스트 열기
+						49 text IPC 연결과 복구 검증 입력 대기
+						50 button Description: IPC 연결과 복구 검증 연결 만들기, Help: 이 세션에서 연결 만들기, ID: link
+				51 button Description: 축소, ID: minus
+				52 text 85%
+				53 button Description: 확대, ID: plus
+				54 button Description: 레이아웃 초기화, ID: arrow.up.left.and.arrow.down.right
+				55 button Description: 연결선 표시, ID: link
+				56 button Description: 연결선과 조작 안내, ID: info.circle
+			57 splitter (disabled, settable, float) 888
+			58 container
+				59 text Codex 세션 브리지 구현
+				60 button Description: Codex에서 열기, ID: arrow.up.right
+				61 text Help: 실시간 세션 상태, Value: 실행 중 CodexMaestro
+				62 disclosure triangle Description: 정보, Value: off
+				63 세션 정보
+					64 radio button Description: 대화, Value: 1
+					65 radio button Description: 연결, Value: 0
+					66 radio button Description: 기록, Value: 0
+				67 scroll area
+					68 list Secondary Actions: AXScrollToTop, AXScrollToBottom
+						69 image Description: 계정, ID: person.crop.circle
+						70 text 사용자 세션 상태를 관찰하고 연결된 작업 간 컨텍스트를 전달할 수 있도록 구성해주세요.
+						71 image Description: 스파클 별, ID: sparkle
+						72 text Codex 프로젝트별 세션을 구성했습니다. 실행 상태는 실시간으로 반영되며, 연결을 선택하면 전달할 내용을 검토할 수 있습니다.
+				73 text 요청 ⌘ ↵
+				74 scroll area Secondary Actions: Scroll Up, Scroll Down
+					75 text entry area (settable) Description: 세션 프롬프트, ID: prompt-editor
+					76 scroll bar (disabled, settable, float) 0
+				77 text 다음 작업이나 개선할 점을 요청하세요…
+				78 button (disabled) Description: 전송, ID: send-prompt
+		79 text 데모 · 실제 전송 없음 실행 3 · 입력 대기 1
+		80 image Description: 새로 고침, Help: 갱신 오후 11:43:49, ID: arrow.clockwise
+	81 toolbar
+		82 button Description: 사이드바 숨기기, Secondary Actions: Increment, Decrement, Delete, Cancel, Move next, Remove from toolbar
+		83 button Description: 연결, Secondary Actions: Increment, Decrement, Delete, Cancel, Move previous, Move next, Remove from toolbar
+		84 button Description: 새로고침, Help: 새로고침 · ⌘R, Secondary Actions: Increment, Decrement, Delete, Cancel, Move previous, Move next, Remove from toolbar
+		85 button Description: 상세 패널 숨기기, Secondary Actions: Increment, Decrement, Delete, Cancel, Move previous, Move next, Remove from toolbar
+		86 menu button 작업공간 설정, Description: More, Help: 화면 모드와 작업공간 설정
+	87 close button
+	88 full screen button Help: this button also has an action to zoom the window, Secondary Actions: zoom the window
+	89 minimize button
+	90 text Codex Maestro
+91 menu bar
+	92 Codex Maestro
+	93 File
+	94 Edit
+	95 View
+	96 Window
+	97 Help
+
+The focused UI element is 19 text field (settable) Placeholder: 검색, ID: session-search
+PROJECT_DOUBLECLICK
+Window: "Codex Maestro", App: Codex Maestro.
+0 standard window Codex Maestro, ID: maestro, Secondary Actions: Raise
+	1 container
+		2 split group
+			3 container
+				4 button 최근 작업
+				5 button 열린 세션, 6
+				6 button 전체, 6
+				7 text 프로젝트
+				8 scroll area
+					9 list Secondary Actions: AXScrollToTop, AXScrollToBottom
+						10 button Description: CodexMaestro, 3, Help: ~/Projects/CodexMaestro, ~/Projects/CodexMaestro, ~/Projects/CodexMaestro, Secondary Actions: 컨텍스트 보기
+						11 button Description: RunnersHeart, 2, Help: ~/Projects/RunnersHeart, ~/Projects/RunnersHeart, ~/Projects/RunnersHeart, Secondary Actions: 컨텍스트 보기
+						12 button Description: Local AI Studio, 1, Help: ~/Projects/LocalAIStudio, ~/Projects/LocalAIStudio, ~/Projects/LocalAIStudio, Secondary Actions: 컨텍스트 보기
+			13 splitter (disabled, settable, float) 230
+			14 container
+				15 button Description: 작업 흐름으로 돌아가기, ID: chevron.left
+				16 text CodexMaestro 컨텍스트
+				17 button Description: 컨텍스트 다시 읽기, ID: arrow.clockwise
+				18 button CodexMaestro
+				19 menu button 개선 요청
+				20 split group
+					21 container
+						22 image Description: 검색, ID: magnifyingglass
+						23 text field (settable) 기록 검색
+						24 scroll area
+							25 button Description: 워크스페이스 토폴로지 설계, 데모 기록, Secondary Actions: 펼치기
+							26 button Description: Codex 세션 브리지 구현, 데모 기록, Secondary Actions: 펼치기
+							27 button Description: CodexMaestro, 3개 세션, Secondary Actions: 펼치기
+							28 button Description: IPC 연결과 복구 검증, 데모 기록, Secondary Actions: 펼치기
+							29 button Description: 워크스페이스 토폴로지 설계 → Codex 세션 브리지 구현, 연결에 저장된 요청, 1, Secondary Actions: 펼치기
+							30 button Description: Codex 세션 브리지 구현 → IPC 연결과 복구 검증, 연결에 저장된 요청, 1, Secondary Actions: 펼치기
+						31 button Description: 축소, ID: minus
+						32 text 90%
+						33 button Description: 확대, ID: plus
+						34 text 5개 항목
+					35 splitter (disabled, settable, float) 828
+					36 container
+						37 image Description: 이동, ID: folder
+						38 text CodexMaestro
+						39 button 펼치기
+						40 scroll area
+							41 text 프로젝트 컨텍스트의 데모입니다. 17글자 · 기록 크기 demo
+				42 text 저장된 기록 3개 세션 · 33개 항목
+				43 button Description: 출처와 확인 범위, ID: info.circle
+		44 text 데모 · 실제 전송 없음 실행 3 · 입력 대기 1
+		45 image Description: 새로 고침, Help: 갱신 오후 11:43:49, ID: arrow.clockwise
+	46 toolbar
+		47 button Description: 사이드바 숨기기, Secondary Actions: Increment, Decrement, Delete, Cancel, Move next, Remove from toolbar
+		48 button Description: 연결, Secondary Actions: Increment, Decrement, Delete, Cancel, Move previous, Move next, Remove from toolbar
+		49 button Description: 새로고침, Help: 새로고침 · ⌘R, Secondary Actions: Increment, Decrement, Delete, Cancel, Move previous, Move next, Remove from toolbar
+		50 button Description: 상세 패널 숨기기, Secondary Actions: Increment, Decrement, Delete, Cancel, Move previous, Move next, Remove from toolbar
+		51 menu button 작업공간 설정, Description: More, Help: 화면 모드와 작업공간 설정
+	52 close button
+	53 full screen button Help: this button also has an action to zoom the window, Secondary Actions: zoom the window
+	54 minimize button
+	55 text Codex Maestro
+56 menu bar
+	57 Codex Maestro
+	58 File
+	59 Edit
+	60 View
+	61 Window
+	62 Help
+
+The focused UI element is 0 standard window Codex Maestro, ID: maestro, Secondary Actions: Raise
+OVERLAP_DESIGN_TO_MODELS
+Window: "", App: Codex Maestro.
+0 sheet Secondary Actions: Raise
+	1 container
+		2 text 다음 작업 워크스페이스 토폴로지 설계 → 로컬 모델 실행 검증
+		3 button 참고, 옮긴 항목에서 상대 자료를 참고합니다.
+		4 button 전달, 상대 항목에 자료와 다음 작업을 전달합니다.
+		5 button (selected) 검토, 상대 항목에 검토를 요청합니다.
+		6 button 직접 요청, 담당과 요청 내용을 직접 지정합니다.
+		7 button 취소
+8 menu bar
+	9 Codex Maestro
+	10 File
+	11 Edit
+	12 View
+	13 Window
+	14 Help
+
+The focused UI element is 0 sheet Secondary Actions: Raise
+OVERLAP_CANCELLED
+Window: "Codex Maestro", App: Codex Maestro.
+0 standard window Codex Maestro, ID: maestro, Secondary Actions: Raise
+	1 container
+		2 split group
+			3 container
+				4 button 최근 작업
+				5 button 열린 세션, 6
+				6 button 전체, 6
+				7 text 프로젝트
+				8 scroll area
+					9 list Secondary Actions: AXScrollToTop, AXScrollToBottom
+						10 button Description: CodexMaestro, 3, Help: ~/Projects/CodexMaestro, ~/Projects/CodexMaestro, ~/Projects/CodexMaestro, Secondary Actions: 컨텍스트 보기
+						11 button Description: RunnersHeart, 2, Help: ~/Projects/RunnersHeart, ~/Projects/RunnersHeart, ~/Projects/RunnersHeart, Secondary Actions: 컨텍스트 보기
+						12 button Description: Local AI Studio, 1, Help: ~/Projects/LocalAIStudio, ~/Projects/LocalAIStudio, ~/Projects/LocalAIStudio, Secondary Actions: 컨텍스트 보기
+			13 splitter (disabled, settable, float) 230
+			14 container
+				15 text 작업 흐름
+				16 button Description: 작업 흐름, ID: point.3.connected.trianglepath.dotted
+				17 button Description: 세션 목록 보기, ID: list.bullet
+				18 image Description: 검색, ID: magnifyingglass
+				19 text field (settable) Placeholder: 검색, ID: session-search
+				20 scroll area
+					21 button Description: CodexMaestro 프로젝트 · 3개 세션, Secondary Actions: 컨텍스트 열기
+					22 button Description: CodexMaestro 프로젝트 · 3개 세션, ID: folder, Secondary Actions: 컨텍스트 열기
+					23 button Description: CodexMaestro 프로젝트 · 3개 세션, Secondary Actions: 컨텍스트 열기
+					24 button Description: CodexMaestro 프로젝트 연결 만들기, Help: 이 프로젝트에서 연결 만들기, ID: link
+					25 button Description: RunnersHeart 프로젝트 · 2개 세션, Secondary Actions: 컨텍스트 열기
+					26 button Description: RunnersHeart 프로젝트 · 2개 세션, ID: folder, Secondary Actions: 컨텍스트 열기
+					27 button Description: RunnersHeart 프로젝트 · 2개 세션, Secondary Actions: 컨텍스트 열기
+					28 button Description: RunnersHeart 프로젝트 연결 만들기, Help: 이 프로젝트에서 연결 만들기, ID: link
+					29 button Description: Local AI Studio 프로젝트 · 1개 세션, Secondary Actions: 컨텍스트 열기
+					30 button Description: Local AI Studio 프로젝트 · 1개 세션, ID: folder, Secondary Actions: 컨텍스트 열기
+					31 button Description: Local AI Studio 프로젝트 · 1개 세션, Secondary Actions: 컨텍스트 열기
+					32 button Description: Local AI Studio 프로젝트 연결 만들기, Help: 이 프로젝트에서 연결 만들기, ID: link
+					33 container Description: 워크스페이스 토폴로지 설계, Secondary Actions: 컨텍스트 열기
+						34 text 워크스페이스 토폴로지 설계 실행 중
+						35 button Description: 워크스페이스 토폴로지 설계 연결 만들기, Help: 이 세션에서 연결 만들기, ID: link
+					36 container Description: 러닝 코칭 피드백 개선, Secondary Actions: 컨텍스트 열기
+						37 text 러닝 코칭 피드백 개선 실행 중
+						38 button Description: 러닝 코칭 피드백 개선 연결 만들기, Help: 이 세션에서 연결 만들기, ID: link
+					39 container Description: 로컬 모델 실행 검증, Secondary Actions: 컨텍스트 열기
+						40 text 로컬 모델 실행 검증 대기 중
+						41 button Description: 로컬 모델 실행 검증 연결 만들기, Help: 이 세션에서 연결 만들기, ID: link
+					42 container Description: Codex 세션 브리지 구현, Secondary Actions: 컨텍스트 열기
+						43 text Codex 세션 브리지 구현 실행 중
+						44 button Description: Codex 세션 브리지 구현 연결 만들기, Help: 이 세션에서 연결 만들기, ID: link
+					45 container Description: Watch 동기화 상태 점검, Secondary Actions: 컨텍스트 열기
+						46 text Watch 동기화 상태 점검 대기 중
+						47 button Description: Watch 동기화 상태 점검 연결 만들기, Help: 이 세션에서 연결 만들기, ID: link
+					48 container Description: IPC 연결과 복구 검증, Secondary Actions: 컨텍스트 열기
+						49 text IPC 연결과 복구 검증 입력 대기
+						50 button Description: IPC 연결과 복구 검증 연결 만들기, Help: 이 세션에서 연결 만들기, ID: link
+				51 button Description: 축소, ID: minus
+				52 text 85%
+				53 button Description: 확대, ID: plus
+				54 button Description: 레이아웃 초기화, ID: arrow.up.left.and.arrow.down.right
+				55 button Description: 연결선 표시, ID: link
+				56 button Description: 연결선과 조작 안내, ID: info.circle
+			57 splitter (disabled, settable, float) 888
+			58 container
+				59 text Codex 세션 브리지 구현
+				60 button Description: Codex에서 열기, ID: arrow.up.right
+				61 text Help: 실시간 세션 상태, Value: 실행 중 CodexMaestro
+				62 disclosure triangle Description: 정보, Value: off
+				63 세션 정보
+					64 radio button Description: 대화, Value: 1
+					65 radio button Description: 연결, Value: 0
+					66 radio button Description: 기록, Value: 0
+				67 scroll area
+					68 list Secondary Actions: AXScrollToTop, AXScrollToBottom
+						69 image Description: 계정, ID: person.crop.circle
+						70 text 사용자 세션 상태를 관찰하고 연결된 작업 간 컨텍스트를 전달할 수 있도록 구성해주세요.
+						71 image Description: 스파클 별, ID: sparkle
+						72 text Codex 프로젝트별 세션을 구성했습니다. 실행 상태는 실시간으로 반영되며, 연결을 선택하면 전달할 내용을 검토할 수 있습니다.
+				73 text 요청 ⌘ ↵
+				74 scroll area Secondary Actions: Scroll Up, Scroll Down
+					75 text entry area (settable) Description: 세션 프롬프트, ID: prompt-editor
+					76 scroll bar (disabled, settable, float) 0
+				77 text 다음 작업이나 개선할 점을 요청하세요…
+				78 button (disabled) Description: 전송, ID: send-prompt
+		79 text 데모 · 실제 전송 없음 실행 3 · 입력 대기 1
+		80 image Description: 새로 고침, Help: 갱신 오후 11:43:49, ID: arrow.clockwise
+	81 toolbar
+		82 button Description: 사이드바 숨기기, Secondary Actions: Increment, Decrement, Delete, Cancel, Move next, Remove from toolbar
+		83 button Description: 연결, Secondary Actions: Increment, Decrement, Delete, Cancel, Move previous, Move next, Remove from toolbar
+		84 button Description: 새로고침, Help: 새로고침 · ⌘R, Secondary Actions: Increment, Decrement, Delete, Cancel, Move previous, Move next, Remove from toolbar
+		85 button Description: 상세 패널 숨기기, Secondary Actions: Increment, Decrement, Delete, Cancel, Move previous, Move next, Remove from toolbar
+		86 menu button 더 보기, Description: More, Help: 화면 모드와 작업공간 설정, ID: ellipsis.circle
+	87 close button
+	88 full screen button Help: this button also has an action to zoom the window, Secondary Actions: zoom the window
+	89 minimize button
+	90 text Codex Maestro
+91 menu bar
+	92 Codex Maestro
+	93 File
+	94 Edit
+	95 View
+	96 Window
+	97 Help
+
+The focused UI element is 0 standard window Codex Maestro, ID: maestro, Secondary Actions: Raise
+ICON_BEGIN_DESIGN
+The following is a diff from the previous accessibility tree for Window: "Codex Maestro" with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.
++				98 image Description: 링크, ID: link
++				99 text 워크스페이스 토폴로지 설계 → 연결할 항목 선택
++				100 button 취소
+The focused UI element is 0 standard window Codex Maestro, ID: maestro, Secondary Actions: Raise
+ICON_REQUEST_DESIGN_TO_WATCH
+Window: "", App: Codex Maestro.
+0 sheet Secondary Actions: Raise
+	1 container
+		2 text 요청
+		3 button Description: 닫기, Help: 연결은 그대로 유지합니다
+		4 Description: 작업, ID: connection-function
+			5 radio button Description: 참고, Value: 1
+			6 radio button Description: 전달, Value: 0
+			7 radio button Description: 검토, Value: 0
+			8 radio button Description: 직접 요청, Value: 0
+		9 text 요청 내용
+		10 scroll area Secondary Actions: Scroll Up, Scroll Down
+			11 text entry area (settable) connection-action-prompt
+			12 scroll bar (disabled, settable, float) 0
+		13 text 담당
+		14 Description: 담당, ID: connection-execution-side
+			15 radio button Description: 출발 쪽, Value: 1
+			16 radio button Description: 도착 쪽, Value: 0
+		17 text 작업 워크스페이스 토폴로지 설계 참고 Watch 동기화 상태 점검
+		18 disclosure triangle Description: 보낼 내용, Value: off, ID: connection-action-preview
+		19 text 초안을 확인하고 전송하면 실행됩니다.
+		20 button Description: 저장, ID: save-connection-action
+		21 button Description: 초안 준비, ID: prepare-connection-action
+22 menu bar
+	23 Codex Maestro
+	24 File
+	25 Edit
+	26 View
+	27 Window
+	28 Help
+
+The focused UI element is 11 text entry area (settable) connection-action-prompt
+TYPED_HANDOFF_TARGET
+Window: "", App: Codex Maestro.
+0 sheet Secondary Actions: Raise
+	1 container
+		2 text 요청
+		3 button Description: 닫기, Help: 연결은 그대로 유지합니다
+		4 Description: 작업, ID: connection-function
+			5 radio button Description: 참고, Value: 0
+			6 radio button Description: 전달, Value: 1
+			7 radio button Description: 검토, Value: 0
+			8 radio button Description: 직접 요청, Value: 0
+		9 text 요청 내용
+		10 scroll area Secondary Actions: Scroll Up, Scroll Down
+			11 text entry area (settable) connection-action-prompt
+			12 scroll bar (disabled, settable, float) 0
+		13 text 담당
+		14 Description: 담당, ID: connection-execution-side
+			15 radio button Description: 출발 쪽, Value: 0
+			16 radio button Description: 도착 쪽, Value: 1
+		17 text 작업 Watch 동기화 상태 점검 참고 워크스페이스 토폴로지 설계
+		18 disclosure triangle Description: 보낼 내용, Value: off, ID: connection-action-preview
+		19 text 초안을 확인하고 전송하면 실행됩니다.
+		20 button Description: 저장, ID: save-connection-action
+		21 button Description: 초안 준비, ID: prepare-connection-action
+22 menu bar
+	23 Codex Maestro
+	24 File
+	25 Edit
+	26 View
+	27 Window
+	28 Help
+
+The focused UI element is 11 text entry area (settable) connection-action-prompt
+HANDOFF_EDITED
+The following is a diff from the previous accessibility tree for Window: "" with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.
+~			11 text entry area (settable) Value: 정리 후 전달 초안 경로를 확인합니다., ID: connection-action-prompt
+The focused UI element is 11 text entry area (settable) Value: 정리 후 전달 초안 경로를 확인합니다., ID: connection-action-prompt
+HANDOFF_PREPARED_NO_SEND
+Window: "Codex Maestro", App: Codex Maestro.
+0 standard window Codex Maestro, ID: maestro, Secondary Actions: Raise
+	1 container
+		2 image (selected) Description: 선택됨, ID: checkmark.circle.fill
+		3 text ‘Watch 동기화 상태 점검’의 초안을 준비했습니다. 내용을 편집하고 전송하세요.
+		4 button Description: 닫기, ID: xmark
+		5 split group
+			6 container
+				7 button 최근 작업
+				8 button 열린 세션, 6
+				9 button 전체, 6
+				10 text 프로젝트
+				11 scroll area
+					12 list Secondary Actions: AXScrollToTop, AXScrollToBottom
+						13 button Description: CodexMaestro, 3, Help: ~/Projects/CodexMaestro, ~/Projects/CodexMaestro, ~/Projects/CodexMaestro, Secondary Actions: 컨텍스트 보기
+						14 button Description: RunnersHeart, 2, Help: ~/Projects/RunnersHeart, ~/Projects/RunnersHeart, ~/Projects/RunnersHeart, Secondary Actions: 컨텍스트 보기
+						15 button Description: Local AI Studio, 1, Help: ~/Projects/LocalAIStudio, ~/Projects/LocalAIStudio, ~/Projects/LocalAIStudio, Secondary Actions: 컨텍스트 보기
+			16 splitter (disabled, settable, float) 230
+			17 container
+				18 text 작업 흐름
+				19 button Description: 작업 흐름, ID: point.3.connected.trianglepath.dotted
+				20 button Description: 세션 목록 보기, ID: list.bullet
+				21 image Description: 검색, ID: magnifyingglass
+				22 text field (settable) Placeholder: 검색, ID: session-search
+				23 scroll area
+					24 button Description: CodexMaestro 프로젝트 · 3개 세션, Secondary Actions: 컨텍스트 열기
+					25 button Description: CodexMaestro 프로젝트 · 3개 세션, ID: folder, Secondary Actions: 컨텍스트 열기
+					26 button Description: CodexMaestro 프로젝트 · 3개 세션, Secondary Actions: 컨텍스트 열기
+					27 button Description: CodexMaestro 프로젝트 연결 만들기, Help: 이 프로젝트에서 연결 만들기, ID: link
+					28 button Description: RunnersHeart 프로젝트 · 2개 세션, Secondary Actions: 컨텍스트 열기
+					29 button Description: RunnersHeart 프로젝트 · 2개 세션, ID: folder, Secondary Actions: 컨텍스트 열기
+					30 button Description: RunnersHeart 프로젝트 · 2개 세션, Secondary Actions: 컨텍스트 열기
+					31 button Description: RunnersHeart 프로젝트 연결 만들기, Help: 이 프로젝트에서 연결 만들기, ID: link
+					32 button Description: Local AI Studio 프로젝트 · 1개 세션, Secondary Actions: 컨텍스트 열기
+					33 button Description: Local AI Studio 프로젝트 · 1개 세션, ID: folder, Secondary Actions: 컨텍스트 열기
+					34 button Description: Local AI Studio 프로젝트 · 1개 세션, Secondary Actions: 컨텍스트 열기
+					35 button Description: Local AI Studio 프로젝트 연결 만들기, Help: 이 프로젝트에서 연결 만들기, ID: link
+					36 container Description: 워크스페이스 토폴로지 설계, Secondary Actions: 컨텍스트 열기
+						37 text 워크스페이스 토폴로지 설계 실행 중
+						38 button Description: 워크스페이스 토폴로지 설계 연결 만들기, Help: 이 세션에서 연결 만들기, ID: link
+					39 container Description: 러닝 코칭 피드백 개선, Secondary Actions: 컨텍스트 열기
+						40 text 러닝 코칭 피드백 개선 실행 중
+						41 button Description: 러닝 코칭 피드백 개선 연결 만들기, Help: 이 세션에서 연결 만들기, ID: link
+					42 container Description: 로컬 모델 실행 검증, Secondary Actions: 컨텍스트 열기
+						43 text 로컬 모델 실행 검증 대기 중
+						44 button Description: 로컬 모델 실행 검증 연결 만들기, Help: 이 세션에서 연결 만들기, ID: link
+					45 container Description: Codex 세션 브리지 구현, Secondary Actions: 컨텍스트 열기
+						46 text Codex 세션 브리지 구현 실행 중
+						47 button Description: Codex 세션 브리지 구현 연결 만들기, Help: 이 세션에서 연결 만들기, ID: link
+					48 container Description: Watch 동기화 상태 점검, Secondary Actions: 컨텍스트 열기
+						49 text Watch 동기화 상태 점검 대기 중
+						50 button Description: Watch 동기화 상태 점검 연결 만들기, Help: 이 세션에서 연결 만들기, ID: link
+					51 container Description: IPC 연결과 복구 검증, Secondary Actions: 컨텍스트 열기
+						52 text IPC 연결과 복구 검증 입력 대기
+						53 button Description: IPC 연결과 복구 검증 연결 만들기, Help: 이 세션에서 연결 만들기, ID: link
+				54 button Description: 축소, ID: minus
+				55 text 85%
+				56 button Description: 확대, ID: plus
+				57 button Description: 레이아웃 초기화, ID: arrow.up.left.and.arrow.down.right
+				58 button Description: 연결선 표시, ID: link
+				59 button Description: 연결선과 조작 안내, ID: info.circle
+			60 splitter (disabled, settable, float) 888
+			61 container
+				62 text Watch 동기화 상태 점검
+				63 button Description: Codex에서 열기, ID: arrow.up.right
+				64 text Help: 실시간 세션 상태, Value: 대기 중 RunnersHeart
+				65 disclosure triangle Description: 정보, Value: off
+				66 세션 정보
+					67 radio button Description: 대화, Value: 1
+					68 radio button Description: 연결, Value: 0
+					69 radio button Description: 기록, Value: 0
+				70 scroll area
+					71 list Secondary Actions: AXScrollToTop, AXScrollToBottom
+						72 image Description: 계정, ID: person.crop.circle
+						73 text 사용자 세션 상태를 관찰하고 연결된 작업 간 컨텍스트를 전달할 수 있도록 구성해주세요.
+						74 image Description: 스파클 별, ID: sparkle
+						75 text Codex 프로젝트별 세션을 구성했습니다. 실행 상태는 실시간으로 반영되며, 연결을 선택하면 전달할 내용을 검토할 수 있습니다.
+				76 text 요청 ⌘ ↵
+				77 scroll area Secondary Actions: Scroll Up, Scroll Down
+					78 text entry area (settable) Description: 세션 프롬프트, ID: prompt-editor, Value: 연결 기능: 전달
+실제 작업 세션: Watch 동기화 상태 점검 (sync)
+연결: 워크스페이스 토폴로지 설계 → Watch 동기화 상태 점검
+
+참고 세션: 워크스페이스 토폴로지 설계
+출처: codex://threads/design
+작업 경로: ~/Projects/app
+최근 저장된 어시스턴트 응답입니다. 전체 대화나 실행 중인 내부 상태는 포함하지 않았습니다.
+<reference_material>
+프로젝트별 세션을 구성했습니다. 실행 상태는 실시간으로 반영되며, 연결을 선택하면 전달할 내용을 검토할 수 있습니다.
+</reference_material>
+
+참고 자료와 아래 요청을 바탕으로 다음 작업을 진행하세요.
+
+요청:
+정리 후 전달 초안 경로를 확인합니다.
+
+스킬 선택:
+이 세션에서 사용할 수 있는 스킬 중 요청에 적합한 스킬이 있으면 직접 선택해서 사용하세요. 적합한 스킬이 없으면 일반 작업 방식으로 진행하세요. 요청을 수행하는 데 반드시 필요한 스킬을 사용할 수 없으면 누락된 조건을 명시하세요.
+					79 scroll bar (settable, float) 0
+						80 value indicator (settable, float) 0
+						81 increment arrow button
+						82 decrement arrow button
+						83 increment page button
+						84 decrement page button
+				85 button Description: 전송, ID: send-prompt
+		86 text 데모 · 실제 전송 없음 실행 3 · 입력 대기 1
+		87 image Description: 새로 고침, Help: 갱신 오후 11:43:49, ID: arrow.clockwise
+	88 toolbar
+		89 button Description: 사이드바 숨기기, Secondary Actions: Increment, Decrement, Delete, Cancel, Move next, Remove from toolbar
+		90 button Description: 연결, Secondary Actions: Increment, Decrement, Delete, Cancel, Move previous, Move next, Remove from toolbar
+		91 button Description: 새로고침, Help: 새로고침 · ⌘R, Secondary Actions: Increment, Decrement, Delete, Cancel, Move previous, Move next, Remove from toolbar
+		92 button Description: 상세 패널 숨기기, Secondary Actions: Increment, Decrement, Delete, Cancel, Move previous, Move next, Remove from toolbar
+		93 menu button 더 보기, Description: More, Help: 화면 모드와 작업공간 설정, ID: ellipsis.circle
+	94 close button
+	95 full screen button Help: this button also has an action to zoom the window, Secondary Actions: zoom the window
+	96 minimize button
+	97 text Codex Maestro
+98 menu bar
+	99 Codex Maestro
+	100 File
+	101 Edit
+	102 View
+	103 Window
+	104 Help
+
+The focused UI element is 0 standard window Codex Maestro, ID: maestro, Secondary Actions: Raise

@@ -1,0 +1,24 @@
+Another instance of SwiftPM (PID: 29258) is already running using '/Volumes/eyedisk/develop/CodexMaestro/.build', waiting until that process has finished execution...Building for debugging...
+[1 / 1]
+Build complete! (0.36초)
+Test Suite 'Selected tests' started at 2026-10-03 18:39:00.663.
+Test Suite 'MaestroCoreTests.xctest' started at 2026-10-03 18:39:00.664.
+Test Suite 'StalledPeerTests' started at 2026-10-03 18:39:00.664.
+Test Case '-[MaestroCoreTests.StalledPeerTests testBackpressuredPromptDoesNotBlockMainActorAndDisconnectUnblocksWriter]' started.
+/Volumes/eyedisk/develop/CodexMaestro/Tests/MaestroCoreTests/StalledPeerTests.swift:21: error: -[MaestroCoreTests.StalledPeerTests testBackpressuredPromptDoesNotBlockMainActorAndDisconnectUnblocksWriter] : XCTAssertLessThan failed: ("3.04346175 seconds") is not less than ("1.5 seconds") - A stalled IPC writer must not block the MainActor heartbeat
+Test Case '-[MaestroCoreTests.StalledPeerTests testBackpressuredPromptDoesNotBlockMainActorAndDisconnectUnblocksWriter]' failed (3.224 seconds).
+Test Suite 'StalledPeerTests' failed at 2026-10-03 18:39:03.888.
+	 Executed 1 test, with 1 failure (0 unexpected) in 3.224 (3.224) seconds
+Test Suite 'MaestroCoreTests.xctest' failed at 2026-10-03 18:39:03.888.
+	 Executed 1 test, with 1 failure (0 unexpected) in 3.224 (3.224) seconds
+Test Suite 'Selected tests' failed at 2026-10-03 18:39:03.888.
+	 Executed 1 test, with 1 failure (0 unexpected) in 3.224 (3.225) seconds
+IPC_BACKPRESSURE heartbeat=3.04346175 seconds; disconnect=1.9417e-05 seconds; fixture prompt never accepted
+Test Suite 'Selected tests' started at 2026-10-03 18:39:03.965.
+Test Suite 'MaestroAppTests.xctest' started at 2026-10-03 18:39:03.966.
+Test Suite 'MaestroAppTests.xctest' passed at 2026-10-03 18:39:03.966.
+	 Executed 0 tests, with 0 failures (0 unexpected) in 0.000 (0.000) seconds
+Test Suite 'Selected tests' passed at 2026-10-03 18:39:03.966.
+	 Executed 0 tests, with 0 failures (0 unexpected) in 0.000 (0.001) seconds
+Note: Some test targets reported failures:
+  - MaestroCoreTests (XCTest)

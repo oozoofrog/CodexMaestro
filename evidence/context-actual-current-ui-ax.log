@@ -1,0 +1,301 @@
+
+FINAL_ACTUAL_PROJECT_MAP
+The following is a diff from the previous accessibility tree for Window: "Codex Maestro" with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.
+Removed element IDs: 47-132, 136-144, 148-153, 158-191, 211-232
++			211 splitter (disabled, settable, float) 230
++			212 container
++				213 button Description: 작업 흐름으로 돌아가기, ID: chevron.left
++				214 text CodexMaestro 컨텍스트
++				215 button Description: 컨텍스트 다시 읽기, ID: arrow.clockwise
++				216 button CodexMaestro
++				217 menu button 개선 요청, ID: sparkles
++				218 split group
++					219 container
++						220 image Description: 검색, ID: magnifyingglass
++						221 text field (settable) 기록 검색
++						222 scroll area Secondary Actions: Scroll Up, Scroll Down
++							223 button Description: Codex 관리 도구 만들기, 세션, Secondary Actions: 펼치기
++							224 button Description: 제목 없는 세션, 세션, Secondary Actions: 펼치기
++							225 button Description: CodexMaestro, 프로젝트, Secondary Actions: 펼치기
++							226 button Description: 제목 없는 세션, 세션, Secondary Actions: 펼치기
++							227 button Description: 제목 없는 세션, 세션, Secondary Actions: 펼치기
++							228 button Description: Codex Maestro 연결 기능 기획, 세션, Secondary Actions: 펼치기
++							229 button Description: 앱 디자인을 Apple 스타일로 시안화, 세션, Secondary Actions: 펼치기
++							230 button Description: 제목 없는 세션, 세션, Secondary Actions: 펼치기
++							231 button Description: Codex 개인 설정에 ASD-SDE100 추가, 세션, Secondary Actions: 펼치기
++							232 button Description: 앱 기능을 ASD-STE100으로 설명, 세션, Secondary Actions: 펼치기
++							233 scroll bar (settable, float) 0
++								234 value indicator (settable, float) 0
++								235 increment arrow button
++								236 decrement arrow button
++								237 increment page button
++								238 decrement page button
++						239 button Description: 축소, ID: minus
++						240 text 90%
++						241 button Description: 확대, ID: plus
++						242 text 9개 항목
++					243 splitter (disabled, settable, float) 828
++					244 container
++						245 image Description: 이동, ID: folder
++						246 text CodexMaestro
++						247 button 펼치기
++						248 scroll area
++							249 text /Volumes/eyedisk/develop/CodexMaestro 37글자 · 기록 크기 Codex catalog
++				250 text 저장된 기록 9개 세션 · 12,243개 항목
++				251 button Description: 출처와 확인 범위, ID: info.circle
+The focused UI element is 0 standard window Codex Maestro, ID: maestro, Secondary Actions: Raise
+FINAL_ACTUAL_SESSION_GROUPS
+The following is a diff from the previous accessibility tree for Window: "Codex Maestro" with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.
+Removed element IDs: 223-224, 226-232, 242, 249
++				252 image Description: 앞으로, ID: chevron.right
++				253 button Codex 관리 도구 만들기
++							254 button Description: 메타데이터, 기록 묶음, 2,345, Secondary Actions: 펼치기
++							255 button Description: 지침, 기록 묶음, 47, Secondary Actions: 펼치기
+~							225 button Description: Codex 관리 도구 만들기, 세션, Secondary Actions: 펼치기
++							256 button Description: 대화, 기록 묶음, 289, Secondary Actions: 펼치기
++							257 button Description: 도구 호출, 기록 묶음, 9, Secondary Actions: 펼치기
++							258 button Description: 사용량 기록, 기록 묶음, 1,610, Secondary Actions: 펼치기
++							259 button Description: 도구 결과, 기록 묶음, Secondary Actions: 펼치기
++							260 button Description: 압축 기록, 기록 묶음, 7, Secondary Actions: 펼치기
++							261 button Description: 저장된 세션 메타데이터, 메타데이터, Secondary Actions: 펼치기
++							262 button Description: /Users/oozoofrog/.agents/skills/swift-master/skills/swift-master/SKILL.md, 기록에 등장한 참조, Secondary Actions: 펼치기
++							263 button Description: /Users/oozoofrog/.codex/skills/openai-docs/SKILL.md, 기록에 등장한 참조, Secondary Actions: 펼치기
++							264 button Description: /Users/oozoofrog/.codex/skills/.system/openai-docs/SKILL.md, 기록에 등장한 참조, Secondary Actions: 펼치기
++							265 button Secondary Actions: 펼치기, Description: /Users/oozoofrog/.codex/plugins/cache/openai-curated-remote/build-ios-apps/0.1.2/skills/swiftui-ui-patterns/SKILL.md, 기록에 등장한 참조
++							266 button Secondary Actions: 펼치기, Description: /Users/oozoofrog/.codex/plugins/cache/openai-curated-remote/build-ios-apps/0.1.2/skills/swiftui-performance-audit/SKILL.md, 기록에 등장한 참조
++							267 button Secondary Actions: 펼치기, Description: /Users/oozoofrog/.codex/plugins/cache/jcm/jev-context-manager/0.1.0-dev.9/skills/astra-continuity/SKILL.md, 기록에 등장한 참조
++							268 button Secondary Actions: 펼치기, Description: /Users/oozoofrog/.codex/plugins/cache/openai-bundled/visualize/1.0.46/skills/visualize/SKILL.md, 기록에 등장한 참조
++							269 button Secondary Actions: 펼치기, Description: /Users/oozoofrog/.codex/plugins/cache/codex-skills/swift-intelligence/0.1.0+codex.20260904035318/skills/swift-intelligence/SKILL.md, 기록에 등장한 참조
++							270 button Description: /Users/oozoofrog/.agents/skills/typesafe-ai/SKILL.md, 기록에 등장한 참조, Secondary Actions: 펼치기
++							271 button Secondary Actions: 펼치기, Description: /Users/oozoofrog/.codex/plugins/cache/swift-intelligence-share/swift-intelligence/0.1.0+codex.20260904035318/skills/swift-intelligence/SKILL.md, 기록에 등장한 참조
++						272 button (disabled) 뒤로
++						273 text 1–18 / 513
++						274 button 앞으로
+~						245 image Description: 대화, ID: bubble.left.and.bubble.right
+~						246 text Codex 관리 도구 만들기
++							275 text ID: 01a100d8-585b-74c3-8d63-332de28dd73d
+경로: /Volumes/eyedisk/develop/CodexMaestro
+모델: gpt-6.1-sol
+추론: ultra
+브랜치: 
+보관: false 124글자 · 기록 크기 Codex catalog
+~		193 image Description: 새로 고침, Help: 갱신 오후 10:39:16, ID: arrow.clockwise
+The focused UI element is 0 standard window Codex Maestro, ID: maestro, Secondary Actions: Raise
+FINAL_ACTUAL_TOOL_GROUPS
+The following is a diff from the previous accessibility tree for Window: "Codex Maestro" with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.
+Removed element IDs: 254-271, 275
++				275 image Description: 앞으로, ID: chevron.right
++				276 button 도구 호출
++							277 button Description: exec, 기록에서 사용 관찰, 325, Secondary Actions: 펼치기
++							278 button Description: js, 기록에서 사용 관찰, 291, Secondary Actions: 펼치기
+~							225 button Description: 도구 호출, 기록 묶음, 9, Secondary Actions: 펼치기
++							279 button Description: spawn_agent, 기록에서 사용 관찰, 4, Secondary Actions: 펼치기
++							280 button Description: send_message, 기록에서 사용 관찰, 66, Secondary Actions: 펼치기
++							281 button Description: followup_task, 기록에서 사용 관찰, 48, Secondary Actions: 펼치기
++							282 button Description: list_agents, 기록에서 사용 관찰, 8, Secondary Actions: 펼치기
++							283 button Description: new_context, 기록에서 사용 관찰, 6, Secondary Actions: 펼치기
++							284 button Description: request_user_input_async, 기록에서 사용 관찰, 1, Secondary Actions: 펼치기
++							285 button Description: wait, 기록에서 사용 관찰, 2, Secondary Actions: 펼치기
++							286 button Secondary Actions: 펼치기, Description: 17. exec 2026-10-03T08:19:20.333Z, {
+  "ordinal" : 16,
+  "payload" : {
+    "call_id" : "call_C2ixIc6nvaJTFHYtQzCe25Yi",
+    "id" : "ctc_0db32d45c07787b0016ac0ba7cbda487d0bfff2d28db5cbfcc",
+    "input" : "const results = await Promise.allSettled([\n  tools, 1
++							287 button Secondary Actions: 펼치기, Description: 28. exec 2026-10-03T08:19:41.262Z, {
+  "ordinal" : 27,
+  "payload" : {
+    "call_id" : "call_PObv4Db32uflwaN2nDYwwrqG",
+    "id" : "ctc_0db32d45c07787b0016ac0ba919cd887d0834e3e808de4cc1c",
+    "input" : "const results = await Promise.allSettled([\n  tools, 1
++							288 button Secondary Actions: 펼치기, Description: 36. exec 2026-10-03T08:19:54.153Z, {
+  "ordinal" : 35,
+  "payload" : {
+    "call_id" : "call_Zy5AMamnc7HvokGwB1gPs18U",
+    "id" : "ctc_0db32d45c07787b0016ac0baa26f2887d0a4b4f76654cc9701",
+    "input" : "const results=await Promise.allSettled([\ntools.exe, 1
++							289 button Secondary Actions: 펼치기, Description: 45. exec 2026-10-03T08:20:14.318Z, {
+  "ordinal" : 44,
+  "payload" : {
+    "call_id" : "call_9WEaofyA3JTgBY93xjX9Wlxj",
+    "id" : "ctc_0db32d45c07787b0016ac0bab046f887d087bb034cd277f5cd",
+    "input" : "const results=await Promise.allSettled([\ntools.exe, 1
++							290 button Secondary Actions: 펼치기, Description: 54. exec 2026-10-03T08:20:30.732Z, {
+  "ordinal" : 53,
+  "payload" : {
+    "call_id" : "call_ZuuAngol9mLpzO79NSKhiext",
+    "id" : "ctc_0db32d45c07787b0016ac0bac5014487d092b6a9d6e3f90850",
+    "input" : "const results=await Promise.allSettled([\ntools.exe, 1
++							291 button Secondary Actions: 펼치기, Description: 64. exec 2026-10-03T08:20:51.857Z, {
+  "ordinal" : 63,
+  "payload" : {
+    "call_id" : "call_wzXcjrhFPPf92rEXXi2jEsdH",
+    "id" : "ctc_0db32d45c07787b0016ac0bad95f0887d095cd9f6ef5d5e75d",
+    "input" : "text(await tools.exec_command({cmd:\"python3 - <<'P, 1
++							292 button Secondary Actions: 펼치기, Description: 72. exec 2026-10-03T08:21:02.903Z, {
+  "ordinal" : 71,
+  "payload" : {
+    "call_id" : "call_Plz7gu5Cx6sEr9jZJrqYUhHb",
+    "id" : "ctc_0db32d45c07787b0016ac0bae6628887d0b9a16ba81dcf0fe9",
+    "input" : "text(await tools.exec_command({cmd:\"python3 - <<'P, 1
++							293 button Secondary Actions: 펼치기, Description: 79. exec 2026-10-03T08:21:14.345Z, {
+  "ordinal" : 78,
+  "payload" : {
+    "call_id" : "call_PPrrnXSD0frMbwRNaRSjns8B",
+    "id" : "ctc_0db32d45c07787b0016ac0baf1ccdc87d0a5b98f329f0da35d",
+    "input" : "text(await tools.exec_command({cmd:\"python3 - <<'P, 1
++							294 button Secondary Actions: 펼치기, Description: 86. exec 2026-10-03T08:21:25.286Z, {
+  "ordinal" : 85,
+  "payload" : {
+    "call_id" : "call_Gtw09YGvqZQmA10wnK9L39Ke",
+    "id" : "ctc_0db32d45c07787b0016ac0bafd0cc887d0a277c54bd8225e4e",
+    "input" : "text(await tools.exec_command({cmd:\"python3 - <<'P, 1
+~						273 text 1–18 / 760
+~						245 image Description: 쌓인 정사각형, ID: square.stack
+~						246 text 도구 호출
++							295 text /Users/oozoofrog/.codex/sessions/2026/10/03/rollout-2026-10-03T17-19-00-01a100d8-585b-74c3-8d63-332de28dd73d.jsonl
+~		193 image Description: 새로 고침, Help: 갱신 오후 10:40:36, ID: arrow.clockwise
+The focused UI element is 0 standard window Codex Maestro, ID: maestro, Secondary Actions: Raise
+FINAL_ACTUAL_TOOL_CALL_RESULT_RELATIONS
+The following is a diff from the previous accessibility tree for Window: "Codex Maestro" with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.
+Removed element IDs: 225, 277-285, 295
++				295 image Description: 앞으로, ID: chevron.right
++				296 button exec
++							297 button Secondary Actions: 펼치기, Description: 22. custom_tool_call_output 2026-10-03T08:19:20.484Z, {
+  "metadata" : {
+    "client_authored" : false,
+    "fallback_token_limit_override" : 12000
+  },
+  "ordinal" : 21,
+  "payload" : {
+    "call_id" : "call_C2ixIc6nvaJTFHYtQzCe25Yi",
+    "id" : "ctco_01a100d8-a524-72c3-90, 1
++							298 button Description: exec, 기록에서 사용 관찰, 325, Secondary Actions: 펼치기
++							299 button Secondary Actions: 펼치기, Description: 34. custom_tool_call_output 2026-10-03T08:19:43.337Z, {
+  "metadata" : {
+    "client_authored" : false,
+    "fallback_token_limit_override" : 12000
+  },
+  "ordinal" : 33,
+  "payload" : {
+    "call_id" : "call_PObv4Db32uflwaN2nDYwwrqG",
+    "id" : "ctco_01a100d8-fe69-7e81-b2, 1
++							300 button Secondary Actions: 펼치기, Description: 41. custom_tool_call_output 2026-10-03T08:19:56.792Z, {
+  "metadata" : {
+    "client_authored" : false,
+    "fallback_token_limit_override" : 12000
+  },
+  "ordinal" : 40,
+  "payload" : {
+    "call_id" : "call_Zy5AMamnc7HvokGwB1gPs18U",
+    "id" : "ctco_01a100d9-32f8-7511-b6, 1
++							301 button Secondary Actions: 펼치기, Description: 50. custom_tool_call_output 2026-10-03T08:20:16.181Z, {
+  "metadata" : {
+    "client_authored" : false,
+    "fallback_token_limit_override" : 12000
+  },
+  "ordinal" : 49,
+  "payload" : {
+    "call_id" : "call_9WEaofyA3JTgBY93xjX9Wlxj",
+    "id" : "ctco_01a100d9-7eb5-7a33-90, 1
++							302 button Secondary Actions: 펼치기, Description: 58. custom_tool_call_output 2026-10-03T08:20:30.927Z, {
+  "metadata" : {
+    "client_authored" : false,
+    "fallback_token_limit_override" : 12000
+  },
+  "ordinal" : 57,
+  "payload" : {
+    "call_id" : "call_ZuuAngol9mLpzO79NSKhiext",
+    "id" : "ctco_01a100d9-b84f-73c0-a1, 1
++							303 button Secondary Actions: 펼치기, Description: 68. custom_tool_call_output 2026-10-03T08:20:52.210Z, {
+  "metadata" : {
+    "client_authored" : false,
+    "fallback_token_limit_override" : 12000
+  },
+  "ordinal" : 67,
+  "payload" : {
+    "call_id" : "call_wzXcjrhFPPf92rEXXi2jEsdH",
+    "id" : "ctco_01a100da-0b72-71e2-8d, 1
++							304 button Secondary Actions: 펼치기, Description: 75. custom_tool_call_output 2026-10-03T08:21:03.102Z, {
+  "metadata" : {
+    "client_authored" : false,
+    "fallback_token_limit_override" : 12000
+  },
+  "ordinal" : 74,
+  "payload" : {
+    "call_id" : "call_Plz7gu5Cx6sEr9jZJrqYUhHb",
+    "id" : "ctco_01a100da-35fe-7981-80, 1
++							305 button Secondary Actions: 펼치기, Description: 82. custom_tool_call_output 2026-10-03T08:21:14.548Z, {
+  "metadata" : {
+    "client_authored" : false,
+    "fallback_token_limit_override" : 12000
+  },
+  "ordinal" : 81,
+  "payload" : {
+    "call_id" : "call_PPrrnXSD0frMbwRNaRSjns8B",
+    "id" : "ctco_01a100da-62b4-71e1-a3, 1
++							306 button Secondary Actions: 펼치기, Description: 89. custom_tool_call_output 2026-10-03T08:21:25.442Z, {
+  "metadata" : {
+    "client_authored" : false,
+    "fallback_token_limit_override" : 12000
+  },
+  "ordinal" : 88,
+  "payload" : {
+    "call_id" : "call_Gtw09YGvqZQmA10wnK9L39Ke",
+    "id" : "ctco_01a100da-8d42-72d2-b4, 1
+~						273 text 1–18 / 650
+~						245 image Description: 교차된 렌치와 스크루드라이버, ID: wrench.and.screwdriver
+~						246 text exec
++							307 text 기록에서 사용 관찰 4,308,062글자 · 기록 크기 /Users/oozoofrog/.codex/sessions/2026/10/03/rollout-2026-10-03T17-19-00-01a100d8-585b-74c3-8d63-332de28dd73d.jsonl
+~		193 image Description: 새로 고침, Help: 갱신 오후 10:42:11, ID: arrow.clockwise
+The focused UI element is 0 standard window Codex Maestro, ID: maestro, Secondary Actions: Raise
+FINAL_ACTUAL_DEFERRED_RESULT_BODY
+The following is a diff from the previous accessibility tree for Window: "Codex Maestro" with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.
+Removed element IDs: 247
+~						245 image Description: 왼쪽 아래 대각선 화살표, ID: arrow.down.left
+~						246 text 22. custom_tool_call_output 2026-10-03T08:19:20.484Z
+~						248 scroll area Secondary Actions: Scroll Up, Scroll Down
+~							307 text {
+  "metadata" : {
+    "client_authored" : false,
+    "fallback_token_limit_override" : 12000
+  },
+  "ordinal" : 21,
+  "payload" : {
+    "call_id" : "call_C2ixIc6nvaJTFHYtQzCe25Yi",
+    "id" : "ctco_01a100d8-a524-72c3-9028-57eff1d3b396",
+    "internal_chat_message_metadata_passthrough" : {
+      "create_time" : 1791015560.484658,
+      "turn_id" : "01a100d8-5b39-76e1-b8f2-32296f608f56"
+    },
+    "output" : [
+      {
+        "text" : "Script completed\nWall time 0.1 seconds\nOutput:\n",
+        "type" : "input_text"
+      },
+      {
+        "text" : "{\"i\":0,\"status\":\"fulfilled\",\"value\":{\"chunk_id\":\"da094f\",\"wall_time_seconds\":0.000006083,\"exit_code\":0,\"original_token_count\":10,\"output\":\"/Volumes/eyedisk/develop/CodexMaestro\\n\"}}",
+        "type" : "input_text"
+      },
+      {
+        "text" : "{\"i\":1,\"status\":\"fulfilled\",\"value\":{\"chunk_id\":\"1a4a27\",\"wall_time_seconds\":0.000005542,\"exit_code\":0,\"original_token_count\":827,\"output\":\"762:- Do not relabel literal audit qualifications: eight later JCM-owned `hooks.state...trusted_hash` entries and strict equality 151/152 (one approved document header/link changed) remain. CUA’s “Computer Use is not allowed to use the app 'com.openai.codex' for safety reasons.” means app-server loading is not Composer visibility or hook-execution proof. [Task 6]\\n822:- Marketplace exposure requires a catalog/Plugin manifest, source/snapshot/cache byte comparison, and an interactive fresh `codex app-server --stdio` `skills/list` check. `codex plugin add` success alone is insufficient. [Task 1][Task 2]\\n1746:- AGENTS.md, progressive-disclosure, Ponytail, MoAI, allow_implicit_invocation, skills/list, forceReload, app-server, openai-docs, config.toml, hooks.json, context_management=false, invalid type: map, expected a boolean\\n1762:- Cache presence, activation, exposure, and loader visibility are separate facts. A fresh `skills/list` app-server process with `forceReload: true` is a useful discovery check; use `codex -c features.context_management=false app-server --stdio` when the Homebrew CLI otherwise rejects the desktop config map. [Task 1]\\n1766:- `/Users/oozoofrog/.codex/config.toml` was changed only from `model_reasoning_effort = \\\"xhigh\\\"` to `\\\"high\\\"`; `model = \\\"gpt-6-astra\\\"` and `plan_mode_reasoning_effort = \\\"high\\\"` were retained. Fresh app-server `config/read` confirmed the new default. [Task 2]\\n2011:- `computer-use`, `unified-computer-use`, the installed-cache `SKILL.md`, app-server `skills/list`, and Composer’s `$` list are separate layers. An empty cached `skills` directory can be restored by the official bundled CLI without changing `config.toml`; validate the restored bytes against the app-bundle source and then use a fresh app-server `skills/list(forceReload=true)`. [Task 7]\\n2012:- Both `/Users/oozoofrog/Movies/ReScene` and `/Volumes/eyedisk/AI/LocalAIHub` returned the same enabled `computer-use:computer-use` result under forced fresh app-server lookup. Composer queries include host/roots/cwd and have about five-minute stale/gc caching, so a project-local stale result is plausible but was not proven as the cause. [Task 7]\\n2019:- New app-server success does not refresh the running Desktop server or its Composer cache. The next acceptance check is the affected ReScene chat: Settings → Skills → refresh, then search `$computer`; without its observed result, report the UI issue as unresolved. Computer Use cannot inspect Codex itself because `Computer Use is not allowed to use the app 'com.openai.codex' for safety reasons.` [Task 7]\\n2270:- audit, skill-creator, SKILL.md, AGENTS.md, prompt-cleanup, GPT-6-Astra, progressive-disclosure, quick_validate.py, app-server, forceReload\\n2292:- Create `audit` with the local skill-creator scaffold, replace TODOs, run `quick_validate.py`, then use a fresh `codex app-server --stdio` `skills/list` with `forceReload`. Valid frontmatter and loader exposure do not prove behavior; test in-scope and out-of-scope calls when needed. [Task 2]\\n2500:- A one-shot EOF app-server stream returned only initialization; keep an interactive `codex app-server --stdio` process through `skills/list` when verifying loader exposure. Historical failures in CHANGELOG/TEST_REPORT are not active plugin registrations. [Task 2]\\n\"}}",
+        "type" : "input_text"
+      },
+      {
+        "text" : "{\"i\":2,\"status\":\"fulfilled\",\"value\":{\"chunk_id\":\"008976\",\"wall_time_seconds\":0.000012416,\"exit_code\":0,\"original_token_count\":1170,\"output\":\"---\\nname: \\\"openai-docs\\\"\\ndescription: \\\"Use for current OpenAI product, Codex, ChatGPT Work, model, or API guidance and related configuration work. For local settings alone inspect the local source; verify public product claims with official documentation.\\\"\\n\\nmetadata:\\n  short-description: \\\"Codex models/pricing, scheduled tasks, skills, settings, setup, troubleshooting, and self-knowledge; OpenAI APIs and ChatGPT Work. 'You'/'this app' means Codex only.\\\"\\n---\\n\\n# OpenAI Docs\\n\\nProvide current, cited OpenAI product, API, model, and Codex guidance. Read zero or one primary reference.\\n\\n**Choose sources for the claim:** For a local configuration or installed-file question, inspect the relevant local source first. Reuse official guidance already fetched for this task when it is still current. When the answer depends on public OpenAI behavior, availability, model compatibility, pricing, or an API contract, search the official documentation for that exact topic and fetch the matching page. Prefer available official documentation tools; otherwise use official-domain web search. A local setting does not prove server-side behavior, and a search snippet does not replace the page. Preserve any explicitly named model.\\n\\nFor broad Codex setup or system-map work, use the local manual when it provides the needed facts; fetch official sources only for unresolved public behavior. Do not require web browsing for a purely local read or mechanical edit.\\n\\nFor generic software tasks, answer the software task directly. OpenAI implementation, debugging, SDK, API, prompting, agent, and eval requests are not generic.\\n\\nFor a straightforward factual or citation-only request, follow the source order and do not read a route reference. This includes straightforward API facts, ChatGPT Work or mixed Chat/Work/Codex comparisons, model tiers, aliases, Pro mode, reasoning settings, factual migration baselines, and narrow Codex facts. Prioritize `learn.chatgpt.com` for ChatGPT Work.\\n\\n## Choose one primary route\\n\\nUse the first matching route, and read its reference only when the requested task needs that specialized workflow:\\n\\n- **Explicitly requested local documentation integration:** Read [integration guidance](references/mcp-diagnostics.md) only when the user explicitly requests that local integration.\\n- **Model migration, upgrades, or model-specific prompting:** Read [model-migration.md](references/model-migration.md) for actual migration planning, implementation, dynamic target resolution, or prompt changes. Preserve an explicitly requested target.\\n- **Model selection and comparisons:** Read [model-selection.md](references/model-selection.md) only when nuanced current, latest, default, cost, latency, quality, or modality tradeoffs need more guidance. Do not run a migration resolver for selection alone.\\n- **Product, API, ChatGPT Work, and mixed Chat/Work/Codex documentation:** Read [official-docs.md](references/official-docs.md) only when fetched official pages leave source selection, API schemas, or the requested implementation unresolved. This route is not manual-first.\\n- **Explicitly broad Codex setup, orientation, or cross-topic synthesis:** Read [codex-self-knowledge.md](references/codex-self-knowledge.md) when the eligible Codex manual or deeper Codex procedures are needed.\\n\\nRead at most one primary reference. Do not open every route, bundled model guide, or helper script. Read a supporting reference or run a helper only when the chosen workflow demonstrably needs it.\\n\\n## Source and execution boundaries\\n\\n- Search, open, fetch, and cite only `developers.openai.com`, `platform.openai.com`, and `learn.chatgpt.com`. Cite the page that supports the claim. State uncertainty when official sources do not establish pricing, availability, account access, limits, or behavior.\\n- Preserve an explicitly requested model for selection, migration, and prompting. Resolve an unspecified latest or current migration target only after searching and fetching current official guidance.\\n- Use `references/latest-model.md` only as a disclosed fallback after current official model guidance does not answer the question. Read `references/upgrading-to-gpt-5p6-sol.md` only for an actual, requested GPT-5.6-family migration; read `references/prompting-guide.md` only for requested prompting work.\\n- Before building, running, editing, debugging, or testing an API-backed app or tool, use `openai-platform-api-key` first when available. Documentation, conceptual examples, model selection, and read-only guidance do not require an API key.\\n- Say \\\"OpenAI Docs\\\" or \\\"official OpenAI documentation\\\" in user-facing answers. Keep exact official citations and examples concise.\\n\"}}",
+        "type" : "input_text"
+      },
+      {
+        "text" : "[{\"name\":\"list_mcp_resource_templates\",\"description\":\"Lists resource templates provided by MCP servers. Parameterized resource templates allow servers to share data that takes paramete\"},{\"name\":\"list_mcp_resources\",\"description\":\"Lists resources provided by MCP servers. Resources allow servers to share data that provides context to language models, such as f\"},{\"name\":\"mcp__blender__execute_blender_code\",\"description\":\"You have access to Blender tools to interact with a Blender scene directly.\\nBlender must be running with the MCP add-on enabled an\"},{\"name\":\"mcp__blender__execute_blender_code_for_cli\",\"description\":\"You have access to Blender tools to interact with a Blender scene directly.\\nBlender must be running with the MCP add-on enabled an\"},{\"name\":\"mcp__blender__get_blendfile_summary_datablocks\",\"description\":\"You have access to Blender tools to interact with a Blender scene directly.\\nBlender must be running with the MCP add-on enabled an\"},{\"name\":\"mcp__blender__get_blendfile_summary_datablocks_for_cli\",\"description\":\"You have access to Blender tools to interact with a Blender scene directly.\\nBlender must be running with the MCP add-on enabled an\"},{\"name\":\"mcp__blender__get_blendfile_summary_missing_files\",\"description\":\"You have access to Blender tools to interact with a Blender scene directly.\\nBlender must be running with the MCP add-on enabled an\"},{\"name\":\"mcp__blender__get_blendfile_summary_missing_files_for_cli\",\"description\":\"You have access to Blender tools to interact with a Blender scene directly.\\nBlender must be running with the MCP add-on enabled an\"},{\"name\":\"mcp__blender__get_blendfile_summary_of_linked_libraries\",\"description\":\"You have access to Blender tools to interact with a Blender scene directly.\\nBlender must be running with the MCP add-on enabled an\"},{\"name\":\"mcp__blender__get_blendfile_summary_of_linked_libraries_for_cli\",\"description\":\"You have access to Blender tools to interact with a Blender scene directly.\\nBlender must be running with the MCP add-on enabled an\"},{\"name\":\"mcp__blender__get_blendfile_summary_path_info\",\"description\":\"You have access to Blender tools to interact with a Blender scene directly.\\nBlender must be running with the MCP add-on enabled an\"},{\"name\":\"mcp__blender__get_blendfile_summary_path_info_for_cli\",\"description\":\"You have access to Blender tools to interact with a Blender scene directly.\\nBlender must be running with the MCP add-on enabled an\"},{\"name\"
++							308 button (disabled) 뒤로
++							309 text 1–12,000 / 30,972글자
++							310 button 앞으로
++							311 text 30,972글자 · 기록 크기 /Users/oozoofrog/.codex/sessions/2026/10/03/rollout-2026-10-03T17-19-00-01a100d8-585b-74c3-8d63-332de28dd73d.jsonl #22
++							312 scroll bar (settable, float) 0
++								313 value indicator (settable, float) 0
++								314 increment arrow button
++								315 decrement arrow button
++								316 increment page button
++								317 decrement page button
+~		193 image Description: 새로 고침, Help: 갱신 오후 10:42:21, ID: arrow.clockwise
+The focused UI element is 0 standard window Codex Maestro, ID: maestro, Secondary Actions: Raise

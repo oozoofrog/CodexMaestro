@@ -1,0 +1,97 @@
+
+ACTUAL_PROJECT_DOUBLE_CLICK
+The following is a diff from the previous accessibility tree for Window: "Codex Maestro" with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.
+Removed element IDs: 47-132, 136-144, 148-153, 158-191, 211-232
++			211 splitter (disabled, settable, float) 230
++			212 container
++				213 button Description: 작업 흐름으로 돌아가기, ID: chevron.left
++				214 text CodexMaestro 컨텍스트
++				215 button Description: 컨텍스트 다시 읽기, ID: arrow.clockwise
++				216 button CodexMaestro
++				217 menu button 개선 요청
++				218 split group
++					219 container
++						220 image Description: 검색, ID: magnifyingglass
++						221 text field (settable) 기록 검색
++						222 scroll area Secondary Actions: Scroll Up, Scroll Down
++							223 button Description: Codex 관리 도구 만들기, 세션, Secondary Actions: 펼치기
++							224 button Description: 제목 없는 세션, 세션, Secondary Actions: 펼치기
++							225 button Description: CodexMaestro, 프로젝트, Secondary Actions: 펼치기
++							226 button Description: 제목 없는 세션, 세션, Secondary Actions: 펼치기
++							227 button Description: 제목 없는 세션, 세션, Secondary Actions: 펼치기
++							228 button Description: Codex Maestro 연결 기능 기획, 세션, Secondary Actions: 펼치기
++							229 button Description: 앱 디자인을 Apple 스타일로 시안화, 세션, Secondary Actions: 펼치기
++							230 button Description: 제목 없는 세션, 세션, Secondary Actions: 펼치기
++							231 button Description: Codex 개인 설정에 ASD-SDE100 추가, 세션, Secondary Actions: 펼치기
++							232 button Description: 앱 기능을 ASD-STE100으로 설명, 세션, Secondary Actions: 펼치기
++							233 scroll bar (settable, float) 0
++								234 value indicator (settable, float) 0
++								235 increment arrow button
++								236 decrement arrow button
++								237 increment page button
++								238 decrement page button
++						239 button Description: 축소, ID: minus
++						240 text 90%
++						241 button Description: 확대, ID: plus
++						242 text 9개 항목
++					243 splitter (disabled, settable, float) 828
++					244 container
++						245 image Description: 이동, ID: folder
++						246 text CodexMaestro
++						247 button 펼치기
++						248 scroll area
++							249 text /Volumes/eyedisk/develop/CodexMaestro 37글자 · 기록 크기 Codex catalog
++				250 text 저장된 기록 9개 세션 · 12,059개 항목
++				251 button Description: 출처와 확인 범위, ID: info.circle
+The focused UI element is 0 standard window Codex Maestro, ID: maestro, Secondary Actions: Raise
+ACTUAL_SOURCE_COVERAGE
+The following is a diff from the previous accessibility tree for Window: "Codex Maestro" with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.
++					252 popover Secondary Actions: Cancel
++						253 scroll area Secondary Actions: Scroll Up, Scroll Down
++							254 text 출처와 확인 범위 저장된 기록이며 현재 모델에 실제 전달된 입력 전체를 증명하지 않습니다. 관찰된 도구 호출과 스킬 참조는 현재 사용 가능한 도구·스킬 목록이 아닙니다. 글자·바이트 수는 기록 크기입니다. 토큰 사용량은 기록된 실제 telemetry만 표시합니다. /Users/oozoofrog/.codex/sessions/2026/10/03/rollout-2026-10-03T17-19-00-01a100d8-585b-74c3-8d63-332de28dd73d.jsonl 읽음 · 5,695개 기록 · 67,171,246바이트 /Users/oozoofrog/.codex/sessions/2026/10/03/rollout-2026-10-03T18-32-12-01a1011b-5b71-76e1-bea4-8cf35b5482b4.jsonl 읽음 · 1,606개 기록 · 13,197,878바이트 /Users/oozoofrog/.codex/sessions/2026/10/03/rollout-2026-10-03T18-09-56-01a10106-f7f3-7952-b797-53b90bb01350.jsonl 읽음 · 1,535개 기록 · 4,071,089바이트 /Users/oozoofrog/.codex/sessions/2026/10/03/rollout-2026-10-03T18-10-26-01a10107-6cfd-7a72-a7da-84c5dcb80822.jsonl 읽음 · 1,327개 기록 · 4,903,226바이트 /Users/oozoofrog/.codex/sessions/2026/10/03/rollout-2026-10-03T19-53-09-01a10165-7955-7420-b67a-34e66382edc5.jsonl 읽음 · 60개 기록 · 625,959바이트 /Users/oozoofrog/.codex/sessions/2026/10/03/rollout-2026-10-03T18-19-36-01a1010f-d0da-79e1-98fb-85e938299200.jsonl 읽음 · 440개 기록 · 7,914,596바이트 /Users/oozoofrog/.codex/sessions/2026/10/03/rollout-2026-10-03T18-10-12-01a10107-3873-74d2-82a0-e7d1e600d944.jsonl 읽음 · 230개 기록 · 989,605바이트 /Users/oozoofrog/.codex/sessions/2026/10/03/rollout-2026-10-03T18-18-23-01a1010e-b465-7c02-a32e-1040a3ebe426.jsonl 읽음 · 74개 기록 · 376,107바이트 /Users/oozoofrog/.codex/sessions/2026/10/03/rollout-2026-10-03T18-17-12-01a1010d-9f44-78e2-bace-b7a733704288.jsonl 읽음 · 61개 기록 · 502,897바이트
++							255 scroll bar (settable, float) 0
++								256 value indicator (settable, float) 0
++								257 increment arrow button
++								258 decrement arrow button
++								259 increment page button
++								260 decrement page button
+~		193 image Description: 새로 고침, Help: 갱신 오후 10:35:43, ID: arrow.clockwise
+The focused UI element is 0 standard window Codex Maestro, ID: maestro, Secondary Actions: Raise
+ACTUAL_ROOT_SESSION_RECORDS
+The following is a diff from the previous accessibility tree for Window: "Codex Maestro" with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.
+Removed element IDs: 223-224, 226-232, 242, 249, 252-260
++				252 image Description: 앞으로, ID: chevron.right
++				253 button Codex 관리 도구 만들기
+~				217 menu button 개선 요청, ID: sparkles
++							254 button Description: 저장된 세션 메타데이터, 메타데이터, Secondary Actions: 펼치기
++							255 button Description: 메타데이터, 기록 묶음, 2,301, Secondary Actions: 펼치기
+~							225 button Description: Codex 관리 도구 만들기, 세션, Secondary Actions: 펼치기
++							256 button Description: 지침, 기록 묶음, 47, Secondary Actions: 펼치기
++							257 button Description: /absolute/path.png, 기록에 등장한 참조, Secondary Actions: 펼치기
++							258 button Description: /absolute/path.mp3, 기록에 등장한 참조, Secondary Actions: 펼치기
++							259 button Description: /path/to/foo.ts, 기록에 등장한 참조, Secondary Actions: 펼치기
++							260 button Description: /Users/oozoofrog/.codex/memories/memory_summary.md, 기록에 등장한 참조, Secondary Actions: 펼치기
++							261 button Description: /Users/oozoofrog/.codex/memories/MEMORY.md, 기록에 등장한 참조, Secondary Actions: 펼치기
++							262 button Description: /Users/oozoofrog/.codex/skills/.system, 기록에 등장한 참조, Secondary Actions: 펼치기
++							263 button Description: 대화, 기록 묶음, 284, Secondary Actions: 펼치기
++							264 button Description: /Users/oozoofrog/.local/bin/python3.11, 기록에 등장한 참조, Secondary Actions: 펼치기
++							265 button Description: /tmp/PapersActoolVerify-019de3a4/assetcatalog_generated_info.plist, 기록에 등장한 참조, Secondary Actions: 펼치기
++							266 button Description: /Volumes/eyedisk/develop/oozoofrog/uncloud/scripts/install-launch-agent.sh, 기록에 등장한 참조, Secondary Actions: 펼치기
++							267 button Description: /Volumes/eyedisk/develop/oozoofrog/uncloud/config/agent.json, 기록에 등장한 참조, Secondary Actions: 펼치기
++							268 button Description: /Volumes/eyedisk/develop/oozoofrog/uncloud/scripts/install.sh, 기록에 등장한 참조, Secondary Actions: 펼치기
++							269 button Description: /tmp/uncloud-install-config.json, 기록에 등장한 참조, Secondary Actions: 펼치기
++							270 button Description: /tmp/gptpro-legacy-fixture.XXXXXX, 기록에 등장한 참조, Secondary Actions: 펼치기
++							271 button Description: /Volumes/eyedisk/develop/swift-master/skills/swift-master/architecture-reference.md, 기록에 등장한 참조, Secondary Actions: 펼치기
++						272 button (disabled) 뒤로
++						273 text 1–18 / 501
++						274 button 앞으로
+~						245 image Description: 대화, ID: bubble.left.and.bubble.right
+~						246 text Codex 관리 도구 만들기
++							275 text ID: 01a100d8-585b-74c3-8d63-332de28dd73d
+경로: /Volumes/eyedisk/develop/CodexMaestro
+모델: gpt-6.1-sol
+추론: ultra
+브랜치: 
+보관: false 124글자 · 기록 크기 Codex catalog
+~		193 image Description: 새로 고침, Help: 갱신 오후 10:35:59, ID: arrow.clockwise
+The focused UI element is 0 standard window Codex Maestro, ID: maestro, Secondary Actions: Raise

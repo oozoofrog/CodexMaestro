@@ -1,0 +1,111 @@
+Another instance of SwiftPM (PID: 18173) is already running using '/Volumes/eyedisk/develop/CodexMaestro/.build', waiting until that process has finished execution...Building for debugging...
+[2 / 25]
+[3 / 26] MaestroCore
+[5 / 28] MaestroCore
+[8 / 24] MaestroCore
+[13 / 21] MaestroProbe-product
+[14 / 22] MaestroCoreTests-product
+[18 / 20] MaestroAppTests-product
+Build complete! (2.04초)
+Test Suite 'All tests' started at 2026-10-03 18:16:46.977.
+Test Suite 'MaestroCoreTests.xctest' started at 2026-10-03 18:16:46.978.
+Test Suite 'ConnectionTests' started at 2026-10-03 18:16:46.978.
+Test Case '-[MaestroCoreTests.ConnectionTests testExistingVersionOneWorkspaceDecodesWithoutProjectLinks]' started.
+Test Case '-[MaestroCoreTests.ConnectionTests testExistingVersionOneWorkspaceDecodesWithoutProjectLinks]' passed (0.001 seconds).
+Test Case '-[MaestroCoreTests.ConnectionTests testMalformedProjectLinksDoNotDecodeAsEmpty]' started.
+Test Case '-[MaestroCoreTests.ConnectionTests testMalformedProjectLinksDoNotDecodeAsEmpty]' passed (0.000 seconds).
+Test Case '-[MaestroCoreTests.ConnectionTests testProjectLinksPersistAlongsideSessionLinksAndPrivateDrafts]' started.
+Test Case '-[MaestroCoreTests.ConnectionTests testProjectLinksPersistAlongsideSessionLinksAndPrivateDrafts]' passed (0.002 seconds).
+Test Case '-[MaestroCoreTests.ConnectionTests testProjectLinkUpdatePreservesIdentityAndDoesNotLoseDataOnFailure]' started.
+Test Case '-[MaestroCoreTests.ConnectionTests testProjectLinkUpdatePreservesIdentityAndDoesNotLoseDataOnFailure]' passed (0.000 seconds).
+Test Case '-[MaestroCoreTests.ConnectionTests testProjectLinkValidationIsDirectedAndPurposeSpecific]' started.
+Test Case '-[MaestroCoreTests.ConnectionTests testProjectLinkValidationIsDirectedAndPurposeSpecific]' passed (0.000 seconds).
+Test Case '-[MaestroCoreTests.ConnectionTests testSessionLinkUpdateRejectsCollisionWithoutRemovingOriginal]' started.
+Test Case '-[MaestroCoreTests.ConnectionTests testSessionLinkUpdateRejectsCollisionWithoutRemovingOriginal]' passed (0.000 seconds).
+Test Suite 'ConnectionTests' passed at 2026-10-03 18:16:46.981.
+	 Executed 6 tests, with 0 failures (0 unexpected) in 0.003 (0.003) seconds
+Test Suite 'CoreTests' started at 2026-10-03 18:16:46.981.
+Test Case '-[MaestroCoreTests.CoreTests testCatalogReadsAllSessionsAndExplicitProjectMembershipWithoutWriting]' started.
+Test Case '-[MaestroCoreTests.CoreTests testCatalogReadsAllSessionsAndExplicitProjectMembershipWithoutWriting]' passed (0.005 seconds).
+Test Case '-[MaestroCoreTests.CoreTests testDirectedLinksAndPersistenceRoundTrip]' started.
+Test Case '-[MaestroCoreTests.CoreTests testDirectedLinksAndPersistenceRoundTrip]' passed (0.001 seconds).
+Test Case '-[MaestroCoreTests.CoreTests testFramesSurviveFragmentationAndCoalescing]' started.
+Test Case '-[MaestroCoreTests.CoreTests testFramesSurviveFragmentationAndCoalescing]' passed (0.000 seconds).
+Test Case '-[MaestroCoreTests.CoreTests testLiveStatusPatchesAndWaitingFlags]' started.
+Test Case '-[MaestroCoreTests.CoreTests testLiveStatusPatchesAndWaitingFlags]' passed (0.000 seconds).
+Test Case '-[MaestroCoreTests.CoreTests testMalformedFramesFailClosed]' started.
+Test Case '-[MaestroCoreTests.CoreTests testMalformedFramesFailClosed]' passed (0.000 seconds).
+Test Case '-[MaestroCoreTests.CoreTests testTranscriptUsesChronologicalTextMessagesAndBoundThreadID]' started.
+Test Case '-[MaestroCoreTests.CoreTests testTranscriptUsesChronologicalTextMessagesAndBoundThreadID]' passed (0.003 seconds).
+Test Case '-[MaestroCoreTests.CoreTests testTurnPayloadPreservesPromptAndDoesNotOverrideSessionPolicy]' started.
+Test Case '-[MaestroCoreTests.CoreTests testTurnPayloadPreservesPromptAndDoesNotOverrideSessionPolicy]' passed (0.000 seconds).
+Test Suite 'CoreTests' passed at 2026-10-03 18:16:46.991.
+	 Executed 7 tests, with 0 failures (0 unexpected) in 0.009 (0.010) seconds
+Test Suite 'DesktopBridgeTests' started at 2026-10-03 18:16:46.991.
+Test Case '-[MaestroCoreTests.DesktopBridgeTests testDesktopPatchUpdatesRuntimeStatus]' started.
+Test Case '-[MaestroCoreTests.DesktopBridgeTests testDesktopPatchUpdatesRuntimeStatus]' passed (0.001 seconds).
+Test Case '-[MaestroCoreTests.DesktopBridgeTests testDisconnectedClientRejectsSend]' started.
+Test Case '-[MaestroCoreTests.DesktopBridgeTests testDisconnectedClientRejectsSend]' passed (0.000 seconds).
+Test Case '-[MaestroCoreTests.DesktopBridgeTests testMissingOwnerNeverStartsTurn]' started.
+Test Case '-[MaestroCoreTests.DesktopBridgeTests testMissingOwnerNeverStartsTurn]' passed (0.001 seconds).
+Test Case '-[MaestroCoreTests.DesktopBridgeTests testOwnerRoutedPromptAndLiveStatusRoundTrip]' started.
+Test Case '-[MaestroCoreTests.DesktopBridgeTests testOwnerRoutedPromptAndLiveStatusRoundTrip]' passed (0.001 seconds).
+Test Suite 'DesktopBridgeTests' passed at 2026-10-03 18:16:46.994.
+	 Executed 4 tests, with 0 failures (0 unexpected) in 0.003 (0.003) seconds
+Test Suite 'IntegrationProjectionTests' started at 2026-10-03 18:16:46.994.
+Test Case '-[MaestroCoreTests.IntegrationProjectionTests testIndexedFlagsRespectReplacementInsertionAndRemovalOrder]' started.
+Test Case '-[MaestroCoreTests.IntegrationProjectionTests testIndexedFlagsRespectReplacementInsertionAndRemovalOrder]' passed (0.000 seconds).
+Test Case '-[MaestroCoreTests.IntegrationProjectionTests testInvalidProjectionPatchDoesNotPartiallyApplyEarlierPatches]' started.
+Test Case '-[MaestroCoreTests.IntegrationProjectionTests testInvalidProjectionPatchDoesNotPartiallyApplyEarlierPatches]' passed (0.000 seconds).
+Test Case '-[MaestroCoreTests.IntegrationProjectionTests testProjectFallbackRanksOnlyMatchingRootsAndUsesPathBoundaries]' started.
+Test Case '-[MaestroCoreTests.IntegrationProjectionTests testProjectFallbackRanksOnlyMatchingRootsAndUsesPathBoundaries]' passed (0.003 seconds).
+Test Case '-[MaestroCoreTests.IntegrationProjectionTests testUnrelatedConversationPatchesLeaveProjectionUnchanged]' started.
+Test Case '-[MaestroCoreTests.IntegrationProjectionTests testUnrelatedConversationPatchesLeaveProjectionUnchanged]' passed (0.000 seconds).
+Test Suite 'IntegrationProjectionTests' passed at 2026-10-03 18:16:46.998.
+	 Executed 4 tests, with 0 failures (0 unexpected) in 0.004 (0.004) seconds
+Test Suite 'StreamRecoveryTests' started at 2026-10-03 18:16:46.998.
+Test Case '-[MaestroCoreTests.StreamRecoveryTests testMalformedRevisionAndIndexedPatchInvalidateAndResubscribe]' started.
+Test Case '-[MaestroCoreTests.StreamRecoveryTests testMalformedRevisionAndIndexedPatchInvalidateAndResubscribe]' passed (0.002 seconds).
+Test Suite 'StreamRecoveryTests' passed at 2026-10-03 18:16:47.000.
+	 Executed 1 test, with 0 failures (0 unexpected) in 0.002 (0.002) seconds
+Test Suite 'MaestroCoreTests.xctest' passed at 2026-10-03 18:16:47.000.
+	 Executed 22 tests, with 0 failures (0 unexpected) in 0.021 (0.023) seconds
+Test Suite 'All tests' passed at 2026-10-03 18:16:47.000.
+	 Executed 22 tests, with 0 failures (0 unexpected) in 0.021 (0.023) seconds
+Test Suite 'All tests' started at 2026-10-03 18:16:47.121.
+Test Suite 'MaestroAppTests.xctest' started at 2026-10-03 18:16:47.121.
+Test Suite 'ConnectionStoreTests' started at 2026-10-03 18:16:47.121.
+Test Case '-[MaestroAppTests.ConnectionStoreTests testProjectCRUDRejectsUnavailableEndpointsAndDuplicates]' started.
+Test Case '-[MaestroAppTests.ConnectionStoreTests testProjectCRUDRejectsUnavailableEndpointsAndDuplicates]' passed (0.001 seconds).
+Test Case '-[MaestroAppTests.ConnectionStoreTests testProjectRelationDoesNotReassignSessionOrSendPrompt]' started.
+Test Case '-[MaestroAppTests.ConnectionStoreTests testProjectRelationDoesNotReassignSessionOrSendPrompt]' passed (0.000 seconds).
+Test Case '-[MaestroAppTests.ConnectionStoreTests testSessionCRUDRejectsUnavailableEndpointAndPreservesIdentity]' started.
+Test Case '-[MaestroAppTests.ConnectionStoreTests testSessionCRUDRejectsUnavailableEndpointAndPreservesIdentity]' passed (0.000 seconds).
+Test Suite 'ConnectionStoreTests' passed at 2026-10-03 18:16:47.123.
+	 Executed 3 tests, with 0 failures (0 unexpected) in 0.001 (0.002) seconds
+Test Suite 'PerformanceTests' started at 2026-10-03 18:16:47.123.
+Test Case '-[MaestroAppTests.PerformanceTests test601SessionGroupingTimingSample]' started.
+Test Case '-[MaestroAppTests.PerformanceTests test601SessionGroupingTimingSample]' passed (0.065 seconds).
+Test Case '-[MaestroAppTests.PerformanceTests test601SessionsExpandedGroupingPreservesEverySessionExactlyOnce]' started.
+Test Case '-[MaestroAppTests.PerformanceTests test601SessionsExpandedGroupingPreservesEverySessionExactlyOnce]' passed (0.004 seconds).
+Test Case '-[MaestroAppTests.PerformanceTests testCollapsedCardsRetainLiveAndSelectedAndExpansionIsLossless]' started.
+Test Case '-[MaestroAppTests.PerformanceTests testCollapsedCardsRetainLiveAndSelectedAndExpansionIsLossless]' passed (0.001 seconds).
+Test Case '-[MaestroAppTests.PerformanceTests testDragObservationDoesNotInvalidateCatalogLayoutDependencies]' started.
+Test Case '-[MaestroAppTests.PerformanceTests testDragObservationDoesNotInvalidateCatalogLayoutDependencies]' passed (0.001 seconds).
+Test Case '-[MaestroAppTests.PerformanceTests testProjectOrderingMatchesRunningThenFirstSessionAcross601Items]' started.
+Test Case '-[MaestroAppTests.PerformanceTests testProjectOrderingMatchesRunningThenFirstSessionAcross601Items]' passed (0.003 seconds).
+Test Suite 'PerformanceTests' passed at 2026-10-03 18:16:47.197.
+	 Executed 5 tests, with 0 failures (0 unexpected) in 0.074 (0.074) seconds
+Test Suite 'MaestroAppTests.xctest' passed at 2026-10-03 18:16:47.197.
+	 Executed 8 tests, with 0 failures (0 unexpected) in 0.075 (0.076) seconds
+Test Suite 'All tests' passed at 2026-10-03 18:16:47.197.
+	 Executed 8 tests, with 0 failures (0 unexpected) in 0.075 (0.077) seconds
+PERFORMANCE_SAMPLE 601 sessions, 200 grouped layout preparations: 0.064448125 seconds; no rendering/FPS claim
+􀟈  Test run started.
+􀄵  Testing Library Version: 2084
+􀄵  Target Platform: arm64e-apple-macos14.0
+􁁛  Test run with 0 tests in 0 suites passed after 0.001 seconds.
+􀟈  Test run started.
+􀄵  Testing Library Version: 2084
+􀄵  Target Platform: arm64e-apple-macos14.0
+􁁛  Test run with 0 tests in 0 suites passed after 0.001 seconds.

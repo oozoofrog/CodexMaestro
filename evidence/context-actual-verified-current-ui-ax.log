@@ -1,0 +1,91 @@
+
+VERIFIED_CURRENT_PROJECT_MAP
+The following is a diff from the previous accessibility tree for Window: "Codex Maestro" with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.
+Removed element IDs: 47-132, 136-144, 148-153, 158-191, 211-232
++			211 splitter (disabled, settable, float) 230
++			212 container
++				213 button Description: 작업 흐름으로 돌아가기, ID: chevron.left
++				214 text CodexMaestro 컨텍스트
++				215 button Description: 컨텍스트 다시 읽기, ID: arrow.clockwise
++				216 button CodexMaestro
++				217 menu button 개선 요청
++				218 split group
++					219 container
++						220 image Description: 검색, ID: magnifyingglass
++						221 text field (settable) 기록 검색
++						222 scroll area Secondary Actions: Scroll Up, Scroll Down
++							223 button Description: Codex 관리 도구 만들기, 세션, Secondary Actions: 펼치기
++							224 button Description: 제목 없는 세션, 세션, Secondary Actions: 펼치기
++							225 button Description: CodexMaestro, 프로젝트, Secondary Actions: 펼치기
++							226 button Description: 제목 없는 세션, 세션, Secondary Actions: 펼치기
++							227 button Description: 제목 없는 세션, 세션, Secondary Actions: 펼치기
++							228 button Description: Codex Maestro 연결 기능 기획, 세션, Secondary Actions: 펼치기
++							229 button Description: 앱 디자인을 Apple 스타일로 시안화, 세션, Secondary Actions: 펼치기
++							230 button Description: 제목 없는 세션, 세션, Secondary Actions: 펼치기
++							231 button Description: Codex 개인 설정에 ASD-SDE100 추가, 세션, Secondary Actions: 펼치기
++							232 button Description: 앱 기능을 ASD-STE100으로 설명, 세션, Secondary Actions: 펼치기
++							233 scroll bar (settable, float) 0
++								234 value indicator (settable, float) 0
++								235 increment arrow button
++								236 decrement arrow button
++								237 increment page button
++								238 decrement page button
++						239 button Description: 축소, ID: minus
++						240 text 90%
++						241 button Description: 확대, ID: plus
++						242 text 9개 항목
++					243 splitter (disabled, settable, float) 828
++					244 container
++						245 image Description: 이동, ID: folder
++						246 text CodexMaestro
++						247 button 펼치기
++						248 scroll area
++							249 text /Volumes/eyedisk/develop/CodexMaestro 37글자 · 기록 크기 Codex catalog
++				250 text 저장된 기록 9개 세션 · 12,436개 항목
++				251 button Description: 출처와 확인 범위, ID: info.circle
+~		193 image Description: 새로 고침, Help: 갱신 오후 10:45:41, ID: arrow.clockwise
+The focused UI element is 0 standard window Codex Maestro, ID: maestro, Secondary Actions: Raise
+VERIFIED_CURRENT_CALL_RESULT_COUNTS
+The following is a diff from the previous accessibility tree for Window: "Codex Maestro" with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.
+Removed element IDs: 223-224, 226-232, 242, 249
++				252 image Description: 앞으로, ID: chevron.right
++				253 button Codex 관리 도구 만들기
++							254 button Description: 메타데이터, 기록 묶음, 2,396, Secondary Actions: 펼치기
++							255 button Description: 지침, 기록 묶음, 47, Secondary Actions: 펼치기
+~							225 button Description: Codex 관리 도구 만들기, 세션, Secondary Actions: 펼치기
++							256 button Description: 대화, 기록 묶음, 293, Secondary Actions: 펼치기
++							257 button Description: 도구 호출, 기록 묶음, 768, Secondary Actions: 펼치기
++							258 button Description: 사용량 기록, 기록 묶음, 1,646, Secondary Actions: 펼치기
++							259 button Description: 도구 결과, 기록 묶음, 767, Secondary Actions: 펼치기
++							260 button Description: 압축 기록, 기록 묶음, 7, Secondary Actions: 펼치기
++							261 button Description: 저장된 세션 메타데이터, 메타데이터, Secondary Actions: 펼치기
++							262 button Description: /Users/oozoofrog/.agents/skills/swift-master/skills/swift-master/SKILL.md, 기록에 등장한 참조, Secondary Actions: 펼치기
++							263 button Description: /Users/oozoofrog/.codex/skills/openai-docs/SKILL.md, 기록에 등장한 참조, Secondary Actions: 펼치기
++							264 button Description: /Users/oozoofrog/.codex/skills/.system/openai-docs/SKILL.md, 기록에 등장한 참조, Secondary Actions: 펼치기
++							265 button Secondary Actions: 펼치기, Description: /Users/oozoofrog/.codex/plugins/cache/openai-curated-remote/build-ios-apps/0.1.2/skills/swiftui-ui-patterns/SKILL.md, 기록에 등장한 참조
++							266 button Secondary Actions: 펼치기, Description: /Users/oozoofrog/.codex/plugins/cache/openai-curated-remote/build-ios-apps/0.1.2/skills/swiftui-performance-audit/SKILL.md, 기록에 등장한 참조
++							267 button Secondary Actions: 펼치기, Description: /Users/oozoofrog/.codex/plugins/cache/jcm/jev-context-manager/0.1.0-dev.9/skills/astra-continuity/SKILL.md, 기록에 등장한 참조
++							268 button Secondary Actions: 펼치기, Description: /Users/oozoofrog/.codex/plugins/cache/openai-bundled/visualize/1.0.46/skills/visualize/SKILL.md, 기록에 등장한 참조
++							269 button Secondary Actions: 펼치기, Description: /Users/oozoofrog/.codex/plugins/cache/codex-skills/swift-intelligence/0.1.0+codex.20260904035318/skills/swift-intelligence/SKILL.md, 기록에 등장한 참조
++							270 button Description: /Users/oozoofrog/.agents/skills/typesafe-ai/SKILL.md, 기록에 등장한 참조, Secondary Actions: 펼치기
++							271 button Secondary Actions: 펼치기, Description: /Users/oozoofrog/.codex/plugins/cache/swift-intelligence-share/swift-intelligence/0.1.0+codex.20260904035318/skills/swift-intelligence/SKILL.md, 기록에 등장한 참조
++						272 button (disabled) 뒤로
++						273 text 1–18 / 514
++						274 button 앞으로
+~						245 image Description: 대화, ID: bubble.left.and.bubble.right
+~						246 text Codex 관리 도구 만들기
++							275 text ID: 01a100d8-585b-74c3-8d63-332de28dd73d
+경로: /Volumes/eyedisk/develop/CodexMaestro
+모델: gpt-6.1-sol
+추론: ultra
+브랜치: 
+보관: false 124글자 · 기록 크기 Codex catalog
+~		193 image Description: 새로 고침, Help: 갱신 오후 10:45:46, ID: arrow.clockwise
+The focused UI element is 0 standard window Codex Maestro, ID: maestro, Secondary Actions: Raise
+ACTUAL_RECONNECT_STATUS
+The following is a diff from the previous accessibility tree for Window: "Codex Maestro" with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.
+Removed element IDs: 276-284
+~				5 button 열린 세션, 0
+~		192 text 실시간 실행 0 · 입력 대기 0
+~		193 image Description: 새로 고침, Help: 갱신 오후 10:47:59, ID: arrow.clockwise
+The focused UI element is 0 standard window Codex Maestro, ID: maestro, Secondary Actions: Raise

@@ -1,0 +1,48 @@
+Window: "", App: Codex Maestro.
+0 sheet Secondary Actions: Raise
+	1 container
+		2 text 연결 기능 이 연결로 할 작업
+		3 button 닫기
+		4 text 로컬 모델 실행 검증 → RunnersHeart
+		5 pop up button 기능, Value: 참고해서 작업, ID: connection-function
+		6 text 선택한 작업 위치에서 반대쪽 노드의 자료를 참고합니다.
+		7 작업할 위치, ID: connection-execution-side
+			8 radio button Description: 출발 노드에서 작업, Value: 1
+			9 radio button Description: 도착 노드에서 작업, Value: 0
+		10 text 작업할 위치 참고할 대상 로컬 모델 실행 검증
+		11 image Description: 왼쪽, ID: arrow.left
+		12 text RunnersHeart 실제 실행 세션: 로컬 모델 실행 검증
+		13 scroll area Secondary Actions: Scroll Up, Scroll Down
+			14 text 추가할 작업 지시 (선택)
+			15 scroll area Secondary Actions: Scroll Up, Scroll Down
+				16 text entry area (settable) connection-action-prompt
+				17 scroll bar (disabled, settable, float) 0
+			18 text 실제로 준비할 초안 연결 기능: 참고해서 작업
+실제 작업 세션: 로컬 모델 실행 검증 (models)
+연결: 로컬 모델 실행 검증 → RunnersHeart
+
+참고 프로젝트: RunnersHeart
+프로젝트 ID: runner
+참고 경로:
+- ~/Projects/RunnersHeart
+프로젝트의 파일과 세션 대화를 첨부하지 않았습니다. 요청에 필요한 파일을 확인하고, 접근할 수 없으면 필요한 근거를 명시하세요.
+
+참고 자료를 근거로 현재 작업을 진행하세요. 필요한 자료가 없으면 누락된 근거를 명시하세요.
+			19 scroll bar (settable, float) 0
+				20 value indicator (settable, float) 0
+				21 increment arrow button
+				22 decrement arrow button
+				23 increment page button
+				24 decrement page button
+		25 text ID: connection-action-error, Value: ‘로컬 모델 실행 검증’에 기존 초안이 있습니다. 해당 세션에서 기존 초안을 정리한 뒤 다시 준비하세요. 연결 설정과 초안은 유지됩니다. 실제 작업은 선택한 Codex 세션에서 실행됩니다. 기존 초안이 있으면 준비를 멈춥니다. 초안을 검토하고 전송해야 실행되며, 창을 닫아도 연결은 남습니다.
+		26 button Description: 설정 저장, ID: save-connection-action
+		27 button Description: 초안 준비, ID: prepare-connection-action
+28 menu bar
+	29 Codex Maestro
+	30 File
+	31 Edit
+	32 View
+	33 Window
+	34 Help
+
+The focused UI element is 16 text entry area (settable) connection-action-prompt

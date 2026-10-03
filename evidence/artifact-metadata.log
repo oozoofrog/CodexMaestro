@@ -1,0 +1,7 @@
+ProductName:		macOS
+ProductVersion:		27.0
+BuildVersion:		26A428
+dist/Codex Maestro.app/Contents/MacOS/CodexMaestro: Mach-O 64-bit executable arm64
+dist/Codex Maestro.app: valid on disk
+dist/Codex Maestro.app: satisfies its Designated Requirement
+24f46eebd80be28f72396b0b4601d60734c04f15255c6db0f24f760a103ea0a5  dist/Codex Maestro.app/Contents/MacOS/CodexMaestro

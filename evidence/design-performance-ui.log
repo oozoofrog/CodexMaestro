@@ -1,0 +1,10 @@
+Maestro drag: updates=37 layoutPasses=0
+Maestro drag: updates=18 layoutPasses=0
+Maestro drag: updates=9 layoutPasses=0
+Maestro drag: updates=6 layoutPasses=0
+Maestro drag: updates=10 layoutPasses=0
+2026-10-03 19:43:44.015 CodexMaestro[52919:34855404] TSM AdjustCapsLockLEDForKeyTransitionHandling - _ISSetPhysicalKeyboardCapsLockLED Inhibit
+2026-10-03 19:43:44.040 CodexMaestro[52919:34855404] error messaging the mach port for IMKCFRunLoopWakeUpReliable
+Maestro drag: updates=2 layoutPasses=0
+Maestro drag: updates=1 layoutPasses=0
+Maestro drag: updates=1 layoutPasses=0

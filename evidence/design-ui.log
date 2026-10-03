@@ -1,0 +1,38 @@
+CUA runtime observations — 2026-10-03 Asia/Seoul
+Source reference: design-previews/maestro-topology.html from chat01a1010f-d0da-79e1-98fb-85e938299200.
+Reference was served in task-owned wrapper at127.0.0.1:8792/design-reference-preview.html; source reference remained unchanged.
+Native bundle: dist/Codex Maestro.app, initial integrated release.
+Window:1480x920pt; CUA screenshots2960x1840 pixels; graph zoom85%.
+
+Observed by root through native CUA:
+PASS: light palette, neutral sidebar/panels/cards, native toolbar, three project columns.
+PASS: appearance menu selected dark; canvas/sidebar/text/selection/relationship colors changed.
+PASS: project node app selected inspector with3sessions/2running while graph remained3projects/6sessions.
+PASS: sidebar and inspector both hidden then restored; project selection preserved.
+PASS: project inspector Manage Connections opens native manager.
+PASS: new demo project app->runner context connection defaults app source, saves note; inspector/footer relationship total becomes1.
+PASS: canvas source design connection button -> watch target -> native sheet -> context saved; session relation total3->4.
+PASS: bridge relationship tab -> review handoff -> test target selected and prompt contains source/relationship/latest response.
+PASS: demo send shows explicit no actual send completion notice.
+No real session prompt sent; demo workspace writes remain suppressed.
+FOUND D2: bridge->test review caption clipped behind SYNC; same-row app->runner project caption clips behind header cards. Owning agent correction and final runtime recheck pending.
+Saved initial screenshot: design-dark-initial.png (pre-correction).
+Saved native connection manager screenshot: design-connections-dark.png.
+
+Final corrected release observations:
+PASS: default same-column bridge->test review caption is readable outside SYNC, in light and dark.
+PASS: same-row design->watch context caption clears session cards and has a leader.
+PASS: same-row app->runner project context caption clears58pt project header cards and has a leader.
+Final saved screenshots: design-light-final.png, design-dark-final.png, design-session-label-final.png, design-project-label-final.png.
+PASS: readonly --performance-catalog displays606sessions, all project groups expanded.
+PASS: CUA3completed card drags visibly move card and membership spine. Last3counter lines: updates2/1/1, eachlayoutPasses0. Earlier interaction samples in same run are retained as raw evidence and not attributed to these3CUA calls.
+Counter evidence: design-performance-ui.log; final canvas screenshot: design-performance-final.png.
+NoFPS orcontrolled before/after perceived smoothness measured.
+Appearance restored to system mode after theme QA. Performance snapshot discarded on quit; normal Codex mode relaunched.
+
+Final normal-mode acceptance:
+PASS: actual catalog606, live count11, Codexconnected and live status receiving.
+PASS: this development session selected; running, gpt-6.1-sol, ultra, correct projectroot.
+PASS: saved transcript30messages, draft empty, send disabled.
+Saved final real-data screenshot: design-live-final.png.
+App left running in normal mode; no test prompt sent.

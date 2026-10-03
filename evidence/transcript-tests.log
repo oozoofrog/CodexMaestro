@@ -1,0 +1,29 @@
+Building for debugging...
+[1 / 1]
+[2 / 7] MaestroAppTests-product
+[8 / 11] MaestroAppTests-product
+[10 / 14] MaestroAppTests-product
+Build complete! (0.95초)
+Test Suite 'Selected tests' started at 2026-10-03 18:39:07.727.
+Test Suite 'MaestroCoreTests.xctest' started at 2026-10-03 18:39:07.728.
+Test Suite 'MaestroCoreTests.xctest' passed at 2026-10-03 18:39:07.728.
+	 Executed 0 tests, with 0 failures (0 unexpected) in 0.000 (0.000) seconds
+Test Suite 'Selected tests' passed at 2026-10-03 18:39:07.728.
+	 Executed 0 tests, with 0 failures (0 unexpected) in 0.000 (0.001) seconds
+Test Suite 'Selected tests' started at 2026-10-03 18:39:07.784.
+Test Suite 'MaestroAppTests.xctest' started at 2026-10-03 18:39:07.785.
+Test Suite 'TranscriptSelectionTests' started at 2026-10-03 18:39:07.785.
+Test Case '-[MaestroAppTests.TranscriptSelectionTests testBackgroundReadForUnselectedAIsRejectedWithoutInvalidatingB]' started.
+Test Case '-[MaestroAppTests.TranscriptSelectionTests testBackgroundReadForUnselectedAIsRejectedWithoutInvalidatingB]' passed (0.002 seconds).
+Test Case '-[MaestroAppTests.TranscriptSelectionTests testOldACompletionPreservesPendingBAndOnlyBPublishes]' started.
+Test Case '-[MaestroAppTests.TranscriptSelectionTests testOldACompletionPreservesPendingBAndOnlyBPublishes]' passed (0.001 seconds).
+Test Case '-[MaestroAppTests.TranscriptSelectionTests testOldAErrorDoesNotPublishUnderBOrClearBSpinner]' started.
+Test Case '-[MaestroAppTests.TranscriptSelectionTests testOldAErrorDoesNotPublishUnderBOrClearBSpinner]' passed (0.000 seconds).
+Test Case '-[MaestroAppTests.TranscriptSelectionTests testSelectionImmediatelyClearsPreviousTranscriptAndError]' started.
+Test Case '-[MaestroAppTests.TranscriptSelectionTests testSelectionImmediatelyClearsPreviousTranscriptAndError]' passed (0.000 seconds).
+Test Suite 'TranscriptSelectionTests' passed at 2026-10-03 18:39:07.789.
+	 Executed 4 tests, with 0 failures (0 unexpected) in 0.004 (0.005) seconds
+Test Suite 'MaestroAppTests.xctest' passed at 2026-10-03 18:39:07.790.
+	 Executed 4 tests, with 0 failures (0 unexpected) in 0.004 (0.005) seconds
+Test Suite 'Selected tests' passed at 2026-10-03 18:39:07.790.
+	 Executed 4 tests, with 0 failures (0 unexpected) in 0.004 (0.005) seconds

@@ -1,0 +1,42 @@
+Context read: project; sessions: 9; archived: 0
+Graph: 12001 nodes, 14761 edges
+Node kind project: 1; records: 0
+Node kind session: 9; records: 0
+Node kind group: 59; records: 8232
+Node kind message: 501; records: 501
+Node kind instruction: 166; records: 166
+Node kind tool: 31; records: 1385
+Node kind toolCall: 1385; records: 1385
+Node kind toolResult: 1386; records: 1386
+Node kind skill: 58; records: 0
+Node kind plugin: 6; records: 0
+Node kind metadata: 4516; records: 4507
+Node kind usage: 3012; records: 3012
+Node kind compaction: 14; records: 14
+Node kind file: 857; records: 0
+Coverage: 9 sources; records: 10971; bytes: 99639075; issues: 0
+Coverage status complete: 9 sources
+Observed tool groups: 31; tool calls: 1385; tool results: 1386
+Usage label recorded cumulative catalog usage: 9 samples
+Usage label recorded token telemetry: 3012 samples
+Read-only recorded evidence; no current model-input or tool-availability claim
+real 3.14
+user 2.60
+sys 0.11
+           529055744  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               38229  page reclaims
+                   1  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                 115  voluntary context switches
+                1198  involuntary context switches
+         46273057342  instructions retired
+         10845685390  cycles elapsed
+           522831168  peak memory footprint

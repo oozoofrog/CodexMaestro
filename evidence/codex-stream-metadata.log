@@ -1,0 +1,11 @@
+snapshot schema: int status: {'type': 'idle'}
+snapshot schema: int status: {'type': 'active', 'activeFlags': []}
+snapshot schema: int status: {'type': 'active', 'activeFlags': []}
+snapshot schema: int status: {'type': 'idle'}
+snapshot schema: int status: {'type': 'systemError'}
+snapshot schema: int status: {'type': 'idle'}
+snapshot schema: int status: {'type': 'idle'}
+snapshot schema: int status: {'type': 'idle'}
+relevant patches: [{'op': 'replace', 'path': ['threadRuntimeStatus'], 'valueType': 'dict'}]
+snapshot schema: int status: {'type': 'idle'}
+Totals: {'snapshot': 9, 'patches': 20} observed 8 revision discontinuities []

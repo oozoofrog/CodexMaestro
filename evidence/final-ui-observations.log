@@ -1,0 +1,6 @@
+2026-10-03 Asia/Seoul — native Computer Use observations by root
+Final Release demo: project directed arrow CodexMaestro -> RunnersHeart rendered between project cards.
+Final Release demo: duplicate existing session connection keeps editor open and shows inline error.
+Final Release demo after inline error consumption fix: cancel returns to main window, no repeated alert.
+Final normal mode: CODEX DESKTOP; All sessions selected; 29 represented projects; 608 catalog sessions; 8 desktop live sessions.
+Test graphs/drafts were memory only. No prompt sent to a real business session.

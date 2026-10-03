@@ -1,0 +1,72 @@
+Building for debugging...
+[1 / 27] MaestroCore
+[1 / 21]
+[3 / 13] CodexMaestro-product
+[13 / 23] CodexMaestro
+[13 / 23] CodexMaestro-product
+[19 / 30] CodexMaestro
+[20 / 31] CodexMaestro
+[22 / 33] CodexMaestro
+[24 / 33] CodexMaestro-product
+[27 / 32] MaestroAppTests-product
+[31 / 36] MaestroAppTests-product
+[33 / 36] MaestroAppTests-product
+[35 / 39] MaestroAppTests-product
+Build complete! (3.16초)
+Test Suite 'Selected tests' started at 2026-10-03 19:25:34.998.
+Test Suite 'MaestroCoreTests.xctest' started at 2026-10-03 19:25:34.999.
+Test Suite 'ConnectionTests' started at 2026-10-03 19:25:34.999.
+Test Case '-[MaestroCoreTests.ConnectionTests testExistingVersionOneWorkspaceDecodesWithoutProjectLinks]' started.
+Test Case '-[MaestroCoreTests.ConnectionTests testExistingVersionOneWorkspaceDecodesWithoutProjectLinks]' passed (0.002 seconds).
+Test Case '-[MaestroCoreTests.ConnectionTests testMalformedProjectLinksDoNotDecodeAsEmpty]' started.
+Test Case '-[MaestroCoreTests.ConnectionTests testMalformedProjectLinksDoNotDecodeAsEmpty]' passed (0.000 seconds).
+Test Case '-[MaestroCoreTests.ConnectionTests testProjectLinksPersistAlongsideSessionLinksAndPrivateDrafts]' started.
+Test Case '-[MaestroCoreTests.ConnectionTests testProjectLinksPersistAlongsideSessionLinksAndPrivateDrafts]' passed (0.002 seconds).
+Test Case '-[MaestroCoreTests.ConnectionTests testProjectLinkUpdatePreservesIdentityAndDoesNotLoseDataOnFailure]' started.
+Test Case '-[MaestroCoreTests.ConnectionTests testProjectLinkUpdatePreservesIdentityAndDoesNotLoseDataOnFailure]' passed (0.000 seconds).
+Test Case '-[MaestroCoreTests.ConnectionTests testProjectLinkValidationIsDirectedAndPurposeSpecific]' started.
+Test Case '-[MaestroCoreTests.ConnectionTests testProjectLinkValidationIsDirectedAndPurposeSpecific]' passed (0.000 seconds).
+Test Case '-[MaestroCoreTests.ConnectionTests testSessionLinkUpdateRejectsCollisionWithoutRemovingOriginal]' started.
+Test Case '-[MaestroCoreTests.ConnectionTests testSessionLinkUpdateRejectsCollisionWithoutRemovingOriginal]' passed (0.000 seconds).
+Test Suite 'ConnectionTests' passed at 2026-10-03 19:25:35.004.
+	 Executed 6 tests, with 0 failures (0 unexpected) in 0.004 (0.004) seconds
+Test Suite 'MaestroCoreTests.xctest' passed at 2026-10-03 19:25:35.004.
+	 Executed 6 tests, with 0 failures (0 unexpected) in 0.004 (0.004) seconds
+Test Suite 'Selected tests' passed at 2026-10-03 19:25:35.004.
+	 Executed 6 tests, with 0 failures (0 unexpected) in 0.004 (0.006) seconds
+Test Suite 'Selected tests' started at 2026-10-03 19:25:35.084.
+Test Suite 'MaestroAppTests.xctest' started at 2026-10-03 19:25:35.085.
+Test Suite 'ConnectionStoreTests' started at 2026-10-03 19:25:35.085.
+Test Case '-[MaestroAppTests.ConnectionStoreTests testCanvasLinkCompletionValidatesEndpointsAndRetainsEditorOnFailure]' started.
+Test Case '-[MaestroAppTests.ConnectionStoreTests testCanvasLinkCompletionValidatesEndpointsAndRetainsEditorOnFailure]' passed (0.001 seconds).
+Test Case '-[MaestroAppTests.ConnectionStoreTests testCorruptWorkspaceBlocksWritesAndPreservesSourceBytes]' started.
+Test Case '-[MaestroAppTests.ConnectionStoreTests testCorruptWorkspaceBlocksWritesAndPreservesSourceBytes]' passed (0.003 seconds).
+Test Case '-[MaestroAppTests.ConnectionStoreTests testDemoHandoffAppendsContextAndDoesNotSendPrompt]' started.
+Test Case '-[MaestroAppTests.ConnectionStoreTests testDemoHandoffAppendsContextAndDoesNotSendPrompt]' passed (0.000 seconds).
+Test Case '-[MaestroAppTests.ConnectionStoreTests testFailedWritesRollBackConnectionAddsUpdatesAndDeletes]' started.
+Test Case '-[MaestroAppTests.ConnectionStoreTests testFailedWritesRollBackConnectionAddsUpdatesAndDeletes]' passed (0.004 seconds).
+Test Case '-[MaestroAppTests.ConnectionStoreTests testHandoffFailurePreservesDraftAndSelectionWithoutSuccessNotice]' started.
+Test Case '-[MaestroAppTests.ConnectionStoreTests testHandoffFailurePreservesDraftAndSelectionWithoutSuccessNotice]' passed (0.001 seconds).
+Test Case '-[MaestroAppTests.ConnectionStoreTests testProjectCRUDRejectsUnavailableEndpointsAndDuplicates]' started.
+Test Case '-[MaestroAppTests.ConnectionStoreTests testProjectCRUDRejectsUnavailableEndpointsAndDuplicates]' passed (0.000 seconds).
+Test Case '-[MaestroAppTests.ConnectionStoreTests testProjectRelationDoesNotReassignSessionOrSendPrompt]' started.
+Test Case '-[MaestroAppTests.ConnectionStoreTests testProjectRelationDoesNotReassignSessionOrSendPrompt]' passed (0.000 seconds).
+Test Case '-[MaestroAppTests.ConnectionStoreTests testSessionCRUDRejectsUnavailableEndpointAndPreservesIdentity]' started.
+Test Case '-[MaestroAppTests.ConnectionStoreTests testSessionCRUDRejectsUnavailableEndpointAndPreservesIdentity]' passed (0.000 seconds).
+Test Suite 'ConnectionStoreTests' passed at 2026-10-03 19:25:35.096.
+	 Executed 8 tests, with 0 failures (0 unexpected) in 0.010 (0.011) seconds
+Test Suite 'TranscriptSelectionTests' started at 2026-10-03 19:25:35.096.
+Test Case '-[MaestroAppTests.TranscriptSelectionTests testBackgroundReadForUnselectedAIsRejectedWithoutInvalidatingB]' started.
+Test Case '-[MaestroAppTests.TranscriptSelectionTests testBackgroundReadForUnselectedAIsRejectedWithoutInvalidatingB]' passed (0.001 seconds).
+Test Case '-[MaestroAppTests.TranscriptSelectionTests testOldACompletionPreservesPendingBAndOnlyBPublishes]' started.
+Test Case '-[MaestroAppTests.TranscriptSelectionTests testOldACompletionPreservesPendingBAndOnlyBPublishes]' passed (0.001 seconds).
+Test Case '-[MaestroAppTests.TranscriptSelectionTests testOldAErrorDoesNotPublishUnderBOrClearBSpinner]' started.
+Test Case '-[MaestroAppTests.TranscriptSelectionTests testOldAErrorDoesNotPublishUnderBOrClearBSpinner]' passed (0.000 seconds).
+Test Case '-[MaestroAppTests.TranscriptSelectionTests testSelectionImmediatelyClearsPreviousTranscriptAndError]' started.
+Test Case '-[MaestroAppTests.TranscriptSelectionTests testSelectionImmediatelyClearsPreviousTranscriptAndError]' passed (0.000 seconds).
+Test Suite 'TranscriptSelectionTests' passed at 2026-10-03 19:25:35.098.
+	 Executed 4 tests, with 0 failures (0 unexpected) in 0.002 (0.002) seconds
+Test Suite 'MaestroAppTests.xctest' passed at 2026-10-03 19:25:35.098.
+	 Executed 12 tests, with 0 failures (0 unexpected) in 0.012 (0.013) seconds
+Test Suite 'Selected tests' passed at 2026-10-03 19:25:35.098.
+	 Executed 12 tests, with 0 failures (0 unexpected) in 0.012 (0.014) seconds

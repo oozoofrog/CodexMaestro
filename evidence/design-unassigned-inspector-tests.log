@@ -1,0 +1,38 @@
+Building for debugging...
+[2 / 28]
+[3 / 29] MaestroCore
+[5 / 30] MaestroCore
+[9 / 19] CodexMaestro
+[13 / 23] CodexMaestro-product
+[18 / 29] CodexMaestro
+[20 / 31] CodexMaestro
+[24 / 33] CodexMaestro
+[24 / 33] CodexMaestro-product
+[27 / 32] MaestroAppTests-product
+[33 / 38] MaestroAppTests-product
+[37 / 40] MaestroAppTests-product
+[39 / 43] MaestroAppTests-product
+Build complete! (4.69초)
+Test Suite 'Selected tests' started at 2026-10-03 19:33:48.763.
+Test Suite 'MaestroCoreTests.xctest' started at 2026-10-03 19:33:48.766.
+Test Suite 'MaestroCoreTests.xctest' passed at 2026-10-03 19:33:48.766.
+	 Executed 0 tests, with 0 failures (0 unexpected) in 0.000 (0.000) seconds
+Test Suite 'Selected tests' passed at 2026-10-03 19:33:48.766.
+	 Executed 0 tests, with 0 failures (0 unexpected) in 0.000 (0.002) seconds
+Test Suite 'Selected tests' started at 2026-10-03 19:33:48.833.
+Test Suite 'MaestroAppTests.xctest' started at 2026-10-03 19:33:48.833.
+Test Suite 'ProjectInspectorSelectionTests' started at 2026-10-03 19:33:48.833.
+Test Case '-[MaestroAppTests.ProjectInspectorSelectionTests testLateSessionTranscriptCannotPublishUnderProjectInspector]' started.
+Test Case '-[MaestroAppTests.ProjectInspectorSelectionTests testLateSessionTranscriptCannotPublishUnderProjectInspector]' passed (0.003 seconds).
+Test Case '-[MaestroAppTests.ProjectInspectorSelectionTests testProjectNodeSelectionPreservesCatalogScopeAndSessionDrafts]' started.
+Test Case '-[MaestroAppTests.ProjectInspectorSelectionTests testProjectNodeSelectionPreservesCatalogScopeAndSessionDrafts]' passed (0.001 seconds).
+Test Case '-[MaestroAppTests.ProjectInspectorSelectionTests testReviewedHandoffReturnsFromProjectInspectorToReceivingSession]' started.
+Test Case '-[MaestroAppTests.ProjectInspectorSelectionTests testReviewedHandoffReturnsFromProjectInspectorToReceivingSession]' passed (0.000 seconds).
+Test Case '-[MaestroAppTests.ProjectInspectorSelectionTests testUnassignedInspectorMatchesGroupingTotalsAndDirectionalLinkMembership]' started.
+Test Case '-[MaestroAppTests.ProjectInspectorSelectionTests testUnassignedInspectorMatchesGroupingTotalsAndDirectionalLinkMembership]' passed (0.000 seconds).
+Test Suite 'ProjectInspectorSelectionTests' passed at 2026-10-03 19:33:48.838.
+	 Executed 4 tests, with 0 failures (0 unexpected) in 0.004 (0.005) seconds
+Test Suite 'MaestroAppTests.xctest' passed at 2026-10-03 19:33:48.838.
+	 Executed 4 tests, with 0 failures (0 unexpected) in 0.004 (0.005) seconds
+Test Suite 'Selected tests' passed at 2026-10-03 19:33:48.838.
+	 Executed 4 tests, with 0 failures (0 unexpected) in 0.004 (0.005) seconds

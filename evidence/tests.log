@@ -1,0 +1,52 @@
+Building for debugging...
+[1 / 3]
+[2 / 4] MaestroCore
+[3 / 5] MaestroCore
+[9 / 11] CodexMaestro-product
+[15 / 17] CodexMaestro-product
+[17 / 20] MaestroCore
+[20 / 20] CodexMaestro-product
+[24 / 26] MaestroProbe-product
+[26 / 26] MaestroProbe-product
+[28 / 34] MaestroCoreTests-product
+[34 / 38] MaestroCoreTests-product
+[36 / 38] MaestroCoreTests-product
+Build complete! (3.47초)
+Test Suite 'All tests' started at 2026-10-03 17:54:13.947.
+Test Suite 'MaestroCoreTests.xctest' started at 2026-10-03 17:54:13.948.
+Test Suite 'CoreTests' started at 2026-10-03 17:54:13.948.
+Test Case '-[MaestroCoreTests.CoreTests testCatalogReadsAllSessionsAndExplicitProjectMembershipWithoutWriting]' started.
+Test Case '-[MaestroCoreTests.CoreTests testCatalogReadsAllSessionsAndExplicitProjectMembershipWithoutWriting]' passed (0.005 seconds).
+Test Case '-[MaestroCoreTests.CoreTests testDirectedLinksAndPersistenceRoundTrip]' started.
+Test Case '-[MaestroCoreTests.CoreTests testDirectedLinksAndPersistenceRoundTrip]' passed (0.002 seconds).
+Test Case '-[MaestroCoreTests.CoreTests testFramesSurviveFragmentationAndCoalescing]' started.
+Test Case '-[MaestroCoreTests.CoreTests testFramesSurviveFragmentationAndCoalescing]' passed (0.000 seconds).
+Test Case '-[MaestroCoreTests.CoreTests testLiveStatusPatchesAndWaitingFlags]' started.
+Test Case '-[MaestroCoreTests.CoreTests testLiveStatusPatchesAndWaitingFlags]' passed (0.000 seconds).
+Test Case '-[MaestroCoreTests.CoreTests testMalformedFramesFailClosed]' started.
+Test Case '-[MaestroCoreTests.CoreTests testMalformedFramesFailClosed]' passed (0.000 seconds).
+Test Case '-[MaestroCoreTests.CoreTests testTranscriptUsesChronologicalTextMessagesAndBoundThreadID]' started.
+Test Case '-[MaestroCoreTests.CoreTests testTranscriptUsesChronologicalTextMessagesAndBoundThreadID]' passed (0.003 seconds).
+Test Case '-[MaestroCoreTests.CoreTests testTurnPayloadPreservesPromptAndDoesNotOverrideSessionPolicy]' started.
+Test Case '-[MaestroCoreTests.CoreTests testTurnPayloadPreservesPromptAndDoesNotOverrideSessionPolicy]' passed (0.000 seconds).
+Test Suite 'CoreTests' passed at 2026-10-03 17:54:13.959.
+	 Executed 7 tests, with 0 failures (0 unexpected) in 0.011 (0.011) seconds
+Test Suite 'DesktopBridgeTests' started at 2026-10-03 17:54:13.959.
+Test Case '-[MaestroCoreTests.DesktopBridgeTests testDesktopPatchUpdatesRuntimeStatus]' started.
+Test Case '-[MaestroCoreTests.DesktopBridgeTests testDesktopPatchUpdatesRuntimeStatus]' passed (0.001 seconds).
+Test Case '-[MaestroCoreTests.DesktopBridgeTests testDisconnectedClientRejectsSend]' started.
+Test Case '-[MaestroCoreTests.DesktopBridgeTests testDisconnectedClientRejectsSend]' passed (0.000 seconds).
+Test Case '-[MaestroCoreTests.DesktopBridgeTests testMissingOwnerNeverStartsTurn]' started.
+Test Case '-[MaestroCoreTests.DesktopBridgeTests testMissingOwnerNeverStartsTurn]' passed (0.001 seconds).
+Test Case '-[MaestroCoreTests.DesktopBridgeTests testOwnerRoutedPromptAndLiveStatusRoundTrip]' started.
+Test Case '-[MaestroCoreTests.DesktopBridgeTests testOwnerRoutedPromptAndLiveStatusRoundTrip]' passed (0.001 seconds).
+Test Suite 'DesktopBridgeTests' passed at 2026-10-03 17:54:13.962.
+	 Executed 4 tests, with 0 failures (0 unexpected) in 0.003 (0.003) seconds
+Test Suite 'MaestroCoreTests.xctest' passed at 2026-10-03 17:54:13.962.
+	 Executed 11 tests, with 0 failures (0 unexpected) in 0.013 (0.014) seconds
+Test Suite 'All tests' passed at 2026-10-03 17:54:13.962.
+	 Executed 11 tests, with 0 failures (0 unexpected) in 0.013 (0.015) seconds
+􀟈  Test run started.
+􀄵  Testing Library Version: 2084
+􀄵  Target Platform: arm64e-apple-macos14.0
+􁁛  Test run with 0 tests in 0 suites passed after 0.001 seconds.

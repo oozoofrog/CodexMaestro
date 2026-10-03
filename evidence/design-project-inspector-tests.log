@@ -1,0 +1,28 @@
+Building for debugging...
+[Pre-planning 1 / 183]
+[Planning deferred tasks]
+[8 / 19] MaestroAppTests-product
+[13 / 20] MaestroAppTests-product
+[16 / 20] MaestroAppTests-product
+Build complete! (1.10초)
+Test Suite 'Selected tests' started at 2026-10-03 19:26:29.151.
+Test Suite 'MaestroCoreTests.xctest' started at 2026-10-03 19:26:29.151.
+Test Suite 'MaestroCoreTests.xctest' passed at 2026-10-03 19:26:29.151.
+	 Executed 0 tests, with 0 failures (0 unexpected) in 0.000 (0.000) seconds
+Test Suite 'Selected tests' passed at 2026-10-03 19:26:29.151.
+	 Executed 0 tests, with 0 failures (0 unexpected) in 0.000 (0.001) seconds
+Test Suite 'Selected tests' started at 2026-10-03 19:26:29.207.
+Test Suite 'MaestroAppTests.xctest' started at 2026-10-03 19:26:29.208.
+Test Suite 'ProjectInspectorSelectionTests' started at 2026-10-03 19:26:29.208.
+Test Case '-[MaestroAppTests.ProjectInspectorSelectionTests testLateSessionTranscriptCannotPublishUnderProjectInspector]' started.
+Test Case '-[MaestroAppTests.ProjectInspectorSelectionTests testLateSessionTranscriptCannotPublishUnderProjectInspector]' passed (0.002 seconds).
+Test Case '-[MaestroAppTests.ProjectInspectorSelectionTests testProjectNodeSelectionPreservesCatalogScopeAndSessionDrafts]' started.
+Test Case '-[MaestroAppTests.ProjectInspectorSelectionTests testProjectNodeSelectionPreservesCatalogScopeAndSessionDrafts]' passed (0.000 seconds).
+Test Case '-[MaestroAppTests.ProjectInspectorSelectionTests testReviewedHandoffReturnsFromProjectInspectorToReceivingSession]' started.
+Test Case '-[MaestroAppTests.ProjectInspectorSelectionTests testReviewedHandoffReturnsFromProjectInspectorToReceivingSession]' passed (0.000 seconds).
+Test Suite 'ProjectInspectorSelectionTests' passed at 2026-10-03 19:26:29.211.
+	 Executed 3 tests, with 0 failures (0 unexpected) in 0.002 (0.003) seconds
+Test Suite 'MaestroAppTests.xctest' passed at 2026-10-03 19:26:29.211.
+	 Executed 3 tests, with 0 failures (0 unexpected) in 0.002 (0.003) seconds
+Test Suite 'Selected tests' passed at 2026-10-03 19:26:29.211.
+	 Executed 3 tests, with 0 failures (0 unexpected) in 0.002 (0.003) seconds

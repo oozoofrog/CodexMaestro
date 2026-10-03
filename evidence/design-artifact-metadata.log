@@ -1,0 +1,4 @@
+42a3dd8b87a77189dac6a9b67a138f28556e5a87757cc2a2444a68b9cbbcab31  dist/Codex Maestro.app/Contents/MacOS/CodexMaestro
+dist/Codex Maestro.app: valid on disk
+dist/Codex Maestro.app: satisfies its Designated Requirement
+dist/Codex Maestro.app/Contents/MacOS/CodexMaestro: Mach-O 64-bit executable arm64

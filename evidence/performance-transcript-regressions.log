@@ -1,0 +1,48 @@
+Building for debugging...
+[Pre-planning 1 / 183]
+[Planning deferred tasks]
+[8 / 52]
+[9 / 53] MaestroCore
+[11 / 54] MaestroCore
+[17 / 47] CodexMaestro-product
+[25 / 55] MaestroCoreTests-product
+[29 / 54] MaestroCoreTests-product
+[31 / 54] CodexMaestro-product
+[36 / 55] MaestroCoreTests-product
+[38 / 55] CodexMaestro
+[48 / 65] CodexMaestro
+[48 / 65] CodexMaestro-product
+[48 / 65] CodexMaestro
+[52 / 67] CodexMaestro-product
+[56 / 67] MaestroAppTests-product
+[61 / 70] MaestroAppTests-product
+[64 / 70] MaestroAppTests-product
+[66 / 70] MaestroAppTests-product
+Build complete! (4.61초)
+Test Suite 'Selected tests' started at 2026-10-03 18:38:58.544.
+Test Suite 'MaestroCoreTests.xctest' started at 2026-10-03 18:38:58.546.
+Test Suite 'MaestroCoreTests.xctest' passed at 2026-10-03 18:38:58.546.
+	 Executed 0 tests, with 0 failures (0 unexpected) in 0.000 (0.000) seconds
+Test Suite 'Selected tests' passed at 2026-10-03 18:38:58.546.
+	 Executed 0 tests, with 0 failures (0 unexpected) in 0.000 (0.002) seconds
+Test Suite 'Selected tests' started at 2026-10-03 18:38:58.618.
+Test Suite 'MaestroAppTests.xctest' started at 2026-10-03 18:38:58.619.
+Test Suite 'TranscriptSelectionTests' started at 2026-10-03 18:38:58.619.
+Test Case '-[MaestroAppTests.TranscriptSelectionTests testBackgroundReadForUnselectedAIsRejectedWithoutInvalidatingB]' started.
+Test Case '-[MaestroAppTests.TranscriptSelectionTests testBackgroundReadForUnselectedAIsRejectedWithoutInvalidatingB]' passed (0.003 seconds).
+Test Case '-[MaestroAppTests.TranscriptSelectionTests testCanvasConnectionRejectsRemovedSourceAndKeepsPendingSelection]' started.
+Test Case '-[MaestroAppTests.TranscriptSelectionTests testCanvasConnectionRejectsRemovedSourceAndKeepsPendingSelection]' passed (0.001 seconds).
+Test Case '-[MaestroAppTests.TranscriptSelectionTests testCanvasConnectionRejectsRemovedTargetThenCommitsValidLink]' started.
+Test Case '-[MaestroAppTests.TranscriptSelectionTests testCanvasConnectionRejectsRemovedTargetThenCommitsValidLink]' passed (0.000 seconds).
+Test Case '-[MaestroAppTests.TranscriptSelectionTests testOldACompletionPreservesPendingBAndOnlyBPublishes]' started.
+Test Case '-[MaestroAppTests.TranscriptSelectionTests testOldACompletionPreservesPendingBAndOnlyBPublishes]' passed (0.000 seconds).
+Test Case '-[MaestroAppTests.TranscriptSelectionTests testOldAErrorDoesNotPublishUnderBOrClearBSpinner]' started.
+Test Case '-[MaestroAppTests.TranscriptSelectionTests testOldAErrorDoesNotPublishUnderBOrClearBSpinner]' passed (0.001 seconds).
+Test Case '-[MaestroAppTests.TranscriptSelectionTests testSelectionImmediatelyClearsPreviousTranscriptAndError]' started.
+Test Case '-[MaestroAppTests.TranscriptSelectionTests testSelectionImmediatelyClearsPreviousTranscriptAndError]' passed (0.000 seconds).
+Test Suite 'TranscriptSelectionTests' passed at 2026-10-03 18:38:58.625.
+	 Executed 6 tests, with 0 failures (0 unexpected) in 0.005 (0.006) seconds
+Test Suite 'MaestroAppTests.xctest' passed at 2026-10-03 18:38:58.625.
+	 Executed 6 tests, with 0 failures (0 unexpected) in 0.005 (0.006) seconds
+Test Suite 'Selected tests' passed at 2026-10-03 18:38:58.625.
+	 Executed 6 tests, with 0 failures (0 unexpected) in 0.005 (0.007) seconds

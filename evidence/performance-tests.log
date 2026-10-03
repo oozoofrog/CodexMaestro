@@ -1,0 +1,29 @@
+Building for debugging...
+[1 / 3]
+Build complete! (0.24초)
+Test Suite 'Selected tests' started at 2026-10-03 18:14:10.504.
+Test Suite 'MaestroCoreTests.xctest' started at 2026-10-03 18:14:10.505.
+Test Suite 'MaestroCoreTests.xctest' passed at 2026-10-03 18:14:10.505.
+	 Executed 0 tests, with 0 failures (0 unexpected) in 0.000 (0.000) seconds
+Test Suite 'Selected tests' passed at 2026-10-03 18:14:10.505.
+	 Executed 0 tests, with 0 failures (0 unexpected) in 0.000 (0.001) seconds
+Test Suite 'Selected tests' started at 2026-10-03 18:14:10.561.
+Test Suite 'MaestroAppTests.xctest' started at 2026-10-03 18:14:10.561.
+Test Suite 'PerformanceTests' started at 2026-10-03 18:14:10.561.
+Test Case '-[MaestroAppTests.PerformanceTests test601SessionGroupingTimingSample]' started.
+Test Case '-[MaestroAppTests.PerformanceTests test601SessionGroupingTimingSample]' passed (0.065 seconds).
+Test Case '-[MaestroAppTests.PerformanceTests test601SessionsExpandedGroupingPreservesEverySessionExactlyOnce]' started.
+Test Case '-[MaestroAppTests.PerformanceTests test601SessionsExpandedGroupingPreservesEverySessionExactlyOnce]' passed (0.004 seconds).
+Test Case '-[MaestroAppTests.PerformanceTests testCollapsedCardsRetainLiveAndSelectedAndExpansionIsLossless]' started.
+Test Case '-[MaestroAppTests.PerformanceTests testCollapsedCardsRetainLiveAndSelectedAndExpansionIsLossless]' passed (0.001 seconds).
+Test Case '-[MaestroAppTests.PerformanceTests testDragObservationDoesNotInvalidateCatalogLayoutDependencies]' started.
+Test Case '-[MaestroAppTests.PerformanceTests testDragObservationDoesNotInvalidateCatalogLayoutDependencies]' passed (0.001 seconds).
+Test Case '-[MaestroAppTests.PerformanceTests testProjectOrderingMatchesRunningThenFirstSessionAcross601Items]' started.
+Test Case '-[MaestroAppTests.PerformanceTests testProjectOrderingMatchesRunningThenFirstSessionAcross601Items]' passed (0.003 seconds).
+Test Suite 'PerformanceTests' passed at 2026-10-03 18:14:10.636.
+	 Executed 5 tests, with 0 failures (0 unexpected) in 0.074 (0.074) seconds
+Test Suite 'MaestroAppTests.xctest' passed at 2026-10-03 18:14:10.636.
+	 Executed 5 tests, with 0 failures (0 unexpected) in 0.074 (0.075) seconds
+Test Suite 'Selected tests' passed at 2026-10-03 18:14:10.636.
+	 Executed 5 tests, with 0 failures (0 unexpected) in 0.074 (0.075) seconds
+PERFORMANCE_SAMPLE 601 sessions, 200 grouped layout preparations: 0.063420417 seconds; no rendering/FPS claim
