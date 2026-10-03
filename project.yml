@@ -1,0 +1,128 @@
+name: CodexMaestro
+options:
+  minimumXcodeGenVersion: '2.46.0'
+  xcodeVersion: '27.0'
+  bundleIdPrefix: com.oozoofrog
+  deploymentTarget:
+    macOS: '26.0'
+  createIntermediateGroups: true
+  generateEmptyDirectories: true
+settings:
+  base:
+    SWIFT_VERSION: '6.0'
+    SWIFT_INCLUDE_PATHS: '$(inherited) $(SRCROOT)/Sources/CSQLite'
+    CODE_SIGN_STYLE: Manual
+    CODE_SIGN_IDENTITY: '-'
+    ENABLE_USER_SCRIPT_SANDBOXING: YES
+fileGroups:
+  - README.md
+  - Package.swift
+  - Makefile
+  - project.yml
+  - Sources/CSQLite
+  - docs
+  - scripts
+targets:
+  MaestroCore:
+    type: library.static
+    platform: macOS
+    sources:
+      - Sources/MaestroCore
+    settings:
+      base:
+        PRODUCT_MODULE_NAME: MaestroCore
+        DEFINES_MODULE: YES
+        # Core has only Swift consumers; no Objective-C interface header is installed.
+        SWIFT_INSTALL_OBJC_HEADER: NO
+    dependencies:
+      - sdk: libsqlite3.tbd
+  CodexMaestro:
+    type: application
+    platform: macOS
+    productName: Codex Maestro
+    sources:
+      - Sources/CodexMaestro
+      - path: Resources/Assets.xcassets
+        buildPhase: resources
+      - path: Resources/Info.plist
+        buildPhase: none
+    settings:
+      base:
+        PRODUCT_NAME: Codex Maestro
+        PRODUCT_MODULE_NAME: CodexMaestro
+        EXECUTABLE_NAME: CodexMaestro
+        PRODUCT_BUNDLE_IDENTIFIER: com.oozoofrog.CodexMaestro
+        INFOPLIST_FILE: Resources/Info.plist
+        GENERATE_INFOPLIST_FILE: NO
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+        ENABLE_APP_SANDBOX: NO
+    dependencies:
+      - target: MaestroCore
+  MaestroProbe:
+    type: tool
+    platform: macOS
+    sources:
+      - Sources/MaestroProbe
+    settings:
+      base:
+        OTHER_SWIFT_FLAGS: '$(inherited) -parse-as-library'
+    dependencies:
+      - target: MaestroCore
+  MaestroCoreTests:
+    type: bundle.unit-test
+    platform: macOS
+    sources:
+      - Tests/MaestroCoreTests
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.oozoofrog.MaestroCoreTests
+        GENERATE_INFOPLIST_FILE: YES
+    dependencies:
+      - target: MaestroCore
+      - sdk: libsqlite3.tbd
+  MaestroAppTests:
+    type: bundle.unit-test
+    platform: macOS
+    sources:
+      - Tests/MaestroAppTests
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.oozoofrog.MaestroAppTests
+        GENERATE_INFOPLIST_FILE: YES
+        TEST_HOST: '$(BUILT_PRODUCTS_DIR)/Codex Maestro.app/Contents/MacOS/CodexMaestro'
+    dependencies:
+      - target: CodexMaestro
+      - target: MaestroCore
+schemes:
+  CodexMaestro:
+    build:
+      targets:
+        CodexMaestro: all
+        MaestroProbe: [testing]
+    run:
+      config: Debug
+    test:
+      config: Debug
+      commandLineArguments:
+        --demo: true
+      targets:
+        - name: MaestroCoreTests
+          parallelizable: false
+        - name: MaestroAppTests
+          parallelizable: false
+    archive:
+      config: Release
+  CodexMaestro Demo:
+    build:
+      targets:
+        CodexMaestro: all
+    run:
+      config: Debug
+      commandLineArguments:
+        --demo: true
+  MaestroProbe:
+    build:
+      targets:
+        MaestroProbe: all
+    run:
+      config: Debug

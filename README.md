@@ -2,7 +2,7 @@
 
 Codex의 프로젝트와 세션을 한 화면에서 보고, 연결하고, 다음 작업을 지시하는 macOS 네이티브 앱입니다.
 
-SwiftUI / AppKit · macOS 14 이상 · 외부 패키지 의존성 없음
+SwiftUI / AppKit · macOS 26 이상 · Swift 6 · 외부 패키지 의존성 없음
 
 ## 실행
 
@@ -12,7 +12,19 @@ SwiftUI / AppKit · macOS 14 이상 · 외부 패키지 의존성 없음
 open "dist/Codex Maestro.app"
 ```
 
-Xcode에서 `Package.swift`를 열거나 아래 명령으로 개발할 수 있습니다.
+Xcode 개발 진입점은 [CodexMaestro.xcodeproj](CodexMaestro.xcodeproj)입니다. 앱, `MaestroCore` 정적 라이브러리, `MaestroProbe`, Core·앱 XCTest의 5개 타깃이 같은 소스를 사용합니다. 최소 배포 버전은 `26.0`, Swift 언어 모드는 `6.0`입니다.
+
+공유 scheme은 `CodexMaestro`(일반 실행·두 테스트 타깃·Release archive), `CodexMaestro Demo`(격리된 데모 실행), `MaestroProbe`(읽기 전용 연동 진단)입니다. 일반 실행은 실제 로컬 Codex에 연결합니다. `CodexMaestro`의 테스트 호스트는 `--demo`로 실행하므로 실제 작업공간을 읽거나 저장하지 않습니다.
+
+프로젝트 원본 설정은 [project.yml](project.yml)입니다. 생성된 프로젝트가 저장소에 포함되어 있으므로 일반 Xcode 개발에는 XcodeGen이 필요하지 않습니다. 타깃·파일 구성을 바꿔 재생성할 때는 XcodeGen 2.46.0 이상을 사용합니다. 앱 아이콘은 기존 생성기에서 만든 asset catalog를 포함하며 `scripts/generate-icon-assets.sh`로 다시 생성할 수 있습니다.
+
+```sh
+make xcode-build    # 네이티브 Xcode Debug 빌드
+make xcode-test     # 네이티브 Xcode XCTest
+make xcode-project # project.yml에서 프로젝트 재생성
+```
+
+SwiftPM 개발도 유지합니다. `Package.swift`는 Swift tools 6.2 이상, macOS 26, Swift 6 언어 모드를 지정합니다.
 
 ```sh
 make run      # 실제 로컬 Codex에 연결
@@ -22,7 +34,9 @@ make probe    # 읽기 전용 실제 연결 진단
 make app      # release 빌드 + .app 생성 + 로컬 ad-hoc 서명
 ```
 
-`make app`에는 Xcode/Command Line Tools의 Swift, sips, iconutil, codesign이 필요합니다. 앱 실행 자체에는 Node.js나 Python이 필요하지 않습니다. 현재 제공된 바이너리는 이 Mac에서 빌드한 Apple Silicon용입니다. 배포용 Developer ID 서명 및 공증은 포함하지 않습니다.
+`make app`에는 Xcode/Command Line Tools의 Swift, sips, iconutil, codesign이 필요합니다. 앱 실행 자체에는 Node.js나 Python이 필요하지 않습니다. `dist`의 SwiftPM 앱은 Apple Silicon용이며 Xcode Release archive는 arm64·x86_64를 포함합니다. 실제 실행은 Apple Silicon의 macOS 27에서 확인했습니다. macOS 26과 Intel의 실행은 별도 검증이 필요합니다. 두 빌드 경로는 로컬 ad-hoc 서명을 사용합니다. 배포용 Developer ID 서명 및 공증은 포함하지 않습니다.
+
+Xcode 앱의 App Sandbox는 기존 로컬 DB·Unix 소켓 접근 계약에 따라 비활성화합니다. User Script Sandboxing은 활성화합니다. `MaestroCore`는 Swift 소비자만 있으므로 Objective-C 인터페이스 헤더를 설치하지 않습니다. `MaestroProbe`의 `main.swift`는 `@main`을 사용하므로 해당 타깃에 `-parse-as-library`를 지정합니다.
 
 ## 주요 기능
 
@@ -83,7 +97,9 @@ Maestro의 관계·배치·초안을 저장하는 파일은 아래와 같습니�
 
 ## 검증
 
-최신 단순화 적용 후 118개 테스트와 Release 패키징·로컬 서명 검증이 통과했습니다. 변경량, 유지한 계약과 네이티브 확인 범위는 [단순화 적용 기록](docs/CLEANUP.md)에 있습니다.
+macOS 26·Swift 6 전환 후 Xcode와 SwiftPM에서 각각 **119개 테스트**가 통과했습니다. Core 46개와 앱 73개입니다. Xcode Release archive, SwiftPM Release 패키징과 로컬 서명을 검증했습니다. Swift 6의 actor 경계에 맞게 IPC 응답 continuation은 `Data`를 전달하고 수신 메시지 묶음은 `sending`으로 이전합니다. 잘못된 프레임이 포함된 묶음 전체를 거부하는 회귀 검사를 추가했습니다.
+
+전환 후 읽기 전용 Probe는 프로젝트 31개, 로컬 세션 608개, live snapshot 13개와 최근 대화 30개를 확인했습니다. 수량은 확인 시점의 값입니다. 이전 단순화의 변경량과 UI 확인 범위는 [단순화 적용 기록](docs/CLEANUP.md)에 있습니다.
 
 실제 데이터 조회, 데스크톱 상태 수신, 앱 실행과 주요 UI 동작을 확인했습니다. 프롬프트의 대상 및 wire payload는 격리된 Unix 소켓 테스트 서버에서 검증했습니다. 기존 실제 업무 세션에 검증용 프롬프트를 보내지는 않았으므로, 실제 모델의 응답 완료까지 포함한 전송 E2E는 미검증입니다.
 
@@ -96,8 +112,8 @@ Maestro의 관계·배치·초안을 저장하는 파일은 아래와 같습니�
 성능 검증용 실행 모드는 작업공간 파일을 저장하거나 Codex에 프롬프트를 보내지 않습니다.
 
 ```sh
-MAESTRO_PERFORMANCE_LOG=1 .build/release/CodexMaestro --performance-demo
-MAESTRO_PERFORMANCE_LOG=1 .build/release/CodexMaestro --performance-catalog
+MAESTRO_PERFORMANCE_LOG=1 "$(swift build -c release --show-bin-path)/CodexMaestro" --performance-demo
+MAESTRO_PERFORMANCE_LOG=1 "$(swift build -c release --show-bin-path)/CodexMaestro" --performance-catalog
 ```
 
 `--performance-demo`는 601개 합성 세션을 펼칩니다. `--performance-catalog`는 현재 로컬 카탈로그의 모든 세션을 읽기 전용 스냅샷으로 펼칩니다. 실제 Codex 실시간 연동은 일반 실행 모드에서 검증합니다.

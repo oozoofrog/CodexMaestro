@@ -1,0 +1,44 @@
+Building for debugging...
+[Pre-planning 1 / 183]
+[Planning deferred tasks]
+[3 / 29]
+[4 / 30] MaestroCore
+[14 / 73]
+[21 / 73]
+[24 / 73]
+[25 / 73]
+[29 / 73]
+[32 / 73]
+[37 / 73]
+[38 / 73]
+[39 / 73]
+[40 / 73]
+[47 / 73] MaestroCore
+[56 / 76] MaestroCore
+error: SwiftCompile normal arm64 /Volumes/eyedisk/develop/CodexMaestro/Sources/MaestroCore/DesktopBridge.swift failed with a nonzero exit code. Command line:     cd /Volumes/eyedisk/develop
+    builtin-SwiftPerFileCompile DesktopBridge.swift
+/Volumes/eyedisk/develop/CodexMaestro/Sources/MaestroCore/DesktopBridge.swift:312:85: warning: capture of 'onMessage' with non-Sendable type '([String : Any]) -> Void' in a '@Sendable' closure [#SendableClosureCaptures]
+310 |                 if count < 0 && errno == EINTR { continue }
+311 |                 guard count > 0 else { break }
+312 |                 do { for message in try decoder.append(Data(bytes.prefix(count))) { onMessage(message) } }
+    |                                                                                     |- warning: capture of 'onMessage' with non-Sendable type '([String : Any]) -> Void' in a '@Sendable' closure [#SendableClosureCaptures]
+    |                                                                                     `- note: a function type must be marked '@Sendable' to conform to 'Sendable'
+313 |                 catch { fail(error.localizedDescription); return }
+314 |             }
+
+/Volumes/eyedisk/develop/CodexMaestro/Sources/MaestroCore/DesktopBridge.swift:117:77: error: sending 'message' risks causing data races [#RegionIsolation::SendingRisksDataRace]
+115 |             guard let id = message["requestId"] as? String, let continuation = pending.removeValue(forKey: id) else { return }
+116 |             timeouts.removeValue(forKey: id)?.cancel()
+117 |             if message["resultType"] as? String == "success" { continuation.resume(returning: message) }
+    |                                                                             |- error: sending 'message' risks causing data races [#RegionIsolation::SendingRisksDataRace]
+    |                                                                             `- note: main actor-isolated 'message' is passed as a 'sending' parameter; Uses in callee may race with later main actor-isolated uses
+118 |             else {
+119 |                 let code = message["error"] as? String ?? "알 수 없는 IPC 오류"
+
+[#RegionIsolation]: <https://docs.swift.org/compiler/documentation/diagnostics/region-isolation>
+[#SendableClosureCaptures]: <https://docs.swift.org/compiler/documentation/diagnostics/sendable-closure-captures>
+[#SendingRisksDataRace]: <https://docs.swift.org/compiler/documentation/diagnostics/sending-risks-data-race>
+Failed frontend command:
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swift-frontend -frontend -c /Volumes/eyedisk/develop/CodexMaestro/Sources/MaestroCore/CodexCatalog.swift /Volumes/eyedisk/develop/CodexMaestro/Sources/MaestroCore/ConnectionActions.swift /Volumes/eyedisk/develop/CodexMaestro/Sources/MaestroCore/ContextTopology.swift /Volumes/eyedisk/develop/CodexMaestro/Sources/MaestroCore/ContextTopologyLoader.swift -primary-file /Volumes/eyedisk/develop/CodexMaestro/Sources/MaestroCore/DesktopBridge.swift /Volumes/eyedisk/develop/CodexMaestro/Sources/MaestroCore/Models.swift -emit-dependencies-path /Volumes/eyedisk/develop/CodexMaestro/.build/out/Intermediates.noindex/CodexMaestro.build/Debug/MaestroCore-t.build/Objects-normal/arm64/DesktopBridge.d -emit-const-values-path /Volumes/eyedisk/develop/CodexMaestro/.build/out/Intermediates.noindex/CodexMaestro.build/Debug/MaestroCore-t.build/Objects-normal/arm64/DesktopBridge.swiftconstvalues -emit-reference-dependencies-path /Volumes/eyedisk/develop/CodexMaestro/.build/out/Intermediates.noindex/CodexMaestro.build/Debug/MaestroCore-t.build/Objects-normal/arm64/DesktopBridge.swiftdeps -serialize-diagnostics-path /Volumes/eyedisk/develop/CodexMaestro/.build/out/Intermediates.noindex/CodexMaestro.build/Debug/MaestroCore-t.build/Objects-normal/arm64/DesktopBridge.dia -target arm64-apple-macos26.0 -disable-cross-import-overlay-search -swift-module-cross-import Darwin /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/Darwin.swiftcrossimport/xlocale.swiftoverlay -load-resolved-plugin /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib/swift/host/plugins/libFoundationMacros.dylib\#/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/bin/swift-plugin-server\#FoundationMacros -load-resolved-plugin /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib/swift/host/plugins/libObservationMacros.dylib\#/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/bin/swift-plugin-server\#ObservationMacros -load-resolved-plugin /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib/swift/host/plugins/libSwiftMacros.dylib\#/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/bin/swift-plugin-server\#SwiftMacros -disable-implicit-swift-modules -Xcc -fno-implicit-modules -Xcc -fno-implicit-module-maps -explicit-swift-module-map-file /Volumes/eyedisk/develop/CodexMaestro/.build/out/Intermediates.noindex/CodexMaestro.build/Debug/MaestroCore-t.build/Objects-normal/arm64/MaestroCore-dependencies-1.json -Xllvm -aarch64-use-tbi -enable-objc-interop -stack-check -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX27.0.sdk -I /Volumes/eyedisk/develop/CodexMaestro/.build/out/Products/Debug -Isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib -F /Volumes/eyedisk/develop/CodexMaestro/.build/out/Products/Debug -F /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks -module-cache-path /Volumes/eyedisk/develop/CodexMaestro/.build/out/Intermediates.noindex/SwiftExplicitPrecompiledModules -no-color-diagnostics -Xcc -fno-color-diagnostics -enable-testing -g -debug-info-format\=dwarf -dwarf-version\=5 -swift-version 6 -Onone -D SWIFT_PACKAGE -D DEBUG -D SWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE -D Xcode -serialize-debugging-options -enable-experimental-feature DebugDescriptionMacro -empty-abi-descriptor -validate-clang-modules-once -clang-build-session-file /Volumes/eyedisk/develop/CodexMaestro/.build/out/ModuleCache.noindex/Session.modulevalidation -Xcc -working-directory -Xcc /Volumes/eyedisk/develop -enable-anonymous-context-mangled-names -file-compilation-dir /Volumes/eyedisk/develop -Xcc -fmodule-map-file\=/Volumes/eyedisk/develop/CodexMaestro/Sources/CSQLite/module.modulemap -Xcc -D_LIBCPP_HARDENING_MODE\=_LIBCPP_HARDENING_MODE_DEBUG -Xcc -ivfsstatcache -Xcc /Volumes/eyedisk/develop/CodexMaestro/.build/out/SDKStatCaches.noindex/macosx27.0-26A425-80c5bbf1d171475443272936d42f90a37231f6df4def33e022ae2eb8f782df1a.sdkstatcache -Xcc -fmodules-prune-interval\=86400 -Xcc -fmodules-prune-after\=345600 -Xcc -I/Volumes/eyedisk/develop/CodexMaestro/.build/out/Products/Debug/include -Xcc -I/Volumes/eyedisk/develop/CodexMaestro/.build/out/Intermediates.noindex/CodexMaestro.build/Debug/MaestroCore-t.build/DerivedSources-normal/arm64 -Xcc -I/Volumes/eyedisk/develop/CodexMaestro/.build/out/Intermediates.noindex/CodexMaestro.build/Debug/MaestroCore-t.build/DerivedSources/arm64 -Xcc -I/Volumes/eyedisk/develop/CodexMaestro/.build/out/Intermediates.noindex/CodexMaestro.build/Debug/MaestroCore-t.build/DerivedSources -Xcc -DSWIFT_PACKAGE -Xcc -DDEBUG\=1 -no-auto-bridging-header-chaining -module-name MaestroCore -package-name codexmaestro -const-gather-protocols-file /Volumes/eyedisk/develop/CodexMaestro/.build/out/Intermediates.noindex/CodexMaestro.build/Debug/MaestroCore-t.build/Objects-normal/arm64/MaestroCore_const_extract_protocols.json -disable-clang-spi -clang-target arm64-apple-macos27.0 -target-sdk-version 27.0 -target-sdk-name macosx27.0 -in-process-plugin-server-path /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/libSwiftInProcPluginServer.dylib -parse-as-library -o /Volumes/eyedisk/develop/CodexMaestro/.build/out/Intermediates.noindex/CodexMaestro.build/Debug/MaestroCore-t.build/Objects-normal/arm64/DesktopBridge.o -debug-module-path /Volumes/eyedisk/develop/CodexMaestro/.build/out/Intermediates.noindex/CodexMaestro.build/Debug/MaestroCore-t.build/Objects-normal/arm64/MaestroCore.swiftmodule -index-unit-output-path /CodexMaestro.build/Debug/MaestroCore-t.build/Objects-normal/arm64/DesktopBridge.o -index-store-path /Volumes/eyedisk/develop/CodexMaestro/.build/out -index-system-modules
+error: Build failed
+error: fatalError

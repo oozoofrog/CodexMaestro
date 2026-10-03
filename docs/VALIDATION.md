@@ -1,8 +1,41 @@
 # 검증 기록
 
-검증일: 2026-10-03 (Asia/Seoul)
+최신 검증일: 2026-10-04 (Asia/Seoul)
 
-## 최신 단순화 적용 검증
+## Xcode 프로젝트와 macOS 26·Swift 6 전환
+
+`CodexMaestro.xcodeproj`를 추가했다. 앱, Core 정적 라이브러리, Probe와 두 XCTest 타깃은 SwiftPM과 소스를 공유한다. 세 공유 scheme은 일반 실행·테스트·archive, 데모 실행, Probe 실행을 구분한다. `project.yml`에서 모든 타깃의 최소 macOS 버전은 `26.0`, Swift 언어 모드는 `6.0`으로 설정했다. `Package.swift`와 앱 Info.plist도 macOS 26을 지정한다. SwiftPM tools 최소 버전은 6.2다.
+
+검증 환경은 Apple Silicon Mac mini, macOS 27.0, Xcode 27.0 (27A266a), Swift 6.4, XcodeGen 2.46.0이다. macOS 26은 배포 대상이며 이번 실행 환경이 아니다.
+
+| 검증 | 결과 | 근거 |
+|---|---|---|
+| SwiftPM XCTest | Core 46개 + 앱 73개, **119개 통과**, 실패 0개 | `evidence/swift6-tests.log` |
+| Xcode XCTest | 동일한 **119개 통과**, 실패·생략 0개 | `evidence/xcode-tests.log`, `.build/XcodeSwift6Tests-final.xcresult` |
+| Xcode Release archive | 통과, arm64·x86_64의 Mach-O 최소 버전 `26.0` | `evidence/xcode-archive.log`, `.build/CodexMaestro-macOS26.xcarchive` |
+| SwiftPM Release 패키징 | 통과, `dist/Codex Maestro.app` 갱신 | `evidence/swift6-package.log` |
+| 두 앱의 strict ad-hoc 서명 | 종료값 0 | `evidence/xcode-artifact.json` |
+| 프로젝트 재생성 | 프로젝트 파일과 3개 공유 scheme을 포함한 5개 파일의 SHA-256 유지 | `evidence/xcode-generation-reproducibility.json` |
+| 현재 소스·설정·리소스 | 71개 파일의 manifest와 두 바이너리의 SHA-256 기록 | `evidence/xcode-artifact.json` |
+| 읽기 전용 실제 IPC | 프로젝트 31개·로컬 세션 608개·live snapshot 13개·최근 대화 30개, 종료값 0 | `evidence/swift6-live-probe.log` |
+
+Xcode에서 프로젝트를 다시 열고 `CodexMaestro` scheme, `My Mac` 실행 대상, 앱 타깃의 최소 배포 버전 `26.0`과 `Swift Language Version: Swift 6`을 직접 확인했다. 현재 프로젝트는 열어 둔 상태다. 언어 모드 화면과 AX 기록은 `evidence/xcode-swift6-settings.png` 및 `evidence/xcode-open-ui-ax.log`에 저장했다. 다섯 타깃의 실제 빌드 설정은 `evidence/xcode-all-target-settings.json`에 기록했다.
+
+XCTest 통과 후 앱 카테고리를 `public.app-category.developer-tools`로 추가했다. 이 메타데이터 변경은 두 Release 패키지에 다시 반영했다. 테스트한 Swift 소스는 이후 바꾸지 않았다. 최종 archive의 App Category 미지정 경고는 없어졌다.
+
+Xcode의 앱 테스트 호스트는 `--demo`로 실행한다. Probe는 현재 카탈로그를 조회하고 상태를 구독하며 프롬프트를 보내지 않는다. 수량은 조회 시점의 값이다. XCTest의 IPC 송신 계약은 기존 격리된 Unix 소켓 서버 검사로 확인한다. 실제 업무 세션에 대한 전송 E2E를 이번 조회로 주장하지 않는다.
+
+Swift 6 전환에서 `DesktopBridge`의 응답 continuation은 `[String: Any]` 대신 `Data`를 전달한다. 응답 딕셔너리는 MainActor에서 다시 만든다. 백그라운드 프레임 디코더는 기존 JSON 검증을 유지하고 검증한 메시지 묶음의 소유권을 `sending`으로 MainActor에 이전한다. 새 `testMalformedFrameRejectsAnOtherwiseValidBatch`는 유효한 프레임 뒤에 비객체 JSON 또는 크기 0 프레임이 있어도 전체 묶음을 거부하는지 확인한다. 새로운 `@unchecked Sendable` 우회는 추가하지 않았다.
+
+첫 네이티브 빌드는 `main.swift`의 `@main` 충돌로 실패했다. Probe 타깃에 `-parse-as-library`를 지정했다. Swift 6로 다시 빌드할 때 XcodeGen의 자동 Objective-C 헤더 복사 단계가 sandbox에서 실패했다. Swift 소비자만 있는 Core에 `SWIFT_INSTALL_OBJC_HEADER=NO`를 지정해 해당 단계를 생성하지 않도록 했다. User Script Sandboxing은 활성 상태로 유지한다. 앱의 기존 로컬 DB·소켓 접근을 위한 App Sandbox 비활성 설정은 그대로 적용했다.
+
+실패 근거는 `evidence/xcode-tests-attempt1.log`, `evidence/xcode-tests-swift6-attempt1.log`와 `evidence/swift6-*-attempt*.log`에 보존했다. `xcode-tests-macos14-swift5.log`, `xcode-archive-macos14-swift5.log`, `swift6-tests-intermediate.log`는 전환 도중의 이전 결과다. 현재 산출물의 근거로 사용하지 않는다. Xcode 테스트 호스트 로그에는 macOS의 `com.apple.linkd.autoShortcut` 연결 메시지가 있으나 XCTest 실패와 result bundle의 runtime warning은 0개다. Archive의 App Intents metadata 생략 안내는 AppIntents 의존성이 없는 앱에서 발생한다.
+
+이 검증은 macOS 26의 실제 실행, Intel의 실제 실행, 전체 UI 회귀·VoiceOver 탐색, 실제 프롬프트 전송 완료, Developer ID 서명·공증과 외부 배포를 포함하지 않는다. 기존 UI 확인 기록은 아래의 해당 시점에 한정한다.
+
+아래는 2026-10-03의 이전 구현과 실행 시점에 대한 기록이다. 이전 manifest와 바이너리 해시는 현재 Xcode·Swift 6 산출물에 적용하지 않는다.
+
+## 이전 단순화 적용 검증
 
 단순화 후 **118개 테스트가 통과**했다. Core 45개와 앱 73개이며 실패는 없다. `evidence/cleanup-tests.log`에 전체 결과를 기록했다. Release 빌드·패키징은 `evidence/cleanup-package.log`, strict ad-hoc 서명과 50개 파일의 소스 manifest는 `evidence/cleanup-artifact.json`에서 확인한다. 별도 팀원이 현재 소스와 바이너리 해시를 다시 계산해 일치를 확인했다.
 

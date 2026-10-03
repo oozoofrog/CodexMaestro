@@ -11,7 +11,8 @@ public final class DesktopBridge {
     public private(set) var isConnected = false
     private var transport: UnixTransport?
     private var clientID = "initializing-client"
-    private var pending: [String: CheckedContinuation<[String: Any], Error>] = [:]
+    // Continuations transfer their result; keep response dictionaries confined to MainActor.
+    private var pending: [String: CheckedContinuation<Data, Error>] = [:]
     private var timeouts: [String: Task<Void, Never>] = [:]
     private var followed: Set<String> = []
     private var live: [String: LiveSession] = [:]
@@ -24,10 +25,10 @@ public final class DesktopBridge {
         let generation = UUID(); self.generation = generation
         let transport = try UnixTransport(path: socketPath)
         self.transport = transport
-        transport.start { [weak self] message in
+        transport.start { [weak self] messages in
             Task { @MainActor in
                 guard let self, self.generation == generation else { return }
-                self.receive(message)
+                for message in messages { self.receive(message) }
             }
         } onClose: { [weak self] error in
             Task { @MainActor in
@@ -94,7 +95,7 @@ public final class DesktopBridge {
         let id = UUID().uuidString
         var message: [String: Any] = ["type": "request", "requestId": id, "sourceClientId": clientID, "method": method, "params": params, "version": version, "timeoutMs": Int(timeout * 1000)]
         if let target { message["targetClientId"] = target }
-        return try await withCheckedThrowingContinuation { continuation in
+        let responseData: Data = try await withCheckedThrowingContinuation { continuation in
             pending[id] = continuation
             timeouts[id] = Task { [weak self] in
                 try? await Task.sleep(for: .seconds(timeout))
@@ -108,13 +109,18 @@ public final class DesktopBridge {
             do { try transport.send(message, timeout: timeout) }
             catch { pending[id] = nil; timeouts.removeValue(forKey: id)?.cancel(); continuation.resume(throwing: error) }
         }
+        guard let response = try JSONSerialization.jsonObject(with: responseData) as? [String: Any] else { throw MaestroError.message("IPC 응답이 객체가 아닙니다.") }
+        return response
     }
     private func receive(_ message: [String: Any]) {
         switch message["type"] as? String {
         case "response":
             guard let id = message["requestId"] as? String, let continuation = pending.removeValue(forKey: id) else { return }
             timeouts.removeValue(forKey: id)?.cancel()
-            if message["resultType"] as? String == "success" { continuation.resume(returning: message) }
+            if message["resultType"] as? String == "success" {
+                do { continuation.resume(returning: try JSONSerialization.data(withJSONObject: message)) }
+                catch { continuation.resume(throwing: error) }
+            }
             else {
                 let code = message["error"] as? String ?? "알 수 없는 IPC 오류"
                 let description = code == "no-client-found" ? "이 세션이 Codex에서 열려 있지 않습니다. ‘Codex에서 열기’ 후 다시 전송하세요." : "Codex: \(code)"
@@ -254,7 +260,7 @@ public struct IPCFrameDecoder {
     public static let maxFrameBytes = 268_435_456
     private var buffer = Data()
     public init() {}
-    public mutating func append(_ data: Data) throws -> [[String: Any]] {
+    public mutating func append(_ data: Data) throws -> sending [[String: Any]] {
         buffer.append(data)
         var offset = 0
         var messages: [[String: Any]] = []
@@ -282,7 +288,7 @@ private final class UnixTransport: @unchecked Sendable {
     private let lock = NSLock()
     private let writeQueue = DispatchQueue(label: "CodexMaestro.IPC.write", qos: .utility)
     private var closed = false
-    private var closeHandler: ((String) -> Void)?
+    private var closeHandler: (@Sendable (String) -> Void)?
     init(path: String) throws {
         var metadata = stat()
         guard lstat(path, &metadata) == 0, metadata.st_uid == getuid(), (metadata.st_mode & S_IFMT) == S_IFSOCK else { throw MaestroError.message("Codex 데스크톱 연결을 찾을 수 없습니다. Codex를 실행한 뒤 다시 연결하세요.") }
@@ -300,7 +306,7 @@ private final class UnixTransport: @unchecked Sendable {
         guard result == 0 else { throw MaestroError.message("Codex IPC 연결 실패: \(String(cString: strerror(errno)))") }
         fd = descriptor; initialized = true
     }
-    func start(onMessage: @escaping ([String: Any]) -> Void, onClose: @escaping (String) -> Void) {
+    func start(onMessages: @escaping @Sendable (sending [[String: Any]]) -> Void, onClose: @escaping @Sendable (String) -> Void) {
         lock.lock(); closeHandler = onClose; lock.unlock()
         DispatchQueue.global(qos: .utility).async { [self] in
             var decoder = IPCFrameDecoder()
@@ -309,7 +315,8 @@ private final class UnixTransport: @unchecked Sendable {
                 let count = Darwin.read(fd, &bytes, bytes.count)
                 if count < 0 && errno == EINTR { continue }
                 guard count > 0 else { break }
-                do { for message in try decoder.append(Data(bytes.prefix(count))) { onMessage(message) } }
+                // Validate the entire batch before transferring it; malformed batches dispatch nothing.
+                do { onMessages(try decoder.append(Data(bytes.prefix(count)))) }
                 catch { fail(error.localizedDescription); return }
             }
             fail("Codex 데스크톱 연결이 종료되었습니다.")

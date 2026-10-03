@@ -19,6 +19,14 @@ final class CoreTests: XCTestCase {
             var parser = IPCFrameDecoder(); XCTAssertThrowsError(try parser.append(Data(bytes)))
         }
     }
+    func testMalformedFrameRejectsAnOtherwiseValidBatch() throws {
+        let valid = try IPCFrameDecoder.encode(["type": "response", "resultType": "success"])
+        let nonObject = Data([2, 0, 0, 0, 91, 93]) // JSON [] in a complete frame.
+        for invalid in [nonObject, Data([0, 0, 0, 0])] {
+            var decoder = IPCFrameDecoder()
+            XCTAssertThrowsError(try decoder.append(valid + invalid), "A valid prefix must not make a malformed batch acceptable")
+        }
+    }
     func testLiveStatusPatchesAndWaitingFlags() {
         var session = LiveSession(snapshot: ["title": "test", "threadRuntimeStatus": ["type": "active", "activeFlags": []]], owner: "desktop", revision: 2)
         XCTAssertEqual(session.status, .running)

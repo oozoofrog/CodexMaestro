@@ -1,4 +1,4 @@
-.PHONY: build test run demo probe app
+.PHONY: build test run demo probe app xcode-project xcode-build xcode-test
 build:
 	swift build
 test:
@@ -11,3 +11,9 @@ probe:
 	swift run MaestroProbe
 app:
 	./scripts/package-app.sh
+xcode-project:
+	xcodegen generate --spec project.yml
+xcode-build:
+	xcodebuild -project CodexMaestro.xcodeproj -scheme CodexMaestro -configuration Debug -destination 'platform=macOS' -derivedDataPath .build/XcodeDerivedData build
+xcode-test:
+	xcodebuild -project CodexMaestro.xcodeproj -scheme CodexMaestro -configuration Debug -destination 'platform=macOS' -derivedDataPath .build/XcodeDerivedData test

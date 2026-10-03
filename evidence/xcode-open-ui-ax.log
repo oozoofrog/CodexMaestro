@@ -1,0 +1,321 @@
+Window: "CodexMaestro — CodexMaestro.xcodeproj", App: Xcode.
+0 standard window CodexMaestro — CodexMaestro.xcodeproj, URL: file:///Volumes/eyedisk/develop/CodexMaestro/CodexMaestro.xcodeproj, ID: Xcode.WorkspaceWindow, Secondary Actions: Raise
+	1 split group CodexMaestro.xcodeproj, Description: /Volumes/eyedisk/develop/CodexMaestro/CodexMaestro.xcodeproj, ID: Workspace window tab content
+		2 container navigator
+			3 scroll area Secondary Actions: Scroll Up, Scroll Down
+				4 outline Description: Project Navigator, ID: project navigator
+					5 row (selected, expanded) Secondary Actions: Collapse
+						6 cell (selected)
+							7 text Value: Source Control Status: ? , ID: sourceControlFileStatus
+							8 Project
+							9 text field (settable) Value: CodexMaestro, ID: title
+							10 disclosure triangle 1
+					11 row (selectable)
+						12 cell
+							13 text Value: Source Control Status: M , ID: sourceControlFileStatus
+							14 Makefile
+							15 text field (settable) Value: Makefile, ID: title
+					16 row (selectable)
+						17 cell
+							18 text Value: Source Control Status: M , ID: sourceControlFileStatus
+							19 Swift Source
+							20 text field (settable) Value: Package.swift, ID: title
+					21 row (selectable)
+						22 cell
+							23 text Value: Source Control Status: ? , ID: sourceControlFileStatus
+							24 YAML Document
+							25 text field (settable) Value: project.yml, ID: title
+					26 row (selectable)
+						27 cell
+							28 text Value: Source Control Status: M , ID: sourceControlFileStatus
+							29 Markdown
+							30 text field (settable) Value: README.md, ID: title
+					31 row (selectable, expanded) Secondary Actions: Collapse
+						32 cell
+							33 Group
+							34 text field (settable) Value: docs, ID: title
+							35 disclosure triangle 1
+					36 row (selectable)
+						37 cell
+							38 Markdown
+							39 text field (settable) Value: ASTRA-DESIGN-REVIEW.md, ID: title
+					40 row (selectable)
+						41 cell
+							42 Markdown
+							43 text field (settable) Value: ASTRA-FEATURE-PLAN.md, ID: title
+					44 row (selectable)
+						45 cell
+							46 Markdown
+							47 text field (settable) Value: ASTRA-MIXED-REVIEW.md, ID: title
+					48 row (selectable)
+						49 cell
+							50 Markdown
+							51 text field (settable) Value: ASTRA-REVIEW.md, ID: title
+					52 row (selectable)
+						53 cell
+							54 Markdown
+							55 text field (settable) Value: CLEANUP.md, ID: title
+					56 row (selectable)
+						57 cell
+							58 Markdown
+							59 text field (settable) Value: COMMAND-CONNECTIONS-REVIEW.md, ID: title
+					60 row (selectable)
+						61 cell
+							62 Markdown
+							63 text field (settable) Value: COMMAND-CONNECTIONS.md, ID: title
+					64 row (selectable)
+						65 cell
+							66 Markdown
+							67 text field (settable) Value: CONNECTIONS.md, ID: title
+					68 row (selectable)
+						69 cell
+							70 Markdown
+							71 text field (settable) Value: CONTEXT-OVERLAP-REVIEW.md, ID: title
+					72 row (selectable)
+						73 cell
+							74 Markdown
+							75 text field (settable) Value: CONTEXT-TOPOLOGY.md, ID: title
+					76 row (selectable)
+						77 cell
+							78 Markdown
+							79 text field (settable) Value: DESIGN-APPLICATION.md, ID: title
+					80 row (selectable)
+						81 cell
+							82 Markdown
+							83 text field (settable) Value: DESIGN-INSPECTOR.md, ID: title
+					84 row (selectable)
+						85 cell
+							86 Markdown
+							87 text field (settable) Value: DESIGN-TOPOLOGY.md, ID: title
+					88 row (selectable)
+						89 cell
+							90 Markdown
+							91 text field (settable) Value: INTEGRATION.md, ID: title
+					92 row (selectable)
+						93 cell
+							94 Markdown
+							95 text field (settable) Value: MIXED-CONNECTIONS.md, ID: title
+					96 row (selectable)
+						97 cell
+							98 Markdown
+							99 text field (settable) Value: PERFORMANCE.md, ID: title
+					100 row (selectable)
+						101 cell
+							102 text Value: Source Control Status: M , ID: sourceControlFileStatus
+							103 Markdown
+							104 text field (settable) Value: VALIDATION.md, ID: title
+					105 row (selectable, collapsed) Secondary Actions: Expand
+						106 cell
+							107 text Value: Source Control Status: – , ID: sourceControlFileStatus
+							108 Group
+							109 text field (settable) Value: Resources, ID: title
+							110 disclosure triangle 0
+					111 row (selectable, expanded) Secondary Actions: Collapse
+						112 cell
+							113 Group
+							114 text field (settable) Value: scripts, ID: title
+							115 disclosure triangle 1
+					116 row (selectable)
+						117 cell
+							118 text Value: Source Control Status: ? , ID: sourceControlFileStatus
+							119 Shell Script
+							120 text field (settable) Value: generate-icon-assets.sh, ID: title
+					121 row (selectable)
+						122 cell
+							123 Swift Source
+							124 text field (settable) Value: make-icon.swift, ID: title
+					125 row (selectable)
+						126 cell
+							127 Shell Script
+							128 text field (settable) Value: package-app.sh, ID: title
+					129 row (selectable, expanded) Secondary Actions: Collapse
+						130 cell
+							131 Group
+							132 text field (settable) Value: Sources, ID: title
+							133 disclosure triangle 1
+					134 row (selectable, collapsed) Secondary Actions: Expand
+						135 cell
+							136 Group
+							137 text field (settable) Value: CodexMaestro, ID: title
+							138 disclosure triangle 0
+					139 row (selectable, collapsed) Secondary Actions: Expand
+						140 cell
+							141 Group
+							142 text field (settable) Value: CSQLite, ID: title
+							143 disclosure triangle 0
+					144 row (selectable, collapsed) Secondary Actions: Expand
+						145 cell
+							146 text Value: Source Control Status: M , ID: sourceControlFileStatus
+							147 Group
+							148 text field (settable) Value: MaestroCore, ID: title
+							149 disclosure triangle 0
+					150 row (selectable, collapsed) Secondary Actions: Expand
+						151 cell
+							152 Group
+							153 text field (settable) Value: MaestroProbe, ID: title
+							154 disclosure triangle 0
+					155 row (selectable, expanded) Secondary Actions: Collapse
+						156 cell
+							157 Group
+							158 text field (settable) Value: Tests, ID: title
+							159 disclosure triangle 1
+					160 row (selectable, collapsed) Secondary Actions: Expand
+						161 cell
+							162 Group
+							163 text field (settable) Value: MaestroAppTests, ID: title
+							164 disclosure triangle 0
+					165 row (selectable, collapsed) Secondary Actions: Expand
+						166 cell
+							167 text Value: Source Control Status: M , ID: sourceControlFileStatus
+							168 Group
+							169 text field (settable) Value: MaestroCoreTests, ID: title
+							170 disclosure triangle 0
+					171 row (selectable, collapsed) Secondary Actions: Expand
+						172 cell
+							173 Group
+							174 text field (settable) Value: Frameworks, ID: title
+							175 disclosure triangle 0
+				176 scroll bar (settable, float) 0
+					177 value indicator (settable, float) 0
+					178 increment arrow button
+					179 decrement arrow button
+					180 increment page button
+					181 decrement page button
+			182 search text field Description: Project navigator filter, Help: Show files with matching name, Placeholder: Filter
+				183 checkbox Recent files, Help: Show only recent files, Value: 0
+				184 checkbox Files with source-control status, Help: Show only files with source-control status, Value: 0
+				185 button Icon View Drop Down
+					186 image
+			187 menu button filterControlBarActionMenuButton
+			188 tab group two-level chooser segmented control
+				189 tab Description: Project, Help: Show the Project navigator, Value: 1
+				190 tab Description: Source Control, Help: Show the Source Control navigator, Value: 0
+				191 tab Description: Bookmarks, Help: Show the Bookmark navigator, Value: 0
+				192 tab Description: Find, Help: Show the Find navigator, Value: 0
+				193 tab Description: Issues, Help: Show the Issue navigator, Value: 0
+				194 tab Description: Tests, Help: Show the Test navigator, Value: 0
+				195 tab Description: Debug, Help: Show the Debug Navigator, Value: 0
+				196 tab Description: Breakpoints, Help: Show the Breakpoints Navigator, Value: 0
+				197 tab Description: Reports, Help: Show the Report navigator, Value: 0
+		198 splitter (disabled, settable, float) 290
+		199 container editor area
+			200 split group
+				201 container CodexMaestro.xcodeproj
+					202 container Description: CodexMaestro.xcodeproj, ID: editor context
+						203 split group
+							204 split group project editor split view
+								205 scroll area Project and Target list scroll area
+									206 outline Project and Target list outline view
+										207 row (selectable) PROJECT
+										208 row (selectable)
+											209 text field (settable) CodexMaestro
+										210 row (selectable) TARGETS
+										211 row (selectable)
+											212 text field (settable) Description: MaestroCore Target, Value: MaestroCore
+										213 row (selected)
+											214 text field (settable) Description: CodexMaestro Target, Value: CodexMaestro
+										215 row (selectable)
+											216 text field (settable) Description: MaestroProbe Target, Value: MaestroProbe
+										217 row (selectable)
+											218 text field (settable) Description: MaestroCoreTests Target, Value: MaestroCoreTests
+										219 row (selectable)
+											220 text field (settable) Description: MaestroAppTests Target, Value: MaestroAppTests
+								221 container
+									222 button Add target
+									223 button Delete the selected targets
+									224 search text field (settable) Description: Projects and targets source list filter field, Help: Show projects and targets with matching name, Placeholder: Filter, ID: filter
+										225 button toggle filter, Description: filter, ID: search field menu
+								226 splitter (disabled, settable, float) 163
+								227 menu button Description: Add build setting button, Help: Add a new conditional or user-defined build setting
+								228 container Build settings scope
+									229 container
+										230 button Basic
+										231 button Customized
+										232 button (selected) All
+								233 container Build settings display mode
+									234 container
+										235 button (selected) Combined
+										236 button Levels
+								237 container Build settings name display mode
+									238 container
+										239 button Names
+										240 button (selected) Titles
+								241 container Build settings value display mode
+									242 container
+										243 button Definitions
+										244 button (selected) Values
+								245 search text field (settable) Description: Build settings editor filter field, Help: Show build settings with a matching title or value, Value: Swift Language Version, Placeholder: Filter, ID: filter
+									246 button toggle filter, Description: search, ID: search field menu
+									247 button cancel
+								248 scroll area
+									249 outline Build Settings Outline
+										250 row (selectable, expanded) Secondary Actions: Collapse
+											251 container
+												252 disclosure triangle 1
+												253 text Swift Compiler - Language
+											254 text field (settable)
+										255 row (selectable, collapsed) Secondary Actions: Expand
+											256 text field (settable) Swift Language Version
+											257 pop up button Swift 6
+							258 button Description: project editor navigation bar, Help: Hide project and targets list
+							259 container Project editor tab chooser
+								260 container
+									261 button General
+									262 button Signing & Capabilities
+									263 button Resource Tags
+									264 button Info
+									265 button (selected) Build Settings
+									266 button Build Phases
+									267 button Build Rules
+						268 container Description: Jump Bar, ID: jump bar
+							269 container
+								270 menu button Description: Related Items, Help: Navigate to Related Items, ID: related items
+								271 pop up button CodexMaestro
+								272 button “CodexMaestro.xcodeproj” is currently locked because the file does not exist.
+			273 container debug bar
+				274 button Description: Breakpoints, Help: Deactivate Breakpoints, Value: 1
+				275 button Description: main, Help: Shows a list of available branches
+				276 button Description: show debug area, Help: Show the Debug Area
+		277 splitter (disabled, settable, float) 1109.5
+	278 toolbar
+		279 Navigators/Coding Assistant
+			280 radio button Description: Navigators, Value: 1
+			281 radio button Description: Coding Assistant, Value: 0
+		282 container Run/Stop
+			283 button Description: Run, Help: Build and then run the current scheme
+			284 button (disabled) Description: Stop, Help: Stop the running scheme or application
+		285 container Back/Forward
+			286 button (disabled) Description: Go Back, Help: Show Previous Location in History
+			287 button (disabled) Description: Go Forward, Help: Show Next Location in History
+		288 container Window Title/Activity
+			289 progress indicator 1
+			290 text CodexMaestro
+		291 button Description: New Conversation, Secondary Actions: Move previous, Move next, Remove from toolbar
+		292 list path
+			293 pop up button Description: Active Scheme, Value: CodexMaestro
+			294 pop up button Description: Active Run Destination, Value: My Mac
+		295 button Description: Xcode Cloud Notices, ID: NoticesButton, Secondary Actions: Move previous, Move next, Remove from toolbar
+		296 menu button Description: Add Editor, Secondary Actions: Move previous, Move next, Remove from toolbar
+		297 menu button Description: Editor Options, Secondary Actions: Move previous, Move next, Remove from toolbar
+		298 Editor Mode
+			299 radio button Description: Canvas, Help: Show Canvas, Value: 1
+			300 radio button Description: Assistant, Help: Show Assistant, Value: 0
+			301 radio button Description: Code Review, Help: Show Code Review, Value: 0
+		302 button Description: Show Inspector, Secondary Actions: Move previous, Remove from toolbar
+	303 close button
+	304 full screen button Help: this button also has an action to zoom the window, Secondary Actions: zoom the window
+	305 minimize button
+306 menu bar
+	307 Xcode
+	308 File
+	309 Edit
+	310 View
+	311 Find
+	312 Navigate
+	313 Editor
+	314 Product
+	315 Integrate
+	316 Window
+	317 Help
+
+The focused UI element is 245 search text field (settable) Description: Build settings editor filter field, Help: Show build settings with a matching title or value, Value: Swift Language Version, Placeholder: Filter, ID: filter

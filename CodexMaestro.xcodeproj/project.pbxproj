@@ -1,0 +1,1072 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		002CC2E754ADEE5900080D6A /* CoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25F29EBB953971FCDEF96783 /* CoreTests.swift */; };
+		05A5D85F58F5903E28DE7A0E /* WorkspaceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDCFEEC50219B5827E1EC229 /* WorkspaceView.swift */; };
+		0E1ABCEBEEBA82922AC3C198 /* ContextTopologyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE80292C54EFEE6FBACA3B8 /* ContextTopologyView.swift */; };
+		166ACA2E46AD729B08E617FC /* ConnectionActionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9027BD8F8B489D7C8197B52 /* ConnectionActionView.swift */; };
+		17A79BE03393DFE60DB75CB3 /* PerformanceFixture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E93C2683C44BA4CB38D4A80 /* PerformanceFixture.swift */; };
+		1DFF3B70BC207CEC927D19BE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63BA4319D936DA19379DE440 /* Assets.xcassets */; };
+		237E1EAC2F07223AC51D5C33 /* ProjectInspectorSelectionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BD09F9F3DCB1C44B23CB8F4 /* ProjectInspectorSelectionTests.swift */; };
+		240E1DCB199216725739F843 /* OverlapActionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0DA1E786D9C38104A39C540 /* OverlapActionView.swift */; };
+		2501024EDD98F0DABE967BFC /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D6EF1AF5DB395B22A52249A /* libsqlite3.tbd */; };
+		281659C03BF910F23A443900 /* ContextInspectionStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63FE6B857DCE8757A8718747 /* ContextInspectionStore.swift */; };
+		2BABBEDA5376ED899FC17DC8 /* ContextTopologyLoaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7728283D5F1F5032F5129B2B /* ContextTopologyLoaderTests.swift */; };
+		2F20D811EEF5F58B5C90D174 /* CodexCatalog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9987CF879ED86925BB90A923 /* CodexCatalog.swift */; };
+		2F966F32F98422A153011A65 /* libMaestroCore.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ECE0608755035F92BC962D93 /* libMaestroCore.a */; };
+		31C594D331FD44F37255811B /* ContextDemoTopology.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA32EE89A73BE8FBD8A1BC5F /* ContextDemoTopology.swift */; };
+		345C318EDA841A0C3BCC95E2 /* ConnectionActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E94161B11081830F0216E138 /* ConnectionActions.swift */; };
+		36C4A48834C55CFF9A8BDFA6 /* NodeLinkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4354EB5634E193A121E43A8A /* NodeLinkTests.swift */; };
+		404AF1FA4008160CDB80A444 /* StalledPeerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C1D40679B484BBE8EA4C3D1 /* StalledPeerTests.swift */; };
+		4506C461A0F0ABB6F5DBB08F /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95A52355AA92A72A7D0C68D7 /* main.swift */; };
+		51225F29E73080631E52D670 /* CodexMaestroApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02AAF0E1260476626899F43C /* CodexMaestroApp.swift */; };
+		53134E5797073FF90C5EA198 /* TopologyLabelPlacementTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B0B81A4DD77E1E20D495A5 /* TopologyLabelPlacementTests.swift */; };
+		55612A2D66B54CEE7E52458D /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE921DA91049AB5950E62F5 /* Theme.swift */; };
+		56B5BFE8C3357FF2D33136DA /* libMaestroCore.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ECE0608755035F92BC962D93 /* libMaestroCore.a */; };
+		5800C1269FA1DBF9EE625516 /* ConnectionActionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 380200E87CB49D4F2932F97C /* ConnectionActionTests.swift */; };
+		59CA9C2593C8991E45B5FE60 /* IntegrationProjectionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBEC36058FB178FDC8A66DE2 /* IntegrationProjectionTests.swift */; };
+		59F91061CCB892724061B543 /* TranscriptSelectionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E7F7CBC47B0C5373146BCE5 /* TranscriptSelectionTests.swift */; };
+		6E4330FAD51E5C61A4F6B3B6 /* ContextTopology.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63B354EC237DEE42B32B7ED /* ContextTopology.swift */; };
+		74CCD769934041D40A3F8423 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D6EF1AF5DB395B22A52249A /* libsqlite3.tbd */; };
+		7B2DAF977D54FB231349174C /* ArchivedContextCatalogTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1211573AD53CB3251F6A47FF /* ArchivedContextCatalogTests.swift */; };
+		832C8EFC9299437D394CFE43 /* NodeConnectionSelectionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009CED4004B08368ACCA7F3D /* NodeConnectionSelectionTests.swift */; };
+		83390532AF9B2622FCFA5627 /* MaestroStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B4AE20ED9F47B13C7F5A14A /* MaestroStore.swift */; };
+		83B6D7CF37844AEF22CF335D /* libMaestroCore.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ECE0608755035F92BC962D93 /* libMaestroCore.a */; };
+		9A6E295DF24A457D0EE9B824 /* SessionInspector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 957A5A5DCCA2D49A30635421 /* SessionInspector.swift */; };
+		A2EDF881528CDD165E869F6B /* ProjectConnections.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54DE79A573E678BFF092B7A1 /* ProjectConnections.swift */; };
+		B437BB03B360E151D77C6861 /* LongRowTopologyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 488A7438AEFE8163689ACD4E /* LongRowTopologyTests.swift */; };
+		B9DEA5C2C2EDB5CB1542B7A4 /* DesktopBridgeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E16D72E0244C626429F207B7 /* DesktopBridgeTests.swift */; };
+		BBE0997FDFAF4FE12CDFF302 /* ConnectionActionPersistenceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A6529A9F0C8DDAFB4665C91 /* ConnectionActionPersistenceTests.swift */; };
+		C6EC65A9BEE0572820A6B66A /* ConnectionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86457920DDB2C00AFB363D5D /* ConnectionTests.swift */; };
+		C910B6772AE759C0A8E2D2B0 /* ContextInspectionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D528E366FCE71B769D95ED2 /* ContextInspectionTests.swift */; };
+		CBC8780B4EA57EFEF439EF73 /* DesktopBridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = C66D07484679F6D9B77572D8 /* DesktopBridge.swift */; };
+		D005951565A36EA5A49FC0B8 /* ConnectionStoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ADEA8EADB27FE232FC59AF2 /* ConnectionStoreTests.swift */; };
+		D8CBE4F33E6B62C5FC480592 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D2AEFBBED18CC036D49506 /* Models.swift */; };
+		E86FCDF5778D313DCC94020A /* PerformanceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A806291D5D57A5899DC1C06 /* PerformanceTests.swift */; };
+		E93BA29175D15F653E8D487B /* ConnectionDragGestureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDC7AE2CB3107568F891E2AE /* ConnectionDragGestureTests.swift */; };
+		E9F1FDF9C2E829A3E5696778 /* TopologyCanvas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A615D5861F378D13FAAFCA /* TopologyCanvas.swift */; };
+		EB59B0963E2FB44B91AF9295 /* StreamRecoveryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6FBDE74765DD14BCB26A40 /* StreamRecoveryTests.swift */; };
+		F1B56D7784AF27E30C781AFC /* ConnectionActionStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BD05A68378DF818F173B67 /* ConnectionActionStore.swift */; };
+		F24FE9AFDC14AC2C8F12015F /* TopologyDesignTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935EEA173C18347002E19E4E /* TopologyDesignTests.swift */; };
+		F2C655946CE75B51ACC95BFE /* libMaestroCore.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ECE0608755035F92BC962D93 /* libMaestroCore.a */; };
+		FDCC0F6A8C8FA8A4E6F913E8 /* ContextTopologyLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DBD4DF1F2C4DD0DF0496FBC /* ContextTopologyLoader.swift */; };
+		FE80A669D018104188267F5F /* MixedTopologyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7283B8DBAE56EB7A56A9A53F /* MixedTopologyTests.swift */; };
+		FF7C7F39628967836CC5CE40 /* ConnectionManagerEndpointTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 679DC61A0468435BE80D8367 /* ConnectionManagerEndpointTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		683FAD211168A0458EAFD70A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 603F257477C40A5CC2BF1946 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 359E4C51C52B70F766207FA9;
+			remoteInfo = CodexMaestro;
+		};
+		73EF4E632939FC9929646AF8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 603F257477C40A5CC2BF1946 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AF4B0112A0786CD8D8652526;
+			remoteInfo = MaestroCore;
+		};
+		7C363816AA744C97898624BE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 603F257477C40A5CC2BF1946 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AF4B0112A0786CD8D8652526;
+			remoteInfo = MaestroCore;
+		};
+		BABB2498AB416DE2F48D10A2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 603F257477C40A5CC2BF1946 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AF4B0112A0786CD8D8652526;
+			remoteInfo = MaestroCore;
+		};
+		D345D674435EF1528A27A616 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 603F257477C40A5CC2BF1946 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AF4B0112A0786CD8D8652526;
+			remoteInfo = MaestroCore;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		009CED4004B08368ACCA7F3D /* NodeConnectionSelectionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NodeConnectionSelectionTests.swift; sourceTree = "<group>"; };
+		02AAF0E1260476626899F43C /* CodexMaestroApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodexMaestroApp.swift; sourceTree = "<group>"; };
+		03D2AEFBBED18CC036D49506 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		04A615D5861F378D13FAAFCA /* TopologyCanvas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopologyCanvas.swift; sourceTree = "<group>"; };
+		05AD30D45B3F2C9C64BC49FE /* DESIGN-TOPOLOGY.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "DESIGN-TOPOLOGY.md"; sourceTree = "<group>"; };
+		0C6B07A61E962176A82FFC48 /* package-app.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = "package-app.sh"; sourceTree = "<group>"; };
+		1211573AD53CB3251F6A47FF /* ArchivedContextCatalogTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArchivedContextCatalogTests.swift; sourceTree = "<group>"; };
+		1BD09F9F3DCB1C44B23CB8F4 /* ProjectInspectorSelectionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectInspectorSelectionTests.swift; sourceTree = "<group>"; };
+		25F29EBB953971FCDEF96783 /* CoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreTests.swift; sourceTree = "<group>"; };
+		2C106DC5F11BC38800841793 /* MaestroCoreTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MaestroCoreTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2CECC6213EAD42B519C150E3 /* ASTRA-REVIEW.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "ASTRA-REVIEW.md"; sourceTree = "<group>"; };
+		2F6A9D17343B62BC84E78139 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		380200E87CB49D4F2932F97C /* ConnectionActionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectionActionTests.swift; sourceTree = "<group>"; };
+		3A806291D5D57A5899DC1C06 /* PerformanceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerformanceTests.swift; sourceTree = "<group>"; };
+		3DBD4DF1F2C4DD0DF0496FBC /* ContextTopologyLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContextTopologyLoader.swift; sourceTree = "<group>"; };
+		3E93C2683C44BA4CB38D4A80 /* PerformanceFixture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerformanceFixture.swift; sourceTree = "<group>"; };
+		40B8D8293B1759123784D9BC /* MIXED-CONNECTIONS.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "MIXED-CONNECTIONS.md"; sourceTree = "<group>"; };
+		4354EB5634E193A121E43A8A /* NodeLinkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NodeLinkTests.swift; sourceTree = "<group>"; };
+		488A7438AEFE8163689ACD4E /* LongRowTopologyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LongRowTopologyTests.swift; sourceTree = "<group>"; };
+		49CC57ACE50C72A37526ED83 /* CONTEXT-OVERLAP-REVIEW.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "CONTEXT-OVERLAP-REVIEW.md"; sourceTree = "<group>"; };
+		4CE80292C54EFEE6FBACA3B8 /* ContextTopologyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContextTopologyView.swift; sourceTree = "<group>"; };
+		54919231CFEE6D43A43E6F16 /* COMMAND-CONNECTIONS-REVIEW.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "COMMAND-CONNECTIONS-REVIEW.md"; sourceTree = "<group>"; };
+		54DE79A573E678BFF092B7A1 /* ProjectConnections.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectConnections.swift; sourceTree = "<group>"; };
+		5820068F6C4B7E9163972C7A /* PERFORMANCE.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = PERFORMANCE.md; sourceTree = "<group>"; };
+		5997309EA35D58A20305EED0 /* Makefile */ = {isa = PBXFileReference; path = Makefile; sourceTree = "<group>"; };
+		5A6529A9F0C8DDAFB4665C91 /* ConnectionActionPersistenceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectionActionPersistenceTests.swift; sourceTree = "<group>"; };
+		5ADEA8EADB27FE232FC59AF2 /* ConnectionStoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectionStoreTests.swift; sourceTree = "<group>"; };
+		5D6EF1AF5DB395B22A52249A /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		634F353C4980D0F91B8B4C57 /* DESIGN-APPLICATION.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "DESIGN-APPLICATION.md"; sourceTree = "<group>"; };
+		636682E4D68A44C338981767 /* generate-icon-assets.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = "generate-icon-assets.sh"; sourceTree = "<group>"; };
+		63BA4319D936DA19379DE440 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		63FE6B857DCE8757A8718747 /* ContextInspectionStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContextInspectionStore.swift; sourceTree = "<group>"; };
+		679DC61A0468435BE80D8367 /* ConnectionManagerEndpointTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectionManagerEndpointTests.swift; sourceTree = "<group>"; };
+		686372B76FCCF65F57A23625 /* module.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
+		6B3023FEC2987EF368D7B7CD /* CONNECTIONS.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = CONNECTIONS.md; sourceTree = "<group>"; };
+		6B4AE20ED9F47B13C7F5A14A /* MaestroStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaestroStore.swift; sourceTree = "<group>"; };
+		6C1D40679B484BBE8EA4C3D1 /* StalledPeerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StalledPeerTests.swift; sourceTree = "<group>"; };
+		70434636A4D8CEA821FB3CC0 /* DESIGN-INSPECTOR.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "DESIGN-INSPECTOR.md"; sourceTree = "<group>"; };
+		7283B8DBAE56EB7A56A9A53F /* MixedTopologyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MixedTopologyTests.swift; sourceTree = "<group>"; };
+		76EC723AA1277904927B8141 /* Codex Maestro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Codex Maestro.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7728283D5F1F5032F5129B2B /* ContextTopologyLoaderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContextTopologyLoaderTests.swift; sourceTree = "<group>"; };
+		7D528E366FCE71B769D95ED2 /* ContextInspectionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContextInspectionTests.swift; sourceTree = "<group>"; };
+		7D9B9D2C8772D1E06F7BAB67 /* ASTRA-MIXED-REVIEW.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "ASTRA-MIXED-REVIEW.md"; sourceTree = "<group>"; };
+		81C25795EF1D954C2F3B9723 /* MaestroProbe */ = {isa = PBXFileReference; includeInIndex = 0; path = MaestroProbe; sourceTree = BUILT_PRODUCTS_DIR; };
+		84BD05A68378DF818F173B67 /* ConnectionActionStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectionActionStore.swift; sourceTree = "<group>"; };
+		86457920DDB2C00AFB363D5D /* ConnectionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectionTests.swift; sourceTree = "<group>"; };
+		8F9053F7F8DFC3895B94879C /* shim.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = shim.h; sourceTree = "<group>"; };
+		935EEA173C18347002E19E4E /* TopologyDesignTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopologyDesignTests.swift; sourceTree = "<group>"; };
+		957A5A5DCCA2D49A30635421 /* SessionInspector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionInspector.swift; sourceTree = "<group>"; };
+		95A52355AA92A72A7D0C68D7 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		9987CF879ED86925BB90A923 /* CodexCatalog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodexCatalog.swift; sourceTree = "<group>"; };
+		9E7F7CBC47B0C5373146BCE5 /* TranscriptSelectionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranscriptSelectionTests.swift; sourceTree = "<group>"; };
+		A67E3D92F21A14E446079D0D /* VALIDATION.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = VALIDATION.md; sourceTree = "<group>"; };
+		B0DA1E786D9C38104A39C540 /* OverlapActionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverlapActionView.swift; sourceTree = "<group>"; };
+		B0EAA2AD43D427042CC4908C /* MaestroAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MaestroAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B48A5423085FDBF360799377 /* ASTRA-FEATURE-PLAN.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "ASTRA-FEATURE-PLAN.md"; sourceTree = "<group>"; };
+		B63B354EC237DEE42B32B7ED /* ContextTopology.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContextTopology.swift; sourceTree = "<group>"; };
+		B6B0B81A4DD77E1E20D495A5 /* TopologyLabelPlacementTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopologyLabelPlacementTests.swift; sourceTree = "<group>"; };
+		B9ACB0015026721C4AA2C11B /* COMMAND-CONNECTIONS.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "COMMAND-CONNECTIONS.md"; sourceTree = "<group>"; };
+		BBEC36058FB178FDC8A66DE2 /* IntegrationProjectionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntegrationProjectionTests.swift; sourceTree = "<group>"; };
+		BC39951D67198D33F3D95D68 /* ASTRA-DESIGN-REVIEW.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "ASTRA-DESIGN-REVIEW.md"; sourceTree = "<group>"; };
+		BDCFEEC50219B5827E1EC229 /* WorkspaceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkspaceView.swift; sourceTree = "<group>"; };
+		C0846F08AC03E38ABCCD89F2 /* project.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = project.yml; sourceTree = "<group>"; };
+		C5BFB7C2C098380A25871353 /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
+		C66D07484679F6D9B77572D8 /* DesktopBridge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesktopBridge.swift; sourceTree = "<group>"; };
+		C9027BD8F8B489D7C8197B52 /* ConnectionActionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectionActionView.swift; sourceTree = "<group>"; };
+		C9BDC764FB432959836E15BA /* make-icon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "make-icon.swift"; sourceTree = "<group>"; };
+		CE6FBDE74765DD14BCB26A40 /* StreamRecoveryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreamRecoveryTests.swift; sourceTree = "<group>"; };
+		CF0770E326D214D01DCD6ADE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		CFE921DA91049AB5950E62F5 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		DA32EE89A73BE8FBD8A1BC5F /* ContextDemoTopology.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContextDemoTopology.swift; sourceTree = "<group>"; };
+		E12D33C03E7814260BA8112D /* CONTEXT-TOPOLOGY.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "CONTEXT-TOPOLOGY.md"; sourceTree = "<group>"; };
+		E16D72E0244C626429F207B7 /* DesktopBridgeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesktopBridgeTests.swift; sourceTree = "<group>"; };
+		E94161B11081830F0216E138 /* ConnectionActions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectionActions.swift; sourceTree = "<group>"; };
+		ECE0608755035F92BC962D93 /* libMaestroCore.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libMaestroCore.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		F0B534D7D194ED0525AFBAB4 /* INTEGRATION.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = INTEGRATION.md; sourceTree = "<group>"; };
+		FDC7AE2CB3107568F891E2AE /* ConnectionDragGestureTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectionDragGestureTests.swift; sourceTree = "<group>"; };
+		FF92E79EE3B76BC958B33AB8 /* CLEANUP.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = CLEANUP.md; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		23E6E8F1A858250238B6D773 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83B6D7CF37844AEF22CF335D /* libMaestroCore.a in Frameworks */,
+				2501024EDD98F0DABE967BFC /* libsqlite3.tbd in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		78D97DFF1C6485AC03B68184 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F966F32F98422A153011A65 /* libMaestroCore.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8B191C19572A77F8CC127AE3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				56B5BFE8C3357FF2D33136DA /* libMaestroCore.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B46AB07B2DD88FA4F790F1DE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				74CCD769934041D40A3F8423 /* libsqlite3.tbd in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B73D1A00AEC2F68F09CF1BB6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F2C655946CE75B51ACC95BFE /* libMaestroCore.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		103CD6007F0BB7057596895A /* CodexMaestro */ = {
+			isa = PBXGroup;
+			children = (
+				02AAF0E1260476626899F43C /* CodexMaestroApp.swift */,
+				84BD05A68378DF818F173B67 /* ConnectionActionStore.swift */,
+				C9027BD8F8B489D7C8197B52 /* ConnectionActionView.swift */,
+				DA32EE89A73BE8FBD8A1BC5F /* ContextDemoTopology.swift */,
+				63FE6B857DCE8757A8718747 /* ContextInspectionStore.swift */,
+				4CE80292C54EFEE6FBACA3B8 /* ContextTopologyView.swift */,
+				6B4AE20ED9F47B13C7F5A14A /* MaestroStore.swift */,
+				B0DA1E786D9C38104A39C540 /* OverlapActionView.swift */,
+				3E93C2683C44BA4CB38D4A80 /* PerformanceFixture.swift */,
+				54DE79A573E678BFF092B7A1 /* ProjectConnections.swift */,
+				957A5A5DCCA2D49A30635421 /* SessionInspector.swift */,
+				CFE921DA91049AB5950E62F5 /* Theme.swift */,
+				04A615D5861F378D13FAAFCA /* TopologyCanvas.swift */,
+				BDCFEEC50219B5827E1EC229 /* WorkspaceView.swift */,
+			);
+			path = CodexMaestro;
+			sourceTree = "<group>";
+		};
+		123F0E513C276C80B6699A02 /* MaestroCore */ = {
+			isa = PBXGroup;
+			children = (
+				9987CF879ED86925BB90A923 /* CodexCatalog.swift */,
+				E94161B11081830F0216E138 /* ConnectionActions.swift */,
+				B63B354EC237DEE42B32B7ED /* ContextTopology.swift */,
+				3DBD4DF1F2C4DD0DF0496FBC /* ContextTopologyLoader.swift */,
+				C66D07484679F6D9B77572D8 /* DesktopBridge.swift */,
+				03D2AEFBBED18CC036D49506 /* Models.swift */,
+			);
+			path = MaestroCore;
+			sourceTree = "<group>";
+		};
+		1E8E2C67D01E34A1A714C17C /* MaestroProbe */ = {
+			isa = PBXGroup;
+			children = (
+				95A52355AA92A72A7D0C68D7 /* main.swift */,
+			);
+			path = MaestroProbe;
+			sourceTree = "<group>";
+		};
+		23E9B311B1029B9D031D4065 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				103CD6007F0BB7057596895A /* CodexMaestro */,
+				A7FAA704404FB803EB0685A9 /* CSQLite */,
+				123F0E513C276C80B6699A02 /* MaestroCore */,
+				1E8E2C67D01E34A1A714C17C /* MaestroProbe */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		4D8D9A6BD79DB36C2FBD30D3 /* docs */ = {
+			isa = PBXGroup;
+			children = (
+				BC39951D67198D33F3D95D68 /* ASTRA-DESIGN-REVIEW.md */,
+				B48A5423085FDBF360799377 /* ASTRA-FEATURE-PLAN.md */,
+				7D9B9D2C8772D1E06F7BAB67 /* ASTRA-MIXED-REVIEW.md */,
+				2CECC6213EAD42B519C150E3 /* ASTRA-REVIEW.md */,
+				FF92E79EE3B76BC958B33AB8 /* CLEANUP.md */,
+				54919231CFEE6D43A43E6F16 /* COMMAND-CONNECTIONS-REVIEW.md */,
+				B9ACB0015026721C4AA2C11B /* COMMAND-CONNECTIONS.md */,
+				6B3023FEC2987EF368D7B7CD /* CONNECTIONS.md */,
+				49CC57ACE50C72A37526ED83 /* CONTEXT-OVERLAP-REVIEW.md */,
+				E12D33C03E7814260BA8112D /* CONTEXT-TOPOLOGY.md */,
+				634F353C4980D0F91B8B4C57 /* DESIGN-APPLICATION.md */,
+				70434636A4D8CEA821FB3CC0 /* DESIGN-INSPECTOR.md */,
+				05AD30D45B3F2C9C64BC49FE /* DESIGN-TOPOLOGY.md */,
+				F0B534D7D194ED0525AFBAB4 /* INTEGRATION.md */,
+				40B8D8293B1759123784D9BC /* MIXED-CONNECTIONS.md */,
+				5820068F6C4B7E9163972C7A /* PERFORMANCE.md */,
+				A67E3D92F21A14E446079D0D /* VALIDATION.md */,
+			);
+			path = docs;
+			sourceTree = "<group>";
+		};
+		52162FAED22780288C3C9EFF = {
+			isa = PBXGroup;
+			children = (
+				5997309EA35D58A20305EED0 /* Makefile */,
+				C5BFB7C2C098380A25871353 /* Package.swift */,
+				C0846F08AC03E38ABCCD89F2 /* project.yml */,
+				2F6A9D17343B62BC84E78139 /* README.md */,
+				4D8D9A6BD79DB36C2FBD30D3 /* docs */,
+				EAA67957B1217052F82C1183 /* Resources */,
+				95F068D19492F6746F206E76 /* scripts */,
+				23E9B311B1029B9D031D4065 /* Sources */,
+				580EF07905559FDD1F27433F /* Tests */,
+				D74EFDADECB1B60ADF51AC7F /* Frameworks */,
+				BE59188531CF7DF4E6205583 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		580EF07905559FDD1F27433F /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				C6CC2D121ED3CC0C67DD51C5 /* MaestroAppTests */,
+				DECC1BB5545758FD378B1966 /* MaestroCoreTests */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		95F068D19492F6746F206E76 /* scripts */ = {
+			isa = PBXGroup;
+			children = (
+				636682E4D68A44C338981767 /* generate-icon-assets.sh */,
+				C9BDC764FB432959836E15BA /* make-icon.swift */,
+				0C6B07A61E962176A82FFC48 /* package-app.sh */,
+			);
+			path = scripts;
+			sourceTree = "<group>";
+		};
+		A7FAA704404FB803EB0685A9 /* CSQLite */ = {
+			isa = PBXGroup;
+			children = (
+				686372B76FCCF65F57A23625 /* module.modulemap */,
+				8F9053F7F8DFC3895B94879C /* shim.h */,
+			);
+			path = CSQLite;
+			sourceTree = "<group>";
+		};
+		BE59188531CF7DF4E6205583 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				76EC723AA1277904927B8141 /* Codex Maestro.app */,
+				ECE0608755035F92BC962D93 /* libMaestroCore.a */,
+				B0EAA2AD43D427042CC4908C /* MaestroAppTests.xctest */,
+				2C106DC5F11BC38800841793 /* MaestroCoreTests.xctest */,
+				81C25795EF1D954C2F3B9723 /* MaestroProbe */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C6CC2D121ED3CC0C67DD51C5 /* MaestroAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				380200E87CB49D4F2932F97C /* ConnectionActionTests.swift */,
+				FDC7AE2CB3107568F891E2AE /* ConnectionDragGestureTests.swift */,
+				679DC61A0468435BE80D8367 /* ConnectionManagerEndpointTests.swift */,
+				5ADEA8EADB27FE232FC59AF2 /* ConnectionStoreTests.swift */,
+				7D528E366FCE71B769D95ED2 /* ContextInspectionTests.swift */,
+				488A7438AEFE8163689ACD4E /* LongRowTopologyTests.swift */,
+				7283B8DBAE56EB7A56A9A53F /* MixedTopologyTests.swift */,
+				009CED4004B08368ACCA7F3D /* NodeConnectionSelectionTests.swift */,
+				3A806291D5D57A5899DC1C06 /* PerformanceTests.swift */,
+				1BD09F9F3DCB1C44B23CB8F4 /* ProjectInspectorSelectionTests.swift */,
+				935EEA173C18347002E19E4E /* TopologyDesignTests.swift */,
+				B6B0B81A4DD77E1E20D495A5 /* TopologyLabelPlacementTests.swift */,
+				9E7F7CBC47B0C5373146BCE5 /* TranscriptSelectionTests.swift */,
+			);
+			path = MaestroAppTests;
+			sourceTree = "<group>";
+		};
+		D74EFDADECB1B60ADF51AC7F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5D6EF1AF5DB395B22A52249A /* libsqlite3.tbd */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DECC1BB5545758FD378B1966 /* MaestroCoreTests */ = {
+			isa = PBXGroup;
+			children = (
+				1211573AD53CB3251F6A47FF /* ArchivedContextCatalogTests.swift */,
+				5A6529A9F0C8DDAFB4665C91 /* ConnectionActionPersistenceTests.swift */,
+				86457920DDB2C00AFB363D5D /* ConnectionTests.swift */,
+				7728283D5F1F5032F5129B2B /* ContextTopologyLoaderTests.swift */,
+				25F29EBB953971FCDEF96783 /* CoreTests.swift */,
+				E16D72E0244C626429F207B7 /* DesktopBridgeTests.swift */,
+				BBEC36058FB178FDC8A66DE2 /* IntegrationProjectionTests.swift */,
+				4354EB5634E193A121E43A8A /* NodeLinkTests.swift */,
+				6C1D40679B484BBE8EA4C3D1 /* StalledPeerTests.swift */,
+				CE6FBDE74765DD14BCB26A40 /* StreamRecoveryTests.swift */,
+			);
+			path = MaestroCoreTests;
+			sourceTree = "<group>";
+		};
+		EAA67957B1217052F82C1183 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				63BA4319D936DA19379DE440 /* Assets.xcassets */,
+				CF0770E326D214D01DCD6ADE /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		05F13008AD0AB2DD98028E25 /* MaestroCoreTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1AA734D94DA9D3699C572F8C /* Build configuration list for PBXNativeTarget "MaestroCoreTests" */;
+			buildPhases = (
+				3ECCEFAEB72C3BCDB7699774 /* Sources */,
+				23E6E8F1A858250238B6D773 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0689154F81082929B9E6F40A /* PBXTargetDependency */,
+			);
+			name = MaestroCoreTests;
+			packageProductDependencies = (
+			);
+			productName = MaestroCoreTests;
+			productReference = 2C106DC5F11BC38800841793 /* MaestroCoreTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		23768DD2D1F2F014E934F07B /* MaestroAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 24E933B91CAB16D43CFA1B17 /* Build configuration list for PBXNativeTarget "MaestroAppTests" */;
+			buildPhases = (
+				0DC4510A2FDBD4435FC43FBD /* Sources */,
+				78D97DFF1C6485AC03B68184 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				612F0C875EB87F4103CB302D /* PBXTargetDependency */,
+				1C5428993D51F152142C3446 /* PBXTargetDependency */,
+			);
+			name = MaestroAppTests;
+			packageProductDependencies = (
+			);
+			productName = MaestroAppTests;
+			productReference = B0EAA2AD43D427042CC4908C /* MaestroAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		359E4C51C52B70F766207FA9 /* CodexMaestro */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 345C29F01F33D4B5B4DD938F /* Build configuration list for PBXNativeTarget "CodexMaestro" */;
+			buildPhases = (
+				75B83632A55D8026378A0ECC /* Sources */,
+				4AD70F38464172F21DD5E645 /* Resources */,
+				8B191C19572A77F8CC127AE3 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				603ED908DC1130F01C38A506 /* PBXTargetDependency */,
+			);
+			name = CodexMaestro;
+			packageProductDependencies = (
+			);
+			productName = CodexMaestro;
+			productReference = 76EC723AA1277904927B8141 /* Codex Maestro.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AF4B0112A0786CD8D8652526 /* MaestroCore */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B24CB5EAB7F10A707C593018 /* Build configuration list for PBXNativeTarget "MaestroCore" */;
+			buildPhases = (
+				04E3D43C0EA1D0DC3CE4B1AE /* Sources */,
+				B46AB07B2DD88FA4F790F1DE /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MaestroCore;
+			packageProductDependencies = (
+			);
+			productName = MaestroCore;
+			productReference = ECE0608755035F92BC962D93 /* libMaestroCore.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		EC6D8E3CA9FE8778AED84705 /* MaestroProbe */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3ABE53A0A57063CD9551AB03 /* Build configuration list for PBXNativeTarget "MaestroProbe" */;
+			buildPhases = (
+				D75632656C79322A1941B7B8 /* Sources */,
+				B73D1A00AEC2F68F09CF1BB6 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C465AF969745EBA749ECCD8F /* PBXTargetDependency */,
+			);
+			name = MaestroProbe;
+			packageProductDependencies = (
+			);
+			productName = MaestroProbe;
+			productReference = 81C25795EF1D954C2F3B9723 /* MaestroProbe */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		603F257477C40A5CC2BF1946 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 2700;
+				TargetAttributes = {
+					05F13008AD0AB2DD98028E25 = {
+						ProvisioningStyle = Manual;
+					};
+					23768DD2D1F2F014E934F07B = {
+						ProvisioningStyle = Manual;
+					};
+					359E4C51C52B70F766207FA9 = {
+						ProvisioningStyle = Manual;
+					};
+					AF4B0112A0786CD8D8652526 = {
+						ProvisioningStyle = Manual;
+					};
+					EC6D8E3CA9FE8778AED84705 = {
+						ProvisioningStyle = Manual;
+					};
+				};
+			};
+			buildConfigurationList = 1D162A3AF5F849008A681D0D /* Build configuration list for PBXProject "CodexMaestro" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 52162FAED22780288C3C9EFF;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = BE59188531CF7DF4E6205583 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AF4B0112A0786CD8D8652526 /* MaestroCore */,
+				359E4C51C52B70F766207FA9 /* CodexMaestro */,
+				EC6D8E3CA9FE8778AED84705 /* MaestroProbe */,
+				05F13008AD0AB2DD98028E25 /* MaestroCoreTests */,
+				23768DD2D1F2F014E934F07B /* MaestroAppTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4AD70F38464172F21DD5E645 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1DFF3B70BC207CEC927D19BE /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		04E3D43C0EA1D0DC3CE4B1AE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F20D811EEF5F58B5C90D174 /* CodexCatalog.swift in Sources */,
+				345C318EDA841A0C3BCC95E2 /* ConnectionActions.swift in Sources */,
+				6E4330FAD51E5C61A4F6B3B6 /* ContextTopology.swift in Sources */,
+				FDCC0F6A8C8FA8A4E6F913E8 /* ContextTopologyLoader.swift in Sources */,
+				CBC8780B4EA57EFEF439EF73 /* DesktopBridge.swift in Sources */,
+				D8CBE4F33E6B62C5FC480592 /* Models.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0DC4510A2FDBD4435FC43FBD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5800C1269FA1DBF9EE625516 /* ConnectionActionTests.swift in Sources */,
+				E93BA29175D15F653E8D487B /* ConnectionDragGestureTests.swift in Sources */,
+				FF7C7F39628967836CC5CE40 /* ConnectionManagerEndpointTests.swift in Sources */,
+				D005951565A36EA5A49FC0B8 /* ConnectionStoreTests.swift in Sources */,
+				C910B6772AE759C0A8E2D2B0 /* ContextInspectionTests.swift in Sources */,
+				B437BB03B360E151D77C6861 /* LongRowTopologyTests.swift in Sources */,
+				FE80A669D018104188267F5F /* MixedTopologyTests.swift in Sources */,
+				832C8EFC9299437D394CFE43 /* NodeConnectionSelectionTests.swift in Sources */,
+				E86FCDF5778D313DCC94020A /* PerformanceTests.swift in Sources */,
+				237E1EAC2F07223AC51D5C33 /* ProjectInspectorSelectionTests.swift in Sources */,
+				F24FE9AFDC14AC2C8F12015F /* TopologyDesignTests.swift in Sources */,
+				53134E5797073FF90C5EA198 /* TopologyLabelPlacementTests.swift in Sources */,
+				59F91061CCB892724061B543 /* TranscriptSelectionTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3ECCEFAEB72C3BCDB7699774 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7B2DAF977D54FB231349174C /* ArchivedContextCatalogTests.swift in Sources */,
+				BBE0997FDFAF4FE12CDFF302 /* ConnectionActionPersistenceTests.swift in Sources */,
+				C6EC65A9BEE0572820A6B66A /* ConnectionTests.swift in Sources */,
+				2BABBEDA5376ED899FC17DC8 /* ContextTopologyLoaderTests.swift in Sources */,
+				002CC2E754ADEE5900080D6A /* CoreTests.swift in Sources */,
+				B9DEA5C2C2EDB5CB1542B7A4 /* DesktopBridgeTests.swift in Sources */,
+				59CA9C2593C8991E45B5FE60 /* IntegrationProjectionTests.swift in Sources */,
+				36C4A48834C55CFF9A8BDFA6 /* NodeLinkTests.swift in Sources */,
+				404AF1FA4008160CDB80A444 /* StalledPeerTests.swift in Sources */,
+				EB59B0963E2FB44B91AF9295 /* StreamRecoveryTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		75B83632A55D8026378A0ECC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				51225F29E73080631E52D670 /* CodexMaestroApp.swift in Sources */,
+				F1B56D7784AF27E30C781AFC /* ConnectionActionStore.swift in Sources */,
+				166ACA2E46AD729B08E617FC /* ConnectionActionView.swift in Sources */,
+				31C594D331FD44F37255811B /* ContextDemoTopology.swift in Sources */,
+				281659C03BF910F23A443900 /* ContextInspectionStore.swift in Sources */,
+				0E1ABCEBEEBA82922AC3C198 /* ContextTopologyView.swift in Sources */,
+				83390532AF9B2622FCFA5627 /* MaestroStore.swift in Sources */,
+				240E1DCB199216725739F843 /* OverlapActionView.swift in Sources */,
+				17A79BE03393DFE60DB75CB3 /* PerformanceFixture.swift in Sources */,
+				A2EDF881528CDD165E869F6B /* ProjectConnections.swift in Sources */,
+				9A6E295DF24A457D0EE9B824 /* SessionInspector.swift in Sources */,
+				55612A2D66B54CEE7E52458D /* Theme.swift in Sources */,
+				E9F1FDF9C2E829A3E5696778 /* TopologyCanvas.swift in Sources */,
+				05A5D85F58F5903E28DE7A0E /* WorkspaceView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D75632656C79322A1941B7B8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4506C461A0F0ABB6F5DBB08F /* main.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0689154F81082929B9E6F40A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AF4B0112A0786CD8D8652526 /* MaestroCore */;
+			targetProxy = BABB2498AB416DE2F48D10A2 /* PBXContainerItemProxy */;
+		};
+		1C5428993D51F152142C3446 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AF4B0112A0786CD8D8652526 /* MaestroCore */;
+			targetProxy = D345D674435EF1528A27A616 /* PBXContainerItemProxy */;
+		};
+		603ED908DC1130F01C38A506 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AF4B0112A0786CD8D8652526 /* MaestroCore */;
+			targetProxy = 73EF4E632939FC9929646AF8 /* PBXContainerItemProxy */;
+		};
+		612F0C875EB87F4103CB302D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 359E4C51C52B70F766207FA9 /* CodexMaestro */;
+			targetProxy = 683FAD211168A0458EAFD70A /* PBXContainerItemProxy */;
+		};
+		C465AF969745EBA749ECCD8F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AF4B0112A0786CD8D8652526 /* MaestroCore */;
+			targetProxy = 7C363816AA744C97898624BE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		03563EDF795967F9AB3CDB7B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Manual;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 26.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_INCLUDE_PATHS = "$(inherited) $(SRCROOT)/Sources/CSQLite";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 6.0;
+			};
+			name = Debug;
+		};
+		15E5608CE12A5DC1C89B8470 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.oozoofrog.MaestroAppTests;
+				SDKROOT = macosx;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Codex Maestro.app/Contents/MacOS/CodexMaestro";
+			};
+			name = Release;
+		};
+		3EF13738005F24E265C2E49F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				ENABLE_APP_SANDBOX = NO;
+				EXECUTABLE_NAME = CodexMaestro;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Resources/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.oozoofrog.CodexMaestro;
+				PRODUCT_MODULE_NAME = CodexMaestro;
+				PRODUCT_NAME = "Codex Maestro";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		5BB8C048A81CE392087415FB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.oozoofrog.MaestroCore;
+				PRODUCT_MODULE_NAME = MaestroCore;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_INSTALL_OBJC_HEADER = NO;
+			};
+			name = Release;
+		};
+		684A5C6AA8B5F9B12E5189E1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+				);
+				OTHER_SWIFT_FLAGS = "$(inherited) -parse-as-library";
+				PRODUCT_BUNDLE_IDENTIFIER = com.oozoofrog.MaestroProbe;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		6D6B547BB85E14DBAFCAFDC3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.oozoofrog.MaestroCore;
+				PRODUCT_MODULE_NAME = MaestroCore;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_INSTALL_OBJC_HEADER = NO;
+			};
+			name = Debug;
+		};
+		8F544B70DF6B9FC3DF03EC74 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.oozoofrog.MaestroAppTests;
+				SDKROOT = macosx;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Codex Maestro.app/Contents/MacOS/CodexMaestro";
+			};
+			name = Debug;
+		};
+		AB57C720E4C19FA119AF223C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Manual;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 26.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_INCLUDE_PATHS = "$(inherited) $(SRCROOT)/Sources/CSQLite";
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 6.0;
+			};
+			name = Release;
+		};
+		ABD742585A47D30374708B6C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				ENABLE_APP_SANDBOX = NO;
+				EXECUTABLE_NAME = CodexMaestro;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Resources/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.oozoofrog.CodexMaestro;
+				PRODUCT_MODULE_NAME = CodexMaestro;
+				PRODUCT_NAME = "Codex Maestro";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		B67E8E19B004DD8712EFBB3F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.oozoofrog.MaestroCoreTests;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		B9DAF29065168B117546D748 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+				);
+				OTHER_SWIFT_FLAGS = "$(inherited) -parse-as-library";
+				PRODUCT_BUNDLE_IDENTIFIER = com.oozoofrog.MaestroProbe;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		F80FD4CB31D39E4628ABAAAF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.oozoofrog.MaestroCoreTests;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1AA734D94DA9D3699C572F8C /* Build configuration list for PBXNativeTarget "MaestroCoreTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B67E8E19B004DD8712EFBB3F /* Debug */,
+				F80FD4CB31D39E4628ABAAAF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		1D162A3AF5F849008A681D0D /* Build configuration list for PBXProject "CodexMaestro" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				03563EDF795967F9AB3CDB7B /* Debug */,
+				AB57C720E4C19FA119AF223C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		24E933B91CAB16D43CFA1B17 /* Build configuration list for PBXNativeTarget "MaestroAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8F544B70DF6B9FC3DF03EC74 /* Debug */,
+				15E5608CE12A5DC1C89B8470 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		345C29F01F33D4B5B4DD938F /* Build configuration list for PBXNativeTarget "CodexMaestro" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ABD742585A47D30374708B6C /* Debug */,
+				3EF13738005F24E265C2E49F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		3ABE53A0A57063CD9551AB03 /* Build configuration list for PBXNativeTarget "MaestroProbe" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				684A5C6AA8B5F9B12E5189E1 /* Debug */,
+				B9DAF29065168B117546D748 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		B24CB5EAB7F10A707C593018 /* Build configuration list for PBXNativeTarget "MaestroCore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6D6B547BB85E14DBAFCAFDC3 /* Debug */,
+				5BB8C048A81CE392087415FB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 603F257477C40A5CC2BF1946 /* Project object */;
+}
