@@ -15,21 +15,65 @@ struct ContextOptimizationProposal: Identifiable {
 }
 
 extension MaestroStore {
+    func openInspection(for endpoint: LinkEndpoint) {
+        if endpoint.kind == .session { openSessionWork(for: endpoint.id) }
+        else { openContext(for: endpoint) }
+    }
+
+    func openSessionWork(for sessionID: String) {
+        guard let session = sessions.first(where: { $0.id == sessionID }) else { return }
+        cancelLink(); closeSessionWork()
+        selectedNodeProjectID = nil; selectSessionID(session.id)
+        let inspection = SessionWorkStore(session: session, catalog: sessions, home: catalog.home, connected: connected, demo: demo)
+        workInspection = inspection
+        synchronizeSessionWork(observedSessionID: session.id)
+        inspection.start()
+    }
+
+    func closeSessionWork() {
+        workInspection?.close(); workInspection = nil
+        closeContext()
+    }
+
+    func showSessionRecordMap() {
+        guard let inspection = workInspection else { return }
+        inspection.stopPolling()
+        openContext(for: .session(inspection.session.id))
+    }
+
+    func returnToSessionWork() { closeContext() }
+
+    func synchronizeSessionWork(observedSessionID: String? = nil) {
+        workInspection?.synchronize(catalog: sessions, connected: connected,
+                                    observedAt: observedSessionID.flatMap { liveStateObservedAt[$0] },
+                                    observedSessionID: observedSessionID)
+    }
+
+    private func contextEndpointExists(_ endpoint: LinkEndpoint) -> Bool {
+        endpointExists(endpoint) || (endpoint.kind == .session && workInspection?.session.id == endpoint.id)
+    }
+
     func openContext(for endpoint: LinkEndpoint) {
-        guard endpointExists(endpoint) else { return }
+        guard contextEndpointExists(endpoint) else { return }
+        if let inspection = workInspection {
+            if endpoint == .session(inspection.session.id) { inspection.stopPolling() }
+            else { closeSessionWork() }
+        }
         cancelLink()
         contextTask?.cancel()
         let generation = UUID()
         contextGeneration = generation
         contextScope = endpoint; contextTopology = nil; contextError = nil; contextLoading = true
-        let projects = projects, sessions = sessions, reader = contextReader
+        let projects = projects, reader = contextReader
+        var sessions = sessions
+        for member in workInspection?.knownSessions ?? [] where !sessions.contains(where: { $0.id == member.id }) { sessions.append(member) }
         let links = workspace.allNodeLinks, configurations = workspace.connectionActions
         contextTask = Task { [weak self] in
             do {
                 var graph = try await reader(endpoint, projects, sessions)
                 try Task.checkCancellation()
                 guard let self, self.contextGeneration == generation, self.contextScope == endpoint else { return }
-                guard self.endpointExists(endpoint), graph.scope == endpoint else {
+                guard self.contextEndpointExists(endpoint), graph.scope == endpoint else {
                     self.contextError = "선택한 항목이 변경되었습니다. 작업 흐름에서 다시 선택하세요."
                     self.contextLoading = false
                     return
@@ -69,6 +113,7 @@ extension MaestroStore {
         contextTask?.cancel(); contextTask = nil; contextGeneration = UUID()
         contextScope = nil; contextTopology = nil; contextError = nil; contextLoading = false
         optimizationProposal = nil
+        workInspection?.start()
     }
 
     func requestOptimization(graph: ContextTopology, mode: ContextOptimizationMode, selectedNodeID: String?) {
@@ -97,7 +142,7 @@ extension MaestroStore {
         let previous = workspace
         workspace.drafts[recipientID] = prompt
         guard save() else { workspace = previous; return false }
-        closeContext()
+        closeSessionWork()
         selectedProjectID = nil; selectedNodeProjectID = nil; scope = "all"; search = ""
         selectSessionID(recipientID)
         await loadTranscript(recipientID)

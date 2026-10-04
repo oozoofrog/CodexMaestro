@@ -1,0 +1,42 @@
+{
+  "schema_version": 2,
+  "diagram_type": "workflow",
+  "meta": {"title": "세션 상세 작업 구조 · 제안", "quality_profile": "showcase"},
+  "lanes": [
+    {"id": "request", "label": "요청과 보고"},
+    {"id": "execution", "label": "기록된 실행"},
+    {"id": "delegation", "label": "위임과 검증"}
+  ],
+  "phases": [
+    {"id": "scope", "label": "현재 요청", "fromCol": 0, "toCol": 1},
+    {"id": "activity", "label": "호출과 결과", "fromCol": 2, "toCol": 3},
+    {"id": "evidence", "label": "근거와 완료 판단", "fromCol": 4, "toCol": 5}
+  ],
+  "mainPath": ["request-node", "turn-node", "call-node", "result-node", "proof-node", "check-node", "outcome-node"],
+  "nodes": [
+    {"id": "request-node", "lane": "request", "col": 0, "type": "frontend", "label": "사용자 요청", "sublabel": "원문 · 수정 지시", "width": 156},
+    {"id": "turn-node", "lane": "request", "col": 1, "type": "backend", "label": "현재 turn", "sublabel": "시작 · 중단 · 종료", "width": 156},
+    {"id": "outcome-node", "lane": "request", "col": 5, "type": "frontend", "label": "결과 보고", "sublabel": "확인 범위 · 미해결", "width": 156},
+    {"id": "call-node", "lane": "execution", "col": 2, "type": "messagebus", "label": "도구 실행", "sublabel": "호출 ID · 원문", "width": 156},
+    {"id": "result-node", "lane": "execution", "col": 3, "type": "backend", "label": "도구 결과", "sublabel": "성공 · 실패는 별도", "width": 156},
+    {"id": "proof-node", "lane": "execution", "col": 4, "type": "database", "label": "근거와 산출물", "sublabel": "출처 · 항목 ID", "width": 156},
+    {"id": "child-node", "lane": "delegation", "col": 2, "type": "backend", "label": "하위 세션", "sublabel": "명시한 부모 ID", "width": 156},
+    {"id": "report-node", "lane": "delegation", "col": 3, "type": "messagebus", "label": "하위 세션 보고", "sublabel": "작성 주체 · 수신 기록", "width": 156},
+    {"id": "check-node", "lane": "delegation", "col": 4, "type": "security", "label": "검증 근거 구분", "sublabel": "소스 · 빌드 · UI", "width": 156}
+  ],
+  "edges": [
+    {"id": "request-turn", "from": "request-node", "to": "turn-node", "label": "turn_id", "role": "main"},
+    {"id": "turn-call", "from": "turn-node", "to": "call-node", "label": "소속 turn", "role": "main"},
+    {"id": "call-result", "from": "call-node", "to": "result-node", "label": "call_id", "role": "main"},
+    {"id": "result-proof", "from": "result-node", "to": "proof-node", "label": "명시한 출처", "role": "main"},
+    {"id": "proof-check", "from": "proof-node", "to": "check-node", "label": "확인한 범위", "role": "main"},
+    {"id": "check-outcome", "from": "check-node", "to": "outcome-node", "label": "근거와 한계", "role": "main"},
+    {"id": "turn-child", "from": "turn-node", "to": "child-node", "label": "부모 ID", "role": "branch", "variant": "dashed"},
+    {"id": "child-report", "from": "child-node", "to": "report-node", "label": "기록된 보고", "role": "async", "variant": "dashed"},
+    {"id": "report-check", "from": "report-node", "to": "check-node", "label": "보고 근거", "role": "branch", "variant": "dashed"}
+  ],
+  "cards": [
+    {"dot": "cyan", "title": "기록에서 확인한 관계", "items": ["turn_id · call_id · 부모 세션 ID로 연결", "원시 기록 탐색과 본문 지연 읽기 유지"]},
+    {"dot": "amber", "title": "완료를 판단하는 경계", "items": ["결과 수신과 turn 종료는 목표 달성 증거가 아님", "검증 종류와 미확인 범위를 각각 표시"]}
+  ]
+}

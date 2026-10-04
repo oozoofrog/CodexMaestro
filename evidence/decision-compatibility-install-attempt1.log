@@ -1,0 +1,8 @@
+./scripts/install-app.sh
+Building for production...
+[1 / 3]
+Build complete! (5.93초)
+/Volumes/eyedisk/develop/CodexMaestro/dist/Codex Maestro.app: replacing existing signature
+/Volumes/eyedisk/develop/CodexMaestro/dist/Codex Maestro.app
+설치된 Codex Maestro를 종료한 뒤 다시 설치하세요.
+make: *** [install] Error 1

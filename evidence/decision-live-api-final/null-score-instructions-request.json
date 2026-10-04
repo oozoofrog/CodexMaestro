@@ -1,0 +1,14 @@
+{
+  "model" : "jev-latest",
+  "questions" : {
+    "q" : {
+      "criteria" : [
+        "표시 없음",
+        "합성 자료 표시 있음"
+      ],
+      "instructions" : null,
+      "type" : "score"
+    }
+  },
+  "state" : "검증용 합성 자료"
+}

@@ -1,0 +1,18 @@
+Test Suite 'Selected tests' started at 2026-10-04 21:26:51.726.
+Test Suite 'MaestroCoreTests.xctest' started at 2026-10-04 21:26:51.726.
+Test Suite 'SessionWorkPerformanceTests' started at 2026-10-04 21:26:51.726.
+Test Case '-[MaestroCoreTests.SessionWorkPerformanceTests testHundredMegabyteColdWarmAndAppendReadBoundaries]' started.
+Test Case '-[MaestroCoreTests.SessionWorkPerformanceTests testHundredMegabyteColdWarmAndAppendReadBoundaries]' passed (2.387 seconds).
+Test Suite 'SessionWorkPerformanceTests' passed at 2026-10-04 21:26:54.113.
+	 Executed 1 test, with 0 failures (0 unexpected) in 2.387 (2.387) seconds
+Test Suite 'MaestroCoreTests.xctest' passed at 2026-10-04 21:26:54.113.
+	 Executed 1 test, with 0 failures (0 unexpected) in 2.387 (2.387) seconds
+Test Suite 'Selected tests' passed at 2026-10-04 21:26:54.113.
+	 Executed 1 test, with 0 failures (0 unexpected) in 2.387 (2.388) seconds
+SESSION_CIRCUIT_PERFORMANCE bytes=109119566 records=1025 cold_seconds=2.3214269876480103 warm_seconds=0.0009249448776245117 append_seconds=0.0008809566497802734 warm_parsed=0 warm_suffix_bytes=0 append_suffix_bytes=107 process_peak_rss_bytes=78200832
+Test Suite 'Selected tests' started at 2026-10-04 21:26:54.188.
+Test Suite 'MaestroAppTests.xctest' started at 2026-10-04 21:26:54.189.
+Test Suite 'MaestroAppTests.xctest' passed at 2026-10-04 21:26:54.189.
+	 Executed 0 tests, with 0 failures (0 unexpected) in 0.000 (0.000) seconds
+Test Suite 'Selected tests' passed at 2026-10-04 21:26:54.189.
+	 Executed 0 tests, with 0 failures (0 unexpected) in 0.000 (0.001) seconds

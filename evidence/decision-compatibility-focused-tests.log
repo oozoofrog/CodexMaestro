@@ -1,0 +1,121 @@
+Building for debugging...
+[2 / 28]
+[3 / 29] MaestroCore
+[9 / 35] MaestroCore
+[17 / 36] MaestroCore
+[18 / 36] MaestroCore
+[30 / 46] MaestroCore
+[32 / 45] MaestroProbe-product
+[36 / 50] MaestroCoreTests-product
+[37 / 50] MaestroCoreTests-product
+[43 / 55] CodexMaestro-product
+[44 / 55] MaestroCoreTests-product
+[54 / 63] CodexMaestro-product
+[57 / 62] MaestroAppTests-product
+[59 / 64] MaestroAppTests-product
+[63 / 67] MaestroAppTests-product
+Build complete! (7.44초)
+Test Suite 'Selected tests' started at 2026-10-04 10:39:55.959.
+Test Suite 'MaestroCoreTests.xctest' started at 2026-10-04 10:39:55.961.
+Test Suite 'DecisionContractTests' started at 2026-10-04 10:39:55.961.
+Test Case '-[MaestroCoreTests.DecisionContractTests testAllWireInputShapesAndMixedQuestions]' started.
+Test Case '-[MaestroCoreTests.DecisionContractTests testAllWireInputShapesAndMixedQuestions]' passed (0.003 seconds).
+Test Case '-[MaestroCoreTests.DecisionContractTests testFullTypedResponseAndUnknownFieldsAreRetainedWithoutExecutionExposure]' started.
+Test Case '-[MaestroCoreTests.DecisionContractTests testFullTypedResponseAndUnknownFieldsAreRetainedWithoutExecutionExposure]' passed (0.000 seconds).
+Test Case '-[MaestroCoreTests.DecisionContractTests testJSONRoundTripPreservesUnicodeLargeIntegerAndArrayOrder]' started.
+Test Case '-[MaestroCoreTests.DecisionContractTests testJSONRoundTripPreservesUnicodeLargeIntegerAndArrayOrder]' passed (0.000 seconds).
+Test Case '-[MaestroCoreTests.DecisionContractTests testMissingWrongTypeMalformedDistributionAndNoulRangeFail]' started.
+Test Case '-[MaestroCoreTests.DecisionContractTests testMissingWrongTypeMalformedDistributionAndNoulRangeFail]' passed (0.000 seconds).
+Test Case '-[MaestroCoreTests.DecisionContractTests testModelAliasesNeverProduceReproducibleCacheKeys]' started.
+Test Case '-[MaestroCoreTests.DecisionContractTests testModelAliasesNeverProduceReproducibleCacheKeys]' passed (0.000 seconds).
+Test Case '-[MaestroCoreTests.DecisionContractTests testNoulDefinitionMatchesObservedNullAndEmptyBoundaries]' started.
+Test Case '-[MaestroCoreTests.DecisionContractTests testNoulDefinitionMatchesObservedNullAndEmptyBoundaries]' passed (0.000 seconds).
+Test Case '-[MaestroCoreTests.DecisionContractTests testOnlyServiceRubricLimitsAreEnforced]' started.
+Test Case '-[MaestroCoreTests.DecisionContractTests testOnlyServiceRubricLimitsAreEnforced]' passed (0.000 seconds).
+Test Case '-[MaestroCoreTests.DecisionContractTests testOptionalInstructionsDecodeAndExplicitNullCriteriaRoundTrip]' started.
+Test Case '-[MaestroCoreTests.DecisionContractTests testOptionalInstructionsDecodeAndExplicitNullCriteriaRoundTrip]' passed (0.000 seconds).
+Test Case '-[MaestroCoreTests.DecisionContractTests testScoreRejectsNullAndScalarLevelsWithEscapedQuestionAndIndexPath]' started.
+Test Case '-[MaestroCoreTests.DecisionContractTests testScoreRejectsNullAndScalarLevelsWithEscapedQuestionAndIndexPath]' passed (0.000 seconds).
+Test Case '-[MaestroCoreTests.DecisionContractTests testSingleLevelScoreDecodesButCannotBeNormalized]' started.
+Test Case '-[MaestroCoreTests.DecisionContractTests testSingleLevelScoreDecodesButCannotBeNormalized]' passed (0.000 seconds).
+Test Suite 'DecisionContractTests' passed at 2026-10-04 10:39:55.967.
+	 Executed 10 tests, with 0 failures (0 unexpected) in 0.006 (0.006) seconds
+Test Suite 'DecisionEngineTests' started at 2026-10-04 10:39:55.967.
+Test Case '-[MaestroCoreTests.DecisionEngineTests testBranchingAndIndependentLabelsUseExplicitRules]' started.
+Test Case '-[MaestroCoreTests.DecisionEngineTests testBranchingAndIndependentLabelsUseExplicitRules]' passed (0.001 seconds).
+Test Case '-[MaestroCoreTests.DecisionEngineTests testCancellationAndConfidenceInsufficiencyNeverBecomeSuccess]' started.
+Test Case '-[MaestroCoreTests.DecisionEngineTests testCancellationAndConfidenceInsufficiencyNeverBecomeSuccess]' passed (0.001 seconds).
+Test Case '-[MaestroCoreTests.DecisionEngineTests testChoiceCannotBeConfiguredForGlobalRankingAndNoulHasNoConfidenceGate]' started.
+Test Case '-[MaestroCoreTests.DecisionEngineTests testChoiceCannotBeConfiguredForGlobalRankingAndNoulHasNoConfidenceGate]' passed (0.000 seconds).
+Test Case '-[MaestroCoreTests.DecisionEngineTests testDifferentStatesRunInParallel]' started.
+Test Case '-[MaestroCoreTests.DecisionEngineTests testDifferentStatesRunInParallel]' passed (0.000 seconds).
+Test Case '-[MaestroCoreTests.DecisionEngineTests testEvidenceFingerprintChangeInvalidatesCacheEvenWhenSummaryIsUnchanged]' started.
+Test Case '-[MaestroCoreTests.DecisionEngineTests testEvidenceFingerprintChangeInvalidatesCacheEvenWhenSummaryIsUnchanged]' passed (0.002 seconds).
+Test Case '-[MaestroCoreTests.DecisionEngineTests testHierarchicalLookupBuildsNextCandidateSetFromPreviousChoice]' started.
+Test Case '-[MaestroCoreTests.DecisionEngineTests testHierarchicalLookupBuildsNextCandidateSetFromPreviousChoice]' passed (0.001 seconds).
+Test Case '-[MaestroCoreTests.DecisionEngineTests testHierarchyLoadsSelectedFullMaterialAndBuildsDynamicFollowupCriteria]' started.
+Test Case '-[MaestroCoreTests.DecisionEngineTests testHierarchyLoadsSelectedFullMaterialAndBuildsDynamicFollowupCriteria]' passed (0.004 seconds).
+Test Case '-[MaestroCoreTests.DecisionEngineTests testIndivisibleLimitAndValidationFailureAreDistinct]' started.
+Test Case '-[MaestroCoreTests.DecisionEngineTests testIndivisibleLimitAndValidationFailureAreDistinct]' passed (0.000 seconds).
+Test Case '-[MaestroCoreTests.DecisionEngineTests testMissingMaterialMissingReferenceAndCyclicPlanFailBeforeInference]' started.
+Test Case '-[MaestroCoreTests.DecisionEngineTests testMissingMaterialMissingReferenceAndCyclicPlanFailBeforeInference]' passed (0.000 seconds).
+Test Case '-[MaestroCoreTests.DecisionEngineTests testPinnedVersionCacheRespectsInputRubricVersionAndAlias]' started.
+Test Case '-[MaestroCoreTests.DecisionEngineTests testPinnedVersionCacheRespectsInputRubricVersionAndAlias]' passed (0.002 seconds).
+Test Case '-[MaestroCoreTests.DecisionEngineTests testProfilePersistenceCloneExportAndCorruptionPreservation]' started.
+Test Case '-[MaestroCoreTests.DecisionEngineTests testProfilePersistenceCloneExportAndCorruptionPreservation]' passed (0.002 seconds).
+Test Case '-[MaestroCoreTests.DecisionEngineTests testReadCoverageIsPreservedWhenServiceFailsAfterMaterialLoading]' started.
+Test Case '-[MaestroCoreTests.DecisionEngineTests testReadCoverageIsPreservedWhenServiceFailsAfterMaterialLoading]' passed (0.000 seconds).
+Test Case '-[MaestroCoreTests.DecisionEngineTests testReturnedModelMismatchPreventsPinnedCacheReuse]' started.
+Test Case '-[MaestroCoreTests.DecisionEngineTests testReturnedModelMismatchPreventsPinnedCacheReuse]' passed (0.001 seconds).
+Test Case '-[MaestroCoreTests.DecisionEngineTests testSameStateIndependentStagesBecomeOneMixedBatchWithoutIDCollisions]' started.
+Test Case '-[MaestroCoreTests.DecisionEngineTests testSameStateIndependentStagesBecomeOneMixedBatchWithoutIDCollisions]' passed (0.001 seconds).
+Test Case '-[MaestroCoreTests.DecisionEngineTests testServiceLimitSplitsQuestionsAndPreservesEveryStateByte]' started.
+Test Case '-[MaestroCoreTests.DecisionEngineTests testServiceLimitSplitsQuestionsAndPreservesEveryStateByte]' passed (0.003 seconds).
+Test Case '-[MaestroCoreTests.DecisionEngineTests testWeightedRanksNormalizeScoresAndMandatoryRuleCannotBeCompensated]' started.
+Test Case '-[MaestroCoreTests.DecisionEngineTests testWeightedRanksNormalizeScoresAndMandatoryRuleCannotBeCompensated]' passed (0.000 seconds).
+Test Suite 'DecisionEngineTests' passed at 2026-10-04 10:39:55.987.
+	 Executed 16 tests, with 0 failures (0 unexpected) in 0.019 (0.020) seconds
+Test Suite 'TypeSafeHTTPClientTests' started at 2026-10-04 10:39:55.987.
+Test Case '-[MaestroCoreTests.TypeSafeHTTPClientTests testAuthenticatedRequestAndModelListingUseDocumentedEndpoints]' started.
+Test Case '-[MaestroCoreTests.TypeSafeHTTPClientTests testAuthenticatedRequestAndModelListingUseDocumentedEndpoints]' passed (0.005 seconds).
+Test Case '-[MaestroCoreTests.TypeSafeHTTPClientTests testCancellationInterruptsRetryAfterSleep]' started.
+Test Case '-[MaestroCoreTests.TypeSafeHTTPClientTests testCancellationInterruptsRetryAfterSleep]' passed (0.002 seconds).
+Test Case '-[MaestroCoreTests.TypeSafeHTTPClientTests testMalformedResponseRetainsOriginalBytes]' started.
+Test Case '-[MaestroCoreTests.TypeSafeHTTPClientTests testMalformedResponseRetainsOriginalBytes]' passed (0.000 seconds).
+Test Case '-[MaestroCoreTests.TypeSafeHTTPClientTests testMissingKeyNeverMakesARequestAndUnauthorizedIsDistinct]' started.
+Test Case '-[MaestroCoreTests.TypeSafeHTTPClientTests testMissingKeyNeverMakesARequestAndUnauthorizedIsDistinct]' passed (0.000 seconds).
+Test Case '-[MaestroCoreTests.TypeSafeHTTPClientTests testOnlyExplicitServiceInputLimitTriggersAdjustment]' started.
+Test Case '-[MaestroCoreTests.TypeSafeHTTPClientTests testOnlyExplicitServiceInputLimitTriggersAdjustment]' passed (0.000 seconds).
+Test Case '-[MaestroCoreTests.TypeSafeHTTPClientTests testRateLimitAndOverloadRetryButValidationDoesNot]' started.
+Test Case '-[MaestroCoreTests.TypeSafeHTTPClientTests testRateLimitAndOverloadRetryButValidationDoesNot]' passed (0.001 seconds).
+Test Suite 'TypeSafeHTTPClientTests' passed at 2026-10-04 10:39:55.997.
+	 Executed 6 tests, with 0 failures (0 unexpected) in 0.009 (0.009) seconds
+Test Suite 'MaestroCoreTests.xctest' passed at 2026-10-04 10:39:55.997.
+	 Executed 32 tests, with 0 failures (0 unexpected) in 0.034 (0.035) seconds
+Test Suite 'Selected tests' passed at 2026-10-04 10:39:55.997.
+	 Executed 32 tests, with 0 failures (0 unexpected) in 0.034 (0.037) seconds
+Test Suite 'Selected tests' started at 2026-10-04 10:39:56.075.
+Test Suite 'MaestroAppTests.xctest' started at 2026-10-04 10:39:56.076.
+Test Suite 'DecisionWorkbenchTests' started at 2026-10-04 10:39:56.076.
+Test Case '-[MaestroAppTests.DecisionWorkbenchTests testCancelledInputLoadDoesNotLeaveSpinnerOrPublishIntoAnotherScope]' started.
+Test Case '-[MaestroAppTests.DecisionWorkbenchTests testCancelledInputLoadDoesNotLeaveSpinnerOrPublishIntoAnotherScope]' passed (0.003 seconds).
+Test Case '-[MaestroAppTests.DecisionWorkbenchTests testCorruptProfileFileBlocksWritesAndPreservesOriginalBytes]' started.
+Test Case '-[MaestroAppTests.DecisionWorkbenchTests testCorruptProfileFileBlocksWritesAndPreservesOriginalBytes]' passed (0.002 seconds).
+Test Case '-[MaestroAppTests.DecisionWorkbenchTests testDraftPersistenceFailureRollsBackWorkspaceAndSelection]' started.
+Test Case '-[MaestroAppTests.DecisionWorkbenchTests testDraftPersistenceFailureRollsBackWorkspaceAndSelection]' passed (0.003 seconds).
+Test Case '-[MaestroAppTests.DecisionWorkbenchTests testExplicitDraftPreparationCopiesExactOriginalAndProtectsExistingDraft]' started.
+Test Case '-[MaestroAppTests.DecisionWorkbenchTests testExplicitDraftPreparationCopiesExactOriginalAndProtectsExistingDraft]' passed (0.001 seconds).
+Test Case '-[MaestroAppTests.DecisionWorkbenchTests testManualJSONLoadsLocallyAndMissingKeyNeverStartsExecution]' started.
+Test Case '-[MaestroAppTests.DecisionWorkbenchTests testManualJSONLoadsLocallyAndMissingKeyNeverStartsExecution]' passed (0.001 seconds).
+Test Case '-[MaestroAppTests.DecisionWorkbenchTests testResultStalenessTracksProfileManualJSONAndDraftChanges]' started.
+Test Case '-[MaestroAppTests.DecisionWorkbenchTests testResultStalenessTracksProfileManualJSONAndDraftChanges]' passed (0.001 seconds).
+Test Case '-[MaestroAppTests.DecisionWorkbenchTests testSaveCloneReuseAndDefinitionVersionsArePreservedWithoutCredentials]' started.
+Test Case '-[MaestroAppTests.DecisionWorkbenchTests testSaveCloneReuseAndDefinitionVersionsArePreservedWithoutCredentials]' passed (0.003 seconds).
+Test Case '-[MaestroAppTests.DecisionWorkbenchTests testUnknownHandlerWrongDestinationAndStaleResultCannotPrepareDraft]' started.
+Test Case '-[MaestroAppTests.DecisionWorkbenchTests testUnknownHandlerWrongDestinationAndStaleResultCannotPrepareDraft]' passed (0.001 seconds).
+Test Suite 'DecisionWorkbenchTests' passed at 2026-10-04 10:39:56.090.
+	 Executed 8 tests, with 0 failures (0 unexpected) in 0.014 (0.014) seconds
+Test Suite 'MaestroAppTests.xctest' passed at 2026-10-04 10:39:56.090.
+	 Executed 8 tests, with 0 failures (0 unexpected) in 0.014 (0.014) seconds
+Test Suite 'Selected tests' passed at 2026-10-04 10:39:56.090.
+	 Executed 8 tests, with 0 failures (0 unexpected) in 0.014 (0.015) seconds

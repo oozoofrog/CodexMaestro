@@ -1,0 +1,23 @@
+{
+  "model" : "jev-latest",
+  "questions" : {
+    "q" : {
+      "criteria" : [
+        {
+          "example" : null,
+          "level" : "No marker"
+        },
+        {
+          "examples" : [
+            null,
+            "synthetic"
+          ],
+          "level" : "Explicit marker"
+        }
+      ],
+      "instructions" : "How explicit is the synthetic marker?",
+      "type" : "score"
+    }
+  },
+  "state" : "Synthetic verification record. The record is marked synthetic and permits reading only."
+}

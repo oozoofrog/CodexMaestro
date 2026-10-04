@@ -98,6 +98,9 @@ struct SessionInspector: View {
                 Spacer(minLength: 5)
                 ToolButton(symbol: "arrow.up.right", help: "Codex에서 열기") { store.openInCodex(session) }
             }
+            Button { store.openSessionWork(for: session.id) } label: {
+                Label("작업 회로 보기", systemImage: "point.3.connected.trianglepath.dotted")
+            }.buttonStyle(.bordered).controlSize(.small)
             HStack {
                 SessionStatePill(session: session)
                 Spacer()

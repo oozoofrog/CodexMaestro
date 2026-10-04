@@ -115,6 +115,7 @@ extension MaestroStore {
             workspace.version = max(3, workspace.version)
             workspace.drafts[receiver.id] = text
             guard save() else { workspace = previous; return false }
+            closeSessionWork()
             selectedProjectID = nil; selectedNodeProjectID = nil; scope = "all"; search = ""
             selectSessionID(receiver.id)
             await loadTranscript(receiver.id)

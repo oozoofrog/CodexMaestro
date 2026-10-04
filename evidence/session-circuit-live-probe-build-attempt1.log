@@ -1,0 +1,5 @@
+Initial probe link attempt failed before compilation.
+zsh:1: no matches found: .build/arm64-apple-macosx/debug/MaestroCore.build/*.o
+Exit code: 127 (subsequent missing probe invocation).
+The current SwiftPM backend writes its module/object to .build/out/Products/Debug.
+The corrected build uses that path; see session-circuit-live-probe-build.log.

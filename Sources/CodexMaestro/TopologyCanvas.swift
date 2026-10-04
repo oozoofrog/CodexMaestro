@@ -109,10 +109,10 @@ struct TopologyCanvas: View {
                     }
                     Spacer(minLength: 0)
             }.frame(maxWidth: .infinity, maxHeight: .infinity).contentShape(Rectangle())
-                .gesture(TapGesture(count: 2).onEnded { store.openContext(for: endpoint) }
+                .gesture(TapGesture(count: 2).onEnded { store.openInspection(for: endpoint) }
                     .exclusively(before: TapGesture().onEnded { store.selectEndpoint(endpoint) }))
                 .accessibilityAction { store.selectEndpoint(endpoint) }
-                .accessibilityAction(named: Text("컨텍스트 열기")) { store.openContext(for: endpoint) }
+                .accessibilityAction(named: Text("상세 작업 열기")) { store.openInspection(for: endpoint) }
                 .accessibilityLabel("\(group.project.name) 프로젝트 · \(group.items.count + group.hiddenCount)개 세션")
                 .accessibilityAddTraits(selected ? .isSelected : [])
             Button { store.beginLink(from: endpoint) } label: {
@@ -379,24 +379,28 @@ private struct SessionCard: View {
     var body: some View {
         let selected = store.selectedSessionID == item.id
         let linking = store.linkingEndpoint == .session(item.id)
-        return VStack(alignment: .leading, spacing: 10) {
+        return VStack(alignment: .leading, spacing: 6) {
             Text(item.session.title).font(.system(size: 12, weight: .medium)).lineLimit(2)
-                .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .topLeading)
+                .frame(maxWidth: .infinity, alignment: .leading).frame(height: 30, alignment: .topLeading)
+            Text(item.session.lastMessage?.displayText ?? "대화 미리보기 없음")
+                .font(.system(size: 11)).foregroundStyle(Palette.muted)
+                .lineLimit(2).truncationMode(.tail)
+                .frame(maxWidth: .infinity, alignment: .leading).frame(height: 28, alignment: .topLeading)
             HStack {
                 SessionStatePill(session: item.session)
                 Spacer(minLength: 2)
                 Button { store.beginLink(from: .session(item.id)) } label: { Image(systemName: "link").font(.system(size: 12)).foregroundStyle(linking ? Palette.blue : Palette.muted).frame(width: 24, height: 18) }.buttonStyle(.plain).help("이 세션에서 연결 만들기").accessibilityLabel("\(item.session.title) 연결 만들기")
-            }
+            }.frame(height: 18)
         }.padding(12).frame(width: cardWidth, height: 112)
             .background(selected ? Palette.selection : Palette.panel, in: RoundedRectangle(cornerRadius: 11))
             .overlay(RoundedRectangle(cornerRadius: 11).stroke(selected || linking ? Palette.blue : (related ? Palette.blue.opacity(0.45) : Palette.border), lineWidth: selected || linking ? 1.5 : 1))
             .shadow(color: .black.opacity(selected ? 0.25 : 0.08), radius: 4, y: 2)
             .contentShape(RoundedRectangle(cornerRadius: 11))
-            .gesture(TapGesture(count: 2).onEnded { store.openContext(for: .session(item.id)) }
+            .gesture(TapGesture(count: 2).onEnded { store.openInspection(for: .session(item.id)) }
                 .exclusively(before: TapGesture().onEnded { store.selectEndpoint(.session(item.id)) }))
             .accessibilityElement(children: .contain).accessibilityLabel(item.session.title)
             .accessibilityAction { store.selectEndpoint(.session(item.id)) }
-            .accessibilityAction(named: Text("컨텍스트 열기")) { store.openContext(for: .session(item.id)) }
+            .accessibilityAction(named: Text("상세 작업 열기")) { store.openInspection(for: .session(item.id)) }
             .contextMenu { Button("세션 선택") { store.selectEndpoint(.session(item.id)) }; Button("연결 만들기") { store.beginLink(from: .session(item.id)) }; Button("Codex에서 열기") { store.openInCodex(item.session) } }
     }
  }

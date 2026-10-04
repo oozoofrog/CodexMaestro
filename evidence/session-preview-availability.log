@@ -1,0 +1,5 @@
+Catalog without a preview: 25 sessions
+Existing rollout files without message records: 24
+Absent rollout files: 1
+Record types: {('session_meta', None): 24, ('event_msg', 'task_started'): 16}
+No message content, session IDs, or paths printed

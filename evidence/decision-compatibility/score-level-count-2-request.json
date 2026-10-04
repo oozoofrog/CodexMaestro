@@ -1,0 +1,14 @@
+{
+  "model" : "jev-latest",
+  "questions" : {
+    "q" : {
+      "criteria" : [
+        "Synthetic marker clarity level 0 of 1.",
+        "Synthetic marker clarity level 1 of 1."
+      ],
+      "instructions" : "Evaluate the explicit synthetic marker using the ordered descriptions.",
+      "type" : "score"
+    }
+  },
+  "state" : "Synthetic verification record. The record is marked synthetic and permits reading only."
+}

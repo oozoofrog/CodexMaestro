@@ -11,6 +11,7 @@ private enum WorkspaceRequest: Identifiable {
 struct WorkspaceView: View {
     @Bindable var store: MaestroStore
     @State private var showingConnections = false
+    @State private var showingDecisions = false
     @State private var showsSidebar = true
     @State private var showsInspector = true
     @AppStorage("appearance") private var appearance = "system"
@@ -24,9 +25,10 @@ struct WorkspaceView: View {
                 }
                 Group {
                     if store.contextScope != nil { ContextTopologyView(store: store) }
+                    else if store.workInspection != nil { SessionWorkTopologyView(store: store) }
                     else { center }
                 }.frame(minWidth: 560, maxWidth: .infinity)
-                if showsInspector && store.contextScope == nil {
+                if showsInspector && store.contextScope == nil && store.workInspection == nil {
                     SessionInspector(store: store, onManageConnections: { showingConnections = true })
                         .frame(minWidth: 300, idealWidth: 330, maxWidth: 360)
                 }
@@ -41,6 +43,8 @@ struct WorkspaceView: View {
                     .accessibilityLabel(showsSidebar ? "사이드바 숨기기" : "사이드바 표시")
             }
             ToolbarItemGroup(placement: .primaryAction) {
+                Button { showingDecisions = true } label: { Image(systemName: "slider.horizontal.3") }
+                    .help("사용자 정의 판단").accessibilityLabel("사용자 정의 판단")
                 Button { showingConnections = true } label: { Image(systemName: "link") }
                     .help("연결").accessibilityLabel("연결")
                 Button { Task { await store.refresh() } } label: { Image(systemName: "arrow.clockwise") }
@@ -62,6 +66,7 @@ struct WorkspaceView: View {
                     .help("화면 모드와 작업공간 설정").accessibilityLabel("작업공간 설정")
             }
         }
+        .sheet(isPresented: $showingDecisions) { DecisionWorkbenchView(maestro: store) }
         .sheet(isPresented: $showingConnections, onDismiss: { store.actionSheetTarget = nil }) { ProjectConnectionsView(store: store) }
         .sheet(item: requestBinding) { request in
             switch request {
@@ -211,7 +216,7 @@ struct ProjectSidebar: View {
     }
 
     private func selectProject(_ project: Project) {
-        store.closeContext()
+        store.closeSessionWork()
         store.selectedProjectID = project.id
         store.selectProjectNode(project)
     }
@@ -219,7 +224,7 @@ struct ProjectSidebar: View {
     private func scopeRow(_ title: String, symbol: String, scope: String, count: Int?) -> some View {
         let selected = store.selectedProjectID == nil && store.scope == scope
         return Button {
-            store.closeContext()
+            store.closeSessionWork()
             store.selectedProjectID = nil
             store.selectedNodeProjectID = nil
             store.scope = scope
@@ -249,6 +254,8 @@ struct SessionListView: View {
                             VStack(alignment: .leading, spacing: 4) {
                                 Text(session.title).font(.system(size: 13, weight: .medium)).lineLimit(1)
                                 Text(store.projectName(for: session)).font(.system(size: 11)).foregroundStyle(Palette.muted).lineLimit(1)
+                                Text(session.lastMessage?.displayText ?? "대화 미리보기 없음")
+                                    .font(.system(size: 11)).foregroundStyle(Palette.muted).lineLimit(2).truncationMode(.tail)
                             }
                             Spacer()
                             SessionStatePill(session: session)
@@ -256,17 +263,20 @@ struct SessionListView: View {
                         .contentShape(Rectangle())
                         .gesture(TapGesture(count: 2).exclusively(before: TapGesture(count: 1)).onEnded { value in
                             switch value {
-                            case .first: store.openContext(for: .session(session.id))
+                            case .first: store.openSessionWork(for: session.id)
                             case .second: store.select(session)
                             }
                         })
                         .accessibilityElement(children: .combine).accessibilityAddTraits(.isButton)
                         .accessibilityAction { store.select(session) }
-                        .accessibilityAction(named: "컨텍스트 보기") { store.openContext(for: .session(session.id)) }
+                        .accessibilityAction(named: "작업 회로 보기") { store.openSessionWork(for: session.id) }
+                        .contextMenu {
+                            Button("작업 회로 보기") { store.openSessionWork(for: session.id) }
+                            Button("기록 지도 보기") { store.openContext(for: .session(session.id)) }
+                        }
                     Divider()
                 }
             }.padding(16)
         }
     }
 }
-

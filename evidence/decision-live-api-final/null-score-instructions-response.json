@@ -1,0 +1,1 @@
+{"model":"jev-1.13.0","answers":{"q":{"type":"score","score":0.99,"confidence":0.98,"legend":{"0":"표시 없음","1":"합성 자료 표시 있음"},"probabilities":{"0":0.01,"1":0.99}}},"usage":{"input_tokens":292,"output_tokens":17}}

@@ -1,0 +1,15 @@
+Building for production...
+[Planning deferred tasks]
+[9 / 21] MaestroCore
+[11 / 23]
+[12 / 23] MaestroCore
+[19 / 26] MaestroProbe-product
+[22 / 28] MaestroProbe-product
+[24 / 28] MaestroProbe-product
+[24 / 28] CodexMaestro-product
+[26 / 28] CodexMaestro-product
+[27 / 28] CodexMaestro-product
+[29 / 29] MaestroProbe-product
+Build complete! (21.80초)
+/Volumes/eyedisk/develop/CodexMaestro/dist/Codex Maestro.app: replacing existing signature
+/Volumes/eyedisk/develop/CodexMaestro/dist/Codex Maestro.app

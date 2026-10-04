@@ -1,0 +1,11 @@
+MODELS_PASS count=2
+REQUEST_PASS name=object-mixed answers=3 model=jev-1.13.0 inputTokens=586 outputTokens=62 elapsedMs=194
+REQUEST_PASS name=string answers=1 model=jev-1.13.0 inputTokens=314 outputTokens=21 elapsedMs=184
+REQUEST_PASS name=array answers=1 model=jev-1.13.0 inputTokens=326 outputTokens=21 elapsedMs=181
+REQUEST_REJECT name=null-noul-instructions detail=TypeSafe HTTP 400: {"detail":"Noul question must have criteria or instructions: q"}
+REQUEST_PASS name=null-choice-instructions answers=1 model=jev-1.13.0 inputTokens=305 outputTokens=31 elapsedMs=180
+REQUEST_PASS name=null-score-instructions answers=1 model=jev-1.13.0 inputTokens=292 outputTokens=17 elapsedMs=201
+REQUEST_REJECT name=null-score-criterion detail=TypeSafe HTTP 422: {"detail":[{"type":"string_type","loc":["body","questions","q","score","criteria",0,"str"],"msg":"Input should be a valid string","input":null},{"type":"dict_type","loc":["body","questions","q","score","criteria",0,"dict[any,any]"],"msg":"Input should be a valid dictionary","input":null},{"type":"list_type","loc":["body","questions","q","score","criteria",0,"list[any]"],"msg":"Input should be a valid list","input":null}]}
+REQUEST_PASS name=null-noul-criterion answers=1 model=jev-1.13.0 inputTokens=287 outputTokens=20 elapsedMs=257
+HIERARCHY_PASS stages=2 selectedOriginal=true pinnedCacheReuse=true
+LIVE_VERIFICATION_COMPLETED modelCatalogCalls=1 successfulEvaluations=8 rejectedCompatibilityProbes=2 inputTokens=2879 outputTokens=222 credentialLogged=false

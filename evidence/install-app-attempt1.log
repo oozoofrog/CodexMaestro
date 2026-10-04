@@ -1,0 +1,14 @@
+./scripts/install-app.sh
+Building for production...
+[1 / 3]
+Build complete! (0.81초)
+/Volumes/eyedisk/develop/CodexMaestro/dist/Codex Maestro.app: replacing existing signature
+/Volumes/eyedisk/develop/CodexMaestro/dist/Codex Maestro.app
+<stdin>:27:68: error: type 'FileManager.ItemReplacementOptions' has no member 'usingNewMetadata'
+25 |         }
+26 |         _ = try files.replaceItemAt(destination, withItemAt: staged,
+27 |                                     backupItemName: nil, options: .usingNewMetadata)
+   |                                                                    `- error: type 'FileManager.ItemReplacementOptions' has no member 'usingNewMetadata'
+28 |     } else {
+29 |         try files.moveItem(at: staged, to: destination)
+make: *** [install] Error 1

@@ -1,0 +1,25 @@
+/tmp/CodexMaestroLiveDecisionProbe.swift:8:9: warning: 'SecKeychainSetUserInteractionAllowed' was deprecated in macOS 10.10: SecKeychain is deprecated [#DeprecatedDeclaration]
+ 6 |     static func main() async {
+ 7 |         var credential: String?
+ 8 |         SecKeychainSetUserInteractionAllowed(CommandLine.arguments.contains("--request-access"))
+   |         `- warning: 'SecKeychainSetUserInteractionAllowed' was deprecated in macOS 10.10: SecKeychain is deprecated [#DeprecatedDeclaration]
+ 9 |         let query: [String: Any] = [kSecClass as String: kSecClassGenericPassword,
+10 |                                    kSecAttrService as String: "com.oozoofrog.CodexMaestro.typesafe",
+
+/tmp/CodexMaestroLiveDecisionProbe.swift:14:125: warning: 'kSecUseAuthenticationUIAllow' was deprecated in macOS 11.0: Instead of kSecUseAuthenticationUI, use kSecUseAuthenticationContext and set LAContext.interactionNotAllowed property [#DeprecatedDeclaration]
+12 |                                    kSecReturnData as String: true,
+13 |                                    kSecMatchLimit as String: kSecMatchLimitOne,
+14 |                                    kSecUseAuthenticationUI as String: (CommandLine.arguments.contains("--request-access") ? kSecUseAuthenticationUIAllow : kSecUseAuthenticationUIFail)]
+   |                                                                                                                             `- warning: 'kSecUseAuthenticationUIAllow' was deprecated in macOS 11.0: Instead of kSecUseAuthenticationUI, use kSecUseAuthenticationContext and set LAContext.interactionNotAllowed property [#DeprecatedDeclaration]
+15 |         var item: CFTypeRef?
+16 |         let status = SecItemCopyMatching(query as CFDictionary, &item)
+
+/tmp/CodexMaestroLiveDecisionProbe.swift:14:156: warning: 'kSecUseAuthenticationUIFail' was deprecated in macOS 11.0: Instead of kSecUseAuthenticationUI, use kSecUseAuthenticationContext and set LAContext.interactionNotAllowed property [#DeprecatedDeclaration]
+12 |                                    kSecReturnData as String: true,
+13 |                                    kSecMatchLimit as String: kSecMatchLimitOne,
+14 |                                    kSecUseAuthenticationUI as String: (CommandLine.arguments.contains("--request-access") ? kSecUseAuthenticationUIAllow : kSecUseAuthenticationUIFail)]
+   |                                                                                                                                                            `- warning: 'kSecUseAuthenticationUIFail' was deprecated in macOS 11.0: Instead of kSecUseAuthenticationUI, use kSecUseAuthenticationContext and set LAContext.interactionNotAllowed property [#DeprecatedDeclaration]
+15 |         var item: CFTypeRef?
+16 |         let status = SecItemCopyMatching(query as CFDictionary, &item)
+
+[#DeprecatedDeclaration]: <https://docs.swift.org/compiler/documentation/diagnostics/deprecated-declaration>

@@ -1,0 +1,1 @@
+{"model":"jev-1.13.0","answers":{"choice":{"type":"choice","choice":"A","confidence":0.99,"probabilities":{"A":1.0,"B":0.0}},"noul":{"type":"noul","noul":0.94},"score":{"type":"score","score":0.99,"confidence":0.99,"legend":{"0":"읽기 전용 목표에 부적합","1":{"level":"읽기 전용 목표에 적합"}},"probabilities":{"0":0.01,"1":0.99}}},"usage":{"input_tokens":586,"output_tokens":62}}

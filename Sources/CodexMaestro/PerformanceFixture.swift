@@ -28,6 +28,8 @@ import MaestroCore
                 parentID: index >= projectCount && index < sessionCount - 1 ? "stress-session-\(index - projectCount)" : nil)
             session.isLive = index % 11 == 0
             session.status = index % 13 == 0 ? .running : (session.isLive ? .idle : .unknown)
+            session.lastMessage = SessionMessagePreview(role: index % 2 == 0 ? "assistant" : "user",
+                text: "Session \(index) completed its latest synthetic task. This fixture checks bounded conversation previews while dragging the full catalog.")
             return session
         }
         return Catalog(projects: projects, sessions: sessions)

@@ -1,0 +1,74 @@
+The following is a diff from the previous accessibility tree for Window: "Codex Maestro" with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.
+Removed element IDs: 218
+~				221 text gpt-6.1-sol · ultra 현재 IPC: 실행 중 기록: 실행 중 현재 프롬프트
++				227 button 현재 프롬프트 원문 선택
++				228 pop up button Description: 요청, 작업 요청 선택, Value: 최신 요청 따라가기
++				229 text 1,236개 기록 · 39개 표시
++				230 scroll area Description: 작업 회로 · 39개 노드, Secondary Actions: Scroll Left, Scroll Right, Scroll Up, Scroll Down
++					231 text 입력·컨텍스트 프롬프트·세션 도구·하위 세션 결과·검증
++					232 button Description: 지침·컨텍스트 · 5개, 지침·컨텍스트, 접힌 구성원 5개, 관찰 기록, turn 01a106b0-8c2e-7700-8a0e-6e50131e3474, Help: 공개 저장 기록
++					233 button Description: 사용자 프롬프트, 프롬프트, 종료·반환 수신, 관찰 기록, turn 01a106b0-8c2e-7700-8a0e-6e50131e3474, Help: 구현 해주세요
++					234 button Description: 제목 없는 세션, 하위 세션, 미확인, 관찰 기록, turn 미확인, Help: 과거 하위 세션 · 현재 turn 참여 미확인
++					235 button Description: 기타 기록 · 31개, 기타 기록, 접힌 구성원 31개, 관찰 기록, turn 미확인, Help: 공개 저장 기록
++					236 button Description: 컨텍스트 압축 기록, 컨텍스트 압축, 미확인, 관찰 기록, turn 01a106b0-8c2e-7700-8a0e-6e50131e3474, Help: 압축 기록 존재 · 현재 점유율과 내부 입력은 미확인
++					237 button Description: 사용자 프롬프트, 프롬프트, 종료·반환 수신, 관찰 기록, turn 01a106b0-8c2e-7700-8a0e-6e50131e3474, Help: 구현 해주세요
++					238 button Description: 제목 없는 세션, 하위 세션, 미확인, 관찰 기록, turn 미확인, Help: 과거 하위 세션 · 현재 turn 참여 미확인
++					239 button Description: 기타 기록 · 281개, 기타 기록, 접힌 구성원 281개, 관찰 기록, turn 01a106b0-8c2e-7700-8a0e-6e50131e3474, Help: 기록된 시작 · 현재 실행 여부는 IPC와 별도
++					240 button Description: 컨텍스트 압축 기록, 컨텍스트 압축, 미확인, 관찰 기록, turn 01a106b0-8c2e-7700-8a0e-6e50131e3474, Help: 압축 기록 존재 · 현재 점유율과 내부 입력은 미확인
++					241 button Help: 기록 수명주기: 실행 중 · 현재 실행은 IPC와 별도, Description: 메인 세션 · 01a106b0-8c2e-7700-8a0e-6e50131e3474, 세션, 실행 중, 관찰 기록, turn 01a106b0-8c2e-7700-8a0e-6e50131e3474
++					242 button Description: 제목 없는 세션, 하위 세션, 미확인, 관찰 기록, turn 미확인, Help: 과거 하위 세션 · 현재 turn 참여 미확인
++					243 button Description: 공개 메시지 · 99개, 공개 메시지, 접힌 구성원 99개, 관찰 기록, turn 01a106b0-8c2e-7700-8a0e-6e50131e3474, Help: 세션 상세의 동적 회로를 네이티브 앱에 구현하겠습니다. 현재 변경 상태와 기존 기록·세션 모델을 먼저 확인한 뒤, 작업 연결과 토큰 계측 모델, 회로 화면, 실시간 갱신을 연결하겠습니다. 기존 기록 지도와 판단 입력의 계약도 함께 검증하겠습니다.
++					244 button Description: Codex 관리 도구 만들기, 세션, 실행 중, 관찰 기록, turn 미확인, Help: IPC 관찰 · 실행 중
++					245 button Description: 제목 없는 세션, 하위 세션, 미확인, 관찰 기록, turn 미확인, Help: 과거 하위 세션 · 현재 turn 참여 미확인
++					246 button Description: 토큰 계측 · 313개, 토큰 계측, 접힌 구성원 313개, 관찰 기록, turn 01a106b0-8c2e-7700-8a0e-6e50131e3474, Help: 공개 저장 기록
++					247 button Description: 도구 호출 · 132개, 도구 호출, 접힌 구성원 132개, 관찰 기록, turn 01a106b0-8c2e-7700-8a0e-6e50131e3474, Help: 반환 수신 · 성공 여부 미확인
++					248 button Description: 호출 결과 · 227개, 호출 결과, 접힌 구성원 227개, 관찰 기록, turn 01a106b0-8c2e-7700-8a0e-6e50131e3474, Help: 반환 수신 · 성공 근거 있음
++					249 button Description: 명령 실행 · 80개, 명령 실행, 접힌 구성원 80개, 관찰 기록, turn 01a106b0-8c2e-7700-8a0e-6e50131e3474, Help: 반환 수신 · 성공 근거 있음
++					250 button Description: 산출물 참조 · 29개, 산출물 참조, 접힌 구성원 29개, 관찰 기록, turn 01a106b0-8c2e-7700-8a0e-6e50131e3474, Help: 저장된 변경·diff · 현재 파일·hash 검증은 별도
++					251 button Description: 제목 없는 세션, 하위 세션, 미확인, 관찰 기록, turn 01a106b0-8c2e-7700-8a0e-6e50131e3474, Help: 명시된 공개 보고 · 현재 실행·보고 소비 여부는 별도
++					252 button Help: 반환 수신 · 실패, Description: /bin/zsh -lc rg --files -g '*checkpoint*' -g '*notes*' -g 'AGENTS.md' -g 'README*' -g '*handoff*' -g '*plan*'  · 결과, 호출 결과, 실패, 관찰 기록, turn 01a106b0-8c2e-7700-8a0e-6e50131e3474
++					253 button Description: 제목 없는 세션, 하위 세션, 미확인, 관찰 기록, turn 01a106b0-8c2e-7700-8a0e-6e50131e3474, Help: 명시된 공개 보고 · 현재 실행·보고 소비 여부는 별도
++					254 button Help: 반환 수신 · 실패, Description: /bin/zsh -lc ls -lt evidence/session-circuit* | head -25; tail -15 evidence/session-circuit-xcode-build.log · 결과, 호출 결과, 실패, 관찰 기록, turn 01a106b0-8c2e-7700-8a0e-6e50131e3474
++					255 button Description: 제목 없는 세션, 하위 세션, 미확인, 관찰 기록, turn 01a106b0-8c2e-7700-8a0e-6e50131e3474, Help: 명시된 공개 보고 · 현재 실행·보고 소비 여부는 별도
++					256 button Help: 반환 수신 · 실패, Description: /bin/zsh -lc rg -n 'receivedInTurn|historicalAssociation|belongsToTurn|rollout.*coverage|private.*bodyPreview' · 결과, 호출 결과, 실패, 관찰 기록, turn 01a106b0-8c2e-7700-8a0e-6e50131e3474
++					257 button Description: MCP 실행 · 10개, MCP 실행, 접힌 구성원 10개, 관찰 기록, turn 01a106b0-8c2e-7700-8a0e-6e50131e3474, Help: 반환 수신 · 성공 여부 미확인
++					258 button Help: 반환 수신 · 실패, Description: /bin/zsh -lc swiftc -parse-as-library -swift-version 6 -I .build/arm64-apple-macosx/debug/Modules -I Sources/C · 결과, 호출 결과, 실패, 관찰 기록, turn 01a106b0-8c2e-7700-8a0e-6e50131e3474
++					259 button Help: 명시된 메시지 발신 · 현재 실행·보고 소비 여부는 별도, Description: 하위 세션 01a100d8-585b-74c3-8d63-332de28dd73d, 하위 세션, 미확인, 관찰 기록, turn 01a106b0-8c2e-7700-8a0e-6e50131e3474
++					260 button Description: cua_repl.js · 결과, 호출 결과, 실패, 관찰 기록, turn 01a106b0-8c2e-7700-8a0e-6e50131e3474, Help: 반환 수신 · 실패
++					261 button Help: 반환 수신 · 실패, Description: /bin/zsh -lc rg --files -g '*checkpoint*' -g '*notes*' -g 'AGENTS.md' -g 'README*' -g '*handoff*' -g '*plan*' , 명령 실행, 실패, 관찰 기록, turn 01a106b0-8c2e-7700-8a0e-6e50131e3474
++					262 button Help: 반환 수신 · 실패, Description: /bin/zsh -lc ls -lt evidence/session-circuit* | head -25; tail -15 evidence/session-circuit-xcode-build.log, 명령 실행, 실패, 관찰 기록, turn 01a106b0-8c2e-7700-8a0e-6e50131e3474
++					263 button Description: js, 도구 호출, 결과·입력 대기, 관찰 기록, turn 01a106b0-8c2e-7700-8a0e-6e50131e3474, Help: 호출 확인 · 결과 미수신
++					264 button Description: js, 도구 호출, 결과·입력 대기, 관찰 기록, turn 01a106b0-8c2e-7700-8a0e-6e50131e3474, Help: 호출 확인 · 결과 미수신
++					265 button Help: 반환 수신 · 실패, Description: /bin/zsh -lc rg -n 'receivedInTurn|historicalAssociation|belongsToTurn|rollout.*coverage|private.*bodyPreview', 명령 실행, 실패, 관찰 기록, turn 01a106b0-8c2e-7700-8a0e-6e50131e3474
++					266 button Help: 반환 수신 · 실패, Description: /bin/zsh -lc swiftc -parse-as-library -swift-version 6 -I .build/arm64-apple-macosx/debug/Modules -I Sources/C, 명령 실행, 실패, 관찰 기록, turn 01a106b0-8c2e-7700-8a0e-6e50131e3474
++					267 button Description: js, 도구 호출, 결과·입력 대기, 관찰 기록, turn 01a106b0-8c2e-7700-8a0e-6e50131e3474, Help: 호출 확인 · 결과 미수신
++					268 button Description: cua_repl.js, MCP 실행, 실패, 관찰 기록, turn 01a106b0-8c2e-7700-8a0e-6e50131e3474, Help: 반환 수신 · 실패
++					269 button Description: js, 도구 호출, 결과·입력 대기, 관찰 기록, turn 01a106b0-8c2e-7700-8a0e-6e50131e3474, Help: 호출 확인 · 결과 미수신
++					270 button Description: js, 도구 호출, 결과·입력 대기, 관찰 기록, turn 01a106b0-8c2e-7700-8a0e-6e50131e3474, Help: 호출 확인 · 결과 미수신
++					271 scroll bar (settable, float) 0
++						272 value indicator (settable, float) 0
++						273 increment arrow button
++						274 decrement arrow button
++						275 increment page button
++						276 decrement page button
++					277 scroll bar (settable, float) 0
++						278 value indicator (settable, float) 0
++						279 increment arrow button
++						280 decrement arrow button
++						281 increment page button
++						282 decrement page button
++				283 image Description: 시계, ID: clock
++				284 text 관찰된 기록을 증분 갱신 오후 9:33
++				285 scroll area
++					286 text 작업을 선택하세요 회로 노드나 이벤트를 선택하면 원문·ID·연결 근거를 표시합니다.
++				287 text 토큰 계측 명시된 turn 누적 · 직접 turn_token_usage · 구간 0 오후 9:33
++				288 checkbox Description: 하위 세션 포함, Value: 0
++				289 scroll area
++					290 text 입력 캐시 입력 출력 메인 최근 입력 / 한도 21,279,528 20,987,264 67,493 79.4% 캐시 입력 포함 입력의 일부 추론 출력 20,046 포함 입력 205,126 / 한도 258,400 점유율 아님 비율 계측 오후 9:33:37
++				291 text 현재 기록 · 1,089개 이벤트 시각
++				292 button 이벤트 재생
++				293 button 다음 이벤트
++				294 button (disabled) 현재로
++				295 slider (settable, float) Description: 기록 재생 위치, Value: 1088, Details: 1,089 / 1,089
+~		195 image Description: 새로 고침, Help: 갱신 오후 9:33:46, ID: arrow.clockwise
+The focused UI element is 0 standard window Codex Maestro, ID: maestro, Secondary Actions: Raise

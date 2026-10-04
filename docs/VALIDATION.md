@@ -2,6 +2,166 @@
 
 최신 검증일: 2026-10-04 (Asia/Seoul)
 
+## 세션 상세 작업 회로 (2026-10-04)
+
+세션 상세에 네이티브 작업 회로를 추가했다. 최신 요청의 프롬프트, turn, 도구 호출·결과, 명령·MCP 실행, 관련 세션, 공개 메시지, 압축, 토큰 계측과 산출물 참조를 표시한다. 완료한 기록은 구성원 ID와 관계를 유지한 묶음으로 접는다. 이벤트 기록에서는 각 상태 관찰의 원문을 별도로 선택한다. 기존 기록 지도는 같은 상세 화면에서 열고 작업 회로로 돌아올 수 있다.
+
+| 검증 | 결과 | 근거 |
+|---|---|---|
+| 최종 SwiftPM XCTest | Core 119개 + 앱 118개, **237개 통과**, 실패 0개 | `evidence/session-circuit-tests-after-mcp-alias-fix.log` |
+| 최종 Xcode XCTest | 같은 **237개 통과**, 실패 0개, `TEST SUCCEEDED` | `evidence/session-circuit-xcode-tests-after-mcp-alias-fix.log`, `/tmp/CodexMaestroSessionCircuitAliasFinal20261004.xcresult` |
+| 격리한 대형 기록 검사 | 새 테스트 프로세스에서 성능 fixture 1개 통과, 실패 0개. 첫 색인·변경 없는 갱신·추가 기록 읽기를 별도 측정 | `evidence/session-circuit-performance-isolated.log` |
+| 실제 세션 읽기 전용 조회 | 선택한 세션의 카탈로그·rollout을 조회. 최종 조회에서 13,089개 기록, 30개 turn, 12,712개 노드와 36,799개 관계를 복원. 현재 turn의 중복 호출 ID 0개 | `evidence/session-circuit-live-probe-after-mcp-alias-fix.json`, `scripts/verify-session-circuit.swift` |
+| Release 빌드와 설치 | Release 빌드 완료와 `/Applications/Codex Maestro.app` 설치 완료를 확인 | `evidence/session-circuit-install-after-mcp-alias-fix.log` |
+
+### 기록 연결과 회귀 검사
+
+호출과 결과는 직접 `call_id` 또는 native item ID로 연결한다. 다른 turn에서 도착한 결과도 원래 호출 turn에 유지하고, 결과를 수신한 turn과 관찰 시각은 별도 관계로 기록한다. 재생은 그 관계의 `observedAt`을 사용한다. 수신 시각이 없는 갱신을 기존 결과의 생성 시각으로 대체하지 않는다. 결과가 없는 `completed` 호출을 성공으로 표시하지 않으며, turn 응답 종료를 사용자 목표 완료로 표시하지 않는다.
+
+테스트는 lowercase `subagent`와 기존 `subAgent`, 중첩 native 실행, 중복 표현의 출처 병합, 순서가 뒤바뀐 호출·결과, 늦은 결과와 반복 상태 갱신을 검사한다. turn ID가 없는 시작 경계는 현재 turn 미확인으로 유지한다. 파일 변경·이미지 경로는 참조로 표시하며 실제 파일 내용·hash·산출물 생성을 확인한 근거로 바꾸지 않는다. 명령 이름만으로 빌드·테스트 전체 성공이나 목표 충족 관계를 생성하지 않는다. 알 수 없는 공개 기록은 원문 위치를 유지하고, 내부 reasoning과 암호화 본문은 표시하지 않는다.
+
+토큰 계측은 직접 기록한 요청·turn·세션 범위를 구분한다. 캐시 입력은 입력의 일부이며 추론 출력은 출력의 일부다. 누락·잘못된 값·다른 세션의 계측을 합계에 넣지 않는다. 최근 요청의 입력과 직접 기록된 context window가 있을 때만 입력/한도 비율을 표시한다. 이 값은 현재 컨텍스트 점유율이나 작업 진행률이 아니다. 하위 세션은 별도로 조회하고, 범위와 하위 포함 여부가 확인된 독립 계측에만 합계를 만든다.
+
+앱 테스트는 범위 전환·닫기·취소·늦은 응답 거부, 원시 관찰의 정확한 본문 선택, 소스 세대 변경, 하위 세션과 상위 경로 복귀, 기록 지도 왕복과 초안 보존을 검사한다. 하위 계측 조회는 현재 선택을 바꾸지 않는다. 초안 준비는 저장에 성공한 뒤 작업 회로를 닫고 수신 세션을 표시한다. 이번 테스트는 실제 프롬프트 전송 검증을 대체하지 않는다.
+
+### 대형 기록 읽기와 표시 계산
+
+격리한 성능 검사는 **109,119,566바이트·1,025개 완결 기록**의 합성 JSONL을 사용했다. 첫 색인은 **2.321427초**, 변경 없는 갱신은 **0.924945ms**, 1개 기록 추가 뒤 갱신은 **0.880957ms**였다. 변경 없는 갱신은 파싱 0개·suffix 읽기 0바이트였고, 추가 뒤에는 suffix 107바이트만 읽었다. 측정 근거는 `evidence/session-circuit-performance-isolated.log`다.
+
+첫 색인은 비어 있는 로더 인덱스에서 시작한 측정이다. OS 파일 캐시가 비어 있는 cold I/O 측정이 아니다. suffix 바이트 수는 갱신별 최대 8KiB의 무결성 검사 읽기를 제외한다. 테스트 프로세스의 peak RSS는 **78,200,832바이트, 74.578125MiB**였다. 이 값은 XCTest, fixture 생성과 로더 실행을 포함한 프로세스 최대값이며 로더만의 메모리 할당량이 아니다.
+
+1,001개 노드·1,000개 관계의 표시 계산 검사에서는 접힌 회로가 **2.570987ms**, 24개 구성원을 펼친 페이지가 **11.589050ms**였다. 확장 페이지는 26개 표시 항목과 25개 경로를 만들고 모든 구성원과 관계를 유지했다. 폭 360·560·740·780·940·1,200pt에서 경로가 무관한 노드 사각형을 통과하지 않는지도 검사했다. 이 측정은 projection·layout·routing 계산이며 SwiftUI 렌더링 시간, 프레임 유지율 또는 FPS 측정이 아니다. 근거는 `evidence/session-circuit-tests-final.log`의 `SESSION_CIRCUIT_GEOMETRY`와 `SessionWorkLayoutTests`다.
+
+현재 최초 진입은 rollout 전체를 스트리밍하며 세션 인덱스를 만든다. 최신 turn만 끝에서 먼저 읽는 경로와 앱 재실행 후 재사용하는 디스크 인덱스는 구현하지 않았다. 같은 상세 조회에서 변경 없는 갱신은 기록을 다시 파싱하지 않고, 추가된 완결 줄만 파싱한다. 불완전한 마지막 줄은 보류한다. 파일 교체·축소·확인한 수정은 세대를 바꾸고 이전 본문 참조를 거부한다. 첫 색인의 비용은 별도로 평가해야 한다.
+
+### 실제 세션 조회의 범위
+
+2026-10-04 **21:27:50 KST**의 읽기 전용 probe는 세션 `01a100d8-585b-74c3-8d63-332de28dd73d`에서 **117,708,386바이트·12,401개 기록**을 읽었다. 첫 색인은 **9.005353초**였다. 이어진 갱신은 **62.916994ms**였으며, 그 사이 추가된 5개 기록·5,003바이트를 읽었다. 따라서 이 값은 변경 없는 갱신 시간이 아니다. probe 프로세스의 peak RSS는 **121,733,120바이트, 116.09375MiB**였고 카탈로그 조회와 실행 환경을 포함한다.
+
+MCP 호출 ID 수정 후 **21:53:09 KST**에 같은 세션을 다시 조회했다. **129,585,301바이트·13,089개 기록**에서 12,712개 노드·36,799개 관계·30개 turn을 만들었다. 첫 색인은 **9.782115초**였다. 이어진 갱신은 **76.800108ms**였고, 새 기록 9개·68,422바이트를 읽었다. 현재 turn의 같은 호출 ID를 가진 실행 노드 묶음은 **0개**였다. 조회 시점에는 generic 도구 호출 1개가 실행 중 또는 결과 미수신 상태였다. 이 숫자는 임의의 대기 노드를 제거한 결과이며 실행 중인 호출을 모두 완료로 바꾼 결과가 아니다. 최종 probe 프로세스의 peak RSS는 **125,632,512바이트, 119.8125MiB**였다. 근거는 `evidence/session-circuit-live-probe-after-mcp-alias-fix.json`이다. 수정 전 조회 파일도 보존했다.
+
+이 스냅샷의 rollout 확인 범위는 `partial`이다. 알 수 없는 기록 타입을 보존했으며, 12,501개 노드를 만들었다는 사실이 모든 내부 실행의 복원이나 목표 완료를 증명하지 않는다. 수량은 조회 시점의 값이다. 실제 세션은 기록을 계속 추가할 수 있다. probe는 프롬프트·IPC 요청이나 자격 증명 조회를 하지 않고 Maestro 작업공간을 저장하지 않는다.
+
+### 실제 설치 앱의 상호작용
+
+Computer Use로 `/Applications/Codex Maestro.app`의 네이티브 창을 직접 조작했다. 선택한 실제 세션에서 현재 요청 `구현 해주세요`, 모델 `gpt-6.1-sol`, 추론 `ultra`, IPC 실행 상태를 확인했다. 원문 선택은 같은 turn ID와 JSONL 위치를 표시했다. 지침 묶음을 선택한 뒤 구성원 회로를 펼치면 원본 노드 8개가 나타났다. 관찰 중 새 기록 수와 계측 값이 증가했다. 수량은 조회 시점의 값이다.
+
+이벤트 목록에서 호출의 초기 관찰을 선택하면 `결과 미수신`과 해당 원문을 표시했다. 같은 호출의 현재 회로 노드는 반환 수신 상태를 표시했다. `호출 세부 회로`는 직접 연결된 5개 항목을 표시했다. 이 관찰은 원시 상태 선택과 현재 노드 상태를 별도로 보존하는 동작을 확인한다. 이벤트 행의 자동화 접근성 선택은 일부 시도에서 ID 무효화 또는 중복 후보 오류를 반환했다. 화면 좌표로 해당 행을 선택한 뒤 상세 표시를 확인했다.
+
+타임라인을 과거 시점으로 옮기면 `기록 재생`과 해당 시점의 토큰 계측을 표시했다. `현재로`를 누르면 최신 요청과 현재 계측을 표시했다. 과거에 연결된 하위 세션의 회로를 열면 breadcrumb와 그 세션의 모델·요청·도구·계측이 나타났다. `상위 회로`로 돌아오면 부모 회로의 하위 세션 선택이 복원됐다. 하위 계측 조회에서는 8개 중 8개 값을 표시했고, 범위 중복 여부가 미확인이라 합계를 만들지 않았다. 실제 자식 세션으로 프롬프트를 보내지 않았다.
+
+`확인 범위`는 읽은 기록 수·바이트 수와 알 수 없는 타입을 표시했다. `기록 지도` 전환과 `작업 회로로 돌아가기`도 확인했다. 각 동작의 접근성 관찰은 `evidence/session-circuit-native-*-ax.log`에 저장했다. 화면 이미지는 `session-circuit-native-prompt.png`, `session-circuit-native-replay.png`, `session-circuit-native-child.png`다.
+
+실제 MCP 호출 조회에서 direct `function_call.id`와 native `McpToolCall.id`가 다르게 표시돼 같은 `call_id`의 완료 호출이 결과 미수신 노드로도 남는 결함을 발견했다. 최종 어댑터는 명시된 `call_id`와 native item ID를 같은 호출로 연결한다. 같은 이름·시각만으로 서로 다른 호출을 합치지 않는다. 실제 스키마의 성공·실패·역순 표현과 다음 turn에 늦게 기록된 generic 표현을 회귀 fixture로 검증했다. 독립 소스 검토에서도 남은 차단 사항은 없었다. 수정 후 Release 앱을 정상 종료·재설치·재실행했다. 새 설치본에서 이전 generic `js` 대기 노드가 사라졌고, 완료한 `cua_repl.js`의 원래 turn·call ID·native 원문·결과 연결과 호출 세부 회로를 확인했다. 최종 화면은 `evidence/session-circuit-native-final.png`, MCP 선택 근거는 `session-circuit-native-final-mcp-selected-ax.log`와 `session-circuit-native-final-call-detail-ax.log`에 있다. 패키지와 설치본의 파일 해시·서명·실행 경로는 `evidence/session-circuit-artifact.json`에 기록했다.
+
+### 확인 범위와 남은 제한
+
+이번 근거는 소스 계약, fixture와 회귀 테스트, 실제 저장 기록의 읽기 전용 조회, Release 빌드와 설치를 구분한다. 파일 참조는 내용·hash 검증과 다르며, 명령의 종료값은 관련 기능 전체의 검증과 다르다. 내부 reasoning, 기록되지 않은 서버 실행, 계측에 없는 컨텍스트 점유율과 임의의 진행률은 표시 범위에 포함하지 않는다. 실제 GUI의 FPS, 모든 IPC 수명주기의 신호 움직임에 대한 수동 관찰, 전체 VoiceOver 탐색, macOS 26·Intel 실행, Developer ID 서명·공증과 배포는 이번 근거로 확인하지 않았다.
+
+## 공통 판단 계층과 사용자 정의 판단
+
+기획의 1–4단계를 구현했다. 공통 HTTP 계약, 혼합 질문 batch, 의존 단계·분기·자료 조회, 판단값 조합, Profile 편집·저장·재사용과 기존 업무 handler 연결을 포함한다. 상세 계약과 가져오기 예제는 [DECISIONS.md](DECISIONS.md)에 있다. 아래 실제 API 검증은 합성 입력의 계약 호환성을 확인한다. 한국어 업무 자료의 판단 품질을 측정한 결과는 아니다.
+
+| 검증 | 결과 | 근거 |
+|---|---|---|
+| 최종 SwiftPM XCTest | Core 94개 + 앱 82개, **176개 통과**, 실패 0개 | `evidence/decision-compatibility-tests.log` |
+| 최종 Xcode XCTest | 같은 **176개 통과**, `TEST SUCCEEDED`, 종료값 0 | `evidence/decision-compatibility-xcode-tests.log`, `/tmp/CodexMaestroDecisionCompatibility20261004.xcresult` |
+| 실제 API 경계 검사 | 합성 입력 **32건**, 성공 19건·예상 형식 거부 13건, 응답 모델 `jev-1.13.0` | `evidence/decision-compatibility.log`, `evidence/decision-compatibility-noul.log`와 각 디렉터리의 요청·응답·`observations.json` |
+| 현재 코드로 응답 재검사 | 같은 **32건 일치**, 성공 19건의 형식 검사·응답 해석·원본 보존, 거부 13건의 로컬 차단, 네트워크·키 조회 0회 | `evidence/decision-compatibility-replay.log` |
+| Release 패키징 | `make app` 종료값 0, `dist/Codex Maestro.app` strict 서명 통과 | `evidence/decision-compatibility-package.log`, `evidence/decision-compatibility-artifact.json` |
+| 최신 설치 | 사용자 승인 후 기존 앱 강제 종료, `make install` 종료값 0, `/Applications/Codex Maestro.app` 갱신. 패키지·설치본 4개 파일 SHA-256 일치, strict 서명 통과. 저장된 작업공간·Profile 불변 | `evidence/decision-compatibility-force-quit.log`, `evidence/decision-compatibility-install-final.log`, `evidence/decision-compatibility-artifact.json` |
+| 설치 후 실행과 기본 화면 | 새 설치 경로의 프로세스 실행, native 기본 창·사용자 정의 판단 버튼·Codex 연결 상태 확인 | `evidence/decision-compatibility-install-runtime.json` |
+| Profile 예제 | 가져오기 계약 검사와 encode/decode 왕복 일치, 2단계·3질문, 네트워크 호출 0회 | `evidence/decision-example-validation.log` |
+
+이번 소스는 macOS 26 최소 버전과 Swift 6 언어 모드를 유지한다. 실제 검증 호스트는 Apple Silicon의 macOS 27이다. 최신 소스와 패키지 해시는 `evidence/decision-compatibility-artifact.json`에 기록한다. 이전 165개 테스트·설치본의 `decision-artifact.json`은 해당 시점의 근거로 보존한다.
+
+### 실제 서비스에서 확인한 계약
+
+공개 OpenAPI 0.2.0, HTTP API 문서, Advanced 문서와 공식 SDK를 비교했다. 공식 자료 사이의 차이와 원문 링크는 [DECISIONS.md](DECISIONS.md)에 기록했다. 등록된 키는 Keychain에서 읽었으며 키 값을 출력하거나 evidence에 저장하지 않았다. 두 검사 실행은 합성 영어 자료만 전송했다. 모델 목록과 공개 schema도 각 evidence 디렉터리에 보존했다.
+
+- Score는 1·2·10단계에서 HTTP 200, 0단계에서 HTTP 422, 11단계에서 HTTP 400을 반환했다. 1단계 결과는 점수 0·confidence 1·단일 확률 1이었다. 요청은 지원하되 정규화와 순위 계산은 정적·동적 기준 모두 전송 전에 차단한다.
+- Score 단계 자체의 null·숫자는 HTTP 422였다. 단계 설명 객체·배열 내부의 null은 HTTP 200이었다. 현재 요청 형식 검사와 응답 legend 검사는 같은 구조를 적용한다.
+- Choice는 1·255개 선택지에서 HTTP 200, 0·256개에서 HTTP 400이었다. Choice와 Score는 instructions를 생략해도 성공했다.
+- Noul은 instructions 생략·null과 유효한 기준의 조합에서 성공했다. 지시문이 없거나 빈 문자열·객체·배열이고, 기준도 없거나 비어 있거나 모두 null이면 HTTP 400이었다. 기준 설명의 빈 문자열·객체·배열·중첩 null·false 단독 설명·공백 문자열은 추가 6건에서 모두 허용했다. 형식 검사에서 기준의 빈 설명을 임의로 금지하지 않는다.
+
+첫 실행은 26건 중 성공 13건·거부 13건이었다. 두 번째 실행은 Noul 경계 6건이 모두 성공했다. 두 실행의 사용량 합계는 input 11,045 tokens·output 3,080 tokens였다. 이 수량은 위 32건만 포함한다. 앞선 클라이언트 검사의 사용량은 합산하지 않았다.
+
+앞선 `evidence/decision-live-api-final.log`에는 모델 목록 조회 1회, 성공 평가 8회와 예상 거부 2회가 있다. 문자열·객체·배열 state, Choice·Score·Noul 혼합, 2단계 `$lookup`, 원문 선택과 고정 모델 캐시 재사용을 실제 HTTP 클라이언트로 확인했다. 계층 탐색의 각 단계는 후보가 하나였으므로 연결 동작의 근거이며 의미적 선택 품질의 근거는 아니다. 이 실행은 계약 수정 전 소스를 사용했다. 수정한 현재 소스의 서버 응답 호환성은 위 32건의 재검사로 별도 확인했다.
+
+`scripts/verify-decision-api.swift`는 실행 중 오류도 기록하며 인증 실패·rate limit·서버 오류에서 중단한다. 기본 Keychain 조회에는 `kSecUseAuthenticationUIFail`을 적용했다. `--request-access`를 지정하면 macOS의 정상 승인 흐름을 사용할 수 있다. 이전 실행에서는 `LAContext.interactionNotAllowed`만으로 일반 비밀번호 접근 승인 창을 막지 못했다. 플래그를 추가한 버전은 컴파일만 확인했으며 자격 증명을 다시 읽어 실행하지 않았다. 수정 전 소스 해시는 `evidence/decision-compatibility-probe-source-before-keychain-fix.sha256`에 있다. 이 해시는 두 번째 6건 실행 뒤 기록한 것이며 첫 26건 실행 시점의 소스 해시를 증명하지 않는다. 요청·응답 원본은 모두 보존했다.
+
+`scripts/replay-decision-api.swift`는 새로 빌드한 MaestroCore에 연결한다. 저장된 서버 응답에서 성공·거부 여부를 읽고 현재 코드의 형식 검사와 응답 해석을 비교한다. 새 네트워크 요청이나 Keychain 접근은 없다. 저장된 입력 32건의 일치는 API 전체나 향후 서버 변경의 호환성을 보장하지 않는다.
+
+### 회귀 검사와 실패 기록
+
+설치의 첫 시도는 기존 앱이 실행 중이어서 중단됐다. 정상 종료 요청 두 번이 모두 수락됐지만 프로세스는 유지됐다. `evidence/decision-compatibility-install-attempt1.log`와 `decision-compatibility-install-guard.json`에 보존했다. 사용자가 강제 종료를 명시적으로 승인한 뒤 앱을 종료하고 설치를 완료했다. 이 설치는 새 키 조회나 API 호출을 수행하지 않았다.
+
+계약 테스트는 문자열·객체·배열 state, 구조화된 instructions·criteria, 생략과 명시적 null, 혼합 질문, 전체 확률 분포, Score legend, Noul의 confidence 부재, 필드·배열 경로와 새 응답 필드 보존을 검사한다. HTTP 테스트는 합성 API 키와 URLProtocol을 사용한다. 인증 헤더·endpoint·모델 조회·429/529 재시도·422 구분·취소·실패 응답 원본 bytes를 검사한다. 해당 XCTest는 실제 자격 증명을 사용하지 않는다.
+
+실행 계획 테스트는 요청 묶음·병렬 실행, 이전 Choice로 하위 후보 map을 구성하는 `$lookup`, 전체 본문 조회, 조건 분기, 다중 라벨, 원본 값 선택, 가중치·필수 조건, 캐시·취소·입력 변경을 검사한다. 일반 HTTP 실패는 `apiError`를 유지하고 원본 응답을 trace에 보존한다. 서비스 입력 한도에 따른 질문 분할은 같은 state 전체를 유지한다. 일반 422를 입력 한도 오류로 추측하지 않는다. 동적 참조를 해석한 뒤 잘못된 Noul 정의나 1단계 Score 순위를 발견하면 HTTP 요청 없이 종료한다.
+
+앱 테스트는 Profile 저장·복제·버전·손상 파일 보존, 키 없는 실행 차단, 잘못된 Score 저장·실행 차단과 기존 파일 불변, 오래된 결과, 알 수 없는 handler·잘못된 대상 차단, 기존 초안 보호, 저장 실패 복원과 입력 조회 취소를 검사한다. 본문 조회 후 API가 실패해도 읽은 근거 확인 범위를 보존한다.
+
+- `evidence/decision-expanded-tests.log`의 첫 확장 실행에서 macOS가 지원하지 않는 파일 보호 옵션 때문에 Profile 저장이 실패했다. 해당 옵션을 제거하고 `0600` 권한으로 저장한다. 이후 실행이 통과했다.
+- 첫 Xcode 실행에서 작업공간 비교 fixture의 JSON 키 순서가 고정되지 않아 비교 테스트가 실패했다. 비교용 인코더에 `sortedKeys`를 적용했다. 해당 실행은 중단했으며 `evidence/decision-xcode-tests.log`는 통과 근거로 사용하지 않는다.
+- 같은 Xcode 빌드 폴더를 재사용한 실행은 Core XCTest 번들의 실행 파일을 찾지 못했다. 앱 테스트 81개는 통과했지만 전체 종료값은 65였다. `evidence/decision-xcode-tests-final.log`에 보존했다. 새 빌드 폴더에서 두 타깃을 다시 빌드한 이후 실행은 통과했다. 이번 최종 Xcode 검사는 별도의 `/tmp/CodexMaestroDecisionCompatibility20261004` 폴더를 사용했다.
+
+### 남아 있는 검증
+
+실제 입력 한도 초과의 응답 형식, 한국어 업무 자료의 판단 품질, choice 순서 영향과 임계값 보정은 미검증이다. 32건의 형식 검사는 의미적 정확도나 업무 효과를 측정하지 않는다.
+
+Native UI 제어 도구는 판단 시트를 연 뒤 `Sky Computer Use native pipe closed before response`와 `cgWindowNotFound`를 반환했다. `SkyComputerUseService-2026-10-04-025036.ips`에는 helper의 `EXC_BREAKPOINT`와 `Array.remove(at:)`가 기록돼 있다. 이번에는 연결을 초기화한 뒤 설치 앱에 다시 연결해도 같은 native pipe 오류가 발생했다. 이전 설치 앱의 기본 창과 툴바 버튼은 확인했지만 최신 계약 안내와 시트 내부 편집·가져오기·내보내기·실제 API 결과 표시를 native UI로 검증하지 못했다. helper 실패는 앱 화면 정상 동작의 근거가 아니다. XCTest의 ViewModel 검증은 이 화면 검증을 대체하지 않는다. 강제 종료 후 수정본을 설치하고 다시 실행한 뒤에는 native 기본 창 조회가 성공했다. 새 프로세스와 사용자 정의 판단 툴바 버튼, Codex 연결 표시를 확인했다. 판단 시트의 편집·가져오기·내보내기·API 결과 표시는 이번 설치 확인에서 다시 실행하지 않았다.
+
+5단계의 자동 추천·중복 분석 등 전용 업무 기능, 실제 한국어 자료와 기존 방식의 효과 비교, 전체 VoiceOver 탐색, Intel 실행, Developer ID 서명과 공증은 이번 검증 범위에 포함하지 않았다.
+
+## 세션 아이템의 마지막 대화 미리보기
+
+카드 제목 아래와 세션 목록에 마지막 저장된 텍스트 메시지를 추가했다. `Codex:` 또는 `사용자:`를 함께 표시한다. 공백과 줄바꿈을 정리하고 Swift `Character` 기준 최대 160자로 자른다. UI는 최대 두 줄을 표시하며 남은 내용에 말줄임표를 적용한다. 한글과 결합 이모지의 문자 경계를 유지한다. 카드의 240 × 112pt 크기와 기존 드래그·연결 좌표는 유지했다.
+
+기본 출처는 읽기 전용 `thread_history_1.sqlite`이다. `(thread_id, rollout_ordinal)` 인덱스로 역순 조회하며 마지막 읽을 수 있는 사용자·Codex 텍스트를 찾으면 멈춘다. 도구 기록, 빈 문자열, 이미지뿐인 메시지와 잘못된 JSON은 건너뛴다. 후보 메시지 수에 고정 상한을 두지 않는다. 대화 DB를 읽지 못해도 세션 메타데이터는 표시한다. 기존 `Session.preview`의 초기 요청은 변경하지 않았다.
+
+DB에 텍스트가 없는 이전 세션은 `rollout_path`의 원본 JSONL을 역순으로 읽는다. 64 KiB 조각으로 파일 끝에서 읽으며 현재 JSONL 레코드의 조각만 모은다. `response_item`의 사용자·assistant 텍스트와 이전 `event_msg`의 `user_message`·`agent_message`를 지원한다. 도구·메타데이터·내부 reasoning과 미완성 마지막 줄을 제외한다. 두 출처 모두 읽을 수 있는 텍스트가 없으면 `대화 미리보기 없음`을 표시한다. 조회는 기존 카탈로그 새로고침의 백그라운드 작업에서 실행하며 카드 렌더링이나 드래그 중에는 파일을 읽지 않는다.
+
+| 검증 | 결과 | 근거 |
+|---|---|---|
+| 최종 SwiftPM XCTest | Core 56개 + 앱 73개, **129개 통과**, 실패 0개 | `evidence/session-preview-tests-rollout.log` |
+| 최종 Xcode XCTest | 같은 **129개 통과**, 실패 0개 | `evidence/session-preview-xcode-tests-rollout.log`, `.build/SessionPreviewRolloutTests.xcresult` |
+| Release 빌드와 설치 갱신 | `make install` 종료값 0 | `evidence/session-preview-install-final.log` |
+| 설치 파일·서명·최소 버전 | `dist`와 설치 앱 4개 파일의 SHA-256 일치, strict 서명 검증 통과, Mach-O 최소 macOS `26.0` | `evidence/session-preview-artifact.json` |
+| 실제 카탈로그 | 605개 중 580개에 마지막 텍스트 표시, 최대 160자, 최근 5개와 상세 대화 일치 | `evidence/session-preview-live-catalog-final.log` |
+| 설치 앱의 네이티브 UI | 카드와 목록의 두 줄 제한·말줄임표·작성자·상태 표시, 원본 대체 읽기 확인 | `evidence/session-preview-final-cards-ax.log`, `evidence/session-preview-final-list-ax.log`, `evidence/session-preview-legacy-ax.log` |
+
+화면 캡처는 `evidence/session-preview-final-cards.png`, `evidence/session-preview-final-list.png`, `evidence/session-preview-legacy.png`에 저장했다.
+
+추가한 Core 테스트 10개는 최신 사용자·Codex 메시지 선택, 기록 순서, 도구 제외, 빈 항목 이후 이전 텍스트 찾기, 바인딩된 세션 ID, DB 누락·손상, UTF-8 및 결합 이모지, 파일 조각 경계를 포함한다. DB와 rollout 파일이 읽기 전후 동일한지 확인한다. 기존 601개 세션의 토폴로지와 드래그 관찰 회귀 검사도 유지했다. `Session.preview`를 사용하는 기존 초안 준비 경로는 원래 초기 요청을 유지한다.
+
+실제 조회에서 대화 DB만 사용하면 미리보기 338개를 얻었다. 원본 대체 읽기를 추가한 뒤 242개가 늘어 580개가 됐다. 미리보기가 없는 25개는 별도로 확인했다. 24개 원본에는 `session_meta`와 `task_started`만 있고 대화 텍스트가 없었다. 나머지 1개에는 원본 파일이 없었다. 집계 근거는 `evidence/session-preview-availability.log`다. 수량은 확인 시점의 값이다.
+
+최종 Core를 사용하는 읽기 전용 진단에서 카탈로그 전체 조회는 첫 실행 **230.665ms**, 이어진 두 실행은 **129.256ms·129.994ms**였다. 이 측정에는 DB와 원본 대체 읽기를 포함한다. UI 렌더링, IPC 상태 수신, FPS는 측정하지 않았다. 초기 DB만 읽던 구현의 139.114ms·41.639ms·43.027ms는 `evidence/session-preview-live-catalog.log`에 별도 보존했다.
+
+설치된 `/Applications/Codex Maestro.app`에서 실제 Codex 연결, 열린 세션 12개와 카탈로그 605개를 확인했다. 이전 세션의 `Guardian review` 검색 결과에서 원본 대화 텍스트가 표시되는 것을 확인했다. 마지막에는 검색을 지우고 CodexMaestro 프로젝트의 카드 화면을 열어 두었다. 실제 세션에 검증용 요청을 전송하지 않았다.
+
+최종 manifest는 소스·테스트·설정·스크립트 61개 파일을 기록한다. 이 변경에서 Xcode Release archive, macOS 26의 실제 실행, Intel 실행, 전체 VoiceOver 탐색과 새 FPS 측정은 수행하지 않았다. Xcode 테스트 호스트의 `com.apple.linkd.autoShortcut` 연결 메시지는 이전 검증과 같이 발생했으며 테스트는 통과했다. 아래 설치 및 Xcode 전환 기록의 manifest와 바이너리 해시는 해당 시점의 근거다.
+
+## Applications 설치와 설치 스크립트
+
+`scripts/install-app.sh`와 `make install`을 추가했다. 기본 대상은 `/Applications/Codex Maestro.app`이다. 스크립트는 기존 Release 패키징 경로를 실행하고 대상 볼륨에 복사본을 준비한다. 복사본의 strict 서명을 검증한 뒤 신규 설치하거나 기존 설치를 교체한다. 교체는 `FileManager.replaceItemAt`과 `backupItemName: nil`을 사용한다. 사용자가 보존한 이전 앱 백업을 만들지 않는다.
+
+| 검증 | 결과 | 근거 |
+|---|---|---|
+| 신규 설치 | `make install` 종료값 0 | `evidence/install-app.log` |
+| 기존 설치 갱신 | 스크립트 재실행 종료값 0 | `evidence/install-app-update.log` |
+| 설치 파일·서명 | `dist`와 설치 앱의 4개 파일 SHA-256 일치, strict 서명 검증 종료값 0 | `evidence/install-artifact.json` |
+| 설치 앱 실행 | `/Applications`의 실행 파일을 사용하는 프로세스 1개, 실제 창과 Codex 연결 표시 | `evidence/install-app-ui-ax.log`, `evidence/install-app-ui.png` |
+| 실행 중 설치 차단 | 종료값 1과 종료 안내, 설치 앱의 4개 파일 불변, 임시 설치 폴더 0개 | `evidence/install-app-running-guard.log` |
+| Xcode 프로젝트 | 설치 스크립트 탐색 항목 추가, `xcodebuild -list` 종료값 0 | `evidence/install-xcode-list.log` |
+
+설치 앱의 화면에는 확인 시점에 전체 세션 605개, 열린 세션 12개, 실행 2개와 `Codex 연결`이 표시됐다. 이는 설치 앱의 실행·상태 수신 근거이며 프롬프트 전송 완료의 근거가 아니다. 설치 스크립트는 사용자 작업공간을 수정하지 않는다. 일반 모드로 실행한 앱은 기존 자동 저장을 수행할 수 있다.
+
+설치 대상이 심볼릭 링크이거나 기존 대상의 번들 ID가 다르면 중단한다. 설치된 앱이 실행 중일 때는 강제 종료하지 않는다. 설치 디렉터리는 인수로 지정할 수 있다. 이번 실제 설치·갱신은 기본 `/Applications` 경로에서 확인했다. 다른 경로·권한 실패 분기는 실제 실행으로 검증하지 않았다.
+
+처음 설치 검증은 Foundation 옵션 이름 오류로 실패했다. `.usingNewMetadataOnly`로 수정했고 실패 로그는 `evidence/install-app-attempt1.log`에 보존했다. 앱·테스트 소스 46개 파일은 아래의 119개 테스트 실행 시점과 SHA-256이 같다. 이번 변경에서는 해당 XCTest를 다시 실행하지 않았으며, 설치·갱신·실행과 차단 경로를 직접 검증했다. 아래의 Xcode 전환 manifest와 산출물은 그 전환 시점의 기록이다.
+
 ## Xcode 프로젝트와 macOS 26·Swift 6 전환
 
 `CodexMaestro.xcodeproj`를 추가했다. 앱, Core 정적 라이브러리, Probe와 두 XCTest 타깃은 SwiftPM과 소스를 공유한다. 세 공유 scheme은 일반 실행·테스트·archive, 데모 실행, Probe 실행을 구분한다. `project.yml`에서 모든 타깃의 최소 macOS 버전은 `26.0`, Swift 언어 모드는 `6.0`으로 설정했다. `Package.swift`와 앱 Info.plist도 macOS 26을 지정한다. SwiftPM tools 최소 버전은 6.2다.

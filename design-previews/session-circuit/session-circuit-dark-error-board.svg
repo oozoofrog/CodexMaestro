@@ -1,0 +1,505 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="1024" viewBox="0 0 1440 1024" role="img">
+<title>Codex Maestro 세션 동적 회로 디자인 보드</title>
+<desc>합성 이벤트로 작성한 정적 디자인 보드. 브라우저 캡처가 아니다.</desc>
+<rect x="0" y="0" width="1440" height="46" rx="0" fill="#171c23" stroke="none" stroke-width="1"/>
+<polyline points="0,45 1440,45" fill="none" stroke="#303c48" stroke-width="1" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="24" cy="23" r="5.5" fill="#e98078"/>
+<circle cx="42" cy="23" r="5.5" fill="#e4be67"/>
+<circle cx="60" cy="23" r="5.5" fill="#7abf8c"/>
+<text x="84" y="27.049999999999997" fill="#e6edf4" font-family="-apple-system,Apple SD Gothic Neo,sans-serif" font-size="13" font-weight="600">Codex Maestro</text>
+<rect x="207" y="10" width="168" height="27" rx="5" fill="#1d242c" stroke="#303c48" stroke-width="1"/>
+<text x="216" y="26.35" fill="#e7ba6e" font-family="-apple-system,Apple SD Gothic Neo,sans-serif" font-size="11" font-weight="400">디자인 시안 · 합성 이벤트</text>
+<text x="1200" y="26.35" fill="#9baab9" font-family="-apple-system,Apple SD Gothic Neo,sans-serif" font-size="11" font-weight="400">Session circuit</text>
+<rect x="1310" y="10" width="112" height="27" rx="5" fill="#1d242c" stroke="#303c48" stroke-width="1"/>
+<text x="1319" y="26.35" fill="#9baab9" font-family="-apple-system,Apple SD Gothic Neo,sans-serif" font-size="11" font-weight="400">라이트</text>
+<rect x="0" y="46" width="172" height="946" rx="0" fill="#14191f" stroke="none" stroke-width="1"/>
+<polyline points="171,46 171,992" fill="none" stroke="#303c48" stroke-width="1" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="20" y="81.5" fill="#627487" font-family="-apple-system,Apple SD Gothic Neo,sans-serif" font-size="10" font-weight="600">WORKSPACE</text>
+<text x="21" y="113.2" fill="#9baab9" font-family="-apple-system,Apple SD Gothic Neo,sans-serif" font-size="12" font-weight="400">프로젝트</text>
+<text x="21" y="152.2" fill="#9baab9" font-family="-apple-system,Apple SD Gothic Neo,sans-serif" font-size="12" font-weight="400">세션</text>
+<rect x="10" y="172" width="151" height="34" rx="6" fill="#294551" stroke="none" stroke-width="1"/>
+<circle cx="27" cy="189" r="4" fill="#66d1e8"/>
+<text x="40" y="193.2" fill="#e6edf4" font-family="-apple-system,Apple SD Gothic Neo,sans-serif" font-size="12" font-weight="400">세션 상세</text>
+<text x="20" y="240.5" fill="#627487" font-family="-apple-system,Apple SD Gothic Neo,sans-serif" font-size="10" font-weight="600">CODEXMAESTRO</text>
+<rect x="13" y="258" width="147" height="61" rx="6" fill="#213542" stroke="none" stroke-width="1"/>
+<rect x="13" y="258" width="2" height="61" rx="0" fill="#66d1e8" stroke="none" stroke-width="1"/>
+<text x="26" y="280.2" fill="#e6edf4" font-family="-apple-system,Apple SD Gothic Neo,sans-serif" font-size="12" font-weight="400">Codex 관리 도구</text>
+<text x="26" y="301.2" fill="#e6edf4" font-family="-apple-system,Apple SD Gothic Neo,sans-serif" font-size="12" font-weight="400">만들기</text>
+<text x="24" y="354.2" fill="#9baab9" font-family="-apple-system,Apple SD Gothic Neo,sans-serif" font-size="12" font-weight="400">현재 turn</text>
+<circle cx="27" cy="387" r="2.7" fill="#b6a4e3"/>
+<text x="40" y="391.35" fill="#9baab9" font-family="-apple-system,Apple SD Gothic Neo,sans-serif" font-size="11" font-weight="400">수집 계약 검토</text>
+<circle cx="27" cy="422" r="2.7" fill="#b6a4e3"/>
+<text x="40" y="426.35" fill="#9baab9" font-family="-apple-system,Apple SD Gothic Neo,sans-serif" font-size="11" font-weight="400">검증 경계 검토</text>
+<text x="20" y="943.35" fill="#9baab9" font-family="-apple-system,Apple SD Gothic Neo,sans-serif" font-size="11" font-weight="400">시안의 하위 세션과 실행 이벤</text>
+<text x="20" y="961.35" fill="#9baab9" font-family="-apple-system,Apple SD Gothic Neo,sans-serif" font-size="11" font-weight="400">트는 예시입니다.</text>
+<rect x="172" y="46" width="988" height="946" rx="0" fill="#11171d" stroke="none" stroke-width="1"/>
+<rect x="172" y="46" width="988" height="92" rx="0" fill="#171c23" stroke="none" stroke-width="1"/>
+<text x="195" y="72.35" fill="#9baab9" font-family="-apple-system,Apple SD Gothic Neo,sans-serif" font-size="11" font-weight="400">CodexMaestro  /  세션 상세  /  작업 회로</text>
+<text x="195" y="102.7" fill="#e6edf4" font-family="-apple-system,Apple SD Gothic Neo,sans-serif" font-size="22" font-weight="600">Codex 관리 도구 만들기</text>
+<text x="195" y="125.35" fill="#9baab9" font-family="-apple-system,Apple SD Gothic Neo,sans-serif" font-size="11" font-weight="400">gpt-6.1-sol   ·   xhigh   ·   turn / design-demo</text>
+<circle cx="1023" cy="80" r="3" fill="#ef9299"/>
+<text x="1034" y="83.2" fill="#ef9299" font-family="-apple-system,Apple SD Gothic Neo,sans-serif" font-size="12" font-weight="400">도구 오류 예시</text>
+<polyline points="172,137 1160,137" fill="none" stroke="#303c48" stroke-width="1" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="172" y="138" width="988" height="46" rx="0" fill="#171c23" stroke="none" stroke-width="1"/>
+<rect x="194" y="147" width="245" height="29" rx="6" fill="#101419" stroke="none" stroke-width="1"/>
+<rect x="197" y="150" width="75" height="23" rx="4" fill="#2b343e" stroke="none" stroke-width="1"/>
+<text x="206" y="165.35" fill="#e6edf4" font-family="-apple-system,Apple SD Gothic Neo,sans-serif" font-size="11" font-weight="400">작업 회로</text>
+<text x="283" y="165.35" fill="#9baab9" font-family="-apple-system,Apple SD Gothic Neo,sans-serif" font-size="11" font-weight="400">이벤트 기록</text>
+<text x="369" y="165.35" fill="#9baab9" font-family="-apple-system,Apple SD Gothic Neo,sans-serif" font-size="11" font-weight="400">확인 범위</text>
+<text x="845" y="166.35" fill="#9baab9" font-family="-apple-system,Apple SD Gothic Neo,sans-serif" font-size="11" font-weight="400">상태 예시</text>
+<rect x="899" y="147" width="115" height="27" rx="5" fill="#1d242c" stroke="#303c48" stroke-width="1"/>
+<text x="908" y="163.35" fill="#9baab9" font-family="-apple-system,Apple SD Gothic Neo,sans-serif" font-size="11" font-weight="400">도구 오류</text>
+<polyline points="997,157 1001,161 1005,157" fill="none" stroke="#9baab9" stroke-width="1.2" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="1025" y="147" width="111" height="27" rx="5" fill="#294551" stroke="#303c48" stroke-width="1"/>
+<text x="1034" y="163.35" fill="#66d1e8" font-family="-apple-system,Apple SD Gothic Neo,sans-serif" font-size="11" font-weight="400">흐름 표시</text>
+<polyline points="172,183 1160,183" fill="none" stroke="#303c48" stroke-width="1" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="172" y="184" width="988" height="60" rx="0" fill="#213542" stroke="none" stroke-width="1"/>
+<text x="196" y="209.5" fill="#66d1e8" font-family="-apple-system,Apple SD Gothic Neo,sans-serif" font-size="10" font-weight="600">CURRENT PROMPT</text>
+<text x="315" y="208.2" fill="#e6edf4" font-family="-apple-system,Apple SD Gothic Neo,sans-serif" font-size="12" font-weight="400">세션 상세를 열면 현재 동작하는 프롬프트와 툴, 서브 세션, 토큰 사용 등의 모든 작업 동작 연결도를 토폴포지 동적 회로로  볼수 있는 기획과 디자인 시안을 만들어주세요</text>
+<polyline points="172,243 1160,243" fill="none" stroke="#303c48" stroke-width="1" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="196" y="269.35" fill="#9baab9" font-family="-apple-system,Apple SD Gothic Neo,sans-serif" font-size="11" font-weight="400">현재 turn · 16개 작업 노드</text>
+<polyline points="829,266 844,266" fill="none" stroke="#4e667b" stroke-width="1.2" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="850" y="268.5" fill="#9baab9" font-family="-apple-system,Apple SD Gothic Neo,sans-serif" font-size="10" font-weight="400">호출·결과</text>
+<polyline points="931,266 946,266" fill="none" stroke="#b6a4e3" stroke-width="1.2" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="952" y="268.5" fill="#9baab9" font-family="-apple-system,Apple SD Gothic Neo,sans-serif" font-size="10" font-weight="400">위임·보고</text>
+<polyline points="1036,266 1051,266" fill="none" stroke="#4e667b" stroke-width="1.2" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="2 4"/>
+<text x="1057" y="268.5" fill="#9baab9" font-family="-apple-system,Apple SD Gothic Neo,sans-serif" font-size="10" font-weight="400">계측</text>
+<polyline points="172,282 172,794" fill="none" stroke="#1b242e" stroke-width="0.6" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="194,282 194,794" fill="none" stroke="#1b242e" stroke-width="0.6" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="216,282 216,794" fill="none" stroke="#1b242e" stroke-width="0.6" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="238,282 238,794" fill="none" stroke="#1b242e" stroke-width="0.6" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="260,282 260,794" fill="none" stroke="#1b242e" stroke-width="0.6" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="282,282 282,794" fill="none" stroke="#1b242e" stroke-width="0.6" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="304,282 304,794" fill="none" stroke="#1b242e" stroke-width="0.6" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="326,282 326,794" fill="none" stroke="#1b242e" stroke-width="0.6" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="348,282 348,794" fill="none" stroke="#1b242e" stroke-width="0.6" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="370,282 370,794" fill="none" stroke="#1b242e" stroke-width="0.6" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="392,282 392,794" fill="none" stroke="#1b242e" stroke-width="0.6" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="414,282 414,794" fill="none" stroke="#1b242e" stroke-width="0.6" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="436,282 436,794" fill="none" stroke="#1b242e" stroke-width="0.6" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="458,282 458,794" fill="none" stroke="#1b242e" stroke-width="0.6" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="480,282 480,794" fill="none" stroke="#1b242e" stroke-width="0.6" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="502,282 502,794" fill="none" stroke="#1b242e" stroke-width="0.6" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="524,282 524,794" fill="none" stroke="#1b242e" stroke-width="0.6" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="546,282 546,794" fill="none" stroke="#1b242e" stroke-width="0.6" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="568,282 568,794" fill="none" stroke="#1b242e" stroke-width="0.6" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="590,282 590,794" fill="none" stroke="#1b242e" stroke-width="0.6" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="612,282 612,794" fill="none" stroke="#1b242e" stroke-width="0.6" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="634,282 634,794" fill="none" stroke="#1b242e" stroke-width="0.6" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="656,282 656,794" fill="none" stroke="#1b242e" stroke-width="0.6" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="678,282 678,794" fill="none" stroke="#1b242e" stroke-width="0.6" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="700,282 700,794" fill="none" stroke="#1b242e" stroke-width="0.6" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="722,282 722,794" fill="none" stroke="#1b242e" stroke-width="0.6" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="744,282 744,794" fill="none" stroke="#1b242e" stroke-width="0.6" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="766,282 766,794" fill="none" stroke="#1b242e" stroke-width="0.6" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="788,282 788,794" fill="none" stroke="#1b242e" stroke-width="0.6" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="810,282 810,794" fill="none" stroke="#1b242e" stroke-width="0.6" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="832,282 832,794" fill="none" stroke="#1b242e" stroke-width="0.6" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="854,282 854,794" fill="none" stroke="#1b242e" stroke-width="0.6" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="876,282 876,794" fill="none" stroke="#1b242e" stroke-width="0.6" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="898,282 898,794" fill="none" stroke="#1b242e" stroke-width="0.6" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="920,282 920,794" fill="none" stroke="#1b242e" stroke-width="0.6" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="942,282 942,794" fill="none" stroke="#1b242e" stroke-width="0.6" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="964,282 964,794" fill="none" stroke="#1b242e" stroke-width="0.6" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="986,282 986,794" fill="none" stroke="#1b242e" stroke-width="0.6" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="1008,282 1008,794" fill="none" stroke="#1b242e" stroke-width="0.6" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="1030,282 1030,794" fill="none" stroke="#1b242e" stroke-width="0.6" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="1052,282 1052,794" fill="none" stroke="#1b242e" stroke-width="0.6" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="1074,282 1074,794" fill="none" stroke="#1b242e" stroke-width="0.6" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="1096,282 1096,794" fill="none" stroke="#1b242e" stroke-width="0.6" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="1118,282 1118,794" fill="none" stroke="#1b242e" stroke-width="0.6" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="1140,282 1140,794" fill="none" stroke="#1b242e" stroke-width="0.6" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="172,282 1160,282" fill="none" stroke="#1b242e" stroke-width="0.6" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="172,304 1160,304" fill="none" stroke="#1b242e" stroke-width="0.6" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="172,326 1160,326" fill="none" stroke="#1b242e" stroke-width="0.6" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="172,348 1160,348" fill="none" stroke="#1b242e" stroke-width="0.6" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="172,370 1160,370" fill="none" stroke="#1b242e" stroke-width="0.6" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="172,392 1160,392" fill="none" stroke="#1b242e" stroke-width="0.6" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="172,414 1160,414" fill="none" stroke="#1b242e" stroke-width="0.6" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="172,436 1160,436" fill="none" stroke="#1b242e" stroke-width="0.6" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="172,458 1160,458" fill="none" stroke="#1b242e" stroke-width="0.6" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="172,480 1160,480" fill="none" stroke="#1b242e" stroke-width="0.6" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="172,502 1160,502" fill="none" stroke="#1b242e" stroke-width="0.6" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="172,524 1160,524" fill="none" stroke="#1b242e" stroke-width="0.6" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="172,546 1160,546" fill="none" stroke="#1b242e" stroke-width="0.6" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="172,568 1160,568" fill="none" stroke="#1b242e" stroke-width="0.6" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="172,590 1160,590" fill="none" stroke="#1b242e" stroke-width="0.6" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="172,612 1160,612" fill="none" stroke="#1b242e" stroke-width="0.6" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="172,634 1160,634" fill="none" stroke="#1b242e" stroke-width="0.6" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="172,656 1160,656" fill="none" stroke="#1b242e" stroke-width="0.6" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="172,678 1160,678" fill="none" stroke="#1b242e" stroke-width="0.6" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="172,700 1160,700" fill="none" stroke="#1b242e" stroke-width="0.6" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="172,722 1160,722" fill="none" stroke="#1b242e" stroke-width="0.6" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="172,744 1160,744" fill="none" stroke="#1b242e" stroke-width="0.6" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="172,766 1160,766" fill="none" stroke="#1b242e" stroke-width="0.6" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="172,788 1160,788" fill="none" stroke="#1b242e" stroke-width="0.6" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="209" y="305.5" fill="#627487" font-family="-apple-system,Apple SD Gothic Neo,sans-serif" font-size="10" font-weight="400">입력·컨텍스트</text>
+<text x="447" y="305.5" fill="#627487" font-family="-apple-system,Apple SD Gothic Neo,sans-serif" font-size="10" font-weight="400">프롬프트·세션</text>
+<text x="685" y="305.5" fill="#627487" font-family="-apple-system,Apple SD Gothic Neo,sans-serif" font-size="10" font-weight="400">도구·하위 세션</text>
+<text x="923" y="305.5" fill="#627487" font-family="-apple-system,Apple SD Gothic Neo,sans-serif" font-size="10" font-weight="400">결과·검증</text>
+<polyline points="308.625,440 308.625,410" fill="none" stroke="#4e667b" stroke-width="1.1" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="4 5"/>
+<polyline points="311.2384361446533,414.2626226102975 308.625,410 306.0115638553467,414.2626226102975" fill="none" stroke="#4e667b" stroke-width="1.1" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="209,602 197,602 197,366 209,366" fill="none" stroke="#4e667b" stroke-width="1.1" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="4 5"/>
+<polyline points="204.73737738970246,368.6134361446533 209,366 204.73737738970246,363.3865638553467" fill="none" stroke="#4e667b" stroke-width="1.1" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="408.25,366 435.25,366 435.25,484 447.25,484" fill="none" stroke="#66d1e8" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="4 5"/>
+<polyline points="442.9873773897025,486.6134361446533 447.25,484 442.9873773897025,481.3865638553467" fill="none" stroke="#66d1e8" stroke-width="1.1" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="435.25" cy="484" r="2.5" fill="#66d1e8"/>
+<polyline points="546.875,410 546.875,440" fill="none" stroke="#66d1e8" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="544.2615638553467,435.7373773897025 546.875,440 549.4884361446533,435.7373773897025" fill="none" stroke="#66d1e8" stroke-width="1.1" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="546.875" cy="440" r="2.5" fill="#66d1e8"/>
+<polyline points="646.5,484 673.5,484 673.5,366 685.5,366" fill="none" stroke="#4e667b" stroke-width="1.1" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="681.2373773897025,368.6134361446533 685.5,366 681.2373773897025,363.3865638553467" fill="none" stroke="#4e667b" stroke-width="1.1" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="646.5,484 685.5,484" fill="none" stroke="#4e667b" stroke-width="1.1" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="681.2373773897025,486.6134361446533 685.5,484 681.2373773897025,481.3865638553467" fill="none" stroke="#4e667b" stroke-width="1.1" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="646.5,484 658.5,484 658.5,602 685.5,602" fill="none" stroke="#b6a4e3" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="681.2373773897025,604.6134361446533 685.5,602 681.2373773897025,599.3865638553467" fill="none" stroke="#b6a4e3" stroke-width="1.1" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="658.5" cy="602" r="2.5" fill="#b6a4e3"/>
+<polyline points="646.5,484 673.5,484 673.5,720 685.5,720" fill="none" stroke="#b6a4e3" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="681.2373773897025,722.6134361446533 685.5,720 681.2373773897025,717.3865638553467" fill="none" stroke="#b6a4e3" stroke-width="1.1" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="673.5" cy="720" r="2.5" fill="#b6a4e3"/>
+<polyline points="884.75,366 923.75,366" fill="none" stroke="#4e667b" stroke-width="1.1" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="919.4873773897025,368.6134361446533 923.75,366 919.4873773897025,363.3865638553467" fill="none" stroke="#4e667b" stroke-width="1.1" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="884.75,484 911.75,484 911.75,366 923.75,366" fill="none" stroke="#4e667b" stroke-width="1.1" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="919.4873773897025,368.6134361446533 923.75,366 919.4873773897025,363.3865638553467" fill="none" stroke="#4e667b" stroke-width="1.1" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="884.75,602 896.75,602 896.75,366 923.75,366" fill="none" stroke="#b6a4e3" stroke-width="1.1" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="919.4873773897025,368.6134361446533 923.75,366 919.4873773897025,363.3865638553467" fill="none" stroke="#b6a4e3" stroke-width="1.1" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="884.75,720 911.75,720 911.75,366 923.75,366" fill="none" stroke="#b6a4e3" stroke-width="1.1" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="919.4873773897025,368.6134361446533 923.75,366 919.4873773897025,363.3865638553467" fill="none" stroke="#b6a4e3" stroke-width="1.1" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="1023.375,410 1023.375,440" fill="none" stroke="#4e667b" stroke-width="1.1" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="1020.7615638553467,435.7373773897025 1023.375,440 1025.9884361446534,435.7373773897025" fill="none" stroke="#4e667b" stroke-width="1.1" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="1023.375,528 1023.375,558" fill="none" stroke="#4e667b" stroke-width="1.1" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="1020.7615638553467,553.7373773897025 1023.375,558 1025.9884361446534,553.7373773897025" fill="none" stroke="#4e667b" stroke-width="1.1" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="1023.375,528 1023.38,540 1135,540 1135,664 1023.38,664 1023.375,676" fill="none" stroke="#4e667b" stroke-width="1.1" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="1020.7633401748076,671.7362888280893 1023.375,676 1025.9902120103927,671.7384666913541" fill="none" stroke="#4e667b" stroke-width="1.1" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="546.875,528 546.875,558" fill="none" stroke="#4e667b" stroke-width="1.1" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="544.2615638553467,553.7373773897025 546.875,558 549.4884361446533,553.7373773897025" fill="none" stroke="#4e667b" stroke-width="1.1" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="546.875,528 546.88,540 435.25,540 435.25,664 546.88,664 546.875,676" fill="none" stroke="#4e667b" stroke-width="1.1" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="2 6"/>
+<polyline points="544.2633401748076,671.7362888280893 546.875,676 549.4902120103926,671.7384666913541" fill="none" stroke="#4e667b" stroke-width="1.1" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="408.25,720 447.25,720" fill="none" stroke="#4e667b" stroke-width="1.1" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="2 6"/>
+<polyline points="442.9873773897025,722.6134361446533 447.25,720 442.9873773897025,717.3865638553467" fill="none" stroke="#4e667b" stroke-width="1.1" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="685.5,602 658.5,602 658.5,720 646.5,720" fill="none" stroke="#4e667b" stroke-width="1.1" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="2 6"/>
+<polyline points="650.7626226102975,717.3865638553467 646.5,720 650.7626226102975,722.6134361446533" fill="none" stroke="#4e667b" stroke-width="1.1" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="685.5,720 646.5,720" fill="none" stroke="#4e667b" stroke-width="1.1" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="2 6"/>
+<polyline points="650.7626226102975,717.3865638553467 646.5,720 650.7626226102975,722.6134361446533" fill="none" stroke="#4e667b" stroke-width="1.1" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="209" y="322" width="199.25" height="88" rx="9" fill="#1d242c" stroke="#303c48" stroke-width="1"/>
+<text x="221" y="339.65" fill="#627487" font-family="-apple-system,Apple SD Gothic Neo,sans-serif" font-size="9" font-weight="400">CONTEXT</text>
+<text x="221" y="366.05" fill="#e6edf4" font-family="-apple-system,Apple SD Gothic Neo,sans-serif" font-size="13" font-weight="600">지침·컨텍스트</text>
+<circle cx="224" cy="390" r="2.7" fill="#82c9a4"/>
+<text x="232" y="392.5" fill="#82c9a4" font-family="-apple-system,Apple SD Gothic Neo,sans-serif" font-size="10" font-weight="400">결과 있음</text>
+<text x="337.40625" y="392.5" fill="#9baab9" font-family="-apple-system,Apple SD Gothic Neo,sans-serif" font-size="10" font-weight="400">지침 2 · 자료 3</text>
+<circle cx="209" cy="366.0" r="2.5" fill="#4e667b"/>
+<circle cx="209" cy="366.0" r="1.5" fill="#171c23"/>
+<circle cx="408.25" cy="366.0" r="2.5" fill="#4e667b"/>
+<circle cx="408.25" cy="366.0" r="1.5" fill="#171c23"/>
+<circle cx="308.625" cy="322" r="2.5" fill="#4e667b"/>
+<circle cx="308.625" cy="322" r="1.5" fill="#171c23"/>
+<circle cx="308.625" cy="410" r="2.5" fill="#4e667b"/>
+<circle cx="308.625" cy="410" r="1.5" fill="#171c23"/>
+<rect x="447.25" y="322" width="199.25" height="88" rx="9" fill="#1d242c" stroke="#303c48" stroke-width="1"/>
+<text x="459.25" y="339.65" fill="#627487" font-family="-apple-system,Apple SD Gothic Neo,sans-serif" font-size="9" font-weight="400">PROMPT</text>
+<text x="459.25" y="366.05" fill="#e6edf4" font-family="-apple-system,Apple SD Gothic Neo,sans-serif" font-size="13" font-weight="600">현재 프롬프트</text>
+<circle cx="462.25" cy="390" r="2.7" fill="#82c9a4"/>
+<text x="470.25" y="392.5" fill="#82c9a4" font-family="-apple-system,Apple SD Gothic Neo,sans-serif" font-size="10" font-weight="400">결과 있음</text>
+<text x="562.7109375" y="392.5" fill="#9baab9" font-family="-apple-system,Apple SD Gothic Neo,sans-serif" font-size="10" font-weight="400">사용자 · turn 연결</text>
+<circle cx="447.25" cy="366.0" r="2.5" fill="#4e667b"/>
+<circle cx="447.25" cy="366.0" r="1.5" fill="#171c23"/>
+<circle cx="646.5" cy="366.0" r="2.5" fill="#4e667b"/>
+<circle cx="646.5" cy="366.0" r="1.5" fill="#171c23"/>
+<circle cx="546.875" cy="322" r="2.5" fill="#4e667b"/>
+<circle cx="546.875" cy="322" r="1.5" fill="#171c23"/>
+<circle cx="546.875" cy="410" r="2.5" fill="#4e667b"/>
+<circle cx="546.875" cy="410" r="1.5" fill="#171c23"/>
+<rect x="681.5" y="318" width="207.25" height="96" rx="12" fill="#11171d" stroke="#66d1e8" stroke-width="1.7"/>
+<rect x="685.5" y="322" width="199.25" height="88" rx="9" fill="#1d242c" stroke="#ef9299" stroke-width="1"/>
+<text x="697.5" y="339.65" fill="#627487" font-family="-apple-system,Apple SD Gothic Neo,sans-serif" font-size="9" font-weight="400">COMMAND</text>
+<text x="697.5" y="366.05" fill="#e6edf4" font-family="-apple-system,Apple SD Gothic Neo,sans-serif" font-size="13" font-weight="600">명령 실행</text>
+<polyline points="697.5,390 700.5,387 703.5,390 700.5,393 697.5,390" fill="none" stroke="#ef9299" stroke-width="1.3" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="708.5" y="392.5" fill="#ef9299" font-family="-apple-system,Apple SD Gothic Neo,sans-serif" font-size="10" font-weight="400">오류</text>
+<text x="825.5078125" y="392.5" fill="#9baab9" font-family="-apple-system,Apple SD Gothic Neo,sans-serif" font-size="10" font-weight="400">exit 1 · 예시</text>
+<circle cx="685.5" cy="366.0" r="2.5" fill="#4e667b"/>
+<circle cx="685.5" cy="366.0" r="1.5" fill="#171c23"/>
+<circle cx="884.75" cy="366.0" r="2.5" fill="#4e667b"/>
+<circle cx="884.75" cy="366.0" r="1.5" fill="#171c23"/>
+<circle cx="785.125" cy="322" r="2.5" fill="#4e667b"/>
+<circle cx="785.125" cy="322" r="1.5" fill="#171c23"/>
+<circle cx="785.125" cy="410" r="2.5" fill="#4e667b"/>
+<circle cx="785.125" cy="410" r="1.5" fill="#171c23"/>
+<rect x="923.75" y="322" width="199.25" height="88" rx="9" fill="#1d242c" stroke="#ef9299" stroke-width="1"/>
+<text x="935.75" y="339.65" fill="#627487" font-family="-apple-system,Apple SD Gothic Neo,sans-serif" font-size="9" font-weight="400">RESULT</text>
+<text x="935.75" y="366.05" fill="#e6edf4" font-family="-apple-system,Apple SD Gothic Neo,sans-serif" font-size="13" font-weight="600">호출 결과</text>
+<polyline points="935.75,390 938.75,387 941.75,390 938.75,393 935.75,390" fill="none" stroke="#ef9299" stroke-width="1.3" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="946.75" y="392.5" fill="#ef9299" font-family="-apple-system,Apple SD Gothic Neo,sans-serif" font-size="10" font-weight="400">오류</text>
+<text x="1053.84375" y="392.5" fill="#9baab9" font-family="-apple-system,Apple SD Gothic Neo,sans-serif" font-size="10" font-weight="400">실패 결과 수신</text>
+<circle cx="923.75" cy="366.0" r="2.5" fill="#4e667b"/>
+<circle cx="923.75" cy="366.0" r="1.5" fill="#171c23"/>
+<circle cx="1123.0" cy="366.0" r="2.5" fill="#4e667b"/>
+<circle cx="1123.0" cy="366.0" r="1.5" fill="#171c23"/>
+<circle cx="1023.375" cy="322" r="2.5" fill="#4e667b"/>
+<circle cx="1023.375" cy="322" r="1.5" fill="#171c23"/>
+<circle cx="1023.375" cy="410" r="2.5" fill="#4e667b"/>
+<circle cx="1023.375" cy="410" r="1.5" fill="#171c23"/>
+<rect x="209" y="440" width="199.25" height="88" rx="9" fill="#1d242c" stroke="#303c48" stroke-width="1"/>
+<text x="221" y="457.65" fill="#627487" font-family="-apple-system,Apple SD Gothic Neo,sans-serif" font-size="9" font-weight="400">EVIDENCE</text>
+<text x="221" y="484.05" fill="#e6edf4" font-family="-apple-system,Apple SD Gothic Neo,sans-serif" font-size="13" font-weight="600">파일·자료</text>
+<circle cx="224" cy="508" r="2.7" fill="#82c9a4"/>
+<text x="232" y="510.5" fill="#82c9a4" font-family="-apple-system,Apple SD Gothic Neo,sans-serif" font-size="10" font-weight="400">결과 있음</text>
+<text x="339.09375" y="510.5" fill="#9baab9" font-family="-apple-system,Apple SD Gothic Neo,sans-serif" font-size="10" font-weight="400">본문 확인 범위</text>
+<circle cx="209" cy="484.0" r="2.5" fill="#4e667b"/>
+<circle cx="209" cy="484.0" r="1.5" fill="#171c23"/>
+<circle cx="408.25" cy="484.0" r="2.5" fill="#4e667b"/>
+<circle cx="408.25" cy="484.0" r="1.5" fill="#171c23"/>
+<circle cx="308.625" cy="440" r="2.5" fill="#4e667b"/>
+<circle cx="308.625" cy="440" r="1.5" fill="#171c23"/>
+<circle cx="308.625" cy="528" r="2.5" fill="#4e667b"/>
+<circle cx="308.625" cy="528" r="1.5" fill="#171c23"/>
+<rect x="447.25" y="440" width="199.25" height="88" rx="9" fill="#1a343e" stroke="#66d1e8" stroke-width="1"/>
+<text x="459.25" y="457.65" fill="#627487" font-family="-apple-system,Apple SD Gothic Neo,sans-serif" font-size="9" font-weight="400">MAIN SESSION</text>
+<text x="459.25" y="484.05" fill="#e6edf4" font-family="-apple-system,Apple SD Gothic Neo,sans-serif" font-size="13" font-weight="600">메인 세션</text>
+<circle cx="462.25" cy="508" r="2.7" fill="#66d1e8"/>
+<text x="470.25" y="510.5" fill="#66d1e8" font-family="-apple-system,Apple SD Gothic Neo,sans-serif" font-size="10" font-weight="400">실행 중</text>
+<text x="557.796875" y="510.5" fill="#9baab9" font-family="-apple-system,Apple SD Gothic Neo,sans-serif" font-size="10" font-weight="400">gpt-6.1-sol · xhigh</text>
+<circle cx="447.25" cy="484.0" r="2.5" fill="#4e667b"/>
+<circle cx="447.25" cy="484.0" r="1.5" fill="#171c23"/>
+<circle cx="646.5" cy="484.0" r="2.5" fill="#4e667b"/>
+<circle cx="646.5" cy="484.0" r="1.5" fill="#171c23"/>
+<circle cx="546.875" cy="440" r="2.5" fill="#4e667b"/>
+<circle cx="546.875" cy="440" r="1.5" fill="#171c23"/>
+<circle cx="546.875" cy="528" r="2.5" fill="#4e667b"/>
+<circle cx="546.875" cy="528" r="1.5" fill="#171c23"/>
+<rect x="685.5" y="440" width="199.25" height="88" rx="9" fill="#1d242c" stroke="#303c48" stroke-width="1"/>
+<text x="697.5" y="457.65" fill="#627487" font-family="-apple-system,Apple SD Gothic Neo,sans-serif" font-size="9" font-weight="400">MCP</text>
+<text x="697.5" y="484.05" fill="#e6edf4" font-family="-apple-system,Apple SD Gothic Neo,sans-serif" font-size="13" font-weight="600">Swift Intelligence</text>
+<circle cx="700.5" cy="508" r="2.7" fill="#82c9a4"/>
+<text x="708.5" y="510.5" fill="#82c9a4" font-family="-apple-system,Apple SD Gothic Neo,sans-serif" font-size="10" font-weight="400">결과 있음</text>
+<text x="813.0390625" y="510.5" fill="#9baab9" font-family="-apple-system,Apple SD Gothic Neo,sans-serif" font-size="10" font-weight="400">참조 6개 · 예시</text>
+<circle cx="685.5" cy="484.0" r="2.5" fill="#4e667b"/>
+<circle cx="685.5" cy="484.0" r="1.5" fill="#171c23"/>
+<circle cx="884.75" cy="484.0" r="2.5" fill="#4e667b"/>
+<circle cx="884.75" cy="484.0" r="1.5" fill="#171c23"/>
+<circle cx="785.125" cy="440" r="2.5" fill="#4e667b"/>
+<circle cx="785.125" cy="440" r="1.5" fill="#171c23"/>
+<circle cx="785.125" cy="528" r="2.5" fill="#4e667b"/>
+<circle cx="785.125" cy="528" r="1.5" fill="#171c23"/>
+<rect x="923.75" y="440" width="199.25" height="88" rx="9" fill="#1d242c" stroke="#303c48" stroke-width="1"/>
+<text x="935.75" y="457.65" fill="#627487" font-family="-apple-system,Apple SD Gothic Neo,sans-serif" font-size="9" font-weight="400">VERIFICATION</text>
+<text x="935.75" y="484.05" fill="#e6edf4" font-family="-apple-system,Apple SD Gothic Neo,sans-serif" font-size="13" font-weight="600">검증 근거</text>
+<circle cx="938.75" cy="508" r="2.7" fill="#627487"/>
+<text x="946.75" y="510.5" fill="#627487" font-family="-apple-system,Apple SD Gothic Neo,sans-serif" font-size="10" font-weight="400">대기</text>
+<text x="1082.421875" y="510.5" fill="#9baab9" font-family="-apple-system,Apple SD Gothic Neo,sans-serif" font-size="10" font-weight="400">확인 전</text>
+<circle cx="923.75" cy="484.0" r="2.5" fill="#4e667b"/>
+<circle cx="923.75" cy="484.0" r="1.5" fill="#171c23"/>
+<circle cx="1123.0" cy="484.0" r="2.5" fill="#4e667b"/>
+<circle cx="1123.0" cy="484.0" r="1.5" fill="#171c23"/>
+<circle cx="1023.375" cy="440" r="2.5" fill="#4e667b"/>
+<circle cx="1023.375" cy="440" r="1.5" fill="#171c23"/>
+<circle cx="1023.375" cy="528" r="2.5" fill="#4e667b"/>
+<circle cx="1023.375" cy="528" r="1.5" fill="#171c23"/>
+<rect x="209" y="558" width="199.25" height="88" rx="9" fill="#1d242c" stroke="#303c48" stroke-width="1"/>
+<text x="221" y="575.65" fill="#627487" font-family="-apple-system,Apple SD Gothic Neo,sans-serif" font-size="9" font-weight="400">COMPACTION</text>
+<text x="221" y="602.05" fill="#e6edf4" font-family="-apple-system,Apple SD Gothic Neo,sans-serif" font-size="13" font-weight="600">컨텍스트 압축</text>
+<circle cx="224" cy="626" r="2.7" fill="#627487"/>
+<text x="232" y="628.5" fill="#627487" font-family="-apple-system,Apple SD Gothic Neo,sans-serif" font-size="10" font-weight="400">없음</text>
+<text x="349.7734375" y="628.5" fill="#9baab9" font-family="-apple-system,Apple SD Gothic Neo,sans-serif" font-size="10" font-weight="400">이 turn 0개</text>
+<circle cx="209" cy="602.0" r="2.5" fill="#4e667b"/>
+<circle cx="209" cy="602.0" r="1.5" fill="#171c23"/>
+<circle cx="408.25" cy="602.0" r="2.5" fill="#4e667b"/>
+<circle cx="408.25" cy="602.0" r="1.5" fill="#171c23"/>
+<circle cx="308.625" cy="558" r="2.5" fill="#4e667b"/>
+<circle cx="308.625" cy="558" r="1.5" fill="#171c23"/>
+<circle cx="308.625" cy="646" r="2.5" fill="#4e667b"/>
+<circle cx="308.625" cy="646" r="1.5" fill="#171c23"/>
+<rect x="447.25" y="558" width="199.25" height="88" rx="9" fill="#1d242c" stroke="#303c48" stroke-width="1"/>
+<text x="459.25" y="575.65" fill="#627487" font-family="-apple-system,Apple SD Gothic Neo,sans-serif" font-size="9" font-weight="400">INPUT GATE</text>
+<text x="459.25" y="602.05" fill="#e6edf4" font-family="-apple-system,Apple SD Gothic Neo,sans-serif" font-size="13" font-weight="600">입력 대기</text>
+<circle cx="462.25" cy="626" r="2.7" fill="#82c9a4"/>
+<text x="470.25" y="628.5" fill="#82c9a4" font-family="-apple-system,Apple SD Gothic Neo,sans-serif" font-size="10" font-weight="400">결과 있음</text>
+<text x="577.34375" y="628.5" fill="#9baab9" font-family="-apple-system,Apple SD Gothic Neo,sans-serif" font-size="10" font-weight="400">예시 응답 수신</text>
+<circle cx="447.25" cy="602.0" r="2.5" fill="#4e667b"/>
+<circle cx="447.25" cy="602.0" r="1.5" fill="#171c23"/>
+<circle cx="646.5" cy="602.0" r="2.5" fill="#4e667b"/>
+<circle cx="646.5" cy="602.0" r="1.5" fill="#171c23"/>
+<circle cx="546.875" cy="558" r="2.5" fill="#4e667b"/>
+<circle cx="546.875" cy="558" r="1.5" fill="#171c23"/>
+<circle cx="546.875" cy="646" r="2.5" fill="#4e667b"/>
+<circle cx="546.875" cy="646" r="1.5" fill="#171c23"/>
+<rect x="685.5" y="558" width="199.25" height="88" rx="9" fill="#1a343e" stroke="#66d1e8" stroke-width="1"/>
+<text x="697.5" y="575.65" fill="#627487" font-family="-apple-system,Apple SD Gothic Neo,sans-serif" font-size="9" font-weight="400">SUBSESSION</text>
+<text x="697.5" y="602.05" fill="#e6edf4" font-family="-apple-system,Apple SD Gothic Neo,sans-serif" font-size="13" font-weight="600">수집 계약 검토</text>
+<circle cx="700.5" cy="626" r="2.7" fill="#66d1e8"/>
+<text x="708.5" y="628.5" fill="#66d1e8" font-family="-apple-system,Apple SD Gothic Neo,sans-serif" font-size="10" font-weight="400">실행 중</text>
+<text x="815.59375" y="628.5" fill="#9baab9" font-family="-apple-system,Apple SD Gothic Neo,sans-serif" font-size="10" font-weight="400">예시 하위 세션</text>
+<circle cx="685.5" cy="602.0" r="2.5" fill="#4e667b"/>
+<circle cx="685.5" cy="602.0" r="1.5" fill="#171c23"/>
+<circle cx="884.75" cy="602.0" r="2.5" fill="#4e667b"/>
+<circle cx="884.75" cy="602.0" r="1.5" fill="#171c23"/>
+<circle cx="785.125" cy="558" r="2.5" fill="#4e667b"/>
+<circle cx="785.125" cy="558" r="1.5" fill="#171c23"/>
+<circle cx="785.125" cy="646" r="2.5" fill="#4e667b"/>
+<circle cx="785.125" cy="646" r="1.5" fill="#171c23"/>
+<rect x="923.75" y="558" width="199.25" height="88" rx="9" fill="#1d242c" stroke="#303c48" stroke-width="1"/>
+<text x="935.75" y="575.65" fill="#627487" font-family="-apple-system,Apple SD Gothic Neo,sans-serif" font-size="9" font-weight="400">RESPONSE</text>
+<text x="935.75" y="602.05" fill="#e6edf4" font-family="-apple-system,Apple SD Gothic Neo,sans-serif" font-size="13" font-weight="600">최종 응답</text>
+<circle cx="938.75" cy="626" r="2.7" fill="#627487"/>
+<text x="946.75" y="628.5" fill="#627487" font-family="-apple-system,Apple SD Gothic Neo,sans-serif" font-size="10" font-weight="400">대기</text>
+<text x="1073.7734375" y="628.5" fill="#9baab9" font-family="-apple-system,Apple SD Gothic Neo,sans-serif" font-size="10" font-weight="400">공개 응답</text>
+<circle cx="923.75" cy="602.0" r="2.5" fill="#4e667b"/>
+<circle cx="923.75" cy="602.0" r="1.5" fill="#171c23"/>
+<circle cx="1123.0" cy="602.0" r="2.5" fill="#4e667b"/>
+<circle cx="1123.0" cy="602.0" r="1.5" fill="#171c23"/>
+<circle cx="1023.375" cy="558" r="2.5" fill="#4e667b"/>
+<circle cx="1023.375" cy="558" r="1.5" fill="#171c23"/>
+<circle cx="1023.375" cy="646" r="2.5" fill="#4e667b"/>
+<circle cx="1023.375" cy="646" r="1.5" fill="#171c23"/>
+<rect x="209" y="676" width="199.25" height="88" rx="9" fill="#1d242c" stroke="#303c48" stroke-width="1"/>
+<text x="221" y="693.65" fill="#627487" font-family="-apple-system,Apple SD Gothic Neo,sans-serif" font-size="9" font-weight="400">INPUT CACHE</text>
+<text x="221" y="720.05" fill="#e6edf4" font-family="-apple-system,Apple SD Gothic Neo,sans-serif" font-size="13" font-weight="600">입력 캐시</text>
+<circle cx="224" cy="744" r="2.7" fill="#9baab9"/>
+<text x="232" y="746.5" fill="#9baab9" font-family="-apple-system,Apple SD Gothic Neo,sans-serif" font-size="10" font-weight="400">계측 있음</text>
+<text x="322.7734375" y="746.5" fill="#9baab9" font-family="-apple-system,Apple SD Gothic Neo,sans-serif" font-size="10" font-weight="400">86% · 입력의 일부</text>
+<circle cx="209" cy="720.0" r="2.5" fill="#4e667b"/>
+<circle cx="209" cy="720.0" r="1.5" fill="#171c23"/>
+<circle cx="408.25" cy="720.0" r="2.5" fill="#4e667b"/>
+<circle cx="408.25" cy="720.0" r="1.5" fill="#171c23"/>
+<circle cx="308.625" cy="676" r="2.5" fill="#4e667b"/>
+<circle cx="308.625" cy="676" r="1.5" fill="#171c23"/>
+<circle cx="308.625" cy="764" r="2.5" fill="#4e667b"/>
+<circle cx="308.625" cy="764" r="1.5" fill="#171c23"/>
+<rect x="447.25" y="676" width="199.25" height="88" rx="9" fill="#1d242c" stroke="#303c48" stroke-width="1"/>
+<text x="459.25" y="693.65" fill="#627487" font-family="-apple-system,Apple SD Gothic Neo,sans-serif" font-size="9" font-weight="400">TELEMETRY</text>
+<text x="459.25" y="720.05" fill="#e6edf4" font-family="-apple-system,Apple SD Gothic Neo,sans-serif" font-size="13" font-weight="600">토큰 계측</text>
+<circle cx="462.25" cy="744" r="2.7" fill="#9baab9"/>
+<text x="470.25" y="746.5" fill="#9baab9" font-family="-apple-system,Apple SD Gothic Neo,sans-serif" font-size="10" font-weight="400">계측 있음</text>
+<text x="589.0078125" y="746.5" fill="#9baab9" font-family="-apple-system,Apple SD Gothic Neo,sans-serif" font-size="10" font-weight="400">29,420 tok</text>
+<circle cx="447.25" cy="720.0" r="2.5" fill="#4e667b"/>
+<circle cx="447.25" cy="720.0" r="1.5" fill="#171c23"/>
+<circle cx="646.5" cy="720.0" r="2.5" fill="#4e667b"/>
+<circle cx="646.5" cy="720.0" r="1.5" fill="#171c23"/>
+<circle cx="546.875" cy="676" r="2.5" fill="#4e667b"/>
+<circle cx="546.875" cy="676" r="1.5" fill="#171c23"/>
+<circle cx="546.875" cy="764" r="2.5" fill="#4e667b"/>
+<circle cx="546.875" cy="764" r="1.5" fill="#171c23"/>
+<rect x="685.5" y="676" width="199.25" height="88" rx="9" fill="#1a343e" stroke="#66d1e8" stroke-width="1"/>
+<text x="697.5" y="693.65" fill="#627487" font-family="-apple-system,Apple SD Gothic Neo,sans-serif" font-size="9" font-weight="400">SUBSESSION</text>
+<text x="697.5" y="720.05" fill="#e6edf4" font-family="-apple-system,Apple SD Gothic Neo,sans-serif" font-size="13" font-weight="600">검증 경계 검토</text>
+<circle cx="700.5" cy="744" r="2.7" fill="#66d1e8"/>
+<text x="708.5" y="746.5" fill="#66d1e8" font-family="-apple-system,Apple SD Gothic Neo,sans-serif" font-size="10" font-weight="400">실행 중</text>
+<text x="815.59375" y="746.5" fill="#9baab9" font-family="-apple-system,Apple SD Gothic Neo,sans-serif" font-size="10" font-weight="400">예시 하위 세션</text>
+<circle cx="685.5" cy="720.0" r="2.5" fill="#4e667b"/>
+<circle cx="685.5" cy="720.0" r="1.5" fill="#171c23"/>
+<circle cx="884.75" cy="720.0" r="2.5" fill="#4e667b"/>
+<circle cx="884.75" cy="720.0" r="1.5" fill="#171c23"/>
+<circle cx="785.125" cy="676" r="2.5" fill="#4e667b"/>
+<circle cx="785.125" cy="676" r="1.5" fill="#171c23"/>
+<circle cx="785.125" cy="764" r="2.5" fill="#4e667b"/>
+<circle cx="785.125" cy="764" r="1.5" fill="#171c23"/>
+<rect x="923.75" y="676" width="199.25" height="88" rx="9" fill="#1d242c" stroke="#303c48" stroke-width="1"/>
+<text x="935.75" y="693.65" fill="#627487" font-family="-apple-system,Apple SD Gothic Neo,sans-serif" font-size="9" font-weight="400">ARTIFACT</text>
+<text x="935.75" y="720.05" fill="#e6edf4" font-family="-apple-system,Apple SD Gothic Neo,sans-serif" font-size="13" font-weight="600">산출물</text>
+<circle cx="938.75" cy="744" r="2.7" fill="#627487"/>
+<text x="946.75" y="746.5" fill="#627487" font-family="-apple-system,Apple SD Gothic Neo,sans-serif" font-size="10" font-weight="400">대기</text>
+<text x="1082.421875" y="746.5" fill="#9baab9" font-family="-apple-system,Apple SD Gothic Neo,sans-serif" font-size="10" font-weight="400">생성 전</text>
+<circle cx="923.75" cy="720.0" r="2.5" fill="#4e667b"/>
+<circle cx="923.75" cy="720.0" r="1.5" fill="#171c23"/>
+<circle cx="1123.0" cy="720.0" r="2.5" fill="#4e667b"/>
+<circle cx="1123.0" cy="720.0" r="1.5" fill="#171c23"/>
+<circle cx="1023.375" cy="676" r="2.5" fill="#4e667b"/>
+<circle cx="1023.375" cy="676" r="1.5" fill="#171c23"/>
+<circle cx="1023.375" cy="764" r="2.5" fill="#4e667b"/>
+<circle cx="1023.375" cy="764" r="1.5" fill="#171c23"/>
+<circle cx="196" cy="804" r="2.8" fill="#ef9299"/>
+<text x="206" y="807.35" fill="#ef9299" font-family="-apple-system,Apple SD Gothic Neo,sans-serif" font-size="11" font-weight="400">예시 테스트 명령의 실패 결과가 수신됨</text>
+<text x="1062.0" y="806.5" fill="#9baab9" font-family="-apple-system,Apple SD Gothic Neo,sans-serif" font-size="10" font-weight="400">예시 이벤트 T+32s</text>
+<rect x="172" y="818" width="988" height="88" rx="0" fill="#171c23" stroke="none" stroke-width="1"/>
+<polyline points="172,818 1160,818" fill="none" stroke="#303c48" stroke-width="1" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="172,905 1160,905" fill="none" stroke="#303c48" stroke-width="1" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="195" y="842.2" fill="#e6edf4" font-family="-apple-system,Apple SD Gothic Neo,sans-serif" font-size="12" font-weight="600">토큰 흐름</text>
+<text x="260" y="842.5" fill="#9baab9" font-family="-apple-system,Apple SD Gothic Neo,sans-serif" font-size="10" font-weight="400">예시</text>
+<rect x="195" y="857" width="11" height="11" rx="2" fill="#171c23" stroke="#627487" stroke-width="1"/>
+<text x="212" y="866.5" fill="#9baab9" font-family="-apple-system,Apple SD Gothic Neo,sans-serif" font-size="10" font-weight="400">하위 세션 포함</text>
+<text x="195" y="886.5" fill="#9baab9" font-family="-apple-system,Apple SD Gothic Neo,sans-serif" font-size="10" font-weight="400">메인 turn · T+31s</text>
+<text x="353" y="842.35" fill="#9baab9" font-family="-apple-system,Apple SD Gothic Neo,sans-serif" font-size="11" font-weight="400">입력</text>
+<text x="353" y="870.7" fill="#e6edf4" font-family="-apple-system,Apple SD Gothic Neo,sans-serif" font-size="22" font-weight="400">26,840</text>
+<text x="425.2421875" y="869.5" fill="#9baab9" font-family="-apple-system,Apple SD Gothic Neo,sans-serif" font-size="10" font-weight="400">tok</text>
+<text x="353" y="889.5" fill="#9baab9" font-family="-apple-system,Apple SD Gothic Neo,sans-serif" font-size="10" font-weight="400">캐시 포함</text>
+<text x="549" y="842.35" fill="#9baab9" font-family="-apple-system,Apple SD Gothic Neo,sans-serif" font-size="11" font-weight="400">캐시 입력</text>
+<text x="549" y="870.7" fill="#e6edf4" font-family="-apple-system,Apple SD Gothic Neo,sans-serif" font-size="22" font-weight="400">23,100</text>
+<text x="617.03125" y="869.5" fill="#9baab9" font-family="-apple-system,Apple SD Gothic Neo,sans-serif" font-size="10" font-weight="400">tok</text>
+<text x="549" y="889.5" fill="#9baab9" font-family="-apple-system,Apple SD Gothic Neo,sans-serif" font-size="10" font-weight="400">입력의 86%</text>
+<text x="745" y="842.35" fill="#9baab9" font-family="-apple-system,Apple SD Gothic Neo,sans-serif" font-size="11" font-weight="400">출력</text>
+<text x="745" y="870.7" fill="#e6edf4" font-family="-apple-system,Apple SD Gothic Neo,sans-serif" font-size="22" font-weight="400">2,580</text>
+<text x="805.1796875" y="869.5" fill="#9baab9" font-family="-apple-system,Apple SD Gothic Neo,sans-serif" font-size="10" font-weight="400">tok</text>
+<text x="745" y="889.5" fill="#9baab9" font-family="-apple-system,Apple SD Gothic Neo,sans-serif" font-size="10" font-weight="400">추론 출력 1,070 포함</text>
+<text x="941" y="842.35" fill="#9baab9" font-family="-apple-system,Apple SD Gothic Neo,sans-serif" font-size="11" font-weight="400">최근 입력 / 한도</text>
+<text x="941" y="870.7" fill="#e6edf4" font-family="-apple-system,Apple SD Gothic Neo,sans-serif" font-size="22" font-weight="400">15.8</text>
+<text x="983.4453125" y="869.5" fill="#9baab9" font-family="-apple-system,Apple SD Gothic Neo,sans-serif" font-size="10" font-weight="400">%</text>
+<text x="941" y="889.5" fill="#9baab9" font-family="-apple-system,Apple SD Gothic Neo,sans-serif" font-size="10" font-weight="400">한도 128k 예시</text>
+<rect x="549" y="894" width="155" height="3" rx="1" fill="#303c48" stroke="none" stroke-width="1"/>
+<rect x="549" y="894" width="133.4016393442623" height="3" rx="1" fill="#66d1e8" stroke="none" stroke-width="1"/>
+<rect x="172" y="906" width="988" height="86" rx="0" fill="#171c23" stroke="none" stroke-width="1"/>
+<text x="195" y="930.35" fill="#9baab9" font-family="-apple-system,Apple SD Gothic Neo,sans-serif" font-size="11" font-weight="400">예시 이벤트 · 도구 오류</text>
+<rect x="951" y="912" width="88" height="27" rx="5" fill="#1d242c" stroke="#303c48" stroke-width="1"/>
+<text x="960" y="928.35" fill="#9baab9" font-family="-apple-system,Apple SD Gothic Neo,sans-serif" font-size="11" font-weight="400">이벤트 재생</text>
+<rect x="1046" y="912" width="92" height="27" rx="5" fill="#1d242c" stroke="#303c48" stroke-width="1"/>
+<text x="1055" y="928.35" fill="#9baab9" font-family="-apple-system,Apple SD Gothic Neo,sans-serif" font-size="11" font-weight="400">다음 이벤트</text>
+<polyline points="195,955 286,955" fill="none" stroke="#4e667b" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="195" y="973.5" fill="#9baab9" font-family="-apple-system,Apple SD Gothic Neo,sans-serif" font-size="10" font-weight="400">요청 수신</text>
+<polyline points="299,955 390,955" fill="none" stroke="#4e667b" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="299" y="973.5" fill="#9baab9" font-family="-apple-system,Apple SD Gothic Neo,sans-serif" font-size="10" font-weight="400">컨텍스트</text>
+<polyline points="403,955 494,955" fill="none" stroke="#4e667b" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="403" y="973.5" fill="#9baab9" font-family="-apple-system,Apple SD Gothic Neo,sans-serif" font-size="10" font-weight="400">병렬 실행</text>
+<polyline points="507,955 598,955" fill="none" stroke="#4e667b" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="507" y="973.5" fill="#9baab9" font-family="-apple-system,Apple SD Gothic Neo,sans-serif" font-size="10" font-weight="400">입력 대기</text>
+<polyline points="611,955 702,955" fill="none" stroke="#66d1e8" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="611" y="973.5" fill="#e6edf4" font-family="-apple-system,Apple SD Gothic Neo,sans-serif" font-size="10" font-weight="600">도구 오류</text>
+<polyline points="715,955 806,955" fill="none" stroke="#303c48" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="715" y="973.5" fill="#9baab9" font-family="-apple-system,Apple SD Gothic Neo,sans-serif" font-size="10" font-weight="400">새 호출</text>
+<polyline points="819,955 910,955" fill="none" stroke="#303c48" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="819" y="973.5" fill="#9baab9" font-family="-apple-system,Apple SD Gothic Neo,sans-serif" font-size="10" font-weight="400">결과 취합</text>
+<polyline points="923,955 1014,955" fill="none" stroke="#303c48" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="923" y="973.5" fill="#9baab9" font-family="-apple-system,Apple SD Gothic Neo,sans-serif" font-size="10" font-weight="400">검증</text>
+<polyline points="1027,955 1118,955" fill="none" stroke="#303c48" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="1027" y="973.5" fill="#9baab9" font-family="-apple-system,Apple SD Gothic Neo,sans-serif" font-size="10" font-weight="400">응답 종료</text>
+<rect x="1160" y="46" width="280" height="946" rx="0" fill="#171c23" stroke="none" stroke-width="1"/>
+<polyline points="1160,46 1160,992" fill="none" stroke="#303c48" stroke-width="1" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="1178" y="76.5" fill="#627487" font-family="-apple-system,Apple SD Gothic Neo,sans-serif" font-size="10" font-weight="600">SELECTED NODE</text>
+<text x="1379.09375" y="75.65" fill="#9baab9" font-family="-apple-system,Apple SD Gothic Neo,sans-serif" font-size="9" font-weight="400">COMMAND</text>
+<text x="1178" y="114.85" fill="#e6edf4" font-family="-apple-system,Apple SD Gothic Neo,sans-serif" font-size="21" font-weight="600">명령 실행</text>
+<polyline points="1179,137 1182,134 1185,137 1182,140 1179,137" fill="none" stroke="#ef9299" stroke-width="1.3" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="1190" y="139.5" fill="#ef9299" font-family="-apple-system,Apple SD Gothic Neo,sans-serif" font-size="10" font-weight="400">오류</text>
+<polyline points="1160,158 1440,158" fill="none" stroke="#303c48" stroke-width="1" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="1178" y="188.35" fill="#9baab9" font-family="-apple-system,Apple SD Gothic Neo,sans-serif" font-size="11" font-weight="400">역할</text>
+<text x="1178" y="211.2" fill="#e6edf4" font-family="-apple-system,Apple SD Gothic Neo,sans-serif" font-size="12" font-weight="400">실제 명령·작업 경로·호출 ID·결과를 한 쌍으로 표시</text>
+<text x="1178" y="232.2" fill="#e6edf4" font-family="-apple-system,Apple SD Gothic Neo,sans-serif" font-size="12" font-weight="400">합니다. 실행 결과가 없으면 결과 미수신 상태를 유지</text>
+<text x="1178" y="253.2" fill="#e6edf4" font-family="-apple-system,Apple SD Gothic Neo,sans-serif" font-size="12" font-weight="400">합니다.</text>
+<text x="1178" y="305.35" fill="#9baab9" font-family="-apple-system,Apple SD Gothic Neo,sans-serif" font-size="11" font-weight="400">원문·식별자</text>
+<rect x="1178" y="318" width="244" height="93" rx="6" fill="#101419" stroke="#303c48" stroke-width="1"/>
+<text x="1188" y="340.35" fill="#e6edf4" font-family="-apple-system,Apple SD Gothic Neo,sans-serif" font-size="11" font-weight="400">swift test · workdir: CodexMaestro · source: unif</text>
+<text x="1188" y="361.35" fill="#e6edf4" font-family="-apple-system,Apple SD Gothic Neo,sans-serif" font-size="11" font-weight="400">ied_exec_startup</text>
+<text x="1178" y="441.35" fill="#9baab9" font-family="-apple-system,Apple SD Gothic Neo,sans-serif" font-size="11" font-weight="400">메인 turn 계측 · 예시</text>
+<text x="1178" y="466.35" fill="#9baab9" font-family="-apple-system,Apple SD Gothic Neo,sans-serif" font-size="11" font-weight="400">입력</text>
+<text x="1371.015625" y="466.35" fill="#e6edf4" font-family="-apple-system,Apple SD Gothic Neo,sans-serif" font-size="11" font-weight="400">26,840 tok</text>
+<text x="1178" y="491.35" fill="#9baab9" font-family="-apple-system,Apple SD Gothic Neo,sans-serif" font-size="11" font-weight="400">캐시 입력</text>
+<text x="1373.109375" y="491.35" fill="#e6edf4" font-family="-apple-system,Apple SD Gothic Neo,sans-serif" font-size="11" font-weight="400">23,100 tok</text>
+<text x="1178" y="516.35" fill="#9baab9" font-family="-apple-system,Apple SD Gothic Neo,sans-serif" font-size="11" font-weight="400">출력</text>
+<text x="1377.03125" y="516.35" fill="#e6edf4" font-family="-apple-system,Apple SD Gothic Neo,sans-serif" font-size="11" font-weight="400">2,580 tok</text>
+<text x="1178" y="541.35" fill="#9baab9" font-family="-apple-system,Apple SD Gothic Neo,sans-serif" font-size="11" font-weight="400">추론 출력</text>
+<text x="1379.5" y="541.35" fill="#e6edf4" font-family="-apple-system,Apple SD Gothic Neo,sans-serif" font-size="11" font-weight="400">1,070 tok</text>
+<text x="1178" y="566.35" fill="#9baab9" font-family="-apple-system,Apple SD Gothic Neo,sans-serif" font-size="11" font-weight="400">계측 시각</text>
+<text x="1367.5" y="566.35" fill="#e6edf4" font-family="-apple-system,Apple SD Gothic Neo,sans-serif" font-size="11" font-weight="400">T+31s · 예시</text>
+<text x="1178" y="611.35" fill="#9baab9" font-family="-apple-system,Apple SD Gothic Neo,sans-serif" font-size="11" font-weight="400">연결된 작업</text>
+<circle cx="1182" cy="633" r="2.5" fill="#4e667b"/>
+<text x="1193" y="636.35" fill="#e6edf4" font-family="-apple-system,Apple SD Gothic Neo,sans-serif" font-size="11" font-weight="400">메인 세션</text>
+<text x="1388.5078125" y="634.65" fill="#9baab9" font-family="-apple-system,Apple SD Gothic Neo,sans-serif" font-size="9" font-weight="400">명령 호출</text>
+<polyline points="1178,650 1422,650" fill="none" stroke="#303c48" stroke-width="1" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="1182" cy="667" r="2.5" fill="#4e667b"/>
+<text x="1193" y="670.35" fill="#e6edf4" font-family="-apple-system,Apple SD Gothic Neo,sans-serif" font-size="11" font-weight="400">호출 결과</text>
+<text x="1381.703125" y="668.65" fill="#9baab9" font-family="-apple-system,Apple SD Gothic Neo,sans-serif" font-size="9" font-weight="400">call_id 일치</text>
+<polyline points="1178,684 1422,684" fill="none" stroke="#303c48" stroke-width="1" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="1160,913 1440,913" fill="none" stroke="#303c48" stroke-width="1" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="1178" y="940.35" fill="#9baab9" font-family="-apple-system,Apple SD Gothic Neo,sans-serif" font-size="11" font-weight="400">출처 · 합성 기록</text>
+<text x="1178" y="960.5" fill="#9baab9" font-family="-apple-system,Apple SD Gothic Neo,sans-serif" font-size="10" font-weight="400">예시 item_completed.item.CommandExecution</text>
+<rect x="0" y="992" width="1440" height="32" rx="0" fill="#14191f" stroke="none" stroke-width="1"/>
+<polyline points="0,992 1440,992" fill="none" stroke="#303c48" stroke-width="1" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="18" y="1013.35" fill="#9baab9" font-family="-apple-system,Apple SD Gothic Neo,sans-serif" font-size="11" font-weight="400">정적 디자인 보드 · 합성 이벤트 · 브라우저 캡처 아님</text>
+<text x="1336.640625" y="1012.5" fill="#9baab9" font-family="-apple-system,Apple SD Gothic Neo,sans-serif" font-size="10" font-weight="400">READ ONLY DESIGN</text>
+</svg>

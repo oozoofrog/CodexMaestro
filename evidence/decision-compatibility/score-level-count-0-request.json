@@ -1,0 +1,13 @@
+{
+  "model" : "jev-latest",
+  "questions" : {
+    "q" : {
+      "criteria" : [
+
+      ],
+      "instructions" : "Evaluate the explicit synthetic marker using the ordered descriptions.",
+      "type" : "score"
+    }
+  },
+  "state" : "Synthetic verification record. The record is marked synthetic and permits reading only."
+}

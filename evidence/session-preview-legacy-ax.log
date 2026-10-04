@@ -1,0 +1,364 @@
+Window: "Codex Maestro", App: Codex Maestro.
+0 standard window Codex Maestro, ID: maestro, Secondary Actions: Raise
+	1 container
+		2 split group
+			3 container
+				4 button 최근 작업
+				5 button 열린 세션, 12
+				6 button 전체, 605
+				7 text 프로젝트
+				8 scroll area Secondary Actions: Scroll Up, Scroll Down
+					9 list Secondary Actions: AXScrollToTop, AXScrollToBottom
+						10 button Description: CodexMaestro, 9, Secondary Actions: 컨텍스트 보기, Help: /Volumes/eyedisk/develop/CodexMaestro, /Volumes/eyedisk/develop/CodexMaestro, /Volumes/eyedisk/develop/CodexMaestro
+						11 button Description: ColorResonance, 2, Secondary Actions: 컨텍스트 보기, Help: /Volumes/eyedisk/develop/ColorResonance, /Volumes/eyedisk/develop/ColorResonance, /Volumes/eyedisk/develop/ColorResonance
+						12 button Description: oozoofrog, 134, Help: /Users/oozoofrog, /Users/oozoofrog, /Users/oozoofrog, Secondary Actions: 컨텍스트 보기
+						13 button Description: jev-context-manager, 5, Secondary Actions: 컨텍스트 보기, Help: /Volumes/eyedisk/develop/oozoofrog/jev-context-manager, /Volumes/eyedisk/develop/oozoofrog/jev-context-manager, /Volumes/eyedisk/develop/oozoofrog/jev-context-manager
+						14 button Description: RunnersHeart, 149, Secondary Actions: 컨텍스트 보기, Help: /Volumes/eyedisk/develop/oozoofrog/RunnersHeart, /Volumes/eyedisk/develop/oozoofrog/RunnersHeart, /Volumes/eyedisk/develop/oozoofrog/RunnersHeart
+						15 button Description: Papers, 46, Secondary Actions: 컨텍스트 보기, Help: /Volumes/eyedisk/develop/oozoofrog/Papers, /Volumes/eyedisk/develop/oozoofrog/Papers, /Volumes/eyedisk/develop/oozoofrog/Papers
+						16 button Description: codex-skills, 16, Secondary Actions: 컨텍스트 보기, Help: /Volumes/eyedisk/develop/oozoofrog/codex-skills, /Volumes/eyedisk/develop/oozoofrog/codex-skills, /Volumes/eyedisk/develop/oozoofrog/codex-skills
+						17 button Description: 용량 관리, 140, Help: /, /, /, Secondary Actions: 컨텍스트 보기
+						18 button Description: smallpicture, 1, Secondary Actions: 컨텍스트 보기, Help: /Users/oozoofrog/Documents/ChatGPT/smallpicture, /Users/oozoofrog/Documents/ChatGPT/smallpicture, /Users/oozoofrog/Documents/ChatGPT/smallpicture
+						19 button Description: MiniStats, 4, Secondary Actions: 컨텍스트 보기, Help: /Volumes/eyedisk/develop/oozoofrog/MiniStats, /Volumes/eyedisk/develop/oozoofrog/MiniStats, /Volumes/eyedisk/develop/oozoofrog/MiniStats
+						20 button Description: Host, 7, Secondary Actions: 컨텍스트 보기, Help: /Volumes/eyedisk/develop/oozoofrog/Host, /Volumes/eyedisk/develop/oozoofrog/Host, /Volumes/eyedisk/develop/oozoofrog/Host
+						21 button Description: dev, 1, Help: /Volumes/eyedisk/dev, /Volumes/eyedisk/dev, /Volumes/eyedisk/dev, Secondary Actions: 컨텍스트 보기
+						22 button Description: good-days, 3, Secondary Actions: 컨텍스트 보기, Help: /Volumes/eyedisk/develop/good-days, /Volumes/eyedisk/develop/good-days, /Volumes/eyedisk/develop/good-days
+						23 button Description: Textify, 4, Secondary Actions: 컨텍스트 보기, Help: /Volumes/eyedisk/develop/oozoofrog/Textify, /Volumes/eyedisk/develop/oozoofrog/Textify, /Volumes/eyedisk/develop/oozoofrog/Textify
+						24 button Description: Tesella, 0, Secondary Actions: 컨텍스트 보기, Help: /Volumes/eyedisk/develop/oozoofrog/Tesella, /Volumes/eyedisk/develop/oozoofrog/Tesella, /Volumes/eyedisk/develop/oozoofrog/Tesella
+						25 button Description: wordgame, 1, Secondary Actions: 컨텍스트 보기, Help: /Volumes/eyedisk/develop/oozoofrog/wordgame, /Volumes/eyedisk/develop/oozoofrog/wordgame, /Volumes/eyedisk/develop/oozoofrog/wordgame
+						26 button Description: skills, 2, Help: /Users/oozoofrog/.codex/skills, /Users/oozoofrog/.codex/skills, /Users/oozoofrog/.codex/skills, Secondary Actions: 컨텍스트 보기
+						27 button Description: Mosaics, 1, Secondary Actions: 컨텍스트 보기, Help: /Volumes/eyedisk/develop/oozoofrog/Mosaics, /Volumes/eyedisk/develop/oozoofrog/Mosaics, /Volumes/eyedisk/develop/oozoofrog/Mosaics
+						28 button Description: 동물 스무고개  게임, 2, Secondary Actions: 컨텍스트 보기, Help: /Users/oozoofrog/Documents/ChatGPT/동물 스무고개  게임, /Users/oozoofrog/Documents/ChatGPT/동물 스무고개  게임, /Users/oozoofrog/Documents/ChatGPT/동물 스무고개  게임
+						29 button Description: 미로 게임, 7, Help: /Users/oozoofrog/Documents/미로 게임, /Users/oozoofrog/Documents/미로 게임, /Users/oozoofrog/Documents/미로 게임, Secondary Actions: 컨텍스트 보기
+						30 button Description: 고릴라, 9, Help: /Users/oozoofrog/Documents/고릴라, /Users/oozoofrog/Documents/고릴라, /Users/oozoofrog/Documents/고릴라, Secondary Actions: 컨텍스트 보기
+						31 button Description: 사람얼굴 바꾸기, 1, Secondary Actions: 컨텍스트 보기, Help: /Users/oozoofrog/Documents/사람얼굴 바꾸기, /Users/oozoofrog/Documents/사람얼굴 바꾸기, /Users/oozoofrog/Documents/사람얼굴 바꾸기
+						32 button Description: 바나나, 1, Help: /Users/oozoofrog/Documents/바나나, /Users/oozoofrog/Documents/바나나, /Users/oozoofrog/Documents/바나나, Secondary Actions: 컨텍스트 보기
+						33 button Description: FrogRemotePlayer, 3, Secondary Actions: 컨텍스트 보기, Help: /Users/oozoofrog/Documents/ChatGPT/FrogRemotePlayer, /Users/oozoofrog/Documents/ChatGPT/FrogRemotePlayer, /Users/oozoofrog/Documents/ChatGPT/FrogRemotePlayer
+						34 button Description: FrogTorrent, 9, Secondary Actions: 컨텍스트 보기, Help: /Users/oozoofrog/Documents/ChatGPT/FrogTorrent, /Users/oozoofrog/Documents/ChatGPT/FrogTorrent, /Users/oozoofrog/Documents/ChatGPT/FrogTorrent
+						35 button Description: kis-trading-app, 19, Secondary Actions: 컨텍스트 보기, Help: /Volumes/eyedisk/develop/oozoofrog/kis-trading-app, /Volumes/eyedisk/develop/oozoofrog/kis-trading-app, /Volumes/eyedisk/develop/oozoofrog/kis-trading-app
+						36 button Description: Cheat Dreams, 0, Secondary Actions: 컨텍스트 보기, Help: /Users/oozoofrog/Documents/Cheat Dreams, /Users/oozoofrog/Documents/Cheat Dreams, /Users/oozoofrog/Documents/Cheat Dreams
+						37 button Description: PragmataTrainerMenuBar, 21, Secondary Actions: 컨텍스트 보기, Help: /Volumes/eyedisk/develop/oozoofrog/PragmataTrainerMenuBar, /Volumes/eyedisk/develop/oozoofrog/PragmataTrainerMenuBar, /Volumes/eyedisk/develop/oozoofrog/PragmataTrainerMenuBar
+						38 button Description: 퇴마요새, 1, Secondary Actions: 컨텍스트 보기, Help: /Users/oozoofrog/.codex/.chatgpt-projects/g-p-6aa0084b99a881919ce884fae70b8711, /Users/oozoofrog/.codex/.chatgpt-projects/g-p-6aa0084b99a881919ce884fae70b8711, /Users/oozoofrog/.codex/.chatgpt-projects/g-p-6aa0084b99a881919ce884fae70b8711
+						39 button Description: 리센느 뮤직비디오, 1, Help: /Users/oozoofrog/Movies/ReScene, /Users/oozoofrog/Movies/ReScene, /Users/oozoofrog/Movies/ReScene, Secondary Actions: 컨텍스트 보기
+						40 button Description: LocalAIHub, 6, Help: /Volumes/eyedisk/AI/LocalAIHub, /Volumes/eyedisk/AI/LocalAIHub, /Volumes/eyedisk/AI/LocalAIHub, Secondary Actions: 컨텍스트 보기
+					41 scroll bar (settable, float) 0
+						42 value indicator (settable, float) 0
+						43 increment arrow button
+						44 decrement arrow button
+						45 increment page button
+						46 decrement page button
+			47 splitter (disabled, settable, float) 230
+			48 container
+				49 text 작업 흐름
+				50 button Description: 작업 흐름, ID: point.3.connected.trianglepath.dotted
+				51 button Description: 세션 목록 보기, ID: list.bullet
+				52 image Description: 검색, ID: magnifyingglass
+				53 text field (settable) Value: Guardian review, Placeholder: 검색, ID: session-search
+				54 button Description: 검색 지우기, ID: xmark.circle.fill
+				55 scroll area Secondary Actions: Scroll Up, Scroll Down (showing 0-100 of 172 items)
+					56 button Description: oozoofrog 프로젝트 · 54개 세션, Secondary Actions: 컨텍스트 열기
+					57 button Description: oozoofrog 프로젝트 · 54개 세션, ID: folder, Secondary Actions: 컨텍스트 열기
+					58 button Description: oozoofrog 프로젝트 · 54개 세션, Secondary Actions: 컨텍스트 열기
+					59 button Description: oozoofrog 프로젝트 연결 만들기, Help: 이 프로젝트에서 연결 만들기, ID: link
+					60 button Description: Papers 프로젝트 · 22개 세션, Secondary Actions: 컨텍스트 열기
+					61 button Description: Papers 프로젝트 · 22개 세션, ID: folder, Secondary Actions: 컨텍스트 열기
+					62 button Description: Papers 프로젝트 · 22개 세션, Secondary Actions: 컨텍스트 열기
+					63 button Description: Papers 프로젝트 연결 만들기, Help: 이 프로젝트에서 연결 만들기, ID: link
+					64 button Description: RunnersHeart 프로젝트 · 51개 세션, Secondary Actions: 컨텍스트 열기
+					65 button Description: RunnersHeart 프로젝트 · 51개 세션, ID: folder, Secondary Actions: 컨텍스트 열기
+					66 button Description: RunnersHeart 프로젝트 · 51개 세션, Secondary Actions: 컨텍스트 열기
+					67 button Description: RunnersHeart 프로젝트 연결 만들기, Help: 이 프로젝트에서 연결 만들기, ID: link
+					68 container Description: Guardian review, Secondary Actions: 컨텍스트 열기
+						69 text Guardian review Codex: {"risk_level":"low","user_authorization":"high","outcome":"allow","rationale":"사용자가 요청한 코드 검토 패키지의 해시와 공개 범위를 읽기 전용으로 검증하며 변경이나 외부 전송이 없습니다."} 저장 기록
+						70 button Description: Guardian review 연결 만들기, Help: 이 세션에서 연결 만들기, ID: link
+					71 container Description: Guardian review, Secondary Actions: 컨텍스트 열기
+						72 text Guardian review Codex: {"risk_level":"low","user_authorization":"high","outcome":"allow","rationale":"Downloads the publicly referenced step-21 origami image to a temporary file for… 저장 기록
+						73 button Description: Guardian review 연결 만들기, Help: 이 세션에서 연결 만들기, ID: link
+					74 container Description: Guardian review, Secondary Actions: 컨텍스트 열기
+						75 text Guardian review Codex: {"risk_level":"low","user_authorization":"medium","outcome":"allow","rationale":"관련된 검증 완료 변경만 선택적으로 Git index에 스테이징하며, 작업 트리나 기록·원격 저장소를 변경하지 않습니다."} 저장 기록
+						76 button Description: Guardian review 연결 만들기, Help: 이 세션에서 연결 만들기, ID: link
+					77 container Description: Guardian review, Secondary Actions: 컨텍스트 열기
+						78 text Guardian review Codex: {"risk_level":"low","user_authorization":"high","outcome":"allow","rationale":"Stages the explicitly resolved merge files for the user-authorized merge commit;… 저장 기록
+						79 button Description: Guardian review 연결 만들기, Help: 이 세션에서 연결 만들기, ID: link
+					80 container Description: Guardian review, Secondary Actions: 컨텍스트 열기
+						81 text Guardian review Codex: {"outcome":"allow"} 저장 기록
+						82 button Description: Guardian review 연결 만들기, Help: 이 세션에서 연결 만들기, ID: link
+					83 container Description: Guardian review, Secondary Actions: 컨텍스트 열기
+						84 text Guardian review Codex: {"risk_level":"low","user_authorization":"high","outcome":"allow","rationale":"Simulator 삭제 후 기기 목록만 읽어 기존 기기 보존 여부를 확인하는 제한적 검증 작업입니다."} 저장 기록
+						85 button Description: Guardian review 연결 만들기, Help: 이 세션에서 연결 만들기, ID: link
+					86 container Description: Guardian review, Secondary Actions: 컨텍스트 열기
+						87 text Guardian review Codex: {"outcome":"allow"} 저장 기록
+						88 button Description: Guardian review 연결 만들기, Help: 이 세션에서 연결 만들기, ID: link
+					89 container Description: Guardian review, Secondary Actions: 컨텍스트 열기
+						90 text Guardian review Codex: {"risk_level":"low","user_authorization":"high","outcome":"allow","rationale":"Performs read-only symbol inspection and focused local regression tests for the… 저장 기록
+						91 button Description: Guardian review 연결 만들기, Help: 이 세션에서 연결 만들기, ID: link
+					92 container Description: Guardian review, Secondary Actions: 컨텍스트 열기
+						93 text Guardian review Codex: {"risk_level":"low","user_authorization":"high","outcome":"allow","rationale":"Creates a small temporary local key list for the authorized localization work, w… 저장 기록
+						94 button Description: Guardian review 연결 만들기, Help: 이 세션에서 연결 만들기, ID: link
+					95 container Description: Guardian review, Secondary Actions: 컨텍스트 열기
+						96 text Guardian review Codex: {"risk_level":"medium","user_authorization":"high","outcome":"allow","rationale":"The user approved the narrowed warning exception and the DocC fallback workfl… 저장 기록
+						97 button Description: Guardian review 연결 만들기, Help: 이 세션에서 연결 만들기, ID: link
+					98 container Description: Guardian review, Secondary Actions: 컨텍스트 열기
+						99 text Guardian review Codex: {"risk_level":"low","user_authorization":"high","outcome":"allow","rationale":"Running the complete enabled PapersTests suite is routine and non-destructive va… 저장 기록
+						100 button Description: Guardian review 연결 만들기, Help: 이 세션에서 연결 만들기, ID: link
+					101 container Description: Guardian review, Secondary Actions: 컨텍스트 열기
+						102 text Guardian review Codex: {"risk_level":"low","user_authorization":"high","outcome":"allow","rationale":"Runs an explicitly authorized local iOS Simulator generic build with signing dis… 저장 기록
+						103 button Description: Guardian review 연결 만들기, Help: 이 세션에서 연결 만들기, ID: link
+					104 container Description: Guardian review, Secondary Actions: 컨텍스트 열기
+						105 text Guardian review Codex: {"outcome":"allow"} 저장 기록
+						106 button Description: Guardian review 연결 만들기, Help: 이 세션에서 연결 만들기, ID: link
+					107 container Description: Guardian review, Secondary Actions: 컨텍스트 열기
+						108 text Guardian review Codex: {"risk_level":"low","user_authorization":"medium","outcome":"allow","rationale":"Downloads a public instructional PDF to a temporary local directory for the au… 저장 기록
+						109 button Description: Guardian review 연결 만들기, Help: 이 세션에서 연결 만들기, ID: link
+					110 container Description: Guardian review, Secondary Actions: 컨텍스트 열기
+						111 text Guardian review Codex: {"risk_level":"low","user_authorization":"high","outcome":"allow","rationale":"Read-only inspection of the locally generated simulator test result to enumerate… 저장 기록
+						112 button Description: Guardian review 연결 만들기, Help: 이 세션에서 연결 만들기, ID: link
+					113 container Description: Guardian review, Secondary Actions: 컨텍스트 열기
+						114 text Guardian review Codex: {"risk_level":"low","user_authorization":"high","outcome":"allow","rationale":"Running a local generic watchOS Simulator Debug build is a routine, user-authori… 저장 기록
+						115 button Description: Guardian review 연결 만들기, Help: 이 세션에서 연결 만들기, ID: link
+					116 container Description: Guardian review, Secondary Actions: 컨텍스트 열기
+						117 text Guardian review Codex: {"risk_level":"low","user_authorization":"medium","outcome":"allow","rationale":"Staging the specific plan and wiki refresh files is a routine, reversible git… 저장 기록
+						118 button Description: Guardian review 연결 만들기, Help: 이 세션에서 연결 만들기, ID: link
+					119 container Description: Guardian review, Secondary Actions: 컨텍스트 열기
+						120 text Guardian review Codex: {"risk_level":"low","user_authorization":"medium","outcome":"allow","rationale":"Verifies the iPhone catalog and compiles en/ja/ko resources into a temporary d… 저장 기록
+						121 button Description: Guardian review 연결 만들기, Help: 이 세션에서 연결 만들기, ID: link
+					122 container Description: Guardian review, Secondary Actions: 컨텍스트 열기
+						123 text Guardian review Codex: {"risk_level":"low","user_authorization":"medium","outcome":"allow","rationale":"This is a read-only local process-status check to monitor ongoing user-authori… 저장 기록
+						124 button Description: Guardian review 연결 만들기, Help: 이 세션에서 연결 만들기, ID: link
+					125 container Description: Guardian review, Secondary Actions: 컨텍스트 열기
+						126 text Guardian review Codex: {"outcome":"allow"} 저장 기록
+						127 button Description: Guardian review 연결 만들기, Help: 이 세션에서 연결 만들기, ID: link
+					128 container Description: Guardian review, Secondary Actions: 컨텍스트 열기
+						129 text Guardian review Codex: {"risk_level":"low","user_authorization":"high","outcome":"allow","rationale":"Simulator device listing is a read-only local diagnostic needed for the explicit… 저장 기록
+						130 button Description: Guardian review 연결 만들기, Help: 이 세션에서 연결 만들기, ID: link
+					131 container Description: Guardian review, Secondary Actions: 컨텍스트 열기
+						132 text Guardian review Codex: {"outcome":"allow"} 저장 기록
+						133 button Description: Guardian review 연결 만들기, Help: 이 세션에서 연결 만들기, ID: link
+					134 container Description: Guardian review, Secondary Actions: 컨텍스트 열기
+						135 text Guardian review Codex: {"outcome":"allow"} 저장 기록
+						136 button Description: Guardian review 연결 만들기, Help: 이 세션에서 연결 만들기, ID: link
+					137 container Description: Guardian review, Secondary Actions: 컨텍스트 열기
+						138 text Guardian review Codex: {"risk_level":"low","user_authorization":"high","outcome":"allow","rationale":"ACK 기대값을 수정한 승인된 두 focused suite를 지정된 Simulator에서 재실행하는 검증 작업이며, 영향은 임시 테스트 산출물에… 저장 기록
+						139 button Description: Guardian review 연결 만들기, Help: 이 세션에서 연결 만들기, ID: link
+					140 container Description: Guardian review, Secondary Actions: 컨텍스트 열기
+						141 text Guardian review Codex: {"risk_level":"low","user_authorization":"medium","outcome":"allow","rationale":"Creating a local temporary handoff report in /tmp is a low-risk, reversible do… 저장 기록
+						142 button Description: Guardian review 연결 만들기, Help: 이 세션에서 연결 만들기, ID: link
+					143 container Description: Guardian review, Secondary Actions: 컨텍스트 열기
+						144 text Guardian review Codex: {"outcome":"allow"} 저장 기록
+						145 button Description: Guardian review 연결 만들기, Help: 이 세션에서 연결 만들기, ID: link
+					146 container Description: Guardian review, Secondary Actions: 컨텍스트 열기
+						147 text Guardian review Codex: {"risk_level":"low","user_authorization":"high","outcome":"allow","rationale":"This authorized verifier and contract-test rerun is non-destructive, with output… 저장 기록
+						148 button Description: Guardian review 연결 만들기, Help: 이 세션에서 연결 만들기, ID: link
+					149 container Description: Guardian review, Secondary Actions: 컨텍스트 열기
+						150 text Guardian review Codex: {"outcome":"allow"} 저장 기록
+						151 button Description: Guardian review 연결 만들기, Help: 이 세션에서 연결 만들기, ID: link
+					152 container Description: Guardian review, Secondary Actions: 컨텍스트 열기
+						153 text Guardian review Codex: {"outcome":"allow"} 저장 기록
+						154 button Description: Guardian review 연결 만들기, Help: 이 세션에서 연결 만들기, ID: link
+					155 container Description: Guardian review, Secondary Actions: 컨텍스트 열기
+						156 text Guardian review Codex: {"risk_level":"low","user_authorization":"high","outcome":"allow","rationale":"비서명 watchOS Simulator 대상의 로컬 재빌드로, 새 payload 처리 변경을 컴파일 검증할 뿐 사용자 데이터나 외부 서비스를 변… 저장 기록
+						157 button Description: Guardian review 연결 만들기, Help: 이 세션에서 연결 만들기, ID: link
+					158 container Description: Guardian review, Secondary Actions: 컨텍스트 열기
+						159 text Guardian review Codex: {"outcome":"allow"} 저장 기록
+						160 button Description: Guardian review 연결 만들기, Help: 이 세션에서 연결 만들기, ID: link
+					161 container Description: Guardian review, Secondary Actions: 컨텍스트 열기
+						162 text Guardian review Codex: {"risk_level":"low","user_authorization":"high","outcome":"allow","rationale":"This is a read/verify-only local build-and-status check for the requested Task 3… 저장 기록
+						163 button Description: Guardian review 연결 만들기, Help: 이 세션에서 연결 만들기, ID: link
+					164 container Description: Guardian review, Secondary Actions: 컨텍스트 열기
+						165 text Guardian review Codex: {"risk_level":"low","user_authorization":"high","outcome":"allow","rationale":"This reads a local xcresult test summary and has no destructive or external side… 저장 기록
+						166 button Description: Guardian review 연결 만들기, Help: 이 세션에서 연결 만들기, ID: link
+					167 container Description: Guardian review, Secondary Actions: 컨텍스트 열기
+						168 text Guardian review Codex: {"risk_level":"low","user_authorization":"medium","outcome":"allow","rationale":"Running the local watchOS simulator test suite and writing a temporary log fil… 저장 기록
+						169 button Description: Guardian review 연결 만들기, Help: 이 세션에서 연결 만들기, ID: link
+					170 container Description: Guardian review, Secondary Actions: 컨텍스트 열기
+						171 text Guardian review Codex: {"outcome":"allow"} 저장 기록
+						172 button Description: Guardian review 연결 만들기, Help: 이 세션에서 연결 만들기, ID: link
+					173 container Description: Guardian review, Secondary Actions: 컨텍스트 열기
+						174 text Guardian review Codex: {"risk_level":"low","user_authorization":"medium","outcome":"allow","rationale":"Stages a narrowly scoped set of local HealthKit permission changes for the use… 저장 기록
+						175 button Description: Guardian review 연결 만들기, Help: 이 세션에서 연결 만들기, ID: link
+					176 container Description: Guardian review, Secondary Actions: 컨텍스트 열기
+						177 text Guardian review Codex: {"outcome":"allow"} 저장 기록
+						178 button Description: Guardian review 연결 만들기, Help: 이 세션에서 연결 만들기, ID: link
+					179 container Description: Guardian review, Secondary Actions: 컨텍스트 열기
+						180 text Guardian review Codex: {"outcome":"allow"} 저장 기록
+						181 button Description: Guardian review 연결 만들기, Help: 이 세션에서 연결 만들기, ID: link
+					182 container Description: Guardian review, Secondary Actions: 컨텍스트 열기
+						183 text Guardian review Codex: {"risk_level":"low","user_authorization":"high","outcome":"allow","rationale":"This narrowly scoped restaging only records whitespace-only cleanup in files alr… 저장 기록
+						184 button Description: Guardian review 연결 만들기, Help: 이 세션에서 연결 만들기, ID: link
+					185 container Description: Guardian review, Secondary Actions: 컨텍스트 열기
+						186 text Guardian review Codex: {"risk_level":"medium","user_authorization":"medium","outcome":"allow","rationale":"Killing the single identified lingering local xcodebuild test process is a… 저장 기록
+						187 button Description: Guardian review 연결 만들기, Help: 이 세션에서 연결 만들기, ID: link
+					188 container Description: Guardian review, Secondary Actions: 컨텍스트 열기
+						189 text Guardian review Codex: {"outcome":"allow"} 저장 기록
+						190 button Description: Guardian review 연결 만들기, Help: 이 세션에서 연결 만들기, ID: link
+					191 container Description: Guardian review, Secondary Actions: 컨텍스트 열기
+						192 text Guardian review Codex: {"risk_level":"low","user_authorization":"high","outcome":"allow","rationale":"xcresult 테스트 요약을 읽는 로컬 읽기 전용 조회이며, 데이터 변경이나 외부 전송이 없습니다."} 저장 기록
+						193 button Description: Guardian review 연결 만들기, Help: 이 세션에서 연결 만들기, ID: link
+					194 container Description: Guardian review, Secondary Actions: 컨텍스트 열기
+						195 text Guardian review Codex: {"risk_level":"medium","user_authorization":"medium","outcome":"allow","rationale":"Killing one identified local xcodebuild process for the current stuck recov… 저장 기록
+						196 button Description: Guardian review 연결 만들기, Help: 이 세션에서 연결 만들기, ID: link
+					197 container Description: Guardian review, Secondary Actions: 컨텍스트 열기
+						198 text Guardian review Codex: {"outcome":"allow"} 저장 기록
+						199 button Description: Guardian review 연결 만들기, Help: 이 세션에서 연결 만들기, ID: link
+					200 container Description: Guardian review, Secondary Actions: 컨텍스트 열기
+						201 text Guardian review Codex: {"risk_level":"low","user_authorization":"medium","outcome":"allow","rationale":"This stages a bounded, explicitly enumerated set of the requested HLC and veri… 저장 기록
+						202 button Description: Guardian review 연결 만들기, Help: 이 세션에서 연결 만들기, ID: link
+					203 container Description: Guardian review, Secondary Actions: 컨텍스트 열기
+						204 text Guardian review Codex: {"risk_level":"low","user_authorization":"high","outcome":"allow","rationale":"This is a read-only local process-status check directly supporting the user's re… 저장 기록
+						205 button Description: Guardian review 연결 만들기, Help: 이 세션에서 연결 만들기, ID: link
+					206 container Description: Guardian review, Secondary Actions: 컨텍스트 열기
+						207 text Guardian review Codex: {"outcome":"allow"} 저장 기록
+						208 button Description: Guardian review 연결 만들기, Help: 이 세션에서 연결 만들기, ID: link
+					209 container Description: Guardian review, Secondary Actions: 컨텍스트 열기
+						210 text Guardian review Codex: {"risk_level":"low","user_authorization":"high","outcome":"allow","rationale":"The user explicitly requested a commit, and this stages only the two reviewed St… 저장 기록
+						211 button Description: Guardian review 연결 만들기, Help: 이 세션에서 연결 만들기, ID: link
+					212 container Description: Guardian review, Secondary Actions: 컨텍스트 열기
+						213 text Guardian review Codex: {"risk_level":"low","user_authorization":"medium","outcome":"allow","rationale":"This is a read-only local process listing to check whether build/test processe… 저장 기록
+						214 button Description: Guardian review 연결 만들기, Help: 이 세션에서 연결 만들기, ID: link
+					215 container Description: Guardian review, Secondary Actions: 컨텍스트 열기
+						216 text Guardian review Codex: {"outcome":"allow"} 저장 기록
+						217 button Description: Guardian review 연결 만들기, Help: 이 세션에서 연결 만들기, ID: link
+					218 container Description: Guardian review, Secondary Actions: 컨텍스트 열기
+						219 text Guardian review Codex: {"risk_level":"medium","user_authorization":"high","outcome":"allow","rationale":"The user explicitly requested replacing prior functional context, and this co… 저장 기록
+						220 button Description: Guardian review 연결 만들기, Help: 이 세션에서 연결 만들기, ID: link
+					221 container Description: Guardian review, Secondary Actions: 컨텍스트 열기
+						222 text Guardian review Codex: {"risk_level":"low","user_authorization":"high","outcome":"allow","rationale":"Read-only retrieval of a public guide page to verify requested game-guide detail… 저장 기록
+						223 button Description: Guardian review 연결 만들기, Help: 이 세션에서 연결 만들기, ID: link
+					224 container Description: Guardian review, Secondary Actions: 컨텍스트 열기
+						225 text Guardian review Codex: {"outcome":"allow"} 저장 기록
+						226 button Description: Guardian review 연결 만들기, Help: 이 세션에서 연결 만들기, ID: link
+					227 container Description: Guardian review, Secondary Actions: 컨텍스트 열기
+						228 text Guardian review Codex: {"risk_level":"medium","user_authorization":"high","outcome":"allow","rationale":"This unsandboxed verification only executes the two local Swift package manif… 저장 기록
+						229 button Description: Guardian review 연결 만들기, Help: 이 세션에서 연결 만들기, ID: link
+					230 container Description: Guardian review, Secondary Actions: 컨텍스트 열기
+						231 text Guardian review Codex: {"outcome":"allow"} 저장 기록
+						232 button Description: Guardian review 연결 만들기, Help: 이 세션에서 연결 만들기, ID: link
+					233 container Description: Guardian review, Secondary Actions: 컨텍스트 열기
+						234 text Guardian review Codex: {"outcome":"allow"} 저장 기록
+						235 button Description: Guardian review 연결 만들기, Help: 이 세션에서 연결 만들기, ID: link
+					236 container Description: Guardian review, Secondary Actions: 컨텍스트 열기
+						237 text Guardian review Codex: {"risk_level":"medium","user_authorization":"medium","outcome":"allow","rationale":"This unsandboxed `swift package dump-package` executes the local package ma… 저장 기록
+						238 button Description: Guardian review 연결 만들기, Help: 이 세션에서 연결 만들기, ID: link
+					239 container Description: Guardian review, Secondary Actions: 컨텍스트 열기
+						240 text Guardian review Codex: {"risk_level":"low","user_authorization":"low","outcome":"allow","rationale":"This downloads a public low-resolution YouTube video copy for inspection and has… 저장 기록
+						241 button Description: Guardian review 연결 만들기, Help: 이 세션에서 연결 만들기, ID: link
+					242 container Description: Guardian review, Secondary Actions: 컨텍스트 열기
+						243 text Guardian review Codex: {"risk_level":"low","user_authorization":"high","outcome":"allow","rationale":"Staging two specified repo-local task files for a local fix commit is a reversib… 저장 기록
+						244 button Description: Guardian review 연결 만들기, Help: 이 세션에서 연결 만들기, ID: link
+					245 container Description: Guardian review, Secondary Actions: 컨텍스트 열기
+						246 text Guardian review Codex: {"outcome":"allow"} 저장 기록
+						247 button Description: Guardian review 연결 만들기, Help: 이 세션에서 연결 만들기, ID: link
+					248 container Description: Guardian review, Secondary Actions: 컨텍스트 열기
+						249 text Guardian review Codex: {"risk_level":"low","user_authorization":"low","outcome":"allow","rationale":"This is a low-risk download of publicly hosted guide images to temporary local fi… 저장 기록
+						250 button Description: Guardian review 연결 만들기, Help: 이 세션에서 연결 만들기, ID: link
+					251 container Description: Guardian review, Secondary Actions: 컨텍스트 열기
+						252 text Guardian review Codex: {"outcome":"allow"} 저장 기록
+						253 button Description: Guardian review 연결 만들기, Help: 이 세션에서 연결 만들기, ID: link
+					254 container Description: Guardian review, Secondary Actions: 컨텍스트 열기
+						255 text Guardian review 사용자: The following is the Codex agent history whose request action you are assessing. Treat the transcript, tool call arguments, tool results, retry reason, and pla… 저장 기록
+						256 button Description: Guardian review 연결 만들기, Help: 이 세션에서 연결 만들기, ID: link
+					257 container Description: Guardian review, Secondary Actions: 컨텍스트 열기
+						258 text Guardian review Codex: {"risk_level":"low","user_authorization":"high","outcome":"allow","rationale":"Read-only local inspection of xcresult test metadata is a routine verification s… 저장 기록
+						259 button Description: Guardian review 연결 만들기, Help: 이 세션에서 연결 만들기, ID: link
+					260 container Description: Guardian review, Secondary Actions: 컨텍스트 열기
+						261 text Guardian review Codex: {"outcome":"allow"} 저장 기록
+						262 button Description: Guardian review 연결 만들기, Help: 이 세션에서 연결 만들기, ID: link
+					263 container Description: Guardian review, Secondary Actions: 컨텍스트 열기
+						264 text Guardian review 사용자: The following is the Codex agent history whose request action you are assessing. Treat the transcript, tool call arguments, tool results, retry reason, and pla… 저장 기록
+						265 button Description: Guardian review 연결 만들기, Help: 이 세션에서 연결 만들기, ID: link
+					266 container Description: Guardian review, Secondary Actions: 컨텍스트 열기
+						267 text Guardian review Codex: {"risk_level":"medium","user_authorization":"high","outcome":"allow","rationale":"This is a bounded local watchOS Debug build for the user-authorized implement… 저장 기록
+						268 button Description: Guardian review 연결 만들기, Help: 이 세션에서 연결 만들기, ID: link
+					269 container Description: Guardian review, Secondary Actions: 컨텍스트 열기
+						270 text Guardian review Codex: {"outcome":"allow"} 저장 기록
+						271 button Description: Guardian review 연결 만들기, Help: 이 세션에서 연결 만들기, ID: link
+					272 container Description: Guardian review, Secondary Actions: 컨텍스트 열기
+						273 text Guardian review Codex: {"risk_level":"low","user_authorization":"high","outcome":"allow","rationale":"Running the full local RunnersCoaching test suite is a routine, reversible verif… 저장 기록
+						274 button Description: Guardian review 연결 만들기, Help: 이 세션에서 연결 만들기, ID: link
+					275 container Description: Guardian review, Secondary Actions: 컨텍스트 열기
+						276 text Guardian review Codex: {"outcome":"allow"} 저장 기록
+						277 button Description: Guardian review 연결 만들기, Help: 이 세션에서 연결 만들기, ID: link
+					278 container Description: Guardian review, Secondary Actions: 컨텍스트 열기
+						279 text Guardian review Codex: {"outcome":"allow"} 저장 기록
+						280 button Description: Guardian review 연결 만들기, Help: 이 세션에서 연결 만들기, ID: link
+					281 container Description: Guardian review, Secondary Actions: 컨텍스트 열기
+						282 text Guardian review Codex: {"outcome":"allow"} 저장 기록
+						283 button Description: Guardian review 연결 만들기, Help: 이 세션에서 연결 만들기, ID: link
+					284 container Description: Guardian review, Secondary Actions: 컨텍스트 열기
+						285 text Guardian review Codex: {"risk_level":"low","user_authorization":"high","outcome":"allow","rationale":"Local focused simulator test execution to verify the requested regression fix is… 저장 기록
+						286 button Description: Guardian review 연결 만들기, Help: 이 세션에서 연결 만들기, ID: link
+					287 container Description: Guardian review, Secondary Actions: 컨텍스트 열기
+						288 text Guardian review Codex: {"outcome":"allow"} 저장 기록
+						289 button Description: Guardian review 연결 만들기, Help: 이 세션에서 연결 만들기, ID: link
+					290 container Description: Guardian review, Secondary Actions: 컨텍스트 열기
+						291 text Guardian review Codex: {"outcome":"allow"} 저장 기록
+						292 button Description: Guardian review 연결 만들기, Help: 이 세션에서 연결 만들기, ID: link
+					293 container Description: Guardian review, Secondary Actions: 컨텍스트 열기
+						294 text Guardian review Codex: {"outcome":"allow"} 저장 기록
+						295 button Description: Guardian review 연결 만들기, Help: 이 세션에서 연결 만들기, ID: link
+					296 container Description: Guardian review, Secondary Actions: 컨텍스트 열기
+						297 text Guardian review Codex: {"outcome":"allow"} 저장 기록
+						298 button Description: Guardian review 연결 만들기, Help: 이 세션에서 연결 만들기, ID: link
+					299 container Description: Guardian review, Secondary Actions: 컨텍스트 열기
+						300 text Guardian review Codex: {"outcome":"allow"} 저장 기록
+						301 button Description: Guardian review 연결 만들기, Help: 이 세션에서 연결 만들기, ID: link
+					302 container Description: Guardian review, Secondary Actions: 컨텍스트 열기
+						303 text Guardian review Codex: {"outcome":"allow"} 저장 기록
+						304 button Description: Guardian review 연결 만들기, Help: 이 세션에서 연결 만들기, ID: link
+					305 container Description: Guardian review, Secondary Actions: 컨텍스트 열기
+						306 text Guardian review Codex: {"risk_level":"medium","user_authorization":"high","outcome":"allow","rationale":"Staging the three verified recovery-related files is a bounded, reversible gi… 저장 기록
+						307 button Description: Guardian review 연결 만들기, Help: 이 세션에서 연결 만들기, ID: link
+					308 container Description: Guardian review, Secondary Actions: 컨텍스트 열기
+						309 text Guardian review Codex: {"outcome":"allow"} 저장 기록
+						310 button Description: Guardian review 연결 만들기, Help: 이 세션에서 연결 만들기, ID: link
+					311 container Description: Guardian review, Secondary Actions: 컨텍스트 열기
+						312 text Guardian review Codex: {"outcome":"allow"} 저장 기록
+						313 button Description: Guardian review 연결 만들기, Help: 이 세션에서 연결 만들기, ID: link
+					314 container Description: Guardian review, Secondary Actions: 컨텍스트 열기
+						315 text Guardian review Codex: {"outcome":"allow"} 저장 기록
+						316 button Description: Guardian review 연결 만들기, Help: 이 세션에서 연결 만들기, ID: link
+					317 container Description: Guardian review, Secondary Actions: 컨텍스트 열기
+						318 text Guardian review Codex: {"risk_level":"low","user_authorization":"high","outcome":"allow","rationale":"This is a read-only local help query for devicectl syntax, with no data modifica… 저장 기록
+						319 button Description: Guardian review 연결 만들기, Help: 이 세션에서 연결 만들기, ID: link
+					320 container Description: Guardian review, Secondary Actions: 컨텍스트 열기
+						321 text Guardian review Codex: {"outcome":"allow"} 저장 기록
+						322 button Description: Guardian review 연결 만들기, Help: 이 세션에서 연결 만들기, ID: link
+					323 container Description: Guardian review, Secondary Actions: 컨텍스트 열기
+						324 text Guardian review Codex: {"outcome":"allow"} 저장 기록
+						325 button Description: Guardian review 연결 만들기, Help: 이 세션에서 연결 만들기, ID: link
+					326 container Description: Guardian review, Secondary Actions: 컨텍스트 열기
+						327 text Guardian review Codex: {"outcome":"allow"} 저장 기록
+						328 button Description: Guardian review 연결 만들기, Help: 이 세션에서 연결 만들기, ID: link
+					329 container Description: Guardian review, Secondary Actions: 컨텍스트 열기
+						330 text Guardian review Codex: {"risk_level":"medium","user_authorization":"high","outcome":"allow","rationale":"Launching the just-installed app on the user’s connected iPhone is a bounded… 저장 기록
+						331 button Description: Guardian review 연결 만들기, Help: 이 세션에서 연결 만들기, ID: link
+				332 button Description: 축소, ID: minus
+				333 text 85%
+				334 button Description: 확대, ID: plus
+				335 button Description: 레이아웃 초기화, ID: arrow.up.left.and.arrow.down.right
+				336 button Description: 연결선 표시, ID: link
+				337 button Description: 연결선과 조작 안내, ID: info.circle
+			338 splitter (disabled, settable, float) 888
+			339 container
+				340 image Description: 이중 클릭 표시기가 있는 커서 화살표, ID: cursorarrow.click.2
+				341 text 작업을 선택하세요 대화와 연결을 확인합니다.
+		342 text Codex 연결 실행 3 · 입력 대기 0
+		343 image Description: 새로 고침, Help: 갱신 오전 1:56:04, ID: arrow.clockwise
+	344 toolbar
+		345 button Description: 사이드바 숨기기, ID: sidebar.left, Secondary Actions: Increment, Decrement, Delete, Cancel, Move next, Remove from toolbar
+		346 button Description: 연결, ID: link, Secondary Actions: Increment, Decrement, Delete, Cancel, Move previous, Move next, Remove from toolbar
+		347 button Description: 새로고침, Help: 새로고침 · ⌘R, ID: arrow.clockwise, Secondary Actions: Increment, Decrement, Delete, Cancel, Move previous, Move next, Remove from toolbar
+		348 button Description: 상세 패널 숨기기, ID: sidebar.right, Secondary Actions: Increment, Decrement, Delete, Cancel, Move previous, Move next, Remove from toolbar
+		349 menu button 작업공간 설정, Help: 화면 모드와 작업공간 설정, ID: ellipsis.circle
+	350 close button
+	351 full screen button Help: this button also has an action to zoom the window, Secondary Actions: zoom the window
+	352 minimize button
+	353 text Codex Maestro
+354 menu bar
+	355 Codex Maestro
+	356 File
+	357 Edit
+	358 View
+	359 Window
+	360 Help
+
+The focused UI element is 53 text field (settable) Value: Guardian review, Placeholder: 검색, ID: session-search

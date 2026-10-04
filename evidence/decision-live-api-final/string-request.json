@@ -1,0 +1,10 @@
+{
+  "model" : "jev-latest",
+  "questions" : {
+    "noul" : {
+      "instructions" : "state에 실제 사용자 자료가 아닌 검증용 합성 자료라는 표시가 있습니까?",
+      "type" : "noul"
+    }
+  },
+  "state" : "검증용 합성 자료입니다. 실제 사용자 자료는 포함하지 않습니다."
+}

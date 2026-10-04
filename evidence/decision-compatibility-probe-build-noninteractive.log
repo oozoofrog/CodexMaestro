@@ -1,0 +1,9 @@
+scripts/verify-decision-api.swift:28:56: warning: 'kSecUseAuthenticationUIFail' was deprecated in macOS 11.0: Instead of kSecUseAuthenticationUI, use kSecUseAuthenticationContext and set LAContext.interactionNotAllowed property [#DeprecatedDeclaration]
+ 26 |             // LAContext alone does not suppress generic-password ACL approval dialogs.
+ 27 |             // The deprecated Security flag still enforces a noninteractive Keychain lookup.
+ 28 |             query[kSecUseAuthenticationUI as String] = kSecUseAuthenticationUIFail
+    |                                                        `- warning: 'kSecUseAuthenticationUIFail' was deprecated in macOS 11.0: Instead of kSecUseAuthenticationUI, use kSecUseAuthenticationContext and set LAContext.interactionNotAllowed property [#DeprecatedDeclaration]
+ 29 |         }
+ 30 |         var item: CFTypeRef?
+
+[#DeprecatedDeclaration]: <https://docs.swift.org/compiler/documentation/diagnostics/deprecated-declaration>

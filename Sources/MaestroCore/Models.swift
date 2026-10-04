@@ -29,13 +29,40 @@ public struct Session: Identifiable, Hashable, Sendable {
     public var effort: String
     public var updatedAt: Date
     public var preview: String
+    public var lastMessage: SessionMessagePreview?
     public var branch: String
     public var parentID: String?
     public var status: SessionStatus = .unknown
     public var isLive: Bool = false
     public var isArchived: Bool = false
-    public init(id: String, title: String, projectID: String?, cwd: String, model: String = "", effort: String = "", updatedAt: Date = Date(), preview: String = "", branch: String = "", parentID: String? = nil) {
+    public init(id: String, title: String, projectID: String?, cwd: String, model: String = "", effort: String = "", updatedAt: Date = Date(), preview: String = "", branch: String = "", parentID: String? = nil, lastMessage: SessionMessagePreview? = nil) {
         self.id = id; self.title = title; self.projectID = projectID; self.cwd = cwd; self.model = model; self.effort = effort; self.updatedAt = updatedAt; self.preview = preview; self.branch = branch; self.parentID = parentID
+        self.lastMessage = lastMessage
+    }
+}
+public struct SessionMessagePreview: Hashable, Sendable {
+    public static let characterLimit = 160
+    public let role: String
+    public let text: String
+    public var author: String { role == "assistant" ? "Codex" : "사용자" }
+    public var displayText: String { "\(author): \(text)" }
+    public init?(role: String, text: String) {
+        guard role == "user" || role == "assistant" else { return nil }
+        var characters: [Character] = []
+        var pendingSpace = false
+        for character in text {
+            if character.isWhitespace { pendingSpace = !characters.isEmpty; continue }
+            if pendingSpace { characters.append(" "); pendingSpace = false }
+            characters.append(character)
+            if characters.count > Self.characterLimit {
+                characters = Array(characters.prefix(Self.characterLimit - 1))
+                while characters.last?.isWhitespace == true { characters.removeLast() }
+                characters.append("…")
+                break
+            }
+        }
+        guard !characters.isEmpty else { return nil }
+        self.role = role; self.text = String(characters)
     }
 }
 public struct Catalog: Sendable {

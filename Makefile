@@ -1,4 +1,4 @@
-.PHONY: build test run demo probe app xcode-project xcode-build xcode-test
+.PHONY: build test run demo probe app install xcode-project xcode-build xcode-test
 build:
 	swift build
 test:
@@ -11,6 +11,8 @@ probe:
 	swift run MaestroProbe
 app:
 	./scripts/package-app.sh
+install:
+	./scripts/install-app.sh
 xcode-project:
 	xcodegen generate --spec project.yml
 xcode-build:

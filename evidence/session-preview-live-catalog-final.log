@@ -1,0 +1,7 @@
+Catalog run 1: 605 sessions, 580 latest text previews, 230.665 ms
+Preview roles: assistant=549, user=31; max characters=160
+Latest transcript comparison: 5/5 matched; no prompts sent; no message content printed
+Catalog run 2: 605 sessions, 580 latest text previews, 129.256 ms
+Preview roles: assistant=549, user=31; max characters=160
+Catalog run 3: 605 sessions, 580 latest text previews, 129.994 ms
+Preview roles: assistant=549, user=31; max characters=160

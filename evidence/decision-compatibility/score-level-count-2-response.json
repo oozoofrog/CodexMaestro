@@ -1,0 +1,1 @@
+{"model":"jev-1.13.0","answers":{"q":{"type":"score","score":0.97,"confidence":0.95,"legend":{"0":"Synthetic marker clarity level 0 of 1.","1":"Synthetic marker clarity level 1 of 1."},"probabilities":{"0":0.03,"1":0.97}}},"usage":{"input_tokens":332,"output_tokens":17}}

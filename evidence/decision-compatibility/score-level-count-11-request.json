@@ -1,0 +1,23 @@
+{
+  "model" : "jev-latest",
+  "questions" : {
+    "q" : {
+      "criteria" : [
+        "Synthetic marker clarity level 0 of 10.",
+        "Synthetic marker clarity level 1 of 10.",
+        "Synthetic marker clarity level 2 of 10.",
+        "Synthetic marker clarity level 3 of 10.",
+        "Synthetic marker clarity level 4 of 10.",
+        "Synthetic marker clarity level 5 of 10.",
+        "Synthetic marker clarity level 6 of 10.",
+        "Synthetic marker clarity level 7 of 10.",
+        "Synthetic marker clarity level 8 of 10.",
+        "Synthetic marker clarity level 9 of 10.",
+        "Synthetic marker clarity level 10 of 10."
+      ],
+      "instructions" : "Evaluate the explicit synthetic marker using the ordered descriptions.",
+      "type" : "score"
+    }
+  },
+  "state" : "Synthetic verification record. The record is marked synthetic and permits reading only."
+}

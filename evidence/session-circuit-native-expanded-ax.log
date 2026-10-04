@@ -1,0 +1,17 @@
+The following is a diff from the previous accessibility tree for Window: "Codex Maestro" with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.
+Removed element IDs: 64, 68, 132-137, 170-180
+~				61 text 1,331개 기록 · 54개 표시
++				182 button 완료 기록 접기
+~				62 scroll area Description: 작업 회로 · 54개 노드, Secondary Actions: Scroll Left, Scroll Right, Scroll Up, Scroll Down
++					183 button Description: developer 지침, 지침·컨텍스트, 미확인, 관찰 기록, turn 01a106b0-8c2e-7700-8a0e-6e50131e3474, Help: 공개 저장 기록
++					184 button Description: 저장된 turn 컨텍스트, 지침·컨텍스트, 미확인, 관찰 기록, turn 01a106b0-8c2e-7700-8a0e-6e50131e3474, Help: 공개 저장 기록
++					185 button Description: developer 지침, 지침·컨텍스트, 미확인, 관찰 기록, turn 01a106b0-8c2e-7700-8a0e-6e50131e3474, Help: 공개 저장 기록
++					186 button Description: developer 지침, 지침·컨텍스트, 미확인, 관찰 기록, turn 01a106b0-8c2e-7700-8a0e-6e50131e3474, Help: 공개 저장 기록
++					187 button Description: 컨텍스트 압축 · 4개, 컨텍스트 압축, 접힌 구성원 4개, 관찰 기록, turn 01a106b0-8c2e-7700-8a0e-6e50131e3474, Help: 압축 기록 존재 · 현재 점유율과 내부 입력은 미확인
++					188 button Description: 저장된 turn 컨텍스트, 지침·컨텍스트, 미확인, 관찰 기록, turn 01a106b0-8c2e-7700-8a0e-6e50131e3474, Help: 공개 저장 기록
++					189 button Description: developer 지침, 지침·컨텍스트, 미확인, 관찰 기록, turn 01a106b0-8c2e-7700-8a0e-6e50131e3474, Help: 공개 저장 기록
++					190 button Description: developer 지침, 지침·컨텍스트, 미확인, 관찰 기록, turn 01a106b0-8c2e-7700-8a0e-6e50131e3474, Help: 공개 저장 기록
++					191 button Description: 저장된 turn 컨텍스트, 지침·컨텍스트, 미확인, 관찰 기록, turn 01a106b0-8c2e-7700-8a0e-6e50131e3474, Help: 공개 저장 기록
+~				122 scroll area
++					192 text 작업을 선택하세요 회로 노드나 이벤트를 선택하면 원문·ID·연결 근거를 표시합니다.
+The focused UI element is 0 standard window Codex Maestro, ID: maestro, Secondary Actions: Raise

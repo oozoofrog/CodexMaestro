@@ -1,0 +1,58 @@
+{
+  "model" : "jev-latest",
+  "questions" : {
+    "choice" : {
+      "criteria" : {
+        "A" : null,
+        "B" : {
+          "description" : "쓰기를 요구하는 기록"
+        }
+      },
+      "instructions" : {
+        "question" : "읽기 전용 목표에 맞는 기록을 선택하세요.",
+        "scope" : [
+          "A",
+          "B"
+        ]
+      },
+      "type" : "choice"
+    },
+    "noul" : {
+      "criteria" : {
+        "false" : [
+          "합성 자료라는 표시가 없음"
+        ],
+        "true" : null
+      },
+      "instructions" : "state에 실제 사용자 자료가 아닌 검증용 합성 자료라는 표시가 있습니까?",
+      "type" : "noul"
+    },
+    "null-instructions" : {
+      "instructions" : null,
+      "type" : "noul"
+    },
+    "score" : {
+      "criteria" : [
+        null,
+        {
+          "level" : "읽기 전용 목표에 적합"
+        }
+      ],
+      "instructions" : [
+        "기록 A가 읽기 전용 목표에 얼마나 적합한지 평가하세요.",
+        {
+          "boundary" : "추론하지 말고 표시된 행동을 평가하세요."
+        }
+      ],
+      "type" : "score"
+    }
+  },
+  "state" : {
+    "candidates" : {
+      "A" : "읽기만 허용",
+      "B" : "쓰기 요구"
+    },
+    "goal" : "읽기 전용 검증",
+    "text" : "검증용 합성 자료. 기록 A는 읽기만 허용합니다. 기록 B는 쓰기를 요구합니다."
+  }
+}

@@ -1,0 +1,62 @@
+The following is a diff from the previous accessibility tree for Window: "Codex Maestro" with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.
+Removed element IDs: 50, 54, 59, 61, 63-65, 70-87, 102-116, 138-208
++				137 button Codex 관리 도구 만들기
++				138 image Description: 앞으로, ID: chevron.right
++				139 text 제목 없는 세션
+~				53 text gpt-6.1-sol · medium 현재 IPC: 현재 상태 미확인 기록: 종료·반환 수신
++				140 button 상위 회로
++				141 pop up button Description: 요청, 작업 요청 선택, Value: 최신 요청 따라가기
++				142 text 29개 기록 · 16개 표시
++				143 scroll area Description: 작업 회로 · 16개 노드, Secondary Actions: Scroll Left, Scroll Right, Scroll Up, Scroll Down
++					144 text 입력·컨텍스트 프롬프트·세션 도구·하위 세션 결과·검증
++					145 button Description: 컨텍스트 압축 기록, 컨텍스트 압축, 미확인, 마지막 관찰, turn 미확인, Help: 압축 기록 존재 · 현재 점유율과 내부 입력은 미확인
++					146 button Description: 제목 없는 세션, 세션, 미확인, 마지막 관찰, turn 미확인, Help: 저장된 세션 · 현재 상태 미확인
++					147 button Description: exec, 도구 호출, 종료·반환 수신, 마지막 관찰, turn 01a1023c-181a-7351-9664-25932d9f7517, Help: 반환 수신 · 성공 여부 미확인
++					148 button Description: 세션 메타데이터, 기타 기록, 미확인, 마지막 관찰, turn 미확인, Help: 공개 저장 기록
++					149 button Description: 저장된 turn 컨텍스트, 지침·컨텍스트, 미확인, 마지막 관찰, turn 01a1023c-181a-7351-9664-25932d9f7517, Help: 공개 저장 기록
++					150 button Help: 기록 수명주기: 종료·반환 수신 · 현재 실행은 IPC와 별도, Description: 메인 세션 · 01a1023c-181a-7351-9664-25932d9f7517, 세션, 종료·반환 수신, 마지막 관찰, turn 01a1023c-181a-7351-9664-25932d9f7517
++					151 button Help: 반환 수신 · 성공 근거 있음, Description: /bin/zsh -lc cat evidence/cleanup-artifact.json; cat evidence/cleanup-line-counts.json; rg -n 'Executed [0-9]+, 명령 실행, 성공 근거 있음, 마지막 관찰, turn 01a1023c-181a-7351-9664-25932d9f7517
++					152 button Description: 세션 메타데이터, 기타 기록, 미확인, 마지막 관찰, turn 미확인, Help: 공개 저장 기록
++					153 button Description: exec, 도구 호출, 종료·반환 수신, 마지막 관찰, turn 01a1023c-181a-7351-9664-25932d9f7517, Help: 반환 수신 · 성공 여부 미확인
++					154 button Description: world_state, 기타 기록, 미확인, 마지막 관찰, turn 미확인, Help: 공개 저장 기록
++					155 button Help: 반환 수신 · 성공 근거 있음, Description: /bin/zsh -lc python3 - <<'PY'
+import json,hashlib,pathlib
+root=pathlib.Path.cwd(); a=json.loads((root/'evidenc, 명령 실행, 성공 근거 있음, 마지막 관찰, turn 01a1023c-181a-7351-9664-25932d9f7517
++					156 button Description: 기타 기록 · 6개, 기타 기록, 접힌 구성원 6개, 마지막 관찰, turn 01a1023c-181a-7351-9664-25932d9f7517, Help: 기록된 시작 · 현재 실행 여부는 IPC와 별도
++					157 button Description: 공개 진행 보고, 공개 메시지, 종료·반환 수신, 마지막 관찰, turn 01a1023c-181a-7351-9664-25932d9f7517, Help: Message Type: NEW_TASK
+Task name: /root/connections
+Sender: /root
+Payload:
+
++					158 button Description: 호출 결과 · 4개, 호출 결과, 접힌 구성원 4개, 마지막 관찰, turn 01a1023c-181a-7351-9664-25932d9f7517, Help: 반환 수신 · 성공 근거 있음
++					159 button Description: 토큰 계측 · 6개, 토큰 계측, 접힌 구성원 6개, 마지막 관찰, turn 01a1023c-181a-7351-9664-25932d9f7517, Help: 공개 저장 기록
++					160 button Description: 공개 최종 응답, 공개 메시지, 종료·반환 수신, 마지막 관찰, turn 01a1023c-181a-7351-9664-25932d9f7517, Help: Read-only evidence checks passed:
+
+- All **50 files** in `cleanup-artifact.json.sourceManifest` match their current SHA-256 values. The aggregate manifest hash also matches the stored value using sorted-key JSON serializ
++					161 scroll bar (settable, float) 0
++						162 value indicator (settable, float) 0
++						163 increment arrow button
++						164 decrement arrow button
++						165 increment page button
++						166 decrement page button
++					167 scroll bar (settable, float) 0
++						168 value indicator (settable, float) 0
++						169 increment arrow button
++						170 decrement arrow button
++						171 increment page button
++						172 decrement page button
++				173 image Description: 느낌표 배지가 있는 시계, ID: clock.badge.exclamationmark
++				174 text 마지막 관찰 · 현재 실행 여부 미확인 오후 9:39
++				175 scroll area
++					176 text 작업을 선택하세요 회로 노드나 이벤트를 선택하면 원문·ID·연결 근거를 표시합니다.
++				177 text 토큰 계측 명시된 turn 누적 · 직접 turn_token_usage · 구간 0 오후 11:48
++				178 checkbox Description: 하위 세션 포함, Value: 0
++				179 scroll area
++					180 text 입력 캐시 입력 출력 메인 최근 입력 / 한도 470,779 462,336 1,457 61.8% 캐시 입력 포함 입력의 일부 추론 출력 457 포함 입력 159,810 / 한도 258,400 점유율 아님 비율 계측 오후 11:48:48
++				181 text 현재 기록 · 23개 이벤트 시각
++				182 button 이벤트 재생
++				183 button 다음 이벤트
++				184 button (disabled) 현재로
++				185 slider (settable, float) Description: 기록 재생 위치, Value: 22, Details: 23 / 23
+~		118 image Description: 새로 고침, Help: 갱신 오후 9:39:23, ID: arrow.clockwise
+The focused UI element is 0 standard window Codex Maestro, ID: maestro, Secondary Actions: Raise

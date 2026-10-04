@@ -47,12 +47,14 @@ struct OverlapProposal: Identifiable {
     var contextLoading = false
     var contextError: String?
     var optimizationProposal: ContextOptimizationProposal?
+    var workInspection: SessionWorkStore?
     let demo: Bool
     let catalog: CodexCatalog
     private let bridge = DesktopBridge()
     private let persistence: WorkspacePersistence
     private var persistenceWritable = true
     private var liveStates: [String: LiveSession] = [:]
+    @ObservationIgnored private(set) var liveStateObservedAt: [String: Date] = [:]
     private var started = false
     private var connecting = false
     private var transcriptGeneration = UUID()
@@ -88,7 +90,9 @@ struct OverlapProposal: Identifiable {
         bridge.onDisconnect = { [weak self] reason in
             guard let self else { return }
             self.connected = false; self.liveStates.removeAll()
+            self.liveStateObservedAt.removeAll()
             for i in self.sessions.indices { self.sessions[i].isLive = false; self.sessions[i].status = .unknown }
+            self.synchronizeSessionWork()
             self.record(reason, isError: true)
         }
         bridge.onActivity = { [weak self] _, message in self?.record(message, isError: true) }
@@ -202,6 +206,8 @@ struct OverlapProposal: Identifiable {
             if !connected { await reconnect(quiet: true) }
         }
         bridge.disconnect()
+        connected = false
+        synchronizeSessionWork()
     }
     func refresh() async {
         guard !demo, !refreshing else { return }; refreshing = true
@@ -215,6 +221,7 @@ struct OverlapProposal: Identifiable {
                 if let live = liveStates[value.id] { merge(&value, live) }
                 return value
             }
+            synchronizeSessionWork()
             lastRefresh = Date()
             if connected { try bridge.follow(sessions.map(\.id)) }
             if let id = selectedSessionID { await loadTranscript(id) }
@@ -225,25 +232,31 @@ struct OverlapProposal: Identifiable {
         connecting = true
         defer { connecting = false }
         connected = false; liveStates.removeAll()
+        liveStateObservedAt.removeAll()
         for i in sessions.indices { sessions[i].isLive = false; sessions[i].status = .unknown }
+        synchronizeSessionWork()
         do {
             try await bridge.connect(socketPath: catalog.home.appendingPathComponent("ipc/ipc.sock").path)
             connected = true
+            synchronizeSessionWork()
             try bridge.follow(sessions.map(\.id))
             record("Codex 데스크톱에 연결되었습니다.")
         } catch {
             connected = false
+            synchronizeSessionWork()
             if !quiet { self.error = error.localizedDescription; record(error.localizedDescription, isError: true) }
         }
     }
     private func updateLive(_ id: String, _ state: LiveSession) {
         liveStates[id] = state.owner.isEmpty ? nil : state
+        liveStateObservedAt[id] = state.owner.isEmpty ? nil : Date()
         guard let index = sessions.firstIndex(where: { $0.id == id }) else { return }
         var updated = sessions[index]
         merge(&updated, state)
-        guard updated != sessions[index] else { return }
+        guard updated != sessions[index] else { synchronizeSessionWork(observedSessionID: id); return }
         let oldStatus = sessions[index].status
         sessions[index] = updated
+        synchronizeSessionWork(observedSessionID: id)
         if oldStatus != state.status { record("\(sessions[index].title) · \(state.status.label)") }
     }
     private func merge(_ session: inout Session, _ state: LiveSession) {
@@ -257,12 +270,17 @@ struct OverlapProposal: Identifiable {
         if let source = linkingEndpoint, source != .session(session.id) {
             completeConnectionDrag(from: source, to: .session(session.id)); return
         }
+        if workInspection != nil {
+            openSessionWork(for: session.id)
+            return
+        }
         selectedNodeProjectID = nil
         selectSessionID(session.id)
         Task { await loadTranscript(session.id) }
     }
     func selectProjectNode(_ project: Project) {
         cancelLink()
+        if workInspection != nil || contextScope != nil { closeSessionWork() }
         selectSessionID(nil)
         selectedNodeProjectID = project.id
     }
@@ -362,6 +380,9 @@ struct OverlapProposal: Identifiable {
         let rows: [(String, String, String, SessionStatus)] = [("design", "워크스페이스 토폴로지 설계", "app", .running), ("bridge", "Codex 세션 브리지 구현", "app", .running), ("test", "IPC 연결과 복구 검증", "app", .waiting), ("watch", "러닝 코칭 피드백 개선", "runner", .running), ("sync", "Watch 동기화 상태 점검", "runner", .idle), ("models", "로컬 모델 실행 검증", "studio", .idle)]
         sessions = rows.enumerated().map { index, row in
             var value = Session(id: row.0, title: row.1, projectID: row.2, cwd: "~/Projects/\(row.2)", model: "세션 기본 모델", effort: "high", updatedAt: Date().addingTimeInterval(Double(-index * 100)), preview: "작업 내용과 결과를 연결된 세션에서 확인할 수 있습니다.", branch: "main")
+            if let message = Self.demoMessages(for: row.0).last {
+                value.lastMessage = SessionMessagePreview(role: message.role, text: message.text)
+            }
             value.status = row.3; value.isLive = true; return value
         }
         workspace.links = [SessionLink(source: "design", target: "bridge", kind: .context, note: "토폴로지와 상태 표시 계약 공유"), SessionLink(source: "bridge", target: "test", kind: .review), SessionLink(source: "watch", target: "sync", kind: .dependency)]
@@ -369,6 +390,14 @@ struct OverlapProposal: Identifiable {
         record("데모 모드 · 실제 Codex에 연결하지 않습니다.")
     }
     static func demoMessages(for id: String) -> [TranscriptMessage] {
-        [TranscriptMessage(id: "u-\(id)", role: "user", text: "세션 상태를 관찰하고 연결된 작업 간 컨텍스트를 전달할 수 있도록 구성해주세요."), TranscriptMessage(id: "a-\(id)", role: "assistant", text: "프로젝트별 세션을 구성했습니다. 실행 상태는 실시간으로 반영되며, 연결을 선택하면 전달할 내용을 검토할 수 있습니다.")]
+        let responses = [
+            "design": "프로젝트별 세션 카드를 구성했습니다. 연결 방향과 작업 상태를 같은 화면에서 확인할 수 있습니다.",
+            "bridge": "세션 브리지를 연결했습니다. 상태 스냅샷과 변경 사항을 수신하고 연결이 끊기면 다시 구독합니다.",
+            "test": "IPC 연결과 복구 검사가 통과했습니다. 추가 검증 전에 실행 대상과 전송할 초안을 확인해주세요.",
+            "watch": "러닝 중 확인할 항목을 줄이고 짧은 햅틱 안내로 바꿨습니다. 상세 피드백은 달리기 후 iPhone에서 확인할 수 있습니다.",
+            "sync": "Watch와 iPhone의 동기화 상태를 확인했습니다. 저장한 운동 기록은 다음 연결에서 전달됩니다.",
+            "models": "로컬 모델 실행을 확인했습니다. 입력 파일과 생성 결과를 비교했고 다음 단계의 메모리 사용량도 점검했습니다."
+        ]
+        return [TranscriptMessage(id: "u-\(id)", role: "user", text: "세션 상태를 관찰하고 연결된 작업 간 컨텍스트를 전달할 수 있도록 구성해주세요."), TranscriptMessage(id: "a-\(id)", role: "assistant", text: responses[id] ?? "프로젝트별 세션을 구성했습니다. 실행 상태는 실시간으로 반영되며, 연결을 선택하면 전달할 내용을 검토할 수 있습니다.")]
     }
 }

@@ -1,0 +1,20 @@
+The following is a diff from the previous accessibility tree for Window: "Codex Maestro" with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.
+Removed element IDs: 54-97
++				128 scroll area Secondary Actions: Scroll Up, Scroll Down
++					129 list Secondary Actions: AXScrollToTop, AXScrollToBottom
++						130 button Help: 실시간 세션 상태, Secondary Actions: 컨텍스트 보기, Description: Codex 관리 도구 만들기, CodexMaestro, Codex: 실제 카탈로그 605개 중 338개에서 저장된 마지막 텍스트를 읽었습니다. 최근 5개 세션의 미리보기는 상세 대화와 일치했습니다. 카탈로그 전체 조회는 첫 실행 139ms, 이어진 두 실행은 42~43ms였습니다. 설치 앱을 갱신하고 화면의 두 줄 제한과 말줄임표를 확인하겠습니다., 실행 중
++						131 button Help: 실시간 상태를 확인하지 않은 저장된 세션입니다., Secondary Actions: 컨텍스트 보기, Description: 제목 없는 세션, CodexMaestro, Codex: Read-only evidence checks passed: - All **50 files** in `cleanup-artifact.json.sourceManifest` match their current SHA-256 values. The aggregate manifest hash…, 저장 기록
++						132 button Help: 실시간 상태를 확인하지 않은 저장된 세션입니다., Secondary Actions: 컨텍스트 보기, Description: 제목 없는 세션, CodexMaestro, Codex: No blockers found in the bounded post-change review. Accepted scope: - Typed connection creation remains reachable through `beginLink(from:)`, `cancelLink()`,…, 저장 기록
++						133 button Help: 실시간 상태를 확인하지 않은 저장된 세션입니다., Secondary Actions: 컨텍스트 보기, Description: 제목 없는 세션, CodexMaestro, Codex: Implemented the approved simplifications in the six assigned files: - `ConnectionActionView.swift` and `ProjectConnections.swift` use `ConnectionFunction.label…, 저장 기록
++						134 button Help: 실시간 세션 상태, Secondary Actions: 컨텍스트 보기, Description: Codex Maestro 연결 기능 기획, CodexMaestro, Codex: Saved the Korean product plan to [docs/ASTRA-FEATURE-PLAN.md](/Volumes/eyedisk/develop/CodexMaestro/docs/ASTRA-FEATURE-PLAN.md). The recommended MVP is **evide…, 대기 중
++						135 button Help: 실시간 세션 상태, Secondary Actions: 컨텍스트 보기, Description: 앱 디자인을 Apple 스타일로 시안화, CodexMaestro, Codex: 현재 코드의 소속 관계와 연결 모델을 반영해 **토폴로지 중심의 macOS 시안**으로 구성했습니다. 프로젝트 소속은 중립색 가지선으로 표시하고, 프로젝트 간·세션 간 작업 관계는 목적과 방향이 있는 화살표로 구분했습니다. 코드의 데모 데이터를 사용하며, 노드 선택·드래그, 연결 생성…, 대기 중
++						136 button Help: 실시간 상태를 확인하지 않은 저장된 세션입니다., Secondary Actions: 컨텍스트 보기, Description: 제목 없는 세션, CodexMaestro, Codex: Codex integration improvements are complete, and the final shared workspace test run passed **30 tests: 22 core tests and 8 app tests**, with zero failures. Fu…, 저장 기록
++						137 button Help: 실시간 세션 상태, Secondary Actions: 컨텍스트 보기, Description: Codex 개인 설정에 ASD-SDE100 추가, CodexMaestro, Codex: Codex 개인 지침인 [전역 AGENTS.md](/Users/oozoofrog/.codex/AGENTS.md:48)에 **ASD-STE100 원칙을 한국어 기술 설명에 적용하는 지시 프롬프트**를 추가했습니다. 이번 대화에도 갱신된 지침이 전달된 것을 확인했습니다. 말씀하신 `ASD…, 대기 중
++						138 button Help: 실시간 세션 상태, Secondary Actions: 컨텍스트 보기, Description: 앱 기능을 ASD-STE100으로 설명, CodexMaestro, Codex: 아래는 **Codex Maestro의 현재 문서와 구현을 기준으로 작성한 ASD-STE100 영어 기능 설명 초안**입니다. 짧은 문장, 능동태, 일관된 용어를 적용했습니다. `session`, `prompt`, `workspace`, `reasoning level` 등은 소프트웨어…, 대기 중
++					139 scroll bar (settable, float) 0
++						140 value indicator (settable, float) 0
++						141 increment arrow button
++						142 decrement arrow button
++						143 increment page button
++						144 decrement page button
+The focused UI element is 53 text field (settable) Placeholder: 검색, ID: session-search

@@ -1,0 +1,61 @@
+The following is a diff from the previous accessibility tree for Window: "Codex Maestro" with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.
+Removed element IDs: 47-60, 147-182, 203-204
++			203 splitter (disabled, settable, float) 230
++			204 container
++				205 button Description: 작업 회로로 돌아가기, ID: chevron.left
++				206 text Codex 관리 도구 만들기 컨텍스트
++				207 button Description: 컨텍스트 다시 읽기, ID: arrow.clockwise
++				208 button Codex 관리 도구 만들기
++				209 menu button 개선 요청, ID: sparkles
++				210 split group
++					211 container
++						212 image Description: 검색, ID: magnifyingglass
++						213 text field (settable) 기록 검색
++						214 scroll area Secondary Actions: Scroll Up, Scroll Down
++							215 button Description: 메타데이터, 기록 묶음, 5,566, Secondary Actions: 펼치기
++							216 button Description: 지침, 기록 묶음, 119, Secondary Actions: 펼치기
++							217 button Description: Codex 관리 도구 만들기, 세션, Secondary Actions: 펼치기
++							218 button Description: 대화, 기록 묶음, 580, Secondary Actions: 펼치기
++							219 button Description: 도구 호출, 기록 묶음, 1,570, Secondary Actions: 펼치기
++							220 button Description: 사용량 기록, 기록 묶음, 3,357, Secondary Actions: 펼치기
++							221 button Description: 도구 결과, 기록 묶음, 1,569, Secondary Actions: 펼치기
++							222 button Description: 압축 기록, 기록 묶음, 19, Secondary Actions: 펼치기
++							223 button Description: 제목 없는 세션, 세션 관계, Secondary Actions: 펼치기
++							224 button Description: 제목 없는 세션, 세션 관계, Secondary Actions: 펼치기
++							225 button Description: 제목 없는 세션, 세션 관계, Secondary Actions: 펼치기
++							226 button Description: 제목 없는 세션, 세션 관계, Secondary Actions: 펼치기
++							227 button Description: 제목 없는 세션, 세션 관계, Secondary Actions: 펼치기
++							228 button Description: 제목 없는 세션, 세션 관계, Secondary Actions: 펼치기
++							229 button Description: 제목 없는 세션, 세션 관계, Secondary Actions: 펼치기
++							230 button Description: 저장된 세션 메타데이터, 메타데이터, Secondary Actions: 펼치기
++							231 button Description: /Users/oozoofrog/.agents/skills/swift-master/skills/swift-master/SKILL.md, 기록에 등장한 참조, Secondary Actions: 펼치기
++							232 button Description: /Users/oozoofrog/.codex/skills/openai-docs/SKILL.md, 기록에 등장한 참조, Secondary Actions: 펼치기
++							233 button Description: /Users/oozoofrog/.codex/skills/.system/openai-docs/SKILL.md, 기록에 등장한 참조, Secondary Actions: 펼치기
++							234 scroll bar (settable, float) 0
++								235 value indicator (settable, float) 0
++								236 increment arrow button
++								237 decrement arrow button
++								238 increment page button
++								239 decrement page button
++						240 button Description: 축소, ID: minus
++						241 text 90%
++						242 button Description: 확대, ID: plus
++						243 button (disabled) Description: 뒤로, ID: chevron.left
++						244 text 1–18 / 963
++						245 button Description: 앞으로, ID: chevron.right
++					246 splitter (disabled, settable, float) 828
++					247 container
++						248 image Description: 대화, ID: bubble.left.and.bubble.right
++						249 text Codex 관리 도구 만들기
++						250 button 펼치기
++						251 scroll area
++							252 text ID: 01a100d8-585b-74c3-8d63-332de28dd73d
+경로: /Volumes/eyedisk/develop/CodexMaestro
+모델: gpt-6.1-sol
+추론: ultra
+브랜치: main
+보관: false 128글자 · 기록 크기 Codex catalog
++				253 text 저장된 기록 1개 세션 · 13,756개 항목
++				254 button Description: 출처와 확인 범위, ID: info.circle
+~		184 image Description: 새로 고침, Help: 갱신 오후 9:40:51, ID: arrow.clockwise
+The focused UI element is 0 standard window Codex Maestro, ID: maestro, Secondary Actions: Raise

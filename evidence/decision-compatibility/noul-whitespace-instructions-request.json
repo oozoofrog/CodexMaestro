@@ -1,0 +1,10 @@
+{
+  "model" : "jev-latest",
+  "questions" : {
+    "q" : {
+      "instructions" : "   ",
+      "type" : "noul"
+    }
+  },
+  "state" : "Synthetic verification record. The record is marked synthetic and permits reading only."
+}

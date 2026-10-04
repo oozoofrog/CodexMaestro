@@ -1,0 +1,22 @@
+The following is a diff from the previous accessibility tree for Window: "Codex Maestro" with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.
+Removed element IDs: 88, 92-101, 137, 202
+~				61 text 1,463개 기록 · 67개 표시
+~				63 scroll area Description: 작업 회로 · 67개 노드, Secondary Actions: Scroll Left, Scroll Right, Scroll Up, Scroll Down
+~					145 button Description: 기타 기록 · 310개, 기타 기록, 접힌 구성원 310개, 관찰 기록, turn 01a106b0-8c2e-7700-8a0e-6e50131e3474, Help: 기록된 시작 · 현재 실행 여부는 IPC와 별도
+~					150 button Description: 토큰 계측 · 381개, 토큰 계측, 접힌 구성원 381개, 관찰 기록, turn 01a106b0-8c2e-7700-8a0e-6e50131e3474, Help: 공개 저장 기록
+~					152 button Description: 호출 결과 · 285개, 호출 결과, 접힌 구성원 285개, 관찰 기록, turn 01a106b0-8c2e-7700-8a0e-6e50131e3474, Help: 반환 수신 · 성공 근거 있음
+~					161 button Description: MCP 실행 · 30개, MCP 실행, 접힌 구성원 30개, 관찰 기록, turn 01a106b0-8c2e-7700-8a0e-6e50131e3474, Help: 반환 수신 · 성공 여부 미확인
++					202 button Description: js, 도구 호출, 결과·입력 대기, 관찰 기록, turn 01a106b0-8c2e-7700-8a0e-6e50131e3474, Help: 호출 확인 · 결과 미수신
++					203 button Description: js, 도구 호출, 결과·입력 대기, 관찰 기록, turn 01a106b0-8c2e-7700-8a0e-6e50131e3474, Help: 호출 확인 · 결과 미수신
+~					85 text 하위 세션
+~					87 text 미확인 제목 없는 세션 과거 하위 세션 · 현재 turn 참여 미확인 소속 turn 소속 미확인 항목 ID historical-subsession:01a100d8-585b-74c3-8d63-332de28dd73d:01a10106-f7f3-7952-b797-53b90bb01350
++					204 button 제목 없는 세션의 하위 세션 회로 열기
++					205 text 기록 원문 연결된 작업
++					206 button Codex 관리 도구 만들기, 과거 부모·자식 관계
++					207 text source.subagent.thread_spawn.parent_thread_id · 현재 위임을 뜻하지 않습니다. 출처 Codex catalog parentID
+~				108 text 토큰 계측 명시된 turn 누적 · 직접 turn_token_usage · 구간 0 오후 9:39
+~					111 text 입력 캐시 입력 출력 메인 최근 입력 / 한도 24,429,055 24,019,968 72,629 44.1% 캐시 입력 포함 입력의 일부 추론 출력 21,663 포함 입력 113,969 / 한도 258,400 점유율 아님 비율 계측 오후 9:39:04
+~				112 text 현재 기록 · 1,298개 이벤트 시각
+~				116 slider (settable, float) Description: 기록 재생 위치, Value: 1297, Details: 1,298 / 1,298
+~		118 image Description: 새로 고침, Help: 갱신 오후 9:39:12, ID: arrow.clockwise
+The focused UI element is 0 standard window Codex Maestro, ID: maestro, Secondary Actions: Raise

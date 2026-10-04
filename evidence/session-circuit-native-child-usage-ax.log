@@ -1,0 +1,22 @@
+The following is a diff from the previous accessibility tree for Window: "Codex Maestro" with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.
+~				63 text 1,489개 기록 · 71개 표시
+~				64 scroll area Description: 작업 회로 · 71개 노드, Secondary Actions: Scroll Left, Scroll Right, Scroll Up, Scroll Down
+~					142 button Description: 토큰 계측 · 389개, 토큰 계측, 접힌 구성원 389개, 관찰 기록, turn 01a106b0-8c2e-7700-8a0e-6e50131e3474, Help: 공개 저장 기록
++					212 button Description: js, 도구 호출, 결과·입력 대기, 관찰 기록, turn 01a106b0-8c2e-7700-8a0e-6e50131e3474, Help: 호출 확인 · 결과 미수신
++				213 button 하위 계측 갱신
+~				99 checkbox Description: 하위 세션 포함, Value: 1
+~					101 text 입력 캐시 입력 출력 메인 최근 입력 / 한도 24,927,108 24,510,464 73,154 48.2% 캐시 입력 포함 입력의 일부 추론 출력 21,726 포함 입력 124,488 / 한도 258,400 점유율 아님 비율 계측 오후 9:39:42
++				214 image Description: 정보, ID: info.circle
++				215 text 하위 계측 8 / 8개 · 중복·범위 확인 전 합계 없음 하위 세션 계측은 조회 시점의 기록입니다 · 조회 오후 9:39:55
++				216 scroll area Secondary Actions: Scroll Left, Scroll Right
++					217 text Help: 명시된 turn 누적 · 직접 turn_token_usage · 구간 0, Value: 제목 없는 세션 제목 없는 세션 제목 없는 세션 앱 디자인을 Apple 스타일로 시안화 제목 없는 세션 제목 없는 세션 제목 없는 세션 제목 없는 세션 입력 470,779 · 출력 1,457 입력 743,102 · 출력 2,253 입력 1,037,749 · 출력 2,077 입력 4,991,036 · 출력 34,444 입력 640,977 · 출력 2,419 입력 173,092 · 출력 1,177 입력 773,090 · 출력 2,013 입력 956,797 · 출력 6,010 오후 11:48 오후 6:20 오후 11:38 오후 6:57 오후 11:45 오후 9:39 오후 9:26 오후 9:39
++					218 scroll bar (settable, float) 0
++						219 value indicator (settable, float) 0
++						220 increment arrow button
++						221 decrement arrow button
++						222 increment page button
++						223 decrement page button
+~				102 text 현재 기록 · 1,322개 이벤트 시각
+~				106 slider (settable, float) Description: 기록 재생 위치, Value: 1321, Details: 1,322 / 1,322
+~		108 image Description: 새로 고침, Help: 갱신 오후 9:39:55, ID: arrow.clockwise
+The focused UI element is 0 standard window Codex Maestro, ID: maestro, Secondary Actions: Raise

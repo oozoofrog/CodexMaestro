@@ -1,0 +1,7 @@
+2026-10-04 installed /Applications/Codex Maestro.app
+Observed main native window Codex Maestro, catalog count 605, toolbar button 사용자 정의 판단.
+Clicked 사용자 정의 판단. Tool returned: Sky Computer Use native pipe closed before response.
+Fresh app binding returned: Computer Use server error -10005: cgWindowNotFound.
+Native decision-sheet editing and API-result UI are unverified.
+Prior helper crash report: /Users/oozoofrog/Library/Logs/DiagnosticReports/SkyComputerUseService-2026-10-04-025036.ips; EXC_BREAKPOINT / Array.remove(at:).
+This identifies a helper failure; it does not prove the app sheet is correct.

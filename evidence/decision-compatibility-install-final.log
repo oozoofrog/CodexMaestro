@@ -1,0 +1,7 @@
+./scripts/install-app.sh
+Building for production...
+[1 / 1]
+Build complete! (0.65초)
+/Volumes/eyedisk/develop/CodexMaestro/dist/Codex Maestro.app: replacing existing signature
+/Volumes/eyedisk/develop/CodexMaestro/dist/Codex Maestro.app
+설치 완료: /Applications/Codex Maestro.app

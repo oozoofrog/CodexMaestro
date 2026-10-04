@@ -6,8 +6,10 @@ struct ContextTopologyView: View {
     var body: some View {
         VStack(spacing: 0) {
             HStack(spacing: 10) {
-                Button { store.closeContext() } label: { Image(systemName: "chevron.left") }
-                    .buttonStyle(.plain).help("작업 흐름으로 돌아가기").accessibilityLabel("작업 흐름으로 돌아가기")
+                Button { store.returnToSessionWork() } label: { Image(systemName: "chevron.left") }
+                    .buttonStyle(.plain)
+                    .help(store.workInspection == nil ? "작업 흐름으로 돌아가기" : "작업 회로로 돌아가기")
+                    .accessibilityLabel(store.workInspection == nil ? "작업 흐름으로 돌아가기" : "작업 회로로 돌아가기")
                 Text(store.contextScope.map { store.endpointTitle($0) } ?? "컨텍스트")
                     .font(.system(size: 18, weight: .medium)).lineLimit(1)
                 Text("컨텍스트").font(.system(size: 11)).foregroundStyle(Palette.muted)

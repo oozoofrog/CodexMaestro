@@ -1,0 +1,37 @@
+The following is a diff from the previous accessibility tree for Window: "Codex Maestro" with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.
+Removed element IDs: 124-139
+~					121 text 프롬프트
+~					123 text 기록 있음 사용자 프롬프트 구현 해주세요 소속 turn 01a106b0-8c2e-7700-8a0e-6e50131e3474 항목 ID item:01a100d8-585b-74c3-8d63-332de28dd73d:01a106b0-8c8b-77e3-856a-d69cb008a061 기록 시각 2026. 10. 4. 오후 8:33:16 기록 원문 {
+  "ordinal" : 11263,
+  "payload" : {
+    "completed_at_ms" : 1791113596043,
+    "item" : {
+      "client_id" : "C638DF55-F71D-4861-BE0A-7042215F528B",
+      "content" : [
+        {
+          "text" : "구현 해주세요",
+          "text_elements" : [
+
+          ],
+          "type" : "text"
+        }
+      ],
+      "id" : "01a106b0-8c8b-77e3-856a-d69cb008a061",
+      "type" : "UserMessage"
+    },
+    "started_at_ms" : 1791113596043,
+    "thread_id" : "01a100d8-585b-74c3-8d63-332de28dd73d",
+    "turn_id" : "01a106b0-8c2e-7700-8a0e-6e50131e3474",
+    "type" : "item_completed"
+  },
+  "timestamp" : "2026-10-04T11:33:16.043Z",
+  "type" : "event_msg"
+} 연결된 작업
++					175 button 사용자 프롬프트, 기록 순서
++					176 text 원문 기록 순서 · 의존성을 뜻하지 않습니다.
++					177 button 메인 세션 · 01a106b0-8c2e-7700-8a0e-6e50131e3474, turn 소속
++					178 text /Users/oozoofrog/.codex/sessions/2026/10/03/rollout-2026-10-03T17-19-00-01a100d8-585b-74c3-8d63-332de28dd73d.jsonl #11264, 세대 0 · 직접 turn ID
++					179 button 공개 진행 보고, 기록 순서
++					180 text 원문 기록 순서 · 의존성을 뜻하지 않습니다. 출처 /Users/oozoofrog/.codex/sessions/2026/10/03/rollout-2026-10-03T17-19-00-01a100d8-585b-74c3-8d63-332de28dd73d.jsonl #11264, 세대 0 · 직접 turn ID
+~		156 image Description: 새로 고침, Help: 갱신 오후 9:56:40, ID: arrow.clockwise
+The focused UI element is 0 standard window Codex Maestro, ID: maestro, Secondary Actions: Raise

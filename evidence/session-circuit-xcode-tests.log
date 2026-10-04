@@ -1,0 +1,816 @@
+Command line invocation:
+    /Applications/Xcode.app/Contents/Developer/usr/bin/xcodebuild -project CodexMaestro.xcodeproj -scheme CodexMaestro -configuration Debug -destination platform=macOS -derivedDataPath .build/XcodeDerivedData -resultBundlePath /tmp/CodexMaestroSessionCircuitFinal20261004.xcresult test
+
+Writing result bundle at path:
+	/tmp/CodexMaestroSessionCircuitFinal20261004.xcresult
+
+--- xcodebuild: WARNING: Using the first of multiple matching destinations:
+{ platform:macOS, arch:arm64, id:00006040-000A503E11A0801C, name:My Mac }
+{ platform:macOS, arch:x86_64, id:00006040-000A503E11A0801C, name:My Mac }
+ComputePackagePrebuildTargetDependencyGraph
+
+Prepare packages
+
+CreateBuildRequest
+
+SendProjectDescription
+
+CreateBuildOperation
+
+ComputeTargetDependencyGraph
+note: Building targets in dependency order
+note: Target dependency graph (5 targets)
+    Target 'MaestroAppTests' in project 'CodexMaestro'
+        ➜ Explicit dependency on target 'CodexMaestro' in project 'CodexMaestro'
+        ➜ Explicit dependency on target 'MaestroCore' in project 'CodexMaestro'
+    Target 'MaestroCoreTests' in project 'CodexMaestro'
+        ➜ Explicit dependency on target 'MaestroCore' in project 'CodexMaestro'
+    Target 'MaestroProbe' in project 'CodexMaestro'
+        ➜ Explicit dependency on target 'MaestroCore' in project 'CodexMaestro'
+    Target 'CodexMaestro' in project 'CodexMaestro'
+        ➜ Explicit dependency on target 'MaestroCore' in project 'CodexMaestro'
+    Target 'MaestroCore' in project 'CodexMaestro' (no dependencies)
+
+GatherProvisioningInputs
+
+CreateBuildDescription
+
+ClangStatCache /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang-stat-cache /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX27.0.sdk /Volumes/eyedisk/develop/CodexMaestro/.build/XcodeDerivedData/SDKStatCaches.noindex/macosx27.0-26A425-e829b21a6f8c9b70876ba0858053c0447231f6df4def33e022ae2eb8f782df1a.sdkstatcache
+    cd /Volumes/eyedisk/develop/CodexMaestro/CodexMaestro.xcodeproj
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang-stat-cache /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX27.0.sdk -o /Volumes/eyedisk/develop/CodexMaestro/.build/XcodeDerivedData/SDKStatCaches.noindex/macosx27.0-26A425-e829b21a6f8c9b70876ba0858053c0447231f6df4def33e022ae2eb8f782df1a.sdkstatcache
+
+SwiftDriver CodexMaestro normal arm64 com.apple.xcode.tools.swift.compiler (in target 'CodexMaestro' from project 'CodexMaestro')
+    cd /Volumes/eyedisk/develop/CodexMaestro
+    builtin-SwiftDriver -- /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -module-name CodexMaestro -Onone @/Volumes/eyedisk/develop/CodexMaestro/.build/XcodeDerivedData/Build/Intermediates.noindex/CodexMaestro.build/Debug/CodexMaestro.build/Objects-normal/arm64/Codex\ Maestro.SwiftFileList -DDEBUG -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX27.0.sdk -target arm64-apple-macos26.0 -g -module-cache-path /Volumes/eyedisk/develop/CodexMaestro/.build/XcodeDerivedData/ModuleCache.noindex -Xfrontend -serialize-debugging-options -enable-testing -index-store-path /Volumes/eyedisk/develop/CodexMaestro/.build/XcodeDerivedData/Index.noindex/DataStore -Xcc -D_LIBCPP_HARDENING_MODE\=_LIBCPP_HARDENING_MODE_DEBUG -swift-version 6 -I /Volumes/eyedisk/develop/CodexMaestro/.build/XcodeDerivedData/Build/Products/Debug -I /Volumes/eyedisk/develop/CodexMaestro/Sources/CSQLite -F /Volumes/eyedisk/develop/CodexMaestro/.build/XcodeDerivedData/Build/Products/Debug -c -j12 -enable-batch-mode -incremental -Xcc -ivfsstatcache -Xcc /Volumes/eyedisk/develop/CodexMaestro/.build/XcodeDerivedData/SDKStatCaches.noindex/macosx27.0-26A425-e829b21a6f8c9b70876ba0858053c0447231f6df4def33e022ae2eb8f782df1a.sdkstatcache -output-file-map /Volumes/eyedisk/develop/CodexMaestro/.build/XcodeDerivedData/Build/Intermediates.noindex/CodexMaestro.build/Debug/CodexMaestro.build/Objects-normal/arm64/CodexMaestro-OutputFileMap.json -save-temps -no-color-diagnostics -explicit-module-build -module-cache-path /Volumes/eyedisk/develop/CodexMaestro/.build/XcodeDerivedData/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules -clang-scanner-module-cache-path /Volumes/eyedisk/develop/CodexMaestro/.build/XcodeDerivedData/ModuleCache.noindex -sdk-module-cache-path /Volumes/eyedisk/develop/CodexMaestro/.build/XcodeDerivedData/SDKExplicitPrecompiledModules -emit-dependencies -emit-module -emit-module-path /Volumes/eyedisk/develop/CodexMaestro/.build/XcodeDerivedData/Build/Intermediates.noindex/CodexMaestro.build/Debug/CodexMaestro.build/Objects-normal/arm64/CodexMaestro.swiftmodule -serialize-diagnostics -dependency-scan-serialize-diagnostics-path /Volumes/eyedisk/develop/CodexMaestro/.build/XcodeDerivedData/Build/Intermediates.noindex/CodexMaestro.build/Debug/CodexMaestro.build/Objects-normal/arm64/CodexMaestro-dependency-scan.dia -validate-clang-modules-once -clang-build-session-file /Volumes/eyedisk/develop/CodexMaestro/.build/XcodeDerivedData/ModuleCache.noindex/Session.modulevalidation -Xcc -fmodules-prune-interval\=86400 -Xcc -fmodules-prune-after\=345600 -emit-const-values -const-gather-protocols-list /Volumes/eyedisk/develop/CodexMaestro/.build/XcodeDerivedData/Build/Intermediates.noindex/CodexMaestro.build/Debug/CodexMaestro.build/Objects-normal/arm64/CodexMaestro_const_extract_protocols.json -Xcc -iquote -Xcc /Volumes/eyedisk/develop/CodexMaestro/.build/XcodeDerivedData/Build/Intermediates.noindex/CodexMaestro.build/Debug/CodexMaestro.build/Codex\ Maestro-generated-files.hmap -Xcc -I/Volumes/eyedisk/develop/CodexMaestro/.build/XcodeDerivedData/Build/Intermediates.noindex/CodexMaestro.build/Debug/CodexMaestro.build/Codex\ Maestro-own-target-headers.hmap -Xcc -I/Volumes/eyedisk/develop/CodexMaestro/.build/XcodeDerivedData/Build/Intermediates.noindex/CodexMaestro.build/Debug/CodexMaestro.build/Codex\ Maestro-all-non-framework-target-headers.hmap -Xcc -ivfsoverlay -Xcc /Volumes/eyedisk/develop/CodexMaestro/.build/XcodeDerivedData/Build/Intermediates.noindex/CodexMaestro.build/Debug/CodexMaestro-0e2cff73dbdd1dd724aeaf9223fc0605-VFS/all-product-headers.yaml -Xcc -iquote -Xcc /Volumes/eyedisk/develop/CodexMaestro/.build/XcodeDerivedData/Build/Intermediates.noindex/CodexMaestro.build/Debug/CodexMaestro.build/Codex\ Maestro-project-headers.hmap -Xcc -I/Volumes/eyedisk/develop/CodexMaestro/.build/XcodeDerivedData/Build/Products/Debug/include -Xcc -I/Volumes/eyedisk/develop/CodexMaestro/.build/XcodeDerivedData/Build/Intermediates.noindex/CodexMaestro.build/Debug/CodexMaestro.build/DerivedSources-normal/arm64 -Xcc -I/Volumes/eyedisk/develop/CodexMaestro/.build/XcodeDerivedData/Build/Intermediates.noindex/CodexMaestro.build/Debug/CodexMaestro.build/DerivedSources/arm64 -Xcc -I/Volumes/eyedisk/develop/CodexMaestro/.build/XcodeDerivedData/Build/Intermediates.noindex/CodexMaestro.build/Debug/CodexMaestro.build/DerivedSources -Xcc -DDEBUG\=1 -emit-objc-header -emit-objc-header-path /Volumes/eyedisk/develop/CodexMaestro/.build/XcodeDerivedData/Build/Intermediates.noindex/CodexMaestro.build/Debug/CodexMaestro.build/Objects-normal/arm64/CodexMaestro-Swift.h -working-directory /Volumes/eyedisk/develop/CodexMaestro -experimental-emit-module-separately -disable-cmo
+
+SwiftCompile normal arm64 Compiling\ CircuitTokenPanel.swift /Volumes/eyedisk/develop/CodexMaestro/Sources/CodexMaestro/CircuitTokenPanel.swift (in target 'CodexMaestro' from project 'CodexMaestro')
+
+SwiftCompile normal arm64 /Volumes/eyedisk/develop/CodexMaestro/Sources/CodexMaestro/CircuitTokenPanel.swift (in target 'CodexMaestro' from project 'CodexMaestro')
+    cd /Volumes/eyedisk/develop/CodexMaestro
+    builtin-SwiftPerFileCompile CircuitTokenPanel.swift
+
+SwiftEmitModule normal arm64 Emitting\ module\ for\ CodexMaestro (in target 'CodexMaestro' from project 'CodexMaestro')
+
+SwiftCompile normal arm64 (in target 'CodexMaestro' from project 'CodexMaestro')
+    cd /Volumes/eyedisk/develop/CodexMaestro
+    
+
+SwiftDriverJobDiscovery normal arm64 Compiling CircuitTokenPanel.swift (in target 'CodexMaestro' from project 'CodexMaestro')
+
+SwiftDriver\ Compilation CodexMaestro normal arm64 com.apple.xcode.tools.swift.compiler (in target 'CodexMaestro' from project 'CodexMaestro')
+    cd /Volumes/eyedisk/develop/CodexMaestro
+    builtin-Swift-Compilation -- /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -module-name CodexMaestro -Onone @/Volumes/eyedisk/develop/CodexMaestro/.build/XcodeDerivedData/Build/Intermediates.noindex/CodexMaestro.build/Debug/CodexMaestro.build/Objects-normal/arm64/Codex\ Maestro.SwiftFileList -DDEBUG -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX27.0.sdk -target arm64-apple-macos26.0 -g -module-cache-path /Volumes/eyedisk/develop/CodexMaestro/.build/XcodeDerivedData/ModuleCache.noindex -Xfrontend -serialize-debugging-options -enable-testing -index-store-path /Volumes/eyedisk/develop/CodexMaestro/.build/XcodeDerivedData/Index.noindex/DataStore -Xcc -D_LIBCPP_HARDENING_MODE\=_LIBCPP_HARDENING_MODE_DEBUG -swift-version 6 -I /Volumes/eyedisk/develop/CodexMaestro/.build/XcodeDerivedData/Build/Products/Debug -I /Volumes/eyedisk/develop/CodexMaestro/Sources/CSQLite -F /Volumes/eyedisk/develop/CodexMaestro/.build/XcodeDerivedData/Build/Products/Debug -c -j12 -enable-batch-mode -incremental -Xcc -ivfsstatcache -Xcc /Volumes/eyedisk/develop/CodexMaestro/.build/XcodeDerivedData/SDKStatCaches.noindex/macosx27.0-26A425-e829b21a6f8c9b70876ba0858053c0447231f6df4def33e022ae2eb8f782df1a.sdkstatcache -output-file-map /Volumes/eyedisk/develop/CodexMaestro/.build/XcodeDerivedData/Build/Intermediates.noindex/CodexMaestro.build/Debug/CodexMaestro.build/Objects-normal/arm64/CodexMaestro-OutputFileMap.json -save-temps -no-color-diagnostics -explicit-module-build -module-cache-path /Volumes/eyedisk/develop/CodexMaestro/.build/XcodeDerivedData/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules -clang-scanner-module-cache-path /Volumes/eyedisk/develop/CodexMaestro/.build/XcodeDerivedData/ModuleCache.noindex -sdk-module-cache-path /Volumes/eyedisk/develop/CodexMaestro/.build/XcodeDerivedData/SDKExplicitPrecompiledModules -emit-dependencies -emit-module -emit-module-path /Volumes/eyedisk/develop/CodexMaestro/.build/XcodeDerivedData/Build/Intermediates.noindex/CodexMaestro.build/Debug/CodexMaestro.build/Objects-normal/arm64/CodexMaestro.swiftmodule -serialize-diagnostics -dependency-scan-serialize-diagnostics-path /Volumes/eyedisk/develop/CodexMaestro/.build/XcodeDerivedData/Build/Intermediates.noindex/CodexMaestro.build/Debug/CodexMaestro.build/Objects-normal/arm64/CodexMaestro-dependency-scan.dia -validate-clang-modules-once -clang-build-session-file /Volumes/eyedisk/develop/CodexMaestro/.build/XcodeDerivedData/ModuleCache.noindex/Session.modulevalidation -Xcc -fmodules-prune-interval\=86400 -Xcc -fmodules-prune-after\=345600 -emit-const-values -const-gather-protocols-list /Volumes/eyedisk/develop/CodexMaestro/.build/XcodeDerivedData/Build/Intermediates.noindex/CodexMaestro.build/Debug/CodexMaestro.build/Objects-normal/arm64/CodexMaestro_const_extract_protocols.json -Xcc -iquote -Xcc /Volumes/eyedisk/develop/CodexMaestro/.build/XcodeDerivedData/Build/Intermediates.noindex/CodexMaestro.build/Debug/CodexMaestro.build/Codex\ Maestro-generated-files.hmap -Xcc -I/Volumes/eyedisk/develop/CodexMaestro/.build/XcodeDerivedData/Build/Intermediates.noindex/CodexMaestro.build/Debug/CodexMaestro.build/Codex\ Maestro-own-target-headers.hmap -Xcc -I/Volumes/eyedisk/develop/CodexMaestro/.build/XcodeDerivedData/Build/Intermediates.noindex/CodexMaestro.build/Debug/CodexMaestro.build/Codex\ Maestro-all-non-framework-target-headers.hmap -Xcc -ivfsoverlay -Xcc /Volumes/eyedisk/develop/CodexMaestro/.build/XcodeDerivedData/Build/Intermediates.noindex/CodexMaestro.build/Debug/CodexMaestro-0e2cff73dbdd1dd724aeaf9223fc0605-VFS/all-product-headers.yaml -Xcc -iquote -Xcc /Volumes/eyedisk/develop/CodexMaestro/.build/XcodeDerivedData/Build/Intermediates.noindex/CodexMaestro.build/Debug/CodexMaestro.build/Codex\ Maestro-project-headers.hmap -Xcc -I/Volumes/eyedisk/develop/CodexMaestro/.build/XcodeDerivedData/Build/Products/Debug/include -Xcc -I/Volumes/eyedisk/develop/CodexMaestro/.build/XcodeDerivedData/Build/Intermediates.noindex/CodexMaestro.build/Debug/CodexMaestro.build/DerivedSources-normal/arm64 -Xcc -I/Volumes/eyedisk/develop/CodexMaestro/.build/XcodeDerivedData/Build/Intermediates.noindex/CodexMaestro.build/Debug/CodexMaestro.build/DerivedSources/arm64 -Xcc -I/Volumes/eyedisk/develop/CodexMaestro/.build/XcodeDerivedData/Build/Intermediates.noindex/CodexMaestro.build/Debug/CodexMaestro.build/DerivedSources -Xcc -DDEBUG\=1 -emit-objc-header -emit-objc-header-path /Volumes/eyedisk/develop/CodexMaestro/.build/XcodeDerivedData/Build/Intermediates.noindex/CodexMaestro.build/Debug/CodexMaestro.build/Objects-normal/arm64/CodexMaestro-Swift.h -working-directory /Volumes/eyedisk/develop/CodexMaestro -experimental-emit-module-separately -disable-cmo
+
+SwiftDriverJobDiscovery normal arm64 Emitting module for CodexMaestro (in target 'CodexMaestro' from project 'CodexMaestro')
+
+SwiftDriver\ Compilation\ Requirements CodexMaestro normal arm64 com.apple.xcode.tools.swift.compiler (in target 'CodexMaestro' from project 'CodexMaestro')
+    cd /Volumes/eyedisk/develop/CodexMaestro
+    builtin-Swift-Compilation-Requirements -- /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -module-name CodexMaestro -Onone @/Volumes/eyedisk/develop/CodexMaestro/.build/XcodeDerivedData/Build/Intermediates.noindex/CodexMaestro.build/Debug/CodexMaestro.build/Objects-normal/arm64/Codex\ Maestro.SwiftFileList -DDEBUG -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX27.0.sdk -target arm64-apple-macos26.0 -g -module-cache-path /Volumes/eyedisk/develop/CodexMaestro/.build/XcodeDerivedData/ModuleCache.noindex -Xfrontend -serialize-debugging-options -enable-testing -index-store-path /Volumes/eyedisk/develop/CodexMaestro/.build/XcodeDerivedData/Index.noindex/DataStore -Xcc -D_LIBCPP_HARDENING_MODE\=_LIBCPP_HARDENING_MODE_DEBUG -swift-version 6 -I /Volumes/eyedisk/develop/CodexMaestro/.build/XcodeDerivedData/Build/Products/Debug -I /Volumes/eyedisk/develop/CodexMaestro/Sources/CSQLite -F /Volumes/eyedisk/develop/CodexMaestro/.build/XcodeDerivedData/Build/Products/Debug -c -j12 -enable-batch-mode -incremental -Xcc -ivfsstatcache -Xcc /Volumes/eyedisk/develop/CodexMaestro/.build/XcodeDerivedData/SDKStatCaches.noindex/macosx27.0-26A425-e829b21a6f8c9b70876ba0858053c0447231f6df4def33e022ae2eb8f782df1a.sdkstatcache -output-file-map /Volumes/eyedisk/develop/CodexMaestro/.build/XcodeDerivedData/Build/Intermediates.noindex/CodexMaestro.build/Debug/CodexMaestro.build/Objects-normal/arm64/CodexMaestro-OutputFileMap.json -save-temps -no-color-diagnostics -explicit-module-build -module-cache-path /Volumes/eyedisk/develop/CodexMaestro/.build/XcodeDerivedData/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules -clang-scanner-module-cache-path /Volumes/eyedisk/develop/CodexMaestro/.build/XcodeDerivedData/ModuleCache.noindex -sdk-module-cache-path /Volumes/eyedisk/develop/CodexMaestro/.build/XcodeDerivedData/SDKExplicitPrecompiledModules -emit-dependencies -emit-module -emit-module-path /Volumes/eyedisk/develop/CodexMaestro/.build/XcodeDerivedData/Build/Intermediates.noindex/CodexMaestro.build/Debug/CodexMaestro.build/Objects-normal/arm64/CodexMaestro.swiftmodule -serialize-diagnostics -dependency-scan-serialize-diagnostics-path /Volumes/eyedisk/develop/CodexMaestro/.build/XcodeDerivedData/Build/Intermediates.noindex/CodexMaestro.build/Debug/CodexMaestro.build/Objects-normal/arm64/CodexMaestro-dependency-scan.dia -validate-clang-modules-once -clang-build-session-file /Volumes/eyedisk/develop/CodexMaestro/.build/XcodeDerivedData/ModuleCache.noindex/Session.modulevalidation -Xcc -fmodules-prune-interval\=86400 -Xcc -fmodules-prune-after\=345600 -emit-const-values -const-gather-protocols-list /Volumes/eyedisk/develop/CodexMaestro/.build/XcodeDerivedData/Build/Intermediates.noindex/CodexMaestro.build/Debug/CodexMaestro.build/Objects-normal/arm64/CodexMaestro_const_extract_protocols.json -Xcc -iquote -Xcc /Volumes/eyedisk/develop/CodexMaestro/.build/XcodeDerivedData/Build/Intermediates.noindex/CodexMaestro.build/Debug/CodexMaestro.build/Codex\ Maestro-generated-files.hmap -Xcc -I/Volumes/eyedisk/develop/CodexMaestro/.build/XcodeDerivedData/Build/Intermediates.noindex/CodexMaestro.build/Debug/CodexMaestro.build/Codex\ Maestro-own-target-headers.hmap -Xcc -I/Volumes/eyedisk/develop/CodexMaestro/.build/XcodeDerivedData/Build/Intermediates.noindex/CodexMaestro.build/Debug/CodexMaestro.build/Codex\ Maestro-all-non-framework-target-headers.hmap -Xcc -ivfsoverlay -Xcc /Volumes/eyedisk/develop/CodexMaestro/.build/XcodeDerivedData/Build/Intermediates.noindex/CodexMaestro.build/Debug/CodexMaestro-0e2cff73dbdd1dd724aeaf9223fc0605-VFS/all-product-headers.yaml -Xcc -iquote -Xcc /Volumes/eyedisk/develop/CodexMaestro/.build/XcodeDerivedData/Build/Intermediates.noindex/CodexMaestro.build/Debug/CodexMaestro.build/Codex\ Maestro-project-headers.hmap -Xcc -I/Volumes/eyedisk/develop/CodexMaestro/.build/XcodeDerivedData/Build/Products/Debug/include -Xcc -I/Volumes/eyedisk/develop/CodexMaestro/.build/XcodeDerivedData/Build/Intermediates.noindex/CodexMaestro.build/Debug/CodexMaestro.build/DerivedSources-normal/arm64 -Xcc -I/Volumes/eyedisk/develop/CodexMaestro/.build/XcodeDerivedData/Build/Intermediates.noindex/CodexMaestro.build/Debug/CodexMaestro.build/DerivedSources/arm64 -Xcc -I/Volumes/eyedisk/develop/CodexMaestro/.build/XcodeDerivedData/Build/Intermediates.noindex/CodexMaestro.build/Debug/CodexMaestro.build/DerivedSources -Xcc -DDEBUG\=1 -emit-objc-header -emit-objc-header-path /Volumes/eyedisk/develop/CodexMaestro/.build/XcodeDerivedData/Build/Intermediates.noindex/CodexMaestro.build/Debug/CodexMaestro.build/Objects-normal/arm64/CodexMaestro-Swift.h -working-directory /Volumes/eyedisk/develop/CodexMaestro -experimental-emit-module-separately -disable-cmo
+
+Copy /Volumes/eyedisk/develop/CodexMaestro/.build/XcodeDerivedData/Build/Products/Debug/CodexMaestro.swiftmodule/arm64-apple-macos.abi.json /Volumes/eyedisk/develop/CodexMaestro/.build/XcodeDerivedData/Build/Intermediates.noindex/CodexMaestro.build/Debug/CodexMaestro.build/Objects-normal/arm64/CodexMaestro.abi.json (in target 'CodexMaestro' from project 'CodexMaestro')
+    cd /Volumes/eyedisk/develop/CodexMaestro
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks -rename /Volumes/eyedisk/develop/CodexMaestro/.build/XcodeDerivedData/Build/Intermediates.noindex/CodexMaestro.build/Debug/CodexMaestro.build/Objects-normal/arm64/CodexMaestro.abi.json /Volumes/eyedisk/develop/CodexMaestro/.build/XcodeDerivedData/Build/Products/Debug/CodexMaestro.swiftmodule/arm64-apple-macos.abi.json
+
+Copy /Volumes/eyedisk/develop/CodexMaestro/.build/XcodeDerivedData/Build/Products/Debug/CodexMaestro.swiftmodule/Project/arm64-apple-macos.swiftsourceinfo /Volumes/eyedisk/develop/CodexMaestro/.build/XcodeDerivedData/Build/Intermediates.noindex/CodexMaestro.build/Debug/CodexMaestro.build/Objects-normal/arm64/CodexMaestro.swiftsourceinfo (in target 'CodexMaestro' from project 'CodexMaestro')
+    cd /Volumes/eyedisk/develop/CodexMaestro
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks -rename /Volumes/eyedisk/develop/CodexMaestro/.build/XcodeDerivedData/Build/Intermediates.noindex/CodexMaestro.build/Debug/CodexMaestro.build/Objects-normal/arm64/CodexMaestro.swiftsourceinfo /Volumes/eyedisk/develop/CodexMaestro/.build/XcodeDerivedData/Build/Products/Debug/CodexMaestro.swiftmodule/Project/arm64-apple-macos.swiftsourceinfo
+
+Ld /Volumes/eyedisk/develop/CodexMaestro/.build/XcodeDerivedData/Build/Products/Debug/Codex\ Maestro.app/Contents/MacOS/CodexMaestro.debug.dylib normal (in target 'CodexMaestro' from project 'CodexMaestro')
+    cd /Volumes/eyedisk/develop/CodexMaestro
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -Xlinker -reproducible -target arm64-apple-macos26.0 -dynamiclib -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX27.0.sdk -O0 -Xlinker -no_warn_duplicate_libraries -L/Volumes/eyedisk/develop/CodexMaestro/.build/XcodeDerivedData/Build/Intermediates.noindex/EagerLinkingTBDs/Debug -L/Volumes/eyedisk/develop/CodexMaestro/.build/XcodeDerivedData/Build/Products/Debug -F/Volumes/eyedisk/develop/CodexMaestro/.build/XcodeDerivedData/Build/Intermediates.noindex/EagerLinkingTBDs/Debug -F/Volumes/eyedisk/develop/CodexMaestro/.build/XcodeDerivedData/Build/Products/Debug -filelist /Volumes/eyedisk/develop/CodexMaestro/.build/XcodeDerivedData/Build/Intermediates.noindex/CodexMaestro.build/Debug/CodexMaestro.build/Objects-normal/arm64/Codex\ Maestro.LinkFileList -install_name @rpath/CodexMaestro.debug.dylib -Xlinker -rpath -Xlinker @executable_path/../Frameworks -Xlinker -object_path_lto -Xlinker /Volumes/eyedisk/develop/CodexMaestro/.build/XcodeDerivedData/Build/Intermediates.noindex/CodexMaestro.build/Debug/CodexMaestro.build/Objects-normal/arm64/Codex\ Maestro_lto.o -rdynamic -Xlinker -no_deduplicate -Xlinker -dependency_info -Xlinker /Volumes/eyedisk/develop/CodexMaestro/.build/XcodeDerivedData/Build/Intermediates.noindex/CodexMaestro.build/Debug/CodexMaestro.build/Objects-normal/arm64/Codex\ Maestro_dependency_info.dat -fobjc-link-runtime -L/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx -L/usr/lib/swift -Xlinker -add_ast_path -Xlinker /Volumes/eyedisk/develop/CodexMaestro/.build/XcodeDerivedData/Build/Intermediates.noindex/CodexMaestro.build/Debug/CodexMaestro.build/Objects-normal/arm64/CodexMaestro.swiftmodule -ObjC -Xlinker -alias -Xlinker _main -Xlinker ___debug_main_executable_dylib_entry_point -lMaestroCore -Xlinker -no_adhoc_codesign -o /Volumes/eyedisk/develop/CodexMaestro/.build/XcodeDerivedData/Build/Products/Debug/Codex\ Maestro.app/Contents/MacOS/CodexMaestro.debug.dylib
+
+ConstructStubExecutorLinkFileList /Volumes/eyedisk/develop/CodexMaestro/.build/XcodeDerivedData/Build/Intermediates.noindex/CodexMaestro.build/Debug/CodexMaestro.build/Codex\ Maestro-ExecutorLinkFileList-normal-arm64.txt (in target 'CodexMaestro' from project 'CodexMaestro')
+    cd /Volumes/eyedisk/develop/CodexMaestro
+    construct-stub-executor-link-file-list /Volumes/eyedisk/develop/CodexMaestro/.build/XcodeDerivedData/Build/Products/Debug/Codex\ Maestro.app/Contents/MacOS/CodexMaestro.debug.dylib /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib/libPreviewsJITStubExecutor_no_swift_entry_point.a /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib/libPreviewsJITStubExecutor.a --output /Volumes/eyedisk/develop/CodexMaestro/.build/XcodeDerivedData/Build/Intermediates.noindex/CodexMaestro.build/Debug/CodexMaestro.build/Codex\ Maestro-ExecutorLinkFileList-normal-arm64.txt
+note: Using stub executor library with Swift entry point. (in target 'CodexMaestro' from project 'CodexMaestro')
+
+Ld /Volumes/eyedisk/develop/CodexMaestro/.build/XcodeDerivedData/Build/Products/Debug/Codex\ Maestro.app/Contents/MacOS/CodexMaestro normal (in target 'CodexMaestro' from project 'CodexMaestro')
+    cd /Volumes/eyedisk/develop/CodexMaestro
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -Xlinker -reproducible -target arm64-apple-macos26.0 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX27.0.sdk -O0 -Xlinker -no_warn_duplicate_libraries -L/Volumes/eyedisk/develop/CodexMaestro/.build/XcodeDerivedData/Build/Products/Debug -F/Volumes/eyedisk/develop/CodexMaestro/.build/XcodeDerivedData/Build/Products/Debug -Xlinker -rpath -Xlinker @executable_path -Xlinker -rpath -Xlinker @executable_path/../Frameworks -rdynamic -Xlinker -no_deduplicate -e ___debug_blank_executor_main -Xlinker -sectcreate -Xlinker __TEXT -Xlinker __debug_dylib -Xlinker /Volumes/eyedisk/develop/CodexMaestro/.build/XcodeDerivedData/Build/Intermediates.noindex/CodexMaestro.build/Debug/CodexMaestro.build/Codex\ Maestro-DebugDylibPath-normal-arm64.txt -Xlinker -sectcreate -Xlinker __TEXT -Xlinker __debug_instlnm -Xlinker /Volumes/eyedisk/develop/CodexMaestro/.build/XcodeDerivedData/Build/Intermediates.noindex/CodexMaestro.build/Debug/CodexMaestro.build/Codex\ Maestro-DebugDylibInstallName-normal-arm64.txt -Xlinker -filelist -Xlinker /Volumes/eyedisk/develop/CodexMaestro/.build/XcodeDerivedData/Build/Intermediates.noindex/CodexMaestro.build/Debug/CodexMaestro.build/Codex\ Maestro-ExecutorLinkFileList-normal-arm64.txt /Volumes/eyedisk/develop/CodexMaestro/.build/XcodeDerivedData/Build/Products/Debug/Codex\ Maestro.app/Contents/MacOS/CodexMaestro.debug.dylib -Xlinker -no_adhoc_codesign -o /Volumes/eyedisk/develop/CodexMaestro/.build/XcodeDerivedData/Build/Products/Debug/Codex\ Maestro.app/Contents/MacOS/CodexMaestro
+
+ExtractAppIntentsMetadata (in target 'CodexMaestro' from project 'CodexMaestro')
+    cd /Volumes/eyedisk/develop/CodexMaestro
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/appintentsmetadataprocessor --toolchain-dir /var/run/com.apple.security.cryptexd/mnt/com.apple.MobileAsset.MetalToolchain-v27.1.266.1.3bDY6Q/Metal.xctoolchain --module-name CodexMaestro --sdk-root /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX27.0.sdk --xcode-version 27A266a --platform-family macOS --deployment-target 26.0 --bundle-identifier com.oozoofrog.CodexMaestro --output /Volumes/eyedisk/develop/CodexMaestro/.build/XcodeDerivedData/Build/Products/Debug/Codex\ Maestro.app/Contents/Resources --target-triple arm64-apple-macos26.0 --binary-file /Volumes/eyedisk/develop/CodexMaestro/.build/XcodeDerivedData/Build/Products/Debug/Codex\ Maestro.app/Contents/MacOS/CodexMaestro --dependency-file /Volumes/eyedisk/develop/CodexMaestro/.build/XcodeDerivedData/Build/Intermediates.noindex/CodexMaestro.build/Debug/CodexMaestro.build/Objects-normal/arm64/Codex\ Maestro_dependency_info.dat --stringsdata-file /Volumes/eyedisk/develop/CodexMaestro/.build/XcodeDerivedData/Build/Intermediates.noindex/CodexMaestro.build/Debug/CodexMaestro.build/Objects-normal/arm64/ExtractedAppShortcutsMetadata.stringsdata --source-file-list /Volumes/eyedisk/develop/CodexMaestro/.build/XcodeDerivedData/Build/Intermediates.noindex/CodexMaestro.build/Debug/CodexMaestro.build/Objects-normal/arm64/Codex\ Maestro.SwiftFileList --metadata-file-list /Volumes/eyedisk/develop/CodexMaestro/.build/XcodeDerivedData/Build/Intermediates.noindex/CodexMaestro.build/Debug/CodexMaestro.build/Codex\ Maestro.DependencyMetadataFileList --static-metadata-file-list /Volumes/eyedisk/develop/CodexMaestro/.build/XcodeDerivedData/Build/Intermediates.noindex/CodexMaestro.build/Debug/CodexMaestro.build/Codex\ Maestro.DependencyStaticMetadataFileList --swift-const-vals-list /Volumes/eyedisk/develop/CodexMaestro/.build/XcodeDerivedData/Build/Intermediates.noindex/CodexMaestro.build/Debug/CodexMaestro.build/Objects-normal/arm64/Codex\ Maestro.SwiftConstValuesFileList --compile-time-extraction --deployment-aware-processing --no-app-shortcuts-localization
+2026-10-04 21:31:16.382 appintentsmetadataprocessor[65372:38691683] Starting appintentsmetadataprocessor export
+2026-10-04 21:31:16.384 appintentsmetadataprocessor[65372:38691683] warning: Metadata extraction skipped, no AppIntents.framework dependency found
+
+CopySwiftLibs /Volumes/eyedisk/develop/CodexMaestro/.build/XcodeDerivedData/Build/Products/Debug/Codex\ Maestro.app (in target 'CodexMaestro' from project 'CodexMaestro')
+    cd /Volumes/eyedisk/develop/CodexMaestro
+    builtin-swiftStdLibTool --copy --verbose --sign - --scan-executable /Volumes/eyedisk/develop/CodexMaestro/.build/XcodeDerivedData/Build/Products/Debug/Codex\ Maestro.app/Contents/MacOS/CodexMaestro.debug.dylib --scan-folder /Volumes/eyedisk/develop/CodexMaestro/.build/XcodeDerivedData/Build/Products/Debug/Codex\ Maestro.app/Contents/Frameworks --scan-folder /Volumes/eyedisk/develop/CodexMaestro/.build/XcodeDerivedData/Build/Products/Debug/Codex\ Maestro.app/Contents/PlugIns --scan-folder /Volumes/eyedisk/develop/CodexMaestro/.build/XcodeDerivedData/Build/Products/Debug/Codex\ Maestro.app/Contents/Library/SystemExtensions --scan-folder /Volumes/eyedisk/develop/CodexMaestro/.build/XcodeDerivedData/Build/Products/Debug/Codex\ Maestro.app/Contents/Extensions --platform macosx --toolchain /var/run/com.apple.security.cryptexd/mnt/com.apple.MobileAsset.MetalToolchain-v27.1.266.1.3bDY6Q/Metal.xctoolchain --toolchain /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain --destination /Volumes/eyedisk/develop/CodexMaestro/.build/XcodeDerivedData/Build/Products/Debug/Codex\ Maestro.app/Contents/Frameworks --strip-bitcode --strip-bitcode-tool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/bitcode_strip --emit-dependency-info /Volumes/eyedisk/develop/CodexMaestro/.build/XcodeDerivedData/Build/Intermediates.noindex/CodexMaestro.build/Debug/CodexMaestro.build/SwiftStdLibToolInputDependencies.dep --filter-for-swift-os
+
+SwiftDriver MaestroAppTests normal arm64 com.apple.xcode.tools.swift.compiler (in target 'MaestroAppTests' from project 'CodexMaestro')
+    cd /Volumes/eyedisk/develop/CodexMaestro
+    builtin-SwiftDriver -- /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -module-name MaestroAppTests -Onone @/Volumes/eyedisk/develop/CodexMaestro/.build/XcodeDerivedData/Build/Intermediates.noindex/CodexMaestro.build/Debug/MaestroAppTests.build/Objects-normal/arm64/MaestroAppTests.SwiftFileList -DDEBUG -plugin-path /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX27.0.sdk -target arm64-apple-macos26.0 -g -module-cache-path /Volumes/eyedisk/develop/CodexMaestro/.build/XcodeDerivedData/ModuleCache.noindex -Xfrontend -serialize-debugging-options -enable-testing -index-store-path /Volumes/eyedisk/develop/CodexMaestro/.build/XcodeDerivedData/Index.noindex/DataStore -Xcc -D_LIBCPP_HARDENING_MODE\=_LIBCPP_HARDENING_MODE_DEBUG -swift-version 6 -I /Volumes/eyedisk/develop/CodexMaestro/.build/XcodeDerivedData/Build/Products/Debug -I /Volumes/eyedisk/develop/CodexMaestro/Sources/CSQLite -Isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib -F /Volumes/eyedisk/develop/CodexMaestro/.build/XcodeDerivedData/Build/Products/Debug -F /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks -c -j12 -enable-batch-mode -incremental -Xcc -ivfsstatcache -Xcc /Volumes/eyedisk/develop/CodexMaestro/.build/XcodeDerivedData/SDKStatCaches.noindex/macosx27.0-26A425-e829b21a6f8c9b70876ba0858053c0447231f6df4def33e022ae2eb8f782df1a.sdkstatcache -output-file-map /Volumes/eyedisk/develop/CodexMaestro/.build/XcodeDerivedData/Build/Intermediates.noindex/CodexMaestro.build/Debug/MaestroAppTests.build/Objects-normal/arm64/MaestroAppTests-OutputFileMap.json -save-temps -no-color-diagnostics -explicit-module-build -module-cache-path /Volumes/eyedisk/develop/CodexMaestro/.build/XcodeDerivedData/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules -clang-scanner-module-cache-path /Volumes/eyedisk/develop/CodexMaestro/.build/XcodeDerivedData/ModuleCache.noindex -sdk-module-cache-path /Volumes/eyedisk/develop/CodexMaestro/.build/XcodeDerivedData/SDKExplicitPrecompiledModules -emit-dependencies -emit-module -emit-module-path /Volumes/eyedisk/develop/CodexMaestro/.build/XcodeDerivedData/Build/Intermediates.noindex/CodexMaestro.build/Debug/MaestroAppTests.build/Objects-normal/arm64/MaestroAppTests.swiftmodule -serialize-diagnostics -dependency-scan-serialize-diagnostics-path /Volumes/eyedisk/develop/CodexMaestro/.build/XcodeDerivedData/Build/Intermediates.noindex/CodexMaestro.build/Debug/MaestroAppTests.build/Objects-normal/arm64/MaestroAppTests-dependency-scan.dia -validate-clang-modules-once -clang-build-session-file /Volumes/eyedisk/develop/CodexMaestro/.build/XcodeDerivedData/ModuleCache.noindex/Session.modulevalidation -Xcc -fmodules-prune-interval\=86400 -Xcc -fmodules-prune-after\=345600 -emit-const-values -const-gather-protocols-list /Volumes/eyedisk/develop/CodexMaestro/.build/XcodeDerivedData/Build/Intermediates.noindex/CodexMaestro.build/Debug/MaestroAppTests.build/Objects-normal/arm64/MaestroAppTests_const_extract_protocols.json -Xcc -iquote -Xcc /Volumes/eyedisk/develop/CodexMaestro/.build/XcodeDerivedData/Build/Intermediates.noindex/CodexMaestro.build/Debug/MaestroAppTests.build/MaestroAppTests-generated-files.hmap -Xcc -I/Volumes/eyedisk/develop/CodexMaestro/.build/XcodeDerivedData/Build/Intermediates.noindex/CodexMaestro.build/Debug/MaestroAppTests.build/MaestroAppTests-own-target-headers.hmap -Xcc -I/Volumes/eyedisk/develop/CodexMaestro/.build/XcodeDerivedData/Build/Intermediates.noindex/CodexMaestro.build/Debug/MaestroAppTests.build/MaestroAppTests-all-non-framework-target-headers.hmap -Xcc -ivfsoverlay -Xcc /Volumes/eyedisk/develop/CodexMaestro/.build/XcodeDerivedData/Build/Intermediates.noindex/CodexMaestro.build/Debug/CodexMaestro-0e2cff73dbdd1dd724aeaf9223fc0605-VFS/all-product-headers.yaml -Xcc -iquote -Xcc /Volumes/eyedisk/develop/CodexMaestro/.build/XcodeDerivedData/Build/Intermediates.noindex/CodexMaestro.build/Debug/MaestroAppTests.build/MaestroAppTests-project-headers.hmap -Xcc -I/Volumes/eyedisk/develop/CodexMaestro/.build/XcodeDerivedData/Build/Products/Debug/include -Xcc -I/Volumes/eyedisk/develop/CodexMaestro/.build/XcodeDerivedData/Build/Intermediates.noindex/CodexMaestro.build/Debug/MaestroAppTests.build/DerivedSources-normal/arm64 -Xcc -I/Volumes/eyedisk/develop/CodexMaestro/.build/XcodeDerivedData/Build/Intermediates.noindex/CodexMaestro.build/Debug/MaestroAppTests.build/DerivedSources/arm64 -Xcc -I/Volumes/eyedisk/develop/CodexMaestro/.build/XcodeDerivedData/Build/Intermediates.noindex/CodexMaestro.build/Debug/MaestroAppTests.build/DerivedSources -Xcc -DDEBUG\=1 -emit-objc-header -emit-objc-header-path /Volumes/eyedisk/develop/CodexMaestro/.build/XcodeDerivedData/Build/Intermediates.noindex/CodexMaestro.build/Debug/MaestroAppTests.build/Objects-normal/arm64/MaestroAppTests-Swift.h -working-directory /Volumes/eyedisk/develop/CodexMaestro -experimental-emit-module-separately -disable-cmo
+
+SwiftCompile normal arm64 Compiling\ CircuitUsageSelectionTests.swift /Volumes/eyedisk/develop/CodexMaestro/Tests/MaestroAppTests/CircuitUsageSelectionTests.swift (in target 'MaestroAppTests' from project 'CodexMaestro')
+
+SwiftCompile normal arm64 /Volumes/eyedisk/develop/CodexMaestro/Tests/MaestroAppTests/CircuitUsageSelectionTests.swift (in target 'MaestroAppTests' from project 'CodexMaestro')
+    cd /Volumes/eyedisk/develop/CodexMaestro
+    builtin-SwiftPerFileCompile CircuitUsageSelectionTests.swift
+
+SwiftEmitModule normal arm64 Emitting\ module\ for\ MaestroAppTests (in target 'MaestroAppTests' from project 'CodexMaestro')
+
+SwiftCompile normal arm64 (in target 'MaestroAppTests' from project 'CodexMaestro')
+    cd /Volumes/eyedisk/develop/CodexMaestro
+    
+
+SwiftDriverJobDiscovery normal arm64 Compiling CircuitUsageSelectionTests.swift (in target 'MaestroAppTests' from project 'CodexMaestro')
+
+SwiftDriverJobDiscovery normal arm64 Emitting module for MaestroAppTests (in target 'MaestroAppTests' from project 'CodexMaestro')
+
+SwiftDriver\ Compilation\ Requirements MaestroAppTests normal arm64 com.apple.xcode.tools.swift.compiler (in target 'MaestroAppTests' from project 'CodexMaestro')
+    cd /Volumes/eyedisk/develop/CodexMaestro
+    builtin-Swift-Compilation-Requirements -- /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -module-name MaestroAppTests -Onone @/Volumes/eyedisk/develop/CodexMaestro/.build/XcodeDerivedData/Build/Intermediates.noindex/CodexMaestro.build/Debug/MaestroAppTests.build/Objects-normal/arm64/MaestroAppTests.SwiftFileList -DDEBUG -plugin-path /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX27.0.sdk -target arm64-apple-macos26.0 -g -module-cache-path /Volumes/eyedisk/develop/CodexMaestro/.build/XcodeDerivedData/ModuleCache.noindex -Xfrontend -serialize-debugging-options -enable-testing -index-store-path /Volumes/eyedisk/develop/CodexMaestro/.build/XcodeDerivedData/Index.noindex/DataStore -Xcc -D_LIBCPP_HARDENING_MODE\=_LIBCPP_HARDENING_MODE_DEBUG -swift-version 6 -I /Volumes/eyedisk/develop/CodexMaestro/.build/XcodeDerivedData/Build/Products/Debug -I /Volumes/eyedisk/develop/CodexMaestro/Sources/CSQLite -Isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib -F /Volumes/eyedisk/develop/CodexMaestro/.build/XcodeDerivedData/Build/Products/Debug -F /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks -c -j12 -enable-batch-mode -incremental -Xcc -ivfsstatcache -Xcc /Volumes/eyedisk/develop/CodexMaestro/.build/XcodeDerivedData/SDKStatCaches.noindex/macosx27.0-26A425-e829b21a6f8c9b70876ba0858053c0447231f6df4def33e022ae2eb8f782df1a.sdkstatcache -output-file-map /Volumes/eyedisk/develop/CodexMaestro/.build/XcodeDerivedData/Build/Intermediates.noindex/CodexMaestro.build/Debug/MaestroAppTests.build/Objects-normal/arm64/MaestroAppTests-OutputFileMap.json -save-temps -no-color-diagnostics -explicit-module-build -module-cache-path /Volumes/eyedisk/develop/CodexMaestro/.build/XcodeDerivedData/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules -clang-scanner-module-cache-path /Volumes/eyedisk/develop/CodexMaestro/.build/XcodeDerivedData/ModuleCache.noindex -sdk-module-cache-path /Volumes/eyedisk/develop/CodexMaestro/.build/XcodeDerivedData/SDKExplicitPrecompiledModules -emit-dependencies -emit-module -emit-module-path /Volumes/eyedisk/develop/CodexMaestro/.build/XcodeDerivedData/Build/Intermediates.noindex/CodexMaestro.build/Debug/MaestroAppTests.build/Objects-normal/arm64/MaestroAppTests.swiftmodule -serialize-diagnostics -dependency-scan-serialize-diagnostics-path /Volumes/eyedisk/develop/CodexMaestro/.build/XcodeDerivedData/Build/Intermediates.noindex/CodexMaestro.build/Debug/MaestroAppTests.build/Objects-normal/arm64/MaestroAppTests-dependency-scan.dia -validate-clang-modules-once -clang-build-session-file /Volumes/eyedisk/develop/CodexMaestro/.build/XcodeDerivedData/ModuleCache.noindex/Session.modulevalidation -Xcc -fmodules-prune-interval\=86400 -Xcc -fmodules-prune-after\=345600 -emit-const-values -const-gather-protocols-list /Volumes/eyedisk/develop/CodexMaestro/.build/XcodeDerivedData/Build/Intermediates.noindex/CodexMaestro.build/Debug/MaestroAppTests.build/Objects-normal/arm64/MaestroAppTests_const_extract_protocols.json -Xcc -iquote -Xcc /Volumes/eyedisk/develop/CodexMaestro/.build/XcodeDerivedData/Build/Intermediates.noindex/CodexMaestro.build/Debug/MaestroAppTests.build/MaestroAppTests-generated-files.hmap -Xcc -I/Volumes/eyedisk/develop/CodexMaestro/.build/XcodeDerivedData/Build/Intermediates.noindex/CodexMaestro.build/Debug/MaestroAppTests.build/MaestroAppTests-own-target-headers.hmap -Xcc -I/Volumes/eyedisk/develop/CodexMaestro/.build/XcodeDerivedData/Build/Intermediates.noindex/CodexMaestro.build/Debug/MaestroAppTests.build/MaestroAppTests-all-non-framework-target-headers.hmap -Xcc -ivfsoverlay -Xcc /Volumes/eyedisk/develop/CodexMaestro/.build/XcodeDerivedData/Build/Intermediates.noindex/CodexMaestro.build/Debug/CodexMaestro-0e2cff73dbdd1dd724aeaf9223fc0605-VFS/all-product-headers.yaml -Xcc -iquote -Xcc /Volumes/eyedisk/develop/CodexMaestro/.build/XcodeDerivedData/Build/Intermediates.noindex/CodexMaestro.build/Debug/MaestroAppTests.build/MaestroAppTests-project-headers.hmap -Xcc -I/Volumes/eyedisk/develop/CodexMaestro/.build/XcodeDerivedData/Build/Products/Debug/include -Xcc -I/Volumes/eyedisk/develop/CodexMaestro/.build/XcodeDerivedData/Build/Intermediates.noindex/CodexMaestro.build/Debug/MaestroAppTests.build/DerivedSources-normal/arm64 -Xcc -I/Volumes/eyedisk/develop/CodexMaestro/.build/XcodeDerivedData/Build/Intermediates.noindex/CodexMaestro.build/Debug/MaestroAppTests.build/DerivedSources/arm64 -Xcc -I/Volumes/eyedisk/develop/CodexMaestro/.build/XcodeDerivedData/Build/Intermediates.noindex/CodexMaestro.build/Debug/MaestroAppTests.build/DerivedSources -Xcc -DDEBUG\=1 -emit-objc-header -emit-objc-header-path /Volumes/eyedisk/develop/CodexMaestro/.build/XcodeDerivedData/Build/Intermediates.noindex/CodexMaestro.build/Debug/MaestroAppTests.build/Objects-normal/arm64/MaestroAppTests-Swift.h -working-directory /Volumes/eyedisk/develop/CodexMaestro -experimental-emit-module-separately -disable-cmo
+
+SwiftDriver\ Compilation MaestroAppTests normal arm64 com.apple.xcode.tools.swift.compiler (in target 'MaestroAppTests' from project 'CodexMaestro')
+    cd /Volumes/eyedisk/develop/CodexMaestro
+    builtin-Swift-Compilation -- /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -module-name MaestroAppTests -Onone @/Volumes/eyedisk/develop/CodexMaestro/.build/XcodeDerivedData/Build/Intermediates.noindex/CodexMaestro.build/Debug/MaestroAppTests.build/Objects-normal/arm64/MaestroAppTests.SwiftFileList -DDEBUG -plugin-path /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX27.0.sdk -target arm64-apple-macos26.0 -g -module-cache-path /Volumes/eyedisk/develop/CodexMaestro/.build/XcodeDerivedData/ModuleCache.noindex -Xfrontend -serialize-debugging-options -enable-testing -index-store-path /Volumes/eyedisk/develop/CodexMaestro/.build/XcodeDerivedData/Index.noindex/DataStore -Xcc -D_LIBCPP_HARDENING_MODE\=_LIBCPP_HARDENING_MODE_DEBUG -swift-version 6 -I /Volumes/eyedisk/develop/CodexMaestro/.build/XcodeDerivedData/Build/Products/Debug -I /Volumes/eyedisk/develop/CodexMaestro/Sources/CSQLite -Isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib -F /Volumes/eyedisk/develop/CodexMaestro/.build/XcodeDerivedData/Build/Products/Debug -F /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks -c -j12 -enable-batch-mode -incremental -Xcc -ivfsstatcache -Xcc /Volumes/eyedisk/develop/CodexMaestro/.build/XcodeDerivedData/SDKStatCaches.noindex/macosx27.0-26A425-e829b21a6f8c9b70876ba0858053c0447231f6df4def33e022ae2eb8f782df1a.sdkstatcache -output-file-map /Volumes/eyedisk/develop/CodexMaestro/.build/XcodeDerivedData/Build/Intermediates.noindex/CodexMaestro.build/Debug/MaestroAppTests.build/Objects-normal/arm64/MaestroAppTests-OutputFileMap.json -save-temps -no-color-diagnostics -explicit-module-build -module-cache-path /Volumes/eyedisk/develop/CodexMaestro/.build/XcodeDerivedData/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules -clang-scanner-module-cache-path /Volumes/eyedisk/develop/CodexMaestro/.build/XcodeDerivedData/ModuleCache.noindex -sdk-module-cache-path /Volumes/eyedisk/develop/CodexMaestro/.build/XcodeDerivedData/SDKExplicitPrecompiledModules -emit-dependencies -emit-module -emit-module-path /Volumes/eyedisk/develop/CodexMaestro/.build/XcodeDerivedData/Build/Intermediates.noindex/CodexMaestro.build/Debug/MaestroAppTests.build/Objects-normal/arm64/MaestroAppTests.swiftmodule -serialize-diagnostics -dependency-scan-serialize-diagnostics-path /Volumes/eyedisk/develop/CodexMaestro/.build/XcodeDerivedData/Build/Intermediates.noindex/CodexMaestro.build/Debug/MaestroAppTests.build/Objects-normal/arm64/MaestroAppTests-dependency-scan.dia -validate-clang-modules-once -clang-build-session-file /Volumes/eyedisk/develop/CodexMaestro/.build/XcodeDerivedData/ModuleCache.noindex/Session.modulevalidation -Xcc -fmodules-prune-interval\=86400 -Xcc -fmodules-prune-after\=345600 -emit-const-values -const-gather-protocols-list /Volumes/eyedisk/develop/CodexMaestro/.build/XcodeDerivedData/Build/Intermediates.noindex/CodexMaestro.build/Debug/MaestroAppTests.build/Objects-normal/arm64/MaestroAppTests_const_extract_protocols.json -Xcc -iquote -Xcc /Volumes/eyedisk/develop/CodexMaestro/.build/XcodeDerivedData/Build/Intermediates.noindex/CodexMaestro.build/Debug/MaestroAppTests.build/MaestroAppTests-generated-files.hmap -Xcc -I/Volumes/eyedisk/develop/CodexMaestro/.build/XcodeDerivedData/Build/Intermediates.noindex/CodexMaestro.build/Debug/MaestroAppTests.build/MaestroAppTests-own-target-headers.hmap -Xcc -I/Volumes/eyedisk/develop/CodexMaestro/.build/XcodeDerivedData/Build/Intermediates.noindex/CodexMaestro.build/Debug/MaestroAppTests.build/MaestroAppTests-all-non-framework-target-headers.hmap -Xcc -ivfsoverlay -Xcc /Volumes/eyedisk/develop/CodexMaestro/.build/XcodeDerivedData/Build/Intermediates.noindex/CodexMaestro.build/Debug/CodexMaestro-0e2cff73dbdd1dd724aeaf9223fc0605-VFS/all-product-headers.yaml -Xcc -iquote -Xcc /Volumes/eyedisk/develop/CodexMaestro/.build/XcodeDerivedData/Build/Intermediates.noindex/CodexMaestro.build/Debug/MaestroAppTests.build/MaestroAppTests-project-headers.hmap -Xcc -I/Volumes/eyedisk/develop/CodexMaestro/.build/XcodeDerivedData/Build/Products/Debug/include -Xcc -I/Volumes/eyedisk/develop/CodexMaestro/.build/XcodeDerivedData/Build/Intermediates.noindex/CodexMaestro.build/Debug/MaestroAppTests.build/DerivedSources-normal/arm64 -Xcc -I/Volumes/eyedisk/develop/CodexMaestro/.build/XcodeDerivedData/Build/Intermediates.noindex/CodexMaestro.build/Debug/MaestroAppTests.build/DerivedSources/arm64 -Xcc -I/Volumes/eyedisk/develop/CodexMaestro/.build/XcodeDerivedData/Build/Intermediates.noindex/CodexMaestro.build/Debug/MaestroAppTests.build/DerivedSources -Xcc -DDEBUG\=1 -emit-objc-header -emit-objc-header-path /Volumes/eyedisk/develop/CodexMaestro/.build/XcodeDerivedData/Build/Intermediates.noindex/CodexMaestro.build/Debug/MaestroAppTests.build/Objects-normal/arm64/MaestroAppTests-Swift.h -working-directory /Volumes/eyedisk/develop/CodexMaestro -experimental-emit-module-separately -disable-cmo
+
+Copy /Volumes/eyedisk/develop/CodexMaestro/.build/XcodeDerivedData/Build/Products/Debug/MaestroAppTests.swiftmodule/Project/arm64-apple-macos.swiftsourceinfo /Volumes/eyedisk/develop/CodexMaestro/.build/XcodeDerivedData/Build/Intermediates.noindex/CodexMaestro.build/Debug/MaestroAppTests.build/Objects-normal/arm64/MaestroAppTests.swiftsourceinfo (in target 'MaestroAppTests' from project 'CodexMaestro')
+    cd /Volumes/eyedisk/develop/CodexMaestro
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks -rename /Volumes/eyedisk/develop/CodexMaestro/.build/XcodeDerivedData/Build/Intermediates.noindex/CodexMaestro.build/Debug/MaestroAppTests.build/Objects-normal/arm64/MaestroAppTests.swiftsourceinfo /Volumes/eyedisk/develop/CodexMaestro/.build/XcodeDerivedData/Build/Products/Debug/MaestroAppTests.swiftmodule/Project/arm64-apple-macos.swiftsourceinfo
+
+Copy /Volumes/eyedisk/develop/CodexMaestro/.build/XcodeDerivedData/Build/Products/Debug/MaestroAppTests.swiftmodule/arm64-apple-macos.abi.json /Volumes/eyedisk/develop/CodexMaestro/.build/XcodeDerivedData/Build/Intermediates.noindex/CodexMaestro.build/Debug/MaestroAppTests.build/Objects-normal/arm64/MaestroAppTests.abi.json (in target 'MaestroAppTests' from project 'CodexMaestro')
+    cd /Volumes/eyedisk/develop/CodexMaestro
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks -rename /Volumes/eyedisk/develop/CodexMaestro/.build/XcodeDerivedData/Build/Intermediates.noindex/CodexMaestro.build/Debug/MaestroAppTests.build/Objects-normal/arm64/MaestroAppTests.abi.json /Volumes/eyedisk/develop/CodexMaestro/.build/XcodeDerivedData/Build/Products/Debug/MaestroAppTests.swiftmodule/arm64-apple-macos.abi.json
+
+Ld /Volumes/eyedisk/develop/CodexMaestro/.build/XcodeDerivedData/Build/Products/Debug/Codex\ Maestro.app/Contents/PlugIns/MaestroAppTests.xctest/Contents/MacOS/MaestroAppTests normal (in target 'MaestroAppTests' from project 'CodexMaestro')
+    cd /Volumes/eyedisk/develop/CodexMaestro
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -Xlinker -reproducible -target arm64-apple-macos26.0 -bundle -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX27.0.sdk -O0 -Xlinker -no_warn_duplicate_libraries -L/Volumes/eyedisk/develop/CodexMaestro/.build/XcodeDerivedData/Build/Intermediates.noindex/EagerLinkingTBDs/Debug -L/Volumes/eyedisk/develop/CodexMaestro/.build/XcodeDerivedData/Build/Products/Debug -L/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib -F/Volumes/eyedisk/develop/CodexMaestro/.build/XcodeDerivedData/Build/Intermediates.noindex/EagerLinkingTBDs/Debug -F/Volumes/eyedisk/develop/CodexMaestro/.build/XcodeDerivedData/Build/Products/Debug -iframework /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks -filelist /Volumes/eyedisk/develop/CodexMaestro/.build/XcodeDerivedData/Build/Intermediates.noindex/CodexMaestro.build/Debug/MaestroAppTests.build/Objects-normal/arm64/MaestroAppTests.LinkFileList -Xlinker -rpath -Xlinker @loader_path/../Frameworks -Xlinker -rpath -Xlinker @executable_path/../Frameworks -bundle_loader /Volumes/eyedisk/develop/CodexMaestro/.build/XcodeDerivedData/Build/Products/Debug/Codex\ Maestro.app/Contents/MacOS/CodexMaestro -Xlinker -object_path_lto -Xlinker /Volumes/eyedisk/develop/CodexMaestro/.build/XcodeDerivedData/Build/Intermediates.noindex/CodexMaestro.build/Debug/MaestroAppTests.build/Objects-normal/arm64/MaestroAppTests_lto.o -rdynamic -Xlinker -no_deduplicate -Xlinker -dependency_info -Xlinker /Volumes/eyedisk/develop/CodexMaestro/.build/XcodeDerivedData/Build/Intermediates.noindex/CodexMaestro.build/Debug/MaestroAppTests.build/Objects-normal/arm64/MaestroAppTests_dependency_info.dat -fobjc-link-runtime -L/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx -L/usr/lib/swift -Xlinker -add_ast_path -Xlinker /Volumes/eyedisk/develop/CodexMaestro/.build/XcodeDerivedData/Build/Intermediates.noindex/CodexMaestro.build/Debug/MaestroAppTests.build/Objects-normal/arm64/MaestroAppTests.swiftmodule -ObjC -Xlinker -needed_framework -Xlinker XCTest -framework XCTest -Xlinker -needed-lXCTestSwiftSupport -lXCTestSwiftSupport -lMaestroCore /Volumes/eyedisk/develop/CodexMaestro/.build/XcodeDerivedData/Build/Products/Debug/Codex\ Maestro.app/Contents/MacOS/CodexMaestro.debug.dylib -Xlinker -no_adhoc_codesign -o /Volumes/eyedisk/develop/CodexMaestro/.build/XcodeDerivedData/Build/Products/Debug/Codex\ Maestro.app/Contents/PlugIns/MaestroAppTests.xctest/Contents/MacOS/MaestroAppTests
+
+CopySwiftLibs /Volumes/eyedisk/develop/CodexMaestro/.build/XcodeDerivedData/Build/Products/Debug/Codex\ Maestro.app/Contents/PlugIns/MaestroAppTests.xctest (in target 'MaestroAppTests' from project 'CodexMaestro')
+    cd /Volumes/eyedisk/develop/CodexMaestro
+    builtin-swiftStdLibTool --copy --verbose --sign - --scan-executable /Volumes/eyedisk/develop/CodexMaestro/.build/XcodeDerivedData/Build/Products/Debug/Codex\ Maestro.app/Contents/PlugIns/MaestroAppTests.xctest/Contents/MacOS/MaestroAppTests --scan-folder /Volumes/eyedisk/develop/CodexMaestro/.build/XcodeDerivedData/Build/Products/Debug/Codex\ Maestro.app/Contents/PlugIns/MaestroAppTests.xctest/Contents/Frameworks --scan-folder /Volumes/eyedisk/develop/CodexMaestro/.build/XcodeDerivedData/Build/Products/Debug/Codex\ Maestro.app/Contents/PlugIns/MaestroAppTests.xctest/Contents/PlugIns --scan-folder /Volumes/eyedisk/develop/CodexMaestro/.build/XcodeDerivedData/Build/Products/Debug/Codex\ Maestro.app/Contents/PlugIns/MaestroAppTests.xctest/Contents/Library/SystemExtensions --scan-folder /Volumes/eyedisk/develop/CodexMaestro/.build/XcodeDerivedData/Build/Products/Debug/Codex\ Maestro.app/Contents/PlugIns/MaestroAppTests.xctest/Contents/Extensions --platform macosx --toolchain /var/run/com.apple.security.cryptexd/mnt/com.apple.MobileAsset.MetalToolchain-v27.1.266.1.3bDY6Q/Metal.xctoolchain --toolchain /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain --destination /Volumes/eyedisk/develop/CodexMaestro/.build/XcodeDerivedData/Build/Products/Debug/Codex\ Maestro.app/Contents/PlugIns/MaestroAppTests.xctest/Contents/Frameworks --strip-bitcode --scan-executable /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib/libXCTestSwiftSupport.dylib --strip-bitcode-tool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/bitcode_strip --emit-dependency-info /Volumes/eyedisk/develop/CodexMaestro/.build/XcodeDerivedData/Build/Intermediates.noindex/CodexMaestro.build/Debug/MaestroAppTests.build/SwiftStdLibToolInputDependencies.dep --filter-for-swift-os
+
+ExtractAppIntentsMetadata (in target 'MaestroAppTests' from project 'CodexMaestro')
+    cd /Volumes/eyedisk/develop/CodexMaestro
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/appintentsmetadataprocessor --toolchain-dir /var/run/com.apple.security.cryptexd/mnt/com.apple.MobileAsset.MetalToolchain-v27.1.266.1.3bDY6Q/Metal.xctoolchain --module-name MaestroAppTests --sdk-root /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX27.0.sdk --xcode-version 27A266a --platform-family macOS --deployment-target 26.0 --bundle-identifier com.oozoofrog.MaestroAppTests --output /Volumes/eyedisk/develop/CodexMaestro/.build/XcodeDerivedData/Build/Products/Debug/Codex\ Maestro.app/Contents/PlugIns/MaestroAppTests.xctest/Contents/Resources --target-triple arm64-apple-macos26.0 --binary-file /Volumes/eyedisk/develop/CodexMaestro/.build/XcodeDerivedData/Build/Products/Debug/Codex\ Maestro.app/Contents/PlugIns/MaestroAppTests.xctest/Contents/MacOS/MaestroAppTests --dependency-file /Volumes/eyedisk/develop/CodexMaestro/.build/XcodeDerivedData/Build/Intermediates.noindex/CodexMaestro.build/Debug/MaestroAppTests.build/Objects-normal/arm64/MaestroAppTests_dependency_info.dat --stringsdata-file /Volumes/eyedisk/develop/CodexMaestro/.build/XcodeDerivedData/Build/Intermediates.noindex/CodexMaestro.build/Debug/MaestroAppTests.build/Objects-normal/arm64/ExtractedAppShortcutsMetadata.stringsdata --source-file-list /Volumes/eyedisk/develop/CodexMaestro/.build/XcodeDerivedData/Build/Intermediates.noindex/CodexMaestro.build/Debug/MaestroAppTests.build/Objects-normal/arm64/MaestroAppTests.SwiftFileList --metadata-file-list /Volumes/eyedisk/develop/CodexMaestro/.build/XcodeDerivedData/Build/Intermediates.noindex/CodexMaestro.build/Debug/MaestroAppTests.build/MaestroAppTests.DependencyMetadataFileList --static-metadata-file-list /Volumes/eyedisk/develop/CodexMaestro/.build/XcodeDerivedData/Build/Intermediates.noindex/CodexMaestro.build/Debug/MaestroAppTests.build/MaestroAppTests.DependencyStaticMetadataFileList --swift-const-vals-list /Volumes/eyedisk/develop/CodexMaestro/.build/XcodeDerivedData/Build/Intermediates.noindex/CodexMaestro.build/Debug/MaestroAppTests.build/Objects-normal/arm64/MaestroAppTests.SwiftConstValuesFileList --compile-time-extraction --deployment-aware-processing --no-app-shortcuts-localization
+2026-10-04 21:31:16.962 appintentsmetadataprocessor[65385:38691760] Starting appintentsmetadataprocessor export
+2026-10-04 21:31:16.962 appintentsmetadataprocessor[65385:38691760] warning: Metadata extraction skipped, no AppIntents.framework dependency found
+
+CodeSign /Volumes/eyedisk/develop/CodexMaestro/.build/XcodeDerivedData/Build/Products/Debug/Codex\ Maestro.app/Contents/PlugIns/MaestroAppTests.xctest (in target 'MaestroAppTests' from project 'CodexMaestro')
+    cd /Volumes/eyedisk/develop/CodexMaestro
+    
+    Signing Identity:     "Sign to Run Locally"
+    
+    /usr/bin/codesign --force --sign - --timestamp\=none --generate-entitlement-der /Volumes/eyedisk/develop/CodexMaestro/.build/XcodeDerivedData/Build/Products/Debug/Codex\ Maestro.app/Contents/PlugIns/MaestroAppTests.xctest
+
+CodeSign /Volumes/eyedisk/develop/CodexMaestro/.build/XcodeDerivedData/Build/Products/Debug/Codex\ Maestro.app/Contents/MacOS/CodexMaestro.debug.dylib (in target 'CodexMaestro' from project 'CodexMaestro')
+    cd /Volumes/eyedisk/develop/CodexMaestro
+    
+    Signing Identity:     "Sign to Run Locally"
+    
+    /usr/bin/codesign --force --sign - --timestamp\=none --generate-entitlement-der /Volumes/eyedisk/develop/CodexMaestro/.build/XcodeDerivedData/Build/Products/Debug/Codex\ Maestro.app/Contents/MacOS/CodexMaestro.debug.dylib
+
+CodeSign /Volumes/eyedisk/develop/CodexMaestro/.build/XcodeDerivedData/Build/Products/Debug/Codex\ Maestro.app/Contents/MacOS/__preview.dylib (in target 'CodexMaestro' from project 'CodexMaestro')
+    cd /Volumes/eyedisk/develop/CodexMaestro
+    
+    Signing Identity:     "Sign to Run Locally"
+    
+    /usr/bin/codesign --force --sign - --timestamp\=none --generate-entitlement-der /Volumes/eyedisk/develop/CodexMaestro/.build/XcodeDerivedData/Build/Products/Debug/Codex\ Maestro.app/Contents/MacOS/__preview.dylib
+/Volumes/eyedisk/develop/CodexMaestro/.build/XcodeDerivedData/Build/Products/Debug/Codex Maestro.app/Contents/MacOS/__preview.dylib: replacing existing signature
+
+CodeSign /Volumes/eyedisk/develop/CodexMaestro/.build/XcodeDerivedData/Build/Products/Debug/Codex\ Maestro.app (in target 'CodexMaestro' from project 'CodexMaestro')
+    cd /Volumes/eyedisk/develop/CodexMaestro
+    
+    Signing Identity:     "Sign to Run Locally"
+    
+    /usr/bin/codesign --force --sign - --entitlements /Volumes/eyedisk/develop/CodexMaestro/.build/XcodeDerivedData/Build/Intermediates.noindex/CodexMaestro.build/Debug/CodexMaestro.build/Codex\ Maestro.app.xcent --timestamp\=none --generate-entitlement-der /Volumes/eyedisk/develop/CodexMaestro/.build/XcodeDerivedData/Build/Products/Debug/Codex\ Maestro.app
+
+Validate /Volumes/eyedisk/develop/CodexMaestro/.build/XcodeDerivedData/Build/Products/Debug/Codex\ Maestro.app (in target 'CodexMaestro' from project 'CodexMaestro')
+    cd /Volumes/eyedisk/develop/CodexMaestro
+    builtin-validationUtility /Volumes/eyedisk/develop/CodexMaestro/.build/XcodeDerivedData/Build/Products/Debug/Codex\ Maestro.app -no-validate-extension -infoplist-subpath Contents/Info.plist
+
+RegisterWithLaunchServices /Volumes/eyedisk/develop/CodexMaestro/.build/XcodeDerivedData/Build/Products/Debug/Codex\ Maestro.app (in target 'CodexMaestro' from project 'CodexMaestro')
+    cd /Volumes/eyedisk/develop/CodexMaestro
+    builtin-lsregisterurl --record-path /Volumes/eyedisk/develop/CodexMaestro/.build/XcodeDerivedData/Build/Intermediates.noindex/XCBuildData/registered-launchservices.txt -- /System/Library/Frameworks/CoreServices.framework/Versions/Current/Frameworks/LaunchServices.framework/Versions/Current/Support/lsregister -f -R -trusted /Volumes/eyedisk/develop/CodexMaestro/.build/XcodeDerivedData/Build/Products/Debug/Codex\ Maestro.app
+
+PruneExplicitPrecompiledModules /Volumes/eyedisk/develop/CodexMaestro/.build/XcodeDerivedData/SDKExplicitPrecompiledModules
+
+PruneExplicitPrecompiledModules /Volumes/eyedisk/develop/CodexMaestro/.build/XcodeDerivedData/Build/Intermediates.noindex/ExplicitPrecompiledModules
+
+PruneExplicitPrecompiledModules /Volumes/eyedisk/develop/CodexMaestro/.build/XcodeDerivedData/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules
+
+2026-10-04 21:31:17.095 xcodebuild[65316:38691214]  DVTAssertions: Warning in IDEFrameworks/IDEFoundation/Execution/LaunchSystem/IDELaunchSession.m:395
+Details:  setRunnablePIDWithDiagnostics:logSection:andCompletionHandler: called without a completion handler - blocking until diagnostics setup completes. Callers should migrate to using a completion handler for better performance.
+Object:   <IDELaunchSession: 0x7ce6b84600>
+Method:   -setRunnablePIDWithDiagnostics:logSection:andCompletionHandler:
+Thread:   <NSThread: 0x7ce89c54c0>{number = 11, name = (null)}
+Please file a bug at https://feedbackassistant.apple.com with this warning message and any useful information you can provide.
+Test Suite 'All tests' started at 2026-10-04 21:31:17.889.
+Test Suite 'MaestroCoreTests.xctest' started at 2026-10-04 21:31:17.890.
+Test Suite 'ArchivedContextCatalogTests' started at 2026-10-04 21:31:17.890.
+Test Case '-[MaestroCoreTests.ArchivedContextCatalogTests testDefaultCatalogExcludesArchiveAndContextCatalogIncludesMappedArchivedSessions]' started.
+Test Case '-[MaestroCoreTests.ArchivedContextCatalogTests testDefaultCatalogExcludesArchiveAndContextCatalogIncludesMappedArchivedSessions]' passed (0.006 seconds).
+Test Suite 'ArchivedContextCatalogTests' passed at 2026-10-04 21:31:17.896.
+	 Executed 1 test, with 0 failures (0 unexpected) in 0.006 (0.006) seconds
+Test Suite 'ConnectionActionPersistenceTests' started at 2026-10-04 21:31:17.897.
+Test Case '-[MaestroCoreTests.ConnectionActionPersistenceTests testEditsPreserveConfigurationAndClearMovedExecutionRecipientAndDeleteCleansUp]' started.
+Test Case '-[MaestroCoreTests.ConnectionActionPersistenceTests testEditsPreserveConfigurationAndClearMovedExecutionRecipientAndDeleteCleansUp]' passed (0.001 seconds).
+Test Case '-[MaestroCoreTests.ConnectionActionPersistenceTests testLegacyDecodingAndVersionThreeDiskRoundTrip]' started.
+Test Case '-[MaestroCoreTests.ConnectionActionPersistenceTests testLegacyDecodingAndVersionThreeDiskRoundTrip]' passed (0.002 seconds).
+Test Case '-[MaestroCoreTests.ConnectionActionPersistenceTests testLegacySkillDecodeNormalizesWithoutChangingRoutingOrPromptBytes]' started.
+Test Case '-[MaestroCoreTests.ConnectionActionPersistenceTests testLegacySkillDecodeNormalizesWithoutChangingRoutingOrPromptBytes]' passed (0.001 seconds).
+Test Case '-[MaestroCoreTests.ConnectionActionPersistenceTests testNormalizationSuppliesOnlyLegacyEmptyPromptAndClearsObsoleteMetadataForFourFunctions]' started.
+Test Case '-[MaestroCoreTests.ConnectionActionPersistenceTests testNormalizationSuppliesOnlyLegacyEmptyPromptAndClearsObsoleteMetadataForFourFunctions]' passed (0.001 seconds).
+Test Case '-[MaestroCoreTests.ConnectionActionPersistenceTests testNormalizedLegacyActionDiskRoundTripDropsManualBindingAndPreservesOriginalText]' started.
+Test Case '-[MaestroCoreTests.ConnectionActionPersistenceTests testNormalizedLegacyActionDiskRoundTripDropsManualBindingAndPreservesOriginalText]' passed (0.001 seconds).
+Test Suite 'ConnectionActionPersistenceTests' passed at 2026-10-04 21:31:17.902.
+	 Executed 5 tests, with 0 failures (0 unexpected) in 0.005 (0.006) seconds
+Test Suite 'ConnectionTests' started at 2026-10-04 21:31:17.903.
+Test Case '-[MaestroCoreTests.ConnectionTests testExistingVersionOneWorkspaceDecodesWithoutProjectLinks]' started.
+Test Case '-[MaestroCoreTests.ConnectionTests testExistingVersionOneWorkspaceDecodesWithoutProjectLinks]' passed (0.001 seconds).
+Test Case '-[MaestroCoreTests.ConnectionTests testMalformedProjectLinksDoNotDecodeAsEmpty]' started.
+Test Case '-[MaestroCoreTests.ConnectionTests testMalformedProjectLinksDoNotDecodeAsEmpty]' passed (0.001 seconds).
+Test Case '-[MaestroCoreTests.ConnectionTests testProjectLinksPersistAlongsideSessionLinksAndPrivateDrafts]' started.
+Test Case '-[MaestroCoreTests.ConnectionTests testProjectLinksPersistAlongsideSessionLinksAndPrivateDrafts]' passed (0.001 seconds).
+Test Case '-[MaestroCoreTests.ConnectionTests testProjectLinkUpdatePreservesIdentityAndDoesNotLoseDataOnFailure]' started.
+Test Case '-[MaestroCoreTests.ConnectionTests testProjectLinkUpdatePreservesIdentityAndDoesNotLoseDataOnFailure]' passed (0.000 seconds).
+Test Case '-[MaestroCoreTests.ConnectionTests testProjectLinkValidationIsDirectedAndPurposeSpecific]' started.
+Test Case '-[MaestroCoreTests.ConnectionTests testProjectLinkValidationIsDirectedAndPurposeSpecific]' passed (0.000 seconds).
+Test Case '-[MaestroCoreTests.ConnectionTests testSessionLinkUpdateRejectsCollisionWithoutRemovingOriginal]' started.
+Test Case '-[MaestroCoreTests.ConnectionTests testSessionLinkUpdateRejectsCollisionWithoutRemovingOriginal]' passed (0.000 seconds).
+Test Suite 'ConnectionTests' passed at 2026-10-04 21:31:17.907.
+	 Executed 6 tests, with 0 failures (0 unexpected) in 0.004 (0.005) seconds
+Test Suite 'ContextTopologyLoaderTests' started at 2026-10-04 21:31:17.907.
+Test Case '-[MaestroCoreTests.ContextTopologyLoaderTests testDeferredSQLiteBodyUsesThreadAndItemIdentityAndSharedInstructionEdges]' started.
+Test Case '-[MaestroCoreTests.ContextTopologyLoaderTests testDeferredSQLiteBodyUsesThreadAndItemIdentityAndSharedInstructionEdges]' passed (0.003 seconds).
+Test Case '-[MaestroCoreTests.ContextTopologyLoaderTests testLoadsEveryRecordWithLazyExactBodyAndActualTelemetry]' started.
+Test Case '-[MaestroCoreTests.ContextTopologyLoaderTests testLoadsEveryRecordWithLazyExactBodyAndActualTelemetry]' passed (0.067 seconds).
+Test Case '-[MaestroCoreTests.ContextTopologyLoaderTests testMalformedRolloutPreservesPartialCoverageAndStreamsSQLiteFallback]' started.
+Test Case '-[MaestroCoreTests.ContextTopologyLoaderTests testMalformedRolloutPreservesPartialCoverageAndStreamsSQLiteFallback]' passed (0.003 seconds).
+Test Case '-[MaestroCoreTests.ContextTopologyLoaderTests testMissingEvidenceAndCurrentAncestorInstructionsRemainExplicit]' started.
+2026-10-04 21:31:17.982982+0900 xctest[65394:38691881] [logging-persist] cannot open file at line 53009 of [8fa8248e30]
+2026-10-04 21:31:17.982995+0900 xctest[65394:38691881] [logging-persist] os_unix.c:53009: (2) open(/private/var/folders/tf/wn7gzzvd6l7f7_ttdx84ps880000gn/T/98497AB2-AC4D-4E09-840B-8090C507FF5C/thread_history_1.sqlite) - No such file or directory
+Test Case '-[MaestroCoreTests.ContextTopologyLoaderTests testMissingEvidenceAndCurrentAncestorInstructionsRemainExplicit]' passed (0.001 seconds).
+Test Case '-[MaestroCoreTests.ContextTopologyLoaderTests testOnlyRecognizedTelemetryContributesUsage]' started.
+Test Case '-[MaestroCoreTests.ContextTopologyLoaderTests testOnlyRecognizedTelemetryContributesUsage]' passed (0.003 seconds).
+Test Case '-[MaestroCoreTests.ContextTopologyLoaderTests testPathHeavyRecordedOutputKeepsAllEvidenceAndLinearReferenceDiscovery]' started.
+Test Case '-[MaestroCoreTests.ContextTopologyLoaderTests testPathHeavyRecordedOutputKeepsAllEvidenceAndLinearReferenceDiscovery]' passed (0.450 seconds).
+Test Case '-[MaestroCoreTests.ContextTopologyLoaderTests testProjectHierarchyAndEmptyProjectRootInstructions]' started.
+Test Case '-[MaestroCoreTests.ContextTopologyLoaderTests testProjectHierarchyAndEmptyProjectRootInstructions]' passed (0.003 seconds).
+Test Case '-[MaestroCoreTests.ContextTopologyLoaderTests testProjectScopeIncludesArchivedMembersAndExcludesOtherProjects]' started.
+Test Case '-[MaestroCoreTests.ContextTopologyLoaderTests testProjectScopeIncludesArchivedMembersAndExcludesOtherProjects]' passed (0.003 seconds).
+Test Case '-[MaestroCoreTests.ContextTopologyLoaderTests testReasoningIsSanitizedInPreviewAndDeferredBody]' started.
+Test Case '-[MaestroCoreTests.ContextTopologyLoaderTests testReasoningIsSanitizedInPreviewAndDeferredBody]' passed (0.002 seconds).
+Test Case '-[MaestroCoreTests.ContextTopologyLoaderTests testToolChildrenNormalizeRepeatedCallsAndClassifyInstructionsAndUsage]' started.
+Test Case '-[MaestroCoreTests.ContextTopologyLoaderTests testToolChildrenNormalizeRepeatedCallsAndClassifyInstructionsAndUsage]' passed (0.003 seconds).
+Test Suite 'ContextTopologyLoaderTests' passed at 2026-10-04 21:31:18.448.
+	 Executed 10 tests, with 0 failures (0 unexpected) in 0.539 (0.541) seconds
+Test Suite 'CoreTests' started at 2026-10-04 21:31:18.448.
+Test Case '-[MaestroCoreTests.CoreTests testCatalogReadsAllSessionsAndExplicitProjectMembershipWithoutWriting]' started.
+Test Case '-[MaestroCoreTests.CoreTests testCatalogReadsAllSessionsAndExplicitProjectMembershipWithoutWriting]' passed (0.004 seconds).
+Test Case '-[MaestroCoreTests.CoreTests testDirectedLinksAndPersistenceRoundTrip]' started.
+Test Case '-[MaestroCoreTests.CoreTests testDirectedLinksAndPersistenceRoundTrip]' passed (0.001 seconds).
+Test Case '-[MaestroCoreTests.CoreTests testFramesSurviveFragmentationAndCoalescing]' started.
+Test Case '-[MaestroCoreTests.CoreTests testFramesSurviveFragmentationAndCoalescing]' passed (0.001 seconds).
+Test Case '-[MaestroCoreTests.CoreTests testLiveStatusPatchesAndWaitingFlags]' started.
+Test Case '-[MaestroCoreTests.CoreTests testLiveStatusPatchesAndWaitingFlags]' passed (0.001 seconds).
+Test Case '-[MaestroCoreTests.CoreTests testMalformedFrameRejectsAnOtherwiseValidBatch]' started.
+Test Case '-[MaestroCoreTests.CoreTests testMalformedFrameRejectsAnOtherwiseValidBatch]' passed (0.001 seconds).
+Test Case '-[MaestroCoreTests.CoreTests testMalformedFramesFailClosed]' started.
+Test Case '-[MaestroCoreTests.CoreTests testMalformedFramesFailClosed]' passed (0.000 seconds).
+Test Case '-[MaestroCoreTests.CoreTests testTranscriptUsesChronologicalTextMessagesAndBoundThreadID]' started.
+Test Case '-[MaestroCoreTests.CoreTests testTranscriptUsesChronologicalTextMessagesAndBoundThreadID]' passed (0.003 seconds).
+Test Case '-[MaestroCoreTests.CoreTests testTurnPayloadPreservesPromptAndDoesNotOverrideSessionPolicy]' started.
+Test Case '-[MaestroCoreTests.CoreTests testTurnPayloadPreservesPromptAndDoesNotOverrideSessionPolicy]' passed (0.000 seconds).
+Test Suite 'CoreTests' passed at 2026-10-04 21:31:18.460.
+	 Executed 8 tests, with 0 failures (0 unexpected) in 0.010 (0.012) seconds
+Test Suite 'DecisionContractTests' started at 2026-10-04 21:31:18.460.
+Test Case '-[MaestroCoreTests.DecisionContractTests testAllWireInputShapesAndMixedQuestions]' started.
+Test Case '-[MaestroCoreTests.DecisionContractTests testAllWireInputShapesAndMixedQuestions]' passed (0.002 seconds).
+Test Case '-[MaestroCoreTests.DecisionContractTests testFullTypedResponseAndUnknownFieldsAreRetainedWithoutExecutionExposure]' started.
+Test Case '-[MaestroCoreTests.DecisionContractTests testFullTypedResponseAndUnknownFieldsAreRetainedWithoutExecutionExposure]' passed (0.001 seconds).
+Test Case '-[MaestroCoreTests.DecisionContractTests testJSONRoundTripPreservesUnicodeLargeIntegerAndArrayOrder]' started.
+Test Case '-[MaestroCoreTests.DecisionContractTests testJSONRoundTripPreservesUnicodeLargeIntegerAndArrayOrder]' passed (0.001 seconds).
+Test Case '-[MaestroCoreTests.DecisionContractTests testMissingWrongTypeMalformedDistributionAndNoulRangeFail]' started.
+Test Case '-[MaestroCoreTests.DecisionContractTests testMissingWrongTypeMalformedDistributionAndNoulRangeFail]' passed (0.001 seconds).
+Test Case '-[MaestroCoreTests.DecisionContractTests testModelAliasesNeverProduceReproducibleCacheKeys]' started.
+Test Case '-[MaestroCoreTests.DecisionContractTests testModelAliasesNeverProduceReproducibleCacheKeys]' passed (0.001 seconds).
+Test Case '-[MaestroCoreTests.DecisionContractTests testNoulDefinitionMatchesObservedNullAndEmptyBoundaries]' started.
+Test Case '-[MaestroCoreTests.DecisionContractTests testNoulDefinitionMatchesObservedNullAndEmptyBoundaries]' passed (0.000 seconds).
+Test Case '-[MaestroCoreTests.DecisionContractTests testOnlyServiceRubricLimitsAreEnforced]' started.
+Test Case '-[MaestroCoreTests.DecisionContractTests testOnlyServiceRubricLimitsAreEnforced]' passed (0.001 seconds).
+Test Case '-[MaestroCoreTests.DecisionContractTests testOptionalInstructionsDecodeAndExplicitNullCriteriaRoundTrip]' started.
+Test Case '-[MaestroCoreTests.DecisionContractTests testOptionalInstructionsDecodeAndExplicitNullCriteriaRoundTrip]' passed (0.001 seconds).
+Test Case '-[MaestroCoreTests.DecisionContractTests testScoreLegendRejectsNullAndScalarDescriptions]' started.
+Test Case '-[MaestroCoreTests.DecisionContractTests testScoreLegendRejectsNullAndScalarDescriptions]' passed (0.001 seconds).
+Test Case '-[MaestroCoreTests.DecisionContractTests testScoreRejectsNullAndScalarLevelsWithEscapedQuestionAndIndexPath]' started.
+Test Case '-[MaestroCoreTests.DecisionContractTests testScoreRejectsNullAndScalarLevelsWithEscapedQuestionAndIndexPath]' passed (0.000 seconds).
+Test Case '-[MaestroCoreTests.DecisionContractTests testSingleLevelScoreDecodesButCannotBeNormalized]' started.
+Test Case '-[MaestroCoreTests.DecisionContractTests testSingleLevelScoreDecodesButCannotBeNormalized]' passed (0.000 seconds).
+Test Suite 'DecisionContractTests' passed at 2026-10-04 21:31:18.470.
+	 Executed 11 tests, with 0 failures (0 unexpected) in 0.008 (0.010) seconds
+Test Suite 'DecisionEngineTests' started at 2026-10-04 21:31:18.470.
+Test Case '-[MaestroCoreTests.DecisionEngineTests testBranchingAndIndependentLabelsUseExplicitRules]' started.
+Test Case '-[MaestroCoreTests.DecisionEngineTests testBranchingAndIndependentLabelsUseExplicitRules]' passed (0.003 seconds).
+Test Case '-[MaestroCoreTests.DecisionEngineTests testCancellationAndConfidenceInsufficiencyNeverBecomeSuccess]' started.
+Test Case '-[MaestroCoreTests.DecisionEngineTests testCancellationAndConfidenceInsufficiencyNeverBecomeSuccess]' passed (0.001 seconds).
+Test Case '-[MaestroCoreTests.DecisionEngineTests testChoiceCannotBeConfiguredForGlobalRankingAndNoulHasNoConfidenceGate]' started.
+Test Case '-[MaestroCoreTests.DecisionEngineTests testChoiceCannotBeConfiguredForGlobalRankingAndNoulHasNoConfidenceGate]' passed (0.000 seconds).
+Test Case '-[MaestroCoreTests.DecisionEngineTests testDifferentStatesRunInParallel]' started.
+Test Case '-[MaestroCoreTests.DecisionEngineTests testDifferentStatesRunInParallel]' passed (0.001 seconds).
+Test Case '-[MaestroCoreTests.DecisionEngineTests testEvidenceFingerprintChangeInvalidatesCacheEvenWhenSummaryIsUnchanged]' started.
+Test Case '-[MaestroCoreTests.DecisionEngineTests testEvidenceFingerprintChangeInvalidatesCacheEvenWhenSummaryIsUnchanged]' passed (0.002 seconds).
+Test Case '-[MaestroCoreTests.DecisionEngineTests testHierarchicalLookupBuildsNextCandidateSetFromPreviousChoice]' started.
+Test Case '-[MaestroCoreTests.DecisionEngineTests testHierarchicalLookupBuildsNextCandidateSetFromPreviousChoice]' passed (0.001 seconds).
+Test Case '-[MaestroCoreTests.DecisionEngineTests testHierarchyLoadsSelectedFullMaterialAndBuildsDynamicFollowupCriteria]' started.
+Test Case '-[MaestroCoreTests.DecisionEngineTests testHierarchyLoadsSelectedFullMaterialAndBuildsDynamicFollowupCriteria]' passed (0.004 seconds).
+Test Case '-[MaestroCoreTests.DecisionEngineTests testHTTPFailurePreservesRawTraceAndAPIErrorStatus]' started.
+Test Case '-[MaestroCoreTests.DecisionEngineTests testHTTPFailurePreservesRawTraceAndAPIErrorStatus]' passed (0.001 seconds).
+Test Case '-[MaestroCoreTests.DecisionEngineTests testIndivisibleLimitAndValidationFailureAreDistinct]' started.
+Test Case '-[MaestroCoreTests.DecisionEngineTests testIndivisibleLimitAndValidationFailureAreDistinct]' passed (0.001 seconds).
+Test Case '-[MaestroCoreTests.DecisionEngineTests testMissingMaterialMissingReferenceAndCyclicPlanFailBeforeInference]' started.
+Test Case '-[MaestroCoreTests.DecisionEngineTests testMissingMaterialMissingReferenceAndCyclicPlanFailBeforeInference]' passed (0.001 seconds).
+Test Case '-[MaestroCoreTests.DecisionEngineTests testPinnedVersionCacheRespectsInputRubricVersionAndAlias]' started.
+Test Case '-[MaestroCoreTests.DecisionEngineTests testPinnedVersionCacheRespectsInputRubricVersionAndAlias]' passed (0.003 seconds).
+Test Case '-[MaestroCoreTests.DecisionEngineTests testProfilePersistenceCloneExportAndCorruptionPreservation]' started.
+Test Case '-[MaestroCoreTests.DecisionEngineTests testProfilePersistenceCloneExportAndCorruptionPreservation]' passed (0.002 seconds).
+Test Case '-[MaestroCoreTests.DecisionEngineTests testReadCoverageIsPreservedWhenServiceFailsAfterMaterialLoading]' started.
+Test Case '-[MaestroCoreTests.DecisionEngineTests testReadCoverageIsPreservedWhenServiceFailsAfterMaterialLoading]' passed (0.001 seconds).
+Test Case '-[MaestroCoreTests.DecisionEngineTests testResolvedInvalidNoulDefinitionStopsBeforeHTTPAndReportsTheQuestion]' started.
+Test Case '-[MaestroCoreTests.DecisionEngineTests testResolvedInvalidNoulDefinitionStopsBeforeHTTPAndReportsTheQuestion]' passed (0.001 seconds).
+Test Case '-[MaestroCoreTests.DecisionEngineTests testReturnedModelMismatchPreventsPinnedCacheReuse]' started.
+Test Case '-[MaestroCoreTests.DecisionEngineTests testReturnedModelMismatchPreventsPinnedCacheReuse]' passed (0.001 seconds).
+Test Case '-[MaestroCoreTests.DecisionEngineTests testSameStateIndependentStagesBecomeOneMixedBatchWithoutIDCollisions]' started.
+Test Case '-[MaestroCoreTests.DecisionEngineTests testSameStateIndependentStagesBecomeOneMixedBatchWithoutIDCollisions]' passed (0.001 seconds).
+Test Case '-[MaestroCoreTests.DecisionEngineTests testServiceLimitSplitsQuestionsAndPreservesEveryStateByte]' started.
+Test Case '-[MaestroCoreTests.DecisionEngineTests testServiceLimitSplitsQuestionsAndPreservesEveryStateByte]' passed (0.004 seconds).
+Test Case '-[MaestroCoreTests.DecisionEngineTests testSingleLevelScoreIsQueryableButStaticAndDynamicRankingAreBlockedBeforeHTTP]' started.
+Test Case '-[MaestroCoreTests.DecisionEngineTests testSingleLevelScoreIsQueryableButStaticAndDynamicRankingAreBlockedBeforeHTTP]' passed (0.001 seconds).
+Test Case '-[MaestroCoreTests.DecisionEngineTests testWeightedRanksNormalizeScoresAndMandatoryRuleCannotBeCompensated]' started.
+Test Case '-[MaestroCoreTests.DecisionEngineTests testWeightedRanksNormalizeScoresAndMandatoryRuleCannotBeCompensated]' passed (0.002 seconds).
+Test Suite 'DecisionEngineTests' passed at 2026-10-04 21:31:18.506.
+	 Executed 19 tests, with 0 failures (0 unexpected) in 0.032 (0.035) seconds
+Test Suite 'DesktopBridgeTests' started at 2026-10-04 21:31:18.506.
+Test Case '-[MaestroCoreTests.DesktopBridgeTests testDesktopPatchUpdatesRuntimeStatus]' started.
+Test Case '-[MaestroCoreTests.DesktopBridgeTests testDesktopPatchUpdatesRuntimeStatus]' passed (0.001 seconds).
+Test Case '-[MaestroCoreTests.DesktopBridgeTests testDisconnectedClientRejectsSend]' started.
+Test Case '-[MaestroCoreTests.DesktopBridgeTests testDisconnectedClientRejectsSend]' passed (0.001 seconds).
+Test Case '-[MaestroCoreTests.DesktopBridgeTests testMissingOwnerNeverStartsTurn]' started.
+Test Case '-[MaestroCoreTests.DesktopBridgeTests testMissingOwnerNeverStartsTurn]' passed (0.001 seconds).
+Test Case '-[MaestroCoreTests.DesktopBridgeTests testOwnerRoutedPromptAndLiveStatusRoundTrip]' started.
+Test Case '-[MaestroCoreTests.DesktopBridgeTests testOwnerRoutedPromptAndLiveStatusRoundTrip]' passed (0.001 seconds).
+Test Suite 'DesktopBridgeTests' passed at 2026-10-04 21:31:18.511.
+	 Executed 4 tests, with 0 failures (0 unexpected) in 0.004 (0.005) seconds
+Test Suite 'IntegrationProjectionTests' started at 2026-10-04 21:31:18.511.
+Test Case '-[MaestroCoreTests.IntegrationProjectionTests testIndexedFlagsRespectReplacementInsertionAndRemovalOrder]' started.
+Test Case '-[MaestroCoreTests.IntegrationProjectionTests testIndexedFlagsRespectReplacementInsertionAndRemovalOrder]' passed (0.000 seconds).
+Test Case '-[MaestroCoreTests.IntegrationProjectionTests testInvalidProjectionPatchDoesNotPartiallyApplyEarlierPatches]' started.
+Test Case '-[MaestroCoreTests.IntegrationProjectionTests testInvalidProjectionPatchDoesNotPartiallyApplyEarlierPatches]' passed (0.000 seconds).
+Test Case '-[MaestroCoreTests.IntegrationProjectionTests testProjectFallbackRanksOnlyMatchingRootsAndUsesPathBoundaries]' started.
+Test Case '-[MaestroCoreTests.IntegrationProjectionTests testProjectFallbackRanksOnlyMatchingRootsAndUsesPathBoundaries]' passed (0.003 seconds).
+Test Case '-[MaestroCoreTests.IntegrationProjectionTests testUnrelatedConversationPatchesLeaveProjectionUnchanged]' started.
+Test Case '-[MaestroCoreTests.IntegrationProjectionTests testUnrelatedConversationPatchesLeaveProjectionUnchanged]' passed (0.000 seconds).
+Test Suite 'IntegrationProjectionTests' passed at 2026-10-04 21:31:18.515.
+	 Executed 4 tests, with 0 failures (0 unexpected) in 0.004 (0.005) seconds
+Test Suite 'NodeLinkTests' started at 2026-10-04 21:31:18.515.
+Test Case '-[MaestroCoreTests.NodeLinkTests testAllFourDirectionsPreserveTypedIdentityAndReverseRelationships]' started.
+Test Case '-[MaestroCoreTests.NodeLinkTests testAllFourDirectionsPreserveTypedIdentityAndReverseRelationships]' passed (0.001 seconds).
+Test Case '-[MaestroCoreTests.NodeLinkTests testDiskPersistencePreservesAllBucketsAndPermissions]' started.
+Test Case '-[MaestroCoreTests.NodeLinkTests testDiskPersistencePreservesAllBucketsAndPermissions]' passed (0.001 seconds).
+Test Case '-[MaestroCoreTests.NodeLinkTests testEditingAcrossEndpointCombinationsKeepsIDAndRejectsCollisionAtomically]' started.
+Test Case '-[MaestroCoreTests.NodeLinkTests testEditingAcrossEndpointCombinationsKeepsIDAndRejectsCollisionAtomically]' passed (0.000 seconds).
+Test Case '-[MaestroCoreTests.NodeLinkTests testLegacyVersionOneLoadsWithoutMigrationAndRoundTripsMixedLinks]' started.
+Test Case '-[MaestroCoreTests.NodeLinkTests testLegacyVersionOneLoadsWithoutMigrationAndRoundTripsMixedLinks]' passed (0.001 seconds).
+Test Case '-[MaestroCoreTests.NodeLinkTests testMixedLinkValidationAndMalformedStorageDoNotSilentlyDropData]' started.
+Test Case '-[MaestroCoreTests.NodeLinkTests testMixedLinkValidationAndMalformedStorageDoNotSilentlyDropData]' passed (0.000 seconds).
+Test Case '-[MaestroCoreTests.NodeLinkTests testNoteOnlyEditsRetainOrderWithinEveryStorageBucket]' started.
+Test Case '-[MaestroCoreTests.NodeLinkTests testNoteOnlyEditsRetainOrderWithinEveryStorageBucket]' passed (0.000 seconds).
+Test Suite 'NodeLinkTests' passed at 2026-10-04 21:31:18.520.
+	 Executed 6 tests, with 0 failures (0 unexpected) in 0.003 (0.004) seconds
+Test Suite 'RolloutMessagePreviewTests' started at 2026-10-04 21:31:18.520.
+Test Case '-[MaestroCoreTests.RolloutMessagePreviewTests testNonConversationRecordsAndAnalysisAreNotUsedAsPreviews]' started.
+Test Case '-[MaestroCoreTests.RolloutMessagePreviewTests testNonConversationRecordsAndAnalysisAreNotUsedAsPreviews]' passed (0.001 seconds).
+Test Case '-[MaestroCoreTests.RolloutMessagePreviewTests testReadsTheLastTextAcrossChunksAndSkipsToolsEmptyMessagesAndMalformedTail]' started.
+Test Case '-[MaestroCoreTests.RolloutMessagePreviewTests testReadsTheLastTextAcrossChunksAndSkipsToolsEmptyMessagesAndMalformedTail]' passed (0.012 seconds).
+Test Case '-[MaestroCoreTests.RolloutMessagePreviewTests testRecognizesUserAndLegacyEventsWithOrWithoutFinalNewline]' started.
+Test Case '-[MaestroCoreTests.RolloutMessagePreviewTests testRecognizesUserAndLegacyEventsWithOrWithoutFinalNewline]' passed (0.001 seconds).
+Test Suite 'RolloutMessagePreviewTests' passed at 2026-10-04 21:31:18.535.
+	 Executed 3 tests, with 0 failures (0 unexpected) in 0.014 (0.015) seconds
+Test Suite 'SessionMessagePreviewTests' started at 2026-10-04 21:31:18.535.
+Test Case '-[MaestroCoreTests.SessionMessagePreviewTests testCatalogPreviewReadLeavesBothDatabaseFilesUnchanged]' started.
+Test Case '-[MaestroCoreTests.SessionMessagePreviewTests testCatalogPreviewReadLeavesBothDatabaseFilesUnchanged]' passed (0.004 seconds).
+Test Case '-[MaestroCoreTests.SessionMessagePreviewTests testLatestConversationUsesOrdinalAndKeepsInitialPreviewSeparate]' started.
+Test Case '-[MaestroCoreTests.SessionMessagePreviewTests testLatestConversationUsesOrdinalAndKeepsInitialPreviewSeparate]' passed (0.005 seconds).
+Test Case '-[MaestroCoreTests.SessionMessagePreviewTests testMissingOrInvalidHistoryDoesNotHideSessionMetadata]' started.
+2026-10-04 21:31:18.547125+0900 xctest[65394:38691845] [logging] file is not a database in "SELECT item_id, item_type, item_json FROM thread_items WHERE thread_id=? AND item_type IN ('userMessage','agentMessage') ORDER BY rollout_ordinal DESC"
+Test Case '-[MaestroCoreTests.SessionMessagePreviewTests testMissingOrInvalidHistoryDoesNotHideSessionMetadata]' passed (0.003 seconds).
+Test Case '-[MaestroCoreTests.SessionMessagePreviewTests testRolloutSuppliesLegacyPreviewAndHistoryRemainsThePrimarySource]' started.
+Test Case '-[MaestroCoreTests.SessionMessagePreviewTests testRolloutSuppliesLegacyPreviewAndHistoryRemainsThePrimarySource]' passed (0.005 seconds).
+Test Case '-[MaestroCoreTests.SessionMessagePreviewTests testThreadIDsAreBoundAndDoNotReadAnotherSession]' started.
+Test Case '-[MaestroCoreTests.SessionMessagePreviewTests testThreadIDsAreBoundAndDoNotReadAnotherSession]' passed (0.004 seconds).
+Test Case '-[MaestroCoreTests.SessionMessagePreviewTests testUnreadableLatestItemsFallBackToTheLastTextWithoutACandidateLimit]' started.
+Test Case '-[MaestroCoreTests.SessionMessagePreviewTests testUnreadableLatestItemsFallBackToTheLastTextWithoutACandidateLimit]' passed (0.032 seconds).
+Test Case '-[MaestroCoreTests.SessionMessagePreviewTests testWhitespaceAndUnicodeAreNormalizedWithoutSplittingGraphemes]' started.
+Test Case '-[MaestroCoreTests.SessionMessagePreviewTests testWhitespaceAndUnicodeAreNormalizedWithoutSplittingGraphemes]' passed (0.001 seconds).
+Test Suite 'SessionMessagePreviewTests' passed at 2026-10-04 21:31:18.589.
+	 Executed 7 tests, with 0 failures (0 unexpected) in 0.053 (0.055) seconds
+Test Suite 'SessionWorkPerformanceTests' started at 2026-10-04 21:31:18.590.
+Test Case '-[MaestroCoreTests.SessionWorkPerformanceTests testHundredMegabyteColdWarmAndAppendReadBoundaries]' started.
+SESSION_CIRCUIT_PERFORMANCE bytes=109119566 records=1025 cold_seconds=2.2060810327529907 warm_seconds=0.0008519887924194336 append_seconds=0.0007590055465698242 warm_parsed=0 warm_suffix_bytes=0 append_suffix_bytes=107 process_peak_rss_bytes=140509184
+Test Case '-[MaestroCoreTests.SessionWorkPerformanceTests testHundredMegabyteColdWarmAndAppendReadBoundaries]' passed (2.264 seconds).
+Test Suite 'SessionWorkPerformanceTests' passed at 2026-10-04 21:31:20.854.
+	 Executed 1 test, with 0 failures (0 unexpected) in 2.264 (2.265) seconds
+Test Suite 'SessionWorkTopologyTests' started at 2026-10-04 21:31:20.854.
+Test Case '-[MaestroCoreTests.SessionWorkTopologyTests testCancelledLoadNeverPublishesACandidateIndex]' started.
+Test Case '-[MaestroCoreTests.SessionWorkTopologyTests testCancelledLoadNeverPublishesACandidateIndex]' passed (0.130 seconds).
+Test Case '-[MaestroCoreTests.SessionWorkTopologyTests testCanonicalTaskPathSpawnAndPublicAgentMessageUseRecordedAddressing]' started.
+Test Case '-[MaestroCoreTests.SessionWorkTopologyTests testCanonicalTaskPathSpawnAndPublicAgentMessageUseRecordedAddressing]' passed (0.010 seconds).
+Test Case '-[MaestroCoreTests.SessionWorkTopologyTests testCatalogAcceptsLowercaseAndLegacySubAgentWithoutDatabaseWrites]' started.
+Test Case '-[MaestroCoreTests.SessionWorkTopologyTests testCatalogAcceptsLowercaseAndLegacySubAgentWithoutDatabaseWrites]' passed (0.008 seconds).
+Test Case '-[MaestroCoreTests.SessionWorkTopologyTests testCompleteNewlineBoundaryAndAppendOnlyPolling]' started.
+Test Case '-[MaestroCoreTests.SessionWorkTopologyTests testCompleteNewlineBoundaryAndAppendOnlyPolling]' passed (0.012 seconds).
+Test Case '-[MaestroCoreTests.SessionWorkTopologyTests testDelayedChildCatalogMappingResolvesWithoutReparsingRollout]' started.
+Test Case '-[MaestroCoreTests.SessionWorkTopologyTests testDelayedChildCatalogMappingResolvesWithoutReparsingRollout]' passed (0.009 seconds).
+Test Case '-[MaestroCoreTests.SessionWorkTopologyTests testDerivedChildAndArtifactNodesUseProducerObservationTimeAndBody]' started.
+Test Case '-[MaestroCoreTests.SessionWorkTopologyTests testDerivedChildAndArtifactNodesUseProducerObservationTimeAndBody]' passed (0.012 seconds).
+Test Case '-[MaestroCoreTests.SessionWorkTopologyTests testExplicitArtifactCollaborationAndDynamicToolProducers]' started.
+Test Case '-[MaestroCoreTests.SessionWorkTopologyTests testExplicitArtifactCollaborationAndDynamicToolProducers]' passed (0.004 seconds).
+Test Case '-[MaestroCoreTests.SessionWorkTopologyTests testIDLessStartClearsIntervalAndCurrentTurnUntilReliableBoundary]' started.
+Test Case '-[MaestroCoreTests.SessionWorkTopologyTests testIDLessStartClearsIntervalAndCurrentTurnUntilReliableBoundary]' passed (0.003 seconds).
+Test Case '-[MaestroCoreTests.SessionWorkTopologyTests testInvalidTelemetryRemainsUnknownWithCoverageEvidence]' started.
+Test Case '-[MaestroCoreTests.SessionWorkTopologyTests testInvalidTelemetryRemainsUnknownWithCoverageEvidence]' passed (0.006 seconds).
+Test Case '-[MaestroCoreTests.SessionWorkTopologyTests testLateResultsStayWithOriginalCallAndDuplicateReceiptsDoNotOverwriteDistinctOutputs]' started.
+Test Case '-[MaestroCoreTests.SessionWorkTopologyTests testLateResultsStayWithOriginalCallAndDuplicateReceiptsDoNotOverwriteDistinctOutputs]' passed (0.006 seconds).
+Test Case '-[MaestroCoreTests.SessionWorkTopologyTests testMixedPublicMessageBlocksCannotExposeNestedPrivateText]' started.
+Test Case '-[MaestroCoreTests.SessionWorkTopologyTests testMixedPublicMessageBlocksCannotExposeNestedPrivateText]' passed (0.006 seconds).
+Test Case '-[MaestroCoreTests.SessionWorkTopologyTests testNativeLateCompletionKeepsOriginalTurnAndRecordsReceivingTurn]' started.
+Test Case '-[MaestroCoreTests.SessionWorkTopologyTests testNativeLateCompletionKeepsOriginalTurnAndRecordsReceivingTurn]' passed (0.003 seconds).
+Test Case '-[MaestroCoreTests.SessionWorkTopologyTests testNativeLifecycleUsesExactIDsAndExplicitOutcome]' started.
+Test Case '-[MaestroCoreTests.SessionWorkTopologyTests testNativeLifecycleUsesExactIDsAndExplicitOutcome]' passed (0.010 seconds).
+Test Case '-[MaestroCoreTests.SessionWorkTopologyTests testNativeRepeatedResultHistoryUsesLatestObservationTimestamp]' started.
+Test Case '-[MaestroCoreTests.SessionWorkTopologyTests testNativeRepeatedResultHistoryUsesLatestObservationTimestamp]' passed (0.004 seconds).
+Test Case '-[MaestroCoreTests.SessionWorkTopologyTests testNativeRequestTurnAndThreadCountersRetainExactOwnerAndScopes]' started.
+Test Case '-[MaestroCoreTests.SessionWorkTopologyTests testNativeRequestTurnAndThreadCountersRetainExactOwnerAndScopes]' passed (0.005 seconds).
+Test Case '-[MaestroCoreTests.SessionWorkTopologyTests testNativeStartedEmptyOutputRemainsRunningAndReplayUsesOriginalRecord]' started.
+Test Case '-[MaestroCoreTests.SessionWorkTopologyTests testNativeStartedEmptyOutputRemainsRunningAndReplayUsesOriginalRecord]' passed (0.004 seconds).
+Test Case '-[MaestroCoreTests.SessionWorkTopologyTests testReversedSpawnResultAndCatalogPathsRecoverOnlyExplicitParticipation]' started.
+Test Case '-[MaestroCoreTests.SessionWorkTopologyTests testReversedSpawnResultAndCatalogPathsRecoverOnlyExplicitParticipation]' passed (0.009 seconds).
+Test Case '-[MaestroCoreTests.SessionWorkTopologyTests testRotationTruncationAndSourceLossInvalidateReferencesButPreserveLastSafeMetrics]' started.
+Test Case '-[MaestroCoreTests.SessionWorkTopologyTests testRotationTruncationAndSourceLossInvalidateReferencesButPreserveLastSafeMetrics]' passed (0.008 seconds).
+Test Case '-[MaestroCoreTests.SessionWorkTopologyTests testSameSizeMiddleMutationCreatesNewGeneration]' started.
+Test Case '-[MaestroCoreTests.SessionWorkTopologyTests testSameSizeMiddleMutationCreatesNewGeneration]' passed (0.009 seconds).
+Test Case '-[MaestroCoreTests.SessionWorkTopologyTests testTelemetryRetainsScopesSubsetsUnknownsAndResetSegments]' started.
+Test Case '-[MaestroCoreTests.SessionWorkTopologyTests testTelemetryRetainsScopesSubsetsUnknownsAndResetSegments]' passed (0.007 seconds).
+Test Case '-[MaestroCoreTests.SessionWorkTopologyTests testUnknownRecordsAndPrivateReasoningArePreservedWithoutPrivateText]' started.
+Test Case '-[MaestroCoreTests.SessionWorkTopologyTests testUnknownRecordsAndPrivateReasoningArePreservedWithoutPrivateText]' passed (0.007 seconds).
+Test Suite 'SessionWorkTopologyTests' passed at 2026-10-04 21:31:21.130.
+	 Executed 21 tests, with 0 failures (0 unexpected) in 0.272 (0.275) seconds
+Test Suite 'StalledPeerTests' started at 2026-10-04 21:31:21.130.
+Test Case '-[MaestroCoreTests.StalledPeerTests testBackpressuredPromptDoesNotBlockMainActorAndDisconnectUnblocksWriter]' started.
+IPC_BACKPRESSURE heartbeat=0.158435416 seconds; disconnect=0.000179791 seconds; fixture prompt never accepted
+Test Case '-[MaestroCoreTests.StalledPeerTests testBackpressuredPromptDoesNotBlockMainActorAndDisconnectUnblocksWriter]' passed (0.160 seconds).
+Test Suite 'StalledPeerTests' passed at 2026-10-04 21:31:21.290.
+	 Executed 1 test, with 0 failures (0 unexpected) in 0.160 (0.160) seconds
+Test Suite 'StreamRecoveryTests' started at 2026-10-04 21:31:21.291.
+Test Case '-[MaestroCoreTests.StreamRecoveryTests testMalformedRevisionAndIndexedPatchInvalidateAndResubscribe]' started.
+Test Case '-[MaestroCoreTests.StreamRecoveryTests testMalformedRevisionAndIndexedPatchInvalidateAndResubscribe]' passed (0.005 seconds).
+Test Suite 'StreamRecoveryTests' passed at 2026-10-04 21:31:21.296.
+	 Executed 1 test, with 0 failures (0 unexpected) in 0.005 (0.005) seconds
+Test Suite 'TypeSafeHTTPClientTests' started at 2026-10-04 21:31:21.296.
+Test Case '-[MaestroCoreTests.TypeSafeHTTPClientTests testAuthenticatedRequestAndModelListingUseDocumentedEndpoints]' started.
+Test Case '-[MaestroCoreTests.TypeSafeHTTPClientTests testAuthenticatedRequestAndModelListingUseDocumentedEndpoints]' passed (0.013 seconds).
+Test Case '-[MaestroCoreTests.TypeSafeHTTPClientTests testCancellationInterruptsRetryAfterSleep]' started.
+Test Case '-[MaestroCoreTests.TypeSafeHTTPClientTests testCancellationInterruptsRetryAfterSleep]' passed (0.002 seconds).
+Test Case '-[MaestroCoreTests.TypeSafeHTTPClientTests testHTTPValidationLocationIsReadableAndRawBytesAreRetained]' started.
+Test Case '-[MaestroCoreTests.TypeSafeHTTPClientTests testHTTPValidationLocationIsReadableAndRawBytesAreRetained]' passed (0.001 seconds).
+Test Case '-[MaestroCoreTests.TypeSafeHTTPClientTests testInvalidQuestionNeverMakesAnHTTPCall]' started.
+Test Case '-[MaestroCoreTests.TypeSafeHTTPClientTests testInvalidQuestionNeverMakesAnHTTPCall]' passed (0.001 seconds).
+Test Case '-[MaestroCoreTests.TypeSafeHTTPClientTests testMalformedResponseRetainsOriginalBytes]' started.
+Test Case '-[MaestroCoreTests.TypeSafeHTTPClientTests testMalformedResponseRetainsOriginalBytes]' passed (0.001 seconds).
+Test Case '-[MaestroCoreTests.TypeSafeHTTPClientTests testMissingKeyNeverMakesARequestAndUnauthorizedIsDistinct]' started.
+Test Case '-[MaestroCoreTests.TypeSafeHTTPClientTests testMissingKeyNeverMakesARequestAndUnauthorizedIsDistinct]' passed (0.001 seconds).
+Test Case '-[MaestroCoreTests.TypeSafeHTTPClientTests testOnlyExplicitServiceInputLimitTriggersAdjustment]' started.
+Test Case '-[MaestroCoreTests.TypeSafeHTTPClientTests testOnlyExplicitServiceInputLimitTriggersAdjustment]' passed (0.001 seconds).
+Test Case '-[MaestroCoreTests.TypeSafeHTTPClientTests testRateLimitAndOverloadRetryButValidationDoesNot]' started.
+Test Case '-[MaestroCoreTests.TypeSafeHTTPClientTests testRateLimitAndOverloadRetryButValidationDoesNot]' passed (0.002 seconds).
+Test Suite 'TypeSafeHTTPClientTests' passed at 2026-10-04 21:31:21.318.
+	 Executed 8 tests, with 0 failures (0 unexpected) in 0.021 (0.023) seconds
+Test Suite 'MaestroCoreTests.xctest' passed at 2026-10-04 21:31:21.319.
+	 Executed 116 tests, with 0 failures (0 unexpected) in 3.406 (3.429) seconds
+Test Suite 'All tests' passed at 2026-10-04 21:31:21.319.
+	 Executed 116 tests, with 0 failures (0 unexpected) in 3.406 (3.429) seconds
+objc[65405]: Class _TtC11MaestroCore16ReadOnlyDatabase is implemented in both /Volumes/eyedisk/develop/CodexMaestro/.build/XcodeDerivedData/Build/Products/Debug/Codex Maestro.app/Contents/MacOS/CodexMaestro.debug.dylib (0x1043144d0) and /Volumes/eyedisk/develop/CodexMaestro/.build/XcodeDerivedData/Build/Products/Debug/Codex Maestro.app/Contents/PlugIns/MaestroAppTests.xctest/Contents/MacOS/MaestroAppTests (0x10c60baf8). This may cause spurious casting failures and mysterious crashes. One of the duplicates must be removed or renamed.
+objc[65405]: Class _TtC11MaestroCore14DecisionEngine is implemented in both /Volumes/eyedisk/develop/CodexMaestro/.build/XcodeDerivedData/Build/Products/Debug/Codex Maestro.app/Contents/MacOS/CodexMaestro.debug.dylib (0x104314d60) and /Volumes/eyedisk/develop/CodexMaestro/.build/XcodeDerivedData/Build/Products/Debug/Codex Maestro.app/Contents/PlugIns/MaestroAppTests.xctest/Contents/MacOS/MaestroAppTests (0x10c60c4f0). This may cause spurious casting failures and mysterious crashes. One of the duplicates must be removed or renamed.
+objc[65405]: Class _TtC11MaestroCore13DesktopBridge is implemented in both /Volumes/eyedisk/develop/CodexMaestro/.build/XcodeDerivedData/Build/Products/Debug/Codex Maestro.app/Contents/MacOS/CodexMaestro.debug.dylib (0x104315620) and /Volumes/eyedisk/develop/CodexMaestro/.build/XcodeDerivedData/Build/Products/Debug/Codex Maestro.app/Contents/PlugIns/MaestroAppTests.xctest/Contents/MacOS/MaestroAppTests (0x10c60ce30). This may cause spurious casting failures and mysterious crashes. One of the duplicates must be removed or renamed.
+objc[65405]: Class _TtC11MaestroCoreP33_13326FFCF45CB720FCE509FC2E33564E13UnixTransport is implemented in both /Volumes/eyedisk/develop/CodexMaestro/.build/XcodeDerivedData/Build/Products/Debug/Codex Maestro.app/Contents/MacOS/CodexMaestro.debug.dylib (0x1043157b8) and /Volumes/eyedisk/develop/CodexMaestro/.build/XcodeDerivedData/Build/Products/Debug/Codex Maestro.app/Contents/PlugIns/MaestroAppTests.xctest/Contents/MacOS/MaestroAppTests (0x10c60cfc8). This may cause spurious casting failures and mysterious crashes. One of the duplicates must be removed or renamed.
+objc[65405]: Class _TtC11MaestroCore25SessionWorkTopologyLoader is implemented in both /Volumes/eyedisk/develop/CodexMaestro/.build/XcodeDerivedData/Build/Products/Debug/Codex Maestro.app/Contents/MacOS/CodexMaestro.debug.dylib (0x104316380) and /Volumes/eyedisk/develop/CodexMaestro/.build/XcodeDerivedData/Build/Products/Debug/Codex Maestro.app/Contents/PlugIns/MaestroAppTests.xctest/Contents/MacOS/MaestroAppTests (0x10c60dbe0). This may cause spurious casting failures and mysterious crashes. One of the duplicates must be removed or renamed.
+objc[65405]: Class _TtC11MaestroCoreP33_4D1E18F0796ADF4E61FE66B6B688778E21DecisionRedirectGuard is implemented in both /Volumes/eyedisk/develop/CodexMaestro/.build/XcodeDerivedData/Build/Products/Debug/Codex Maestro.app/Contents/MacOS/CodexMaestro.debug.dylib (0x10430ab48) and /Volumes/eyedisk/develop/CodexMaestro/.build/XcodeDerivedData/Build/Products/Debug/Codex Maestro.app/Contents/PlugIns/MaestroAppTests.xctest/Contents/MacOS/MaestroAppTests (0x10c60a750). This may cause spurious casting failures and mysterious crashes. One of the duplicates must be removed or renamed.
+objc[65405]: Class _TtC11MaestroCore18TypeSafeHTTPClient is implemented in both /Volumes/eyedisk/develop/CodexMaestro/.build/XcodeDerivedData/Build/Products/Debug/Codex Maestro.app/Contents/MacOS/CodexMaestro.debug.dylib (0x104316728) and /Volumes/eyedisk/develop/CodexMaestro/.build/XcodeDerivedData/Build/Products/Debug/Codex Maestro.app/Contents/PlugIns/MaestroAppTests.xctest/Contents/MacOS/MaestroAppTests (0x10c60df98). This may cause spurious casting failures and mysterious crashes. One of the duplicates must be removed or renamed.
+2026-10-04 21:31:22.024181+0900 CodexMaestro[65405:38691967] [Connection] Unable to get synchronousRemoteObjectProxy, error: Error Domain=NSCocoaErrorDomain Code=4097 "connection to service named com.apple.linkd.autoShortcut" UserInfo={NSDebugDescription=connection to service named com.apple.linkd.autoShortcut}
+2026-10-04 21:31:22.024352+0900 CodexMaestro[65405:38691967] [Application] Error registering app with intents framework: Error Domain=NSCocoaErrorDomain Code=4097 "connection to service named com.apple.linkd.autoShortcut" UserInfo={NSDebugDescription=connection to service named com.apple.linkd.autoShortcut}
+2026-10-04 21:31:22.024691+0900 CodexMaestro[65405:38691968] [Connection] Unable to get synchronousRemoteObjectProxy, error: Error Domain=NSCocoaErrorDomain Code=4097 "connection to service named com.apple.linkd.autoShortcut" UserInfo={NSDebugDescription=connection to service named com.apple.linkd.autoShortcut}
+2026-10-04 21:31:22.024710+0900 CodexMaestro[65405:38691968] [Connection] Unable to re-register with Process Instance Registry, error: Error Domain=NSCocoaErrorDomain Code=4097 "connection to service named com.apple.linkd.autoShortcut" UserInfo={NSDebugDescription=connection to service named com.apple.linkd.autoShortcut}
+2026-10-04 21:31:22.025017+0900 CodexMaestro[65405:38691965] [Connection] Unable to get synchronousRemoteObjectProxy, error: Error Domain=NSCocoaErrorDomain Code=4097 "connection to service named com.apple.linkd.autoShortcut" UserInfo={NSDebugDescription=connection to service named com.apple.linkd.autoShortcut}
+2026-10-04 21:31:22.025035+0900 CodexMaestro[65405:38691965] [Connection] Unable to re-register with Process Instance Registry, error: Error Domain=NSCocoaErrorDomain Code=4097 "connection to service named com.apple.linkd.autoShortcut" UserInfo={NSDebugDescription=connection to service named com.apple.linkd.autoShortcut}
+2026-10-04 21:31:22.025306+0900 CodexMaestro[65405:38691965] [Connection] Will NOT re-try to establish the connection
+2026-10-04 21:31:22.025330+0900 CodexMaestro[65405:38691967] [Connection] Unable to get synchronousRemoteObjectProxy, error: Error Domain=NSCocoaErrorDomain Code=4097 "connection to service named com.apple.linkd.autoShortcut" UserInfo={NSDebugDescription=connection to service named com.apple.linkd.autoShortcut}
+2026-10-04 21:31:22.025340+0900 CodexMaestro[65405:38691967] [Connection] Unable to re-register with Process Instance Registry, error: Error Domain=NSCocoaErrorDomain Code=4097 "connection to service named com.apple.linkd.autoShortcut" UserInfo={NSDebugDescription=connection to service named com.apple.linkd.autoShortcut}
+2026-10-04 21:31:22.110802+0900 CodexMaestro[65405:38691954] ApplePersistenceIgnoreState: Existing state will not be touched. New state will be written to /var/folders/tf/wn7gzzvd6l7f7_ttdx84ps880000gn/T/com.oozoofrog.CodexMaestro.savedState
+2026-10-04 21:31:22.467311+0900 CodexMaestro[65405:38691968] [Common] Unable to obtain a task name port right for pid 418: (os/kern) failure (0x5)
+Test Suite 'All tests' started at 2026-10-04 21:31:22.516.
+Test Suite 'MaestroAppTests.xctest' started at 2026-10-04 21:31:22.516.
+Test Suite 'CircuitUsageSelectionTests' started at 2026-10-04 21:31:22.516.
+Test Case '-[MaestroAppTests.CircuitUsageSelectionTests testCachedAndReasoningTokensAreSubsetsAndChildOverlapMustBeKnown]' started.
+Test Case '-[MaestroAppTests.CircuitUsageSelectionTests testCachedAndReasoningTokensAreSubsetsAndChildOverlapMustBeKnown]' passed (0.001 seconds).
+Test Case '-[MaestroAppTests.CircuitUsageSelectionTests testForeignOwnerCountersDoNotReplaceMainSessionMetrics]' started.
+Test Case '-[MaestroAppTests.CircuitUsageSelectionTests testForeignOwnerCountersDoNotReplaceMainSessionMetrics]' passed (0.000 seconds).
+Test Case '-[MaestroAppTests.CircuitUsageSelectionTests testHistoricalTurnDoesNotShowLaterOrUndatedSessionMetrics]' started.
+Test Case '-[MaestroAppTests.CircuitUsageSelectionTests testHistoricalTurnDoesNotShowLaterOrUndatedSessionMetrics]' passed (0.000 seconds).
+Test Case '-[MaestroAppTests.CircuitUsageSelectionTests testMissingChildSubsetsRemainUnknownWithinKnownInputOutputSum]' started.
+Test Case '-[MaestroAppTests.CircuitUsageSelectionTests testMissingChildSubsetsRemainUnknownWithinKnownInputOutputSum]' passed (0.000 seconds).
+Test Case '-[MaestroAppTests.CircuitUsageSelectionTests testRecentRequestRatioIsSeparateFromTurnTotals]' started.
+Test Case '-[MaestroAppTests.CircuitUsageSelectionTests testRecentRequestRatioIsSeparateFromTurnTotals]' passed (0.000 seconds).
+Test Case '-[MaestroAppTests.CircuitUsageSelectionTests testUnknownChildMetricAndOverflowCannotBecomeZeroTotal]' started.
+Test Case '-[MaestroAppTests.CircuitUsageSelectionTests testUnknownChildMetricAndOverflowCannotBecomeZeroTotal]' passed (0.000 seconds).
+Test Suite 'CircuitUsageSelectionTests' passed at 2026-10-04 21:31:22.520.
+	 Executed 6 tests, with 0 failures (0 unexpected) in 0.003 (0.004) seconds
+Test Suite 'ConnectionActionTests' started at 2026-10-04 21:31:22.520.
+Test Case '-[MaestroAppTests.ConnectionActionTests testBothExecutionSidesResolveAllFourEndpointCombinations]' started.
+Test Case '-[MaestroAppTests.ConnectionActionTests testBothExecutionSidesResolveAllFourEndpointCombinations]' passed (0.002 seconds).
+Test Case '-[MaestroAppTests.ConnectionActionTests testCommandDropCreatesRelationFirstAndReuseDoesNotSendOrMoveNodes]' started.
+Test Case '-[MaestroAppTests.ConnectionActionTests testCommandDropCreatesRelationFirstAndReuseDoesNotSendOrMoveNodes]' passed (0.001 seconds).
+Test Case '-[MaestroAppTests.ConnectionActionTests testEveryAvailableFunctionDelegatesSkillsToReceivingSessionWithoutForcedBindingOrSend]' started.
+Test Case '-[MaestroAppTests.ConnectionActionTests testEveryAvailableFunctionDelegatesSkillsToReceivingSessionWithoutForcedBindingOrSend]' passed (0.003 seconds).
+Test Case '-[MaestroAppTests.ConnectionActionTests testFailedActionSaveAndDraftSaveRestoreAllState]' started.
+Test Case '-[MaestroAppTests.ConnectionActionTests testFailedActionSaveAndDraftSaveRestoreAllState]' passed (0.003 seconds).
+Test Case '-[MaestroAppTests.ConnectionActionTests testLegacySkillReadAndSavePreservePromptBytesAndPersistNormalizedConfiguration]' started.
+Test Case '-[MaestroAppTests.ConnectionActionTests testLegacySkillReadAndSavePreservePromptBytesAndPersistNormalizedConfiguration]' passed (0.005 seconds).
+Test Case '-[MaestroAppTests.ConnectionActionTests testMissingOrUnreadableLegacySkillPathNoLongerBlocksPreparation]' started.
+Test Case '-[MaestroAppTests.ConnectionActionTests testMissingOrUnreadableLegacySkillPathNoLongerBlocksPreparation]' passed (0.003 seconds).
+Test Case '-[MaestroAppTests.ConnectionActionTests testPreparedSnapshotAndExistingDraftArePreserved]' started.
+Test Case '-[MaestroAppTests.ConnectionActionTests testPreparedSnapshotAndExistingDraftArePreserved]' passed (0.004 seconds).
+Test Case '-[MaestroAppTests.ConnectionActionTests testProjectNeverSelectsRecipientImplicitlyAndMembershipIsRevalidated]' started.
+Test Case '-[MaestroAppTests.ConnectionActionTests testProjectNeverSelectsRecipientImplicitlyAndMembershipIsRevalidated]' passed (0.002 seconds).
+Test Case '-[MaestroAppTests.ConnectionActionTests testTypedCRUDCleansUpActionAndPreservesActionOnFailedDelete]' started.
+Test Case '-[MaestroAppTests.ConnectionActionTests testTypedCRUDCleansUpActionAndPreservesActionOnFailedDelete]' passed (0.002 seconds).
+Test Suite 'ConnectionActionTests' passed at 2026-10-04 21:31:22.547.
+	 Executed 9 tests, with 0 failures (0 unexpected) in 0.024 (0.027) seconds
+Test Suite 'ConnectionDragGestureTests' started at 2026-10-04 21:31:22.547.
+Test Case '-[MaestroAppTests.ConnectionDragGestureTests test601SessionItemUpdatesInvalidateOnlyMovementNotLayoutOrStableTargetCue]' started.
+Test Case '-[MaestroAppTests.ConnectionDragGestureTests test601SessionItemUpdatesInvalidateOnlyMovementNotLayoutOrStableTargetCue]' passed (0.008 seconds).
+Test Case '-[MaestroAppTests.ConnectionDragGestureTests testConnectionControlUsesTypedCardBounds]' started.
+Test Case '-[MaestroAppTests.ConnectionDragGestureTests testConnectionControlUsesTypedCardBounds]' passed (0.000 seconds).
+Test Case '-[MaestroAppTests.ConnectionDragGestureTests testEmptyReleaseAndCancellationCannotCompleteConnection]' started.
+Test Case '-[MaestroAppTests.ConnectionDragGestureTests testEmptyReleaseAndCancellationCannotCompleteConnection]' passed (0.000 seconds).
+Test Case '-[MaestroAppTests.ConnectionDragGestureTests testGestureCapturesMovementEligibilityUntilReset]' started.
+Test Case '-[MaestroAppTests.ConnectionDragGestureTests testGestureCapturesMovementEligibilityUntilReset]' passed (0.000 seconds).
+Test Case '-[MaestroAppTests.ConnectionDragGestureTests testOverlapRejectsGrazingSelfUnavailableAndSyntheticProject]' started.
+Test Case '-[MaestroAppTests.ConnectionDragGestureTests testOverlapRejectsGrazingSelfUnavailableAndSyntheticProject]' passed (0.000 seconds).
+Test Case '-[MaestroAppTests.ConnectionDragGestureTests testOverlapUsesNearestCenterAndFrontmostTieBreakWithTypedIDs]' started.
+Test Case '-[MaestroAppTests.ConnectionDragGestureTests testOverlapUsesNearestCenterAndFrontmostTieBreakWithTypedIDs]' passed (0.000 seconds).
+Test Case '-[MaestroAppTests.ConnectionDragGestureTests testRectangleOverlapSupportsAllFourKindsWithoutPointerInsideTarget]' started.
+Test Case '-[MaestroAppTests.ConnectionDragGestureTests testRectangleOverlapSupportsAllFourKindsWithoutPointerInsideTarget]' passed (0.000 seconds).
+Test Case '-[MaestroAppTests.ConnectionDragGestureTests testTypedProjectMovementKeepsCanonicalOriginAndUnrelatedNodes]' started.
+Test Case '-[MaestroAppTests.ConnectionDragGestureTests testTypedProjectMovementKeepsCanonicalOriginAndUnrelatedNodes]' passed (0.000 seconds).
+Test Suite 'ConnectionDragGestureTests' passed at 2026-10-04 21:31:22.559.
+	 Executed 8 tests, with 0 failures (0 unexpected) in 0.010 (0.012) seconds
+Test Suite 'ConnectionManagerEndpointTests' started at 2026-10-04 21:31:22.559.
+Test Case '-[MaestroAppTests.ConnectionManagerEndpointTests testAllFourDirectionsRenderInManagerAndTypedInspectorMembership]' started.
+Test Case '-[MaestroAppTests.ConnectionManagerEndpointTests testAllFourDirectionsRenderInManagerAndTypedInspectorMembership]' passed (0.001 seconds).
+Test Case '-[MaestroAppTests.ConnectionManagerEndpointTests testEditingEndpointKindsMovesStorageBucketWithoutChangingIdentity]' started.
+Test Case '-[MaestroAppTests.ConnectionManagerEndpointTests testEditingEndpointKindsMovesStorageBucketWithoutChangingIdentity]' passed (0.001 seconds).
+Test Case '-[MaestroAppTests.ConnectionManagerEndpointTests testFailedBucketChangingEditRestoresAllStorageArrays]' started.
+Test Case '-[MaestroAppTests.ConnectionManagerEndpointTests testFailedBucketChangingEditRestoresAllStorageArrays]' passed (0.002 seconds).
+Test Case '-[MaestroAppTests.ConnectionManagerEndpointTests testManagerDraftSeedsSelectedTypedEndpointAndRespectsDirectionFilter]' started.
+Test Case '-[MaestroAppTests.ConnectionManagerEndpointTests testManagerDraftSeedsSelectedTypedEndpointAndRespectsDirectionFilter]' passed (0.000 seconds).
+Test Suite 'ConnectionManagerEndpointTests' passed at 2026-10-04 21:31:22.563.
+	 Executed 4 tests, with 0 failures (0 unexpected) in 0.004 (0.004) seconds
+Test Suite 'ConnectionStoreTests' started at 2026-10-04 21:31:22.563.
+Test Case '-[MaestroAppTests.ConnectionStoreTests testConnectionPreparationFailedSavePreservesWorkspaceSelectionAndNotice]' started.
+Test Case '-[MaestroAppTests.ConnectionStoreTests testConnectionPreparationFailedSavePreservesWorkspaceSelectionAndNotice]' passed (0.008 seconds).
+Test Case '-[MaestroAppTests.ConnectionStoreTests testCorruptWorkspaceBlocksWritesAndPreservesSourceBytes]' started.
+Test Case '-[MaestroAppTests.ConnectionStoreTests testCorruptWorkspaceBlocksWritesAndPreservesSourceBytes]' passed (0.001 seconds).
+Test Case '-[MaestroAppTests.ConnectionStoreTests testDemoPreparationRejectsConflictingDraftAndKeepsAllProjectScopeOnSuccess]' started.
+Test Case '-[MaestroAppTests.ConnectionStoreTests testDemoPreparationRejectsConflictingDraftAndKeepsAllProjectScopeOnSuccess]' passed (0.001 seconds).
+Test Case '-[MaestroAppTests.ConnectionStoreTests testFailedWritesRollBackConnectionAddsUpdatesAndDeletes]' started.
+Test Case '-[MaestroAppTests.ConnectionStoreTests testFailedWritesRollBackConnectionAddsUpdatesAndDeletes]' passed (0.003 seconds).
+Test Case '-[MaestroAppTests.ConnectionStoreTests testProjectCRUDRejectsUnavailableEndpointsAndDuplicates]' started.
+Test Case '-[MaestroAppTests.ConnectionStoreTests testProjectCRUDRejectsUnavailableEndpointsAndDuplicates]' passed (0.001 seconds).
+Test Case '-[MaestroAppTests.ConnectionStoreTests testProjectRelationDoesNotReassignSessionOrSendPrompt]' started.
+Test Case '-[MaestroAppTests.ConnectionStoreTests testProjectRelationDoesNotReassignSessionOrSendPrompt]' passed (0.001 seconds).
+Test Case '-[MaestroAppTests.ConnectionStoreTests testSessionCRUDRejectsUnavailableEndpointAndPreservesIdentity]' started.
+Test Case '-[MaestroAppTests.ConnectionStoreTests testSessionCRUDRejectsUnavailableEndpointAndPreservesIdentity]' passed (0.001 seconds).
+Test Case '-[MaestroAppTests.ConnectionStoreTests testTypedConnectionCompletionValidatesEndpointsAndReusesExistingIdentity]' started.
+Test Case '-[MaestroAppTests.ConnectionStoreTests testTypedConnectionCompletionValidatesEndpointsAndReusesExistingIdentity]' passed (0.001 seconds).
+Test Suite 'ConnectionStoreTests' passed at 2026-10-04 21:31:22.579.
+	 Executed 8 tests, with 0 failures (0 unexpected) in 0.015 (0.016) seconds
+Test Suite 'ContextInspectionTests' started at 2026-10-04 21:31:22.579.
+Test Case '-[MaestroAppTests.ContextInspectionTests testClosingContextCancelsPendingResultAndErrorIsVisible]' started.
+Test Case '-[MaestroAppTests.ContextInspectionTests testClosingContextCancelsPendingResultAndErrorIsVisible]' passed (0.001 seconds).
+Test Case '-[MaestroAppTests.ContextInspectionTests testContextReadsRejectStaleLoadsAndNeverSaveWorkspace]' started.
+Test Case '-[MaestroAppTests.ContextInspectionTests testContextReadsRejectStaleLoadsAndNeverSaveWorkspace]' passed (0.003 seconds).
+Test Case '-[MaestroAppTests.ContextInspectionTests testOptimizationPromptPreservesMeasurementAndCoverageBoundaries]' started.
+Test Case '-[MaestroAppTests.ContextInspectionTests testOptimizationPromptPreservesMeasurementAndCoverageBoundaries]' passed (0.001 seconds).
+Test Case '-[MaestroAppTests.ContextInspectionTests testOptimizationRejectsChangedMembershipAndSnapshot]' started.
+Test Case '-[MaestroAppTests.ContextInspectionTests testOptimizationRejectsChangedMembershipAndSnapshot]' passed (0.003 seconds).
+Test Case '-[MaestroAppTests.ContextInspectionTests testOptimizationRequiresExplicitProjectRecipientAndPreservesExistingDraft]' started.
+Test Case '-[MaestroAppTests.ContextInspectionTests testOptimizationRequiresExplicitProjectRecipientAndPreservesExistingDraft]' passed (0.001 seconds).
+Test Case '-[MaestroAppTests.ContextInspectionTests testOverlapChoiceSupportsAllCombinationsAndPreservesOriginsAndDrafts]' started.
+Test Case '-[MaestroAppTests.ContextInspectionTests testOverlapChoiceSupportsAllCombinationsAndPreservesOriginsAndDrafts]' passed (0.001 seconds).
+Test Case '-[MaestroAppTests.ContextInspectionTests testOverlapIsAProposalUntilChoiceAndCancellationDoesNotWrite]' started.
+Test Case '-[MaestroAppTests.ContextInspectionTests testOverlapIsAProposalUntilChoiceAndCancellationDoesNotWrite]' passed (0.001 seconds).
+Test Case '-[MaestroAppTests.ContextInspectionTests testOverlapRevalidatesTargetAndFailedSaveRestoresState]' started.
+Test Case '-[MaestroAppTests.ContextInspectionTests testOverlapRevalidatesTargetAndFailedSaveRestoresState]' passed (0.001 seconds).
+Test Case '-[MaestroAppTests.ContextInspectionTests testProjectContextIncludesHiddenMembersAndSavedRequestsWithoutWriting]' started.
+Test Case '-[MaestroAppTests.ContextInspectionTests testProjectContextIncludesHiddenMembersAndSavedRequestsWithoutWriting]' passed (0.001 seconds).
+Test Case '-[MaestroAppTests.ContextInspectionTests testProjectPositionUsesHeaderBounds]' started.
+Test Case '-[MaestroAppTests.ContextInspectionTests testProjectPositionUsesHeaderBounds]' passed (0.001 seconds).
+Test Case '-[MaestroAppTests.ContextInspectionTests testRemovedScopeIsRejectedOnLoadCompletionAndOptimizationPreparation]' started.
+Test Case '-[MaestroAppTests.ContextInspectionTests testRemovedScopeIsRejectedOnLoadCompletionAndOptimizationPreparation]' passed (0.001 seconds).
+Test Suite 'ContextInspectionTests' passed at 2026-10-04 21:31:22.596.
+	 Executed 11 tests, with 0 failures (0 unexpected) in 0.015 (0.017) seconds
+Test Suite 'DecisionWorkbenchTests' started at 2026-10-04 21:31:22.596.
+Test Case '-[MaestroAppTests.DecisionWorkbenchTests testCancelledInputLoadDoesNotLeaveSpinnerOrPublishIntoAnotherScope]' started.
+Test Case '-[MaestroAppTests.DecisionWorkbenchTests testCancelledInputLoadDoesNotLeaveSpinnerOrPublishIntoAnotherScope]' passed (0.001 seconds).
+Test Case '-[MaestroAppTests.DecisionWorkbenchTests testCorruptProfileFileBlocksWritesAndPreservesOriginalBytes]' started.
+Test Case '-[MaestroAppTests.DecisionWorkbenchTests testCorruptProfileFileBlocksWritesAndPreservesOriginalBytes]' passed (0.001 seconds).
+Test Case '-[MaestroAppTests.DecisionWorkbenchTests testDraftPersistenceFailureRollsBackWorkspaceAndSelection]' started.
+Test Case '-[MaestroAppTests.DecisionWorkbenchTests testDraftPersistenceFailureRollsBackWorkspaceAndSelection]' passed (0.001 seconds).
+Test Case '-[MaestroAppTests.DecisionWorkbenchTests testExplicitDraftPreparationCopiesExactOriginalAndProtectsExistingDraft]' started.
+Test Case '-[MaestroAppTests.DecisionWorkbenchTests testExplicitDraftPreparationCopiesExactOriginalAndProtectsExistingDraft]' passed (0.002 seconds).
+Test Case '-[MaestroAppTests.DecisionWorkbenchTests testInvalidRubricIsBlockedAtSaveAndRunWithItsProfilePath]' started.
+Test Case '-[MaestroAppTests.DecisionWorkbenchTests testInvalidRubricIsBlockedAtSaveAndRunWithItsProfilePath]' passed (0.004 seconds).
+Test Case '-[MaestroAppTests.DecisionWorkbenchTests testManualJSONLoadsLocallyAndMissingKeyNeverStartsExecution]' started.
+Test Case '-[MaestroAppTests.DecisionWorkbenchTests testManualJSONLoadsLocallyAndMissingKeyNeverStartsExecution]' passed (0.001 seconds).
+Test Case '-[MaestroAppTests.DecisionWorkbenchTests testResultStalenessTracksProfileManualJSONAndDraftChanges]' started.
+Test Case '-[MaestroAppTests.DecisionWorkbenchTests testResultStalenessTracksProfileManualJSONAndDraftChanges]' passed (0.001 seconds).
+Test Case '-[MaestroAppTests.DecisionWorkbenchTests testSaveCloneReuseAndDefinitionVersionsArePreservedWithoutCredentials]' started.
+Test Case '-[MaestroAppTests.DecisionWorkbenchTests testSaveCloneReuseAndDefinitionVersionsArePreservedWithoutCredentials]' passed (0.003 seconds).
+Test Case '-[MaestroAppTests.DecisionWorkbenchTests testUnknownHandlerWrongDestinationAndStaleResultCannotPrepareDraft]' started.
+Test Case '-[MaestroAppTests.DecisionWorkbenchTests testUnknownHandlerWrongDestinationAndStaleResultCannotPrepareDraft]' passed (0.002 seconds).
+Test Suite 'DecisionWorkbenchTests' passed at 2026-10-04 21:31:22.615.
+	 Executed 9 tests, with 0 failures (0 unexpected) in 0.017 (0.019) seconds
+Test Suite 'LongRowTopologyTests' started at 2026-10-04 21:31:22.615.
+Test Case '-[MaestroAppTests.LongRowTopologyTests testAdjacentSameRowRelationKeepsSideAnchorsAndMixedTopsUseTypedHeights]' started.
+Test Case '-[MaestroAppTests.LongRowTopologyTests testAdjacentSameRowRelationKeepsSideAnchorsAndMixedTopsUseTypedHeights]' passed (0.000 seconds).
+Test Case '-[MaestroAppTests.LongRowTopologyTests testNonAdjacentProjectsInBothDirectionsAvoidMiddleHeader]' started.
+Test Case '-[MaestroAppTests.LongRowTopologyTests testNonAdjacentProjectsInBothDirectionsAvoidMiddleHeader]' passed (0.002 seconds).
+Test Case '-[MaestroAppTests.LongRowTopologyTests testNonAdjacentSessionsInBothDirectionsAvoidWatchAndProjectHeaders]' started.
+Test Case '-[MaestroAppTests.LongRowTopologyTests testNonAdjacentSessionsInBothDirectionsAvoidWatchAndProjectHeaders]' passed (0.002 seconds).
+Test Case '-[MaestroAppTests.LongRowTopologyTests testSmallSessionPlacementOffsetsKeepLongCorridorClearInBothDirections]' started.
+Test Case '-[MaestroAppTests.LongRowTopologyTests testSmallSessionPlacementOffsetsKeepLongCorridorClearInBothDirections]' passed (0.013 seconds).
+Test Suite 'LongRowTopologyTests' passed at 2026-10-04 21:31:22.633.
+	 Executed 4 tests, with 0 failures (0 unexpected) in 0.017 (0.018) seconds
+Test Suite 'MixedTopologyTests' started at 2026-10-04 21:31:22.633.
+Test Case '-[MaestroAppTests.MixedTopologyTests testDraggingSessionWithSharedProjectIDMovesOnlyTypedIncidentEdges]' started.
+Test Case '-[MaestroAppTests.MixedTopologyTests testDraggingSessionWithSharedProjectIDMovesOnlyTypedIncidentEdges]' passed (0.000 seconds).
+Test Case '-[MaestroAppTests.MixedTopologyTests testFourEndpointCombinationsPreserveDirectionAndNamespaces]' started.
+Test Case '-[MaestroAppTests.MixedTopologyTests testFourEndpointCombinationsPreserveDirectionAndNamespaces]' passed (0.000 seconds).
+Test Case '-[MaestroAppTests.MixedTopologyTests testLongMixedEdgeAndReverseStayOutsideInterveningDesignAndBridgeCards]' started.
+Test Case '-[MaestroAppTests.MixedTopologyTests testLongMixedEdgeAndReverseStayOutsideInterveningDesignAndBridgeCards]' passed (0.002 seconds).
+Test Case '-[MaestroAppTests.MixedTopologyTests testMixedCaptionAvoidsBothCardSizesAndFilteredEndpointIsOmitted]' started.
+Test Case '-[MaestroAppTests.MixedTopologyTests testMixedCaptionAvoidsBothCardSizesAndFilteredEndpointIsOmitted]' passed (0.000 seconds).
+Test Case '-[MaestroAppTests.MixedTopologyTests testMixedHighlightingFindsIncomingAndOutgoingTypedNeighbors]' started.
+Test Case '-[MaestroAppTests.MixedTopologyTests testMixedHighlightingFindsIncomingAndOutgoingTypedNeighbors]' passed (0.001 seconds).
+Test Case '-[MaestroAppTests.MixedTopologyTests testMixedSameColumnArrowsUseProjectAndSessionSideBoundariesInBothDirections]' started.
+Test Case '-[MaestroAppTests.MixedTopologyTests testMixedSameColumnArrowsUseProjectAndSessionSideBoundariesInBothDirections]' passed (0.000 seconds).
+Test Suite 'MixedTopologyTests' passed at 2026-10-04 21:31:22.638.
+	 Executed 6 tests, with 0 failures (0 unexpected) in 0.004 (0.005) seconds
+Test Suite 'NodeConnectionSelectionTests' started at 2026-10-04 21:31:22.639.
+Test Case '-[MaestroAppTests.NodeConnectionSelectionTests testConnectionIconThenTargetClickCreatesAllEndpointCombinationsWithoutSending]' started.
+Test Case '-[MaestroAppTests.NodeConnectionSelectionTests testConnectionIconThenTargetClickCreatesAllEndpointCombinationsWithoutSending]' passed (0.001 seconds).
+Test Case '-[MaestroAppTests.NodeConnectionSelectionTests testMixedConnectionsPreserveSessionMembershipDraftsAndExecutionState]' started.
+Test Case '-[MaestroAppTests.NodeConnectionSelectionTests testMixedConnectionsPreserveSessionMembershipDraftsAndExecutionState]' passed (0.001 seconds).
+Test Case '-[MaestroAppTests.NodeConnectionSelectionTests testRelatedEmptyProjectsRemainVisibleAndFiltersDoNotLeakOtherProjectNodes]' started.
+Test Case '-[MaestroAppTests.NodeConnectionSelectionTests testRelatedEmptyProjectsRemainVisibleAndFiltersDoNotLeakOtherProjectNodes]' passed (0.001 seconds).
+Test Suite 'NodeConnectionSelectionTests' passed at 2026-10-04 21:31:22.641.
+	 Executed 3 tests, with 0 failures (0 unexpected) in 0.002 (0.002) seconds
+Test Suite 'PerformanceTests' started at 2026-10-04 21:31:22.641.
+Test Case '-[MaestroAppTests.PerformanceTests test601SessionGroupingTimingSample]' started.
+PERFORMANCE_SAMPLE 601 sessions, 200 grouped layout preparations: 0.075581125 seconds; no rendering/FPS claim
+Test Case '-[MaestroAppTests.PerformanceTests test601SessionGroupingTimingSample]' passed (0.083 seconds).
+Test Case '-[MaestroAppTests.PerformanceTests test601SessionsExpandedGroupingPreservesEverySessionExactlyOnce]' started.
+Test Case '-[MaestroAppTests.PerformanceTests test601SessionsExpandedGroupingPreservesEverySessionExactlyOnce]' passed (0.012 seconds).
+Test Case '-[MaestroAppTests.PerformanceTests testCollapsedCardsRetainLiveAndSelectedAndExpansionIsLossless]' started.
+Test Case '-[MaestroAppTests.PerformanceTests testCollapsedCardsRetainLiveAndSelectedAndExpansionIsLossless]' passed (0.008 seconds).
+Test Case '-[MaestroAppTests.PerformanceTests testDragObservationDoesNotInvalidateCatalogLayoutDependencies]' started.
+Test Case '-[MaestroAppTests.PerformanceTests testDragObservationDoesNotInvalidateCatalogLayoutDependencies]' passed (0.008 seconds).
+Test Case '-[MaestroAppTests.PerformanceTests testProjectOrderingMatchesRunningThenFirstSessionAcross601Items]' started.
+Test Case '-[MaestroAppTests.PerformanceTests testProjectOrderingMatchesRunningThenFirstSessionAcross601Items]' passed (0.011 seconds).
+Test Suite 'PerformanceTests' passed at 2026-10-04 21:31:22.764.
+	 Executed 5 tests, with 0 failures (0 unexpected) in 0.122 (0.123) seconds
+Test Suite 'ProjectInspectorSelectionTests' started at 2026-10-04 21:31:22.764.
+Test Case '-[MaestroAppTests.ProjectInspectorSelectionTests testLateSessionTranscriptCannotPublishUnderProjectInspector]' started.
+Test Case '-[MaestroAppTests.ProjectInspectorSelectionTests testLateSessionTranscriptCannotPublishUnderProjectInspector]' passed (0.008 seconds).
+Test Case '-[MaestroAppTests.ProjectInspectorSelectionTests testPreparedConnectionReturnsFromProjectInspectorToReceivingSessionWithAllProjectsVisible]' started.
+Test Case '-[MaestroAppTests.ProjectInspectorSelectionTests testPreparedConnectionReturnsFromProjectInspectorToReceivingSessionWithAllProjectsVisible]' passed (0.003 seconds).
+Test Case '-[MaestroAppTests.ProjectInspectorSelectionTests testProjectNodeSelectionPreservesCatalogScopeAndSessionDrafts]' started.
+Test Case '-[MaestroAppTests.ProjectInspectorSelectionTests testProjectNodeSelectionPreservesCatalogScopeAndSessionDrafts]' passed (0.001 seconds).
+Test Case '-[MaestroAppTests.ProjectInspectorSelectionTests testUnassignedInspectorMatchesGroupingTotalsAndDirectionalLinkMembership]' started.
+Test Case '-[MaestroAppTests.ProjectInspectorSelectionTests testUnassignedInspectorMatchesGroupingTotalsAndDirectionalLinkMembership]' passed (0.001 seconds).
+Test Suite 'ProjectInspectorSelectionTests' passed at 2026-10-04 21:31:22.777.
+	 Executed 4 tests, with 0 failures (0 unexpected) in 0.012 (0.013) seconds
+Test Suite 'SessionWorkLayoutTests' started at 2026-10-04 21:31:22.777.
+Test Case '-[MaestroAppTests.SessionWorkLayoutTests testAllGroupMembersAndEdgesRemainAccessible]' started.
+Test Case '-[MaestroAppTests.SessionWorkLayoutTests testAllGroupMembersAndEdgesRemainAccessible]' passed (0.001 seconds).
+Test Case '-[MaestroAppTests.SessionWorkLayoutTests testEveryLifecycleObservationHasItsOwnSelectableRow]' started.
+Test Case '-[MaestroAppTests.SessionWorkLayoutTests testEveryLifecycleObservationHasItsOwnSelectableRow]' passed (0.000 seconds).
+Test Case '-[MaestroAppTests.SessionWorkLayoutTests testFailedAndPendingExecutionsDoNotDisappearIntoCompletedGroup]' started.
+Test Case '-[MaestroAppTests.SessionWorkLayoutTests testFailedAndPendingExecutionsDoNotDisappearIntoCompletedGroup]' passed (0.000 seconds).
+Test Case '-[MaestroAppTests.SessionWorkLayoutTests testLargeCircuitRetainsAllRelationsAndMeasuresProjectionRouting]' started.
+SESSION_CIRCUIT_GEOMETRY nodes=1001 relations=1000 collapsed_seconds=0.0029870271682739258 expanded_page_seconds=0.01181495189666748 expanded_visible=26 routed=25 scope=projection_layout_routing_not_render_fps
+Test Case '-[MaestroAppTests.SessionWorkLayoutTests testLargeCircuitRetainsAllRelationsAndMeasuresProjectionRouting]' passed (0.016 seconds).
+Test Case '-[MaestroAppTests.SessionWorkLayoutTests testLargeExpandedGroupPagesWithoutLosingConstituents]' started.
+Test Case '-[MaestroAppTests.SessionWorkLayoutTests testLargeExpandedGroupPagesWithoutLosingConstituents]' passed (0.012 seconds).
+Test Case '-[MaestroAppTests.SessionWorkLayoutTests testReceivingTurnTimelineIncludesRepeatedReceiptsWithoutEarlierOrLaterTurns]' started.
+Test Case '-[MaestroAppTests.SessionWorkLayoutTests testReceivingTurnTimelineIncludesRepeatedReceiptsWithoutEarlierOrLaterTurns]' passed (0.001 seconds).
+Test Case '-[MaestroAppTests.SessionWorkLayoutTests testRoutingAvoidsEveryUnrelatedNodeAtActualPanelWidths]' started.
+Test Case '-[MaestroAppTests.SessionWorkLayoutTests testRoutingAvoidsEveryUnrelatedNodeAtActualPanelWidths]' passed (0.010 seconds).
+Test Case '-[MaestroAppTests.SessionWorkLayoutTests testStatusSelectionAndTelemetryDoNotChangeRoutingGeometry]' started.
+Test Case '-[MaestroAppTests.SessionWorkLayoutTests testStatusSelectionAndTelemetryDoNotChangeRoutingGeometry]' passed (0.000 seconds).
+Test Suite 'SessionWorkLayoutTests' passed at 2026-10-04 21:31:22.818.
+	 Executed 8 tests, with 0 failures (0 unexpected) in 0.040 (0.041) seconds
+Test Suite 'SessionWorkStoreTests' started at 2026-10-04 21:31:22.818.
+Test Case '-[MaestroAppTests.SessionWorkStoreTests testAncestorBackRestoresObservationSelection]' started.
+Test Case '-[MaestroAppTests.SessionWorkStoreTests testAncestorBackRestoresObservationSelection]' passed (0.002 seconds).
+Test Case '-[MaestroAppTests.SessionWorkStoreTests testArchivedChildLookupAndBackRestoreParentSelectionAndBody]' started.
+Test Case '-[MaestroAppTests.SessionWorkStoreTests testArchivedChildLookupAndBackRestoreParentSelectionAndBody]' passed (0.001 seconds).
+Test Case '-[MaestroAppTests.SessionWorkStoreTests testChildMetricsStayInParentScopeAndLateResultsAreRejectedAfterNavigation]' started.
+Test Case '-[MaestroAppTests.SessionWorkStoreTests testChildMetricsStayInParentScopeAndLateResultsAreRejectedAfterNavigation]' passed (0.001 seconds).
+Test Case '-[MaestroAppTests.SessionWorkStoreTests testCloseCancelsPendingArchivedCatalogLookup]' started.
+Test Case '-[MaestroAppTests.SessionWorkStoreTests testCloseCancelsPendingArchivedCatalogLookup]' passed (0.001 seconds).
+Test Case '-[MaestroAppTests.SessionWorkStoreTests testCloseCancelsPollingAndRejectsLateGraph]' started.
+Test Case '-[MaestroAppTests.SessionWorkStoreTests testCloseCancelsPollingAndRejectsLateGraph]' passed (0.036 seconds).
+Test Case '-[MaestroAppTests.SessionWorkStoreTests testLazyBodyRejectsOldSelectionAndCloseResults]' started.
+Test Case '-[MaestroAppTests.SessionWorkStoreTests testLazyBodyRejectsOldSelectionAndCloseResults]' passed (0.001 seconds).
+Test Case '-[MaestroAppTests.SessionWorkStoreTests testObservationBodyRaceAndUndatedObservationRemainInspectable]' started.
+Test Case '-[MaestroAppTests.SessionWorkStoreTests testObservationBodyRaceAndUndatedObservationRemainInspectable]' passed (0.001 seconds).
+Test Case '-[MaestroAppTests.SessionWorkStoreTests testObservationDetailIsIndependentFromReplayAndRegularSelectionClearsIt]' started.
+Test Case '-[MaestroAppTests.SessionWorkStoreTests testObservationDetailIsIndependentFromReplayAndRegularSelectionClearsIt]' passed (0.001 seconds).
+Test Case '-[MaestroAppTests.SessionWorkStoreTests testPendingReadDoesNotOverwriteNewIPCState]' started.
+Test Case '-[MaestroAppTests.SessionWorkStoreTests testPendingReadDoesNotOverwriteNewIPCState]' passed (0.012 seconds).
+Test Case '-[MaestroAppTests.SessionWorkStoreTests testPinnedTurnSelectionAndReplayRemainSeparateFromLiveRefresh]' started.
+Test Case '-[MaestroAppTests.SessionWorkStoreTests testPinnedTurnSelectionAndReplayRemainSeparateFromLiveRefresh]' passed (0.001 seconds).
+Test Case '-[MaestroAppTests.SessionWorkStoreTests testReceivingTurnIncludesOnlyExactLateReceiptAndPriorCall]' started.
+Test Case '-[MaestroAppTests.SessionWorkStoreTests testReceivingTurnIncludesOnlyExactLateReceiptAndPriorCall]' passed (0.005 seconds).
+Test Case '-[MaestroAppTests.SessionWorkStoreTests testRecordMapRoundTripPreservesInspectionAndWorkspace]' started.
+Test Case '-[MaestroAppTests.SessionWorkStoreTests testRecordMapRoundTripPreservesInspectionAndWorkspace]' passed (0.001 seconds).
+Test Case '-[MaestroAppTests.SessionWorkStoreTests testRejectedDraftPreparationPreservesOpenCircuitAndDraft]' started.
+Test Case '-[MaestroAppTests.SessionWorkStoreTests testRejectedDraftPreparationPreservesOpenCircuitAndDraft]' passed (0.001 seconds).
+Test Case '-[MaestroAppTests.SessionWorkStoreTests testRepeatedResultDoesNotRevealFutureReceivingTurnRelationship]' started.
+Test Case '-[MaestroAppTests.SessionWorkStoreTests testRepeatedResultDoesNotRevealFutureReceivingTurnRelationship]' passed (0.042 seconds).
+Test Case '-[MaestroAppTests.SessionWorkStoreTests testReplayProjectsObservedSummaryAndExactBodyReference]' started.
+Test Case '-[MaestroAppTests.SessionWorkStoreTests testReplayProjectsObservedSummaryAndExactBodyReference]' passed (0.001 seconds).
+Test Case '-[MaestroAppTests.SessionWorkStoreTests testScopeSwitchRejectsOldErrorWithoutClearingNewSpinner]' started.
+Test Case '-[MaestroAppTests.SessionWorkStoreTests testScopeSwitchRejectsOldErrorWithoutClearingNewSpinner]' passed (0.001 seconds).
+Test Case '-[MaestroAppTests.SessionWorkStoreTests testSourceFailureAndDisconnectPreserveLastUsageAndStopSignals]' started.
+Test Case '-[MaestroAppTests.SessionWorkStoreTests testSourceFailureAndDisconnectPreserveLastUsageAndStopSignals]' passed (0.031 seconds).
+Test Case '-[MaestroAppTests.SessionWorkStoreTests testSourceReplacementCannotRetargetSelectedObservation]' started.
+Test Case '-[MaestroAppTests.SessionWorkStoreTests testSourceReplacementCannotRetargetSelectedObservation]' passed (0.104 seconds).
+Test Case '-[MaestroAppTests.SessionWorkStoreTests testSuccessfulDraftPreparationClosesCircuitAndShowsRecipient]' started.
+Test Case '-[MaestroAppTests.SessionWorkStoreTests testSuccessfulDraftPreparationClosesCircuitAndShowsRecipient]' passed (0.005 seconds).
+Test Case '-[MaestroAppTests.SessionWorkStoreTests testUnavailableCoverageRetainsGraphWithoutRestoringLiveAnimation]' started.
+Test Case '-[MaestroAppTests.SessionWorkStoreTests testUnavailableCoverageRetainsGraphWithoutRestoringLiveAnimation]' passed (0.004 seconds).
+Test Case '-[MaestroAppTests.SessionWorkStoreTests testUndatedReceiptDoesNotInheritEarlierCanonicalResultTime]' started.
+Test Case '-[MaestroAppTests.SessionWorkStoreTests testUndatedReceiptDoesNotInheritEarlierCanonicalResultTime]' passed (0.003 seconds).
+Test Case '-[MaestroAppTests.SessionWorkStoreTests testUnknownCurrentBoundaryDoesNotSelectPriorKnownPrompt]' started.
+Test Case '-[MaestroAppTests.SessionWorkStoreTests testUnknownCurrentBoundaryDoesNotSelectPriorKnownPrompt]' passed (0.002 seconds).
+Test Suite 'SessionWorkStoreTests' passed at 2026-10-04 21:31:23.082.
+	 Executed 22 tests, with 0 failures (0 unexpected) in 0.258 (0.263) seconds
+Test Suite 'TopologyDesignTests' started at 2026-10-04 21:31:23.082.
+Test Case '-[MaestroAppTests.TopologyDesignTests testProjectNodeSelectionKeeps601SessionGraphScopeAndSavedCoordinates]' started.
+Test Case '-[MaestroAppTests.TopologyDesignTests testProjectNodeSelectionKeeps601SessionGraphScopeAndSavedCoordinates]' passed (0.016 seconds).
+Test Suite 'TopologyDesignTests' passed at 2026-10-04 21:31:23.098.
+	 Executed 1 test, with 0 failures (0 unexpected) in 0.016 (0.017) seconds
+Test Suite 'TopologyLabelPlacementTests' started at 2026-10-04 21:31:23.099.
+Test Case '-[MaestroAppTests.TopologyLabelPlacementTests testBlockedSearchReturnsNoCaptionInsteadOfCoveringNode]' started.
+Test Case '-[MaestroAppTests.TopologyLabelPlacementTests testBlockedSearchReturnsNoCaptionInsteadOfCoveringNode]' passed (0.001 seconds).
+Test Case '-[MaestroAppTests.TopologyLabelPlacementTests testCaptionAvoidsInterveningSyncCardWhenPreferredLocationIsObstructed]' started.
+Test Case '-[MaestroAppTests.TopologyLabelPlacementTests testCaptionAvoidsInterveningSyncCardWhenPreferredLocationIsObstructed]' passed (0.001 seconds).
+Test Case '-[MaestroAppTests.TopologyLabelPlacementTests testPrefilterIncludesObstacleBeyondCandidateCenterSearchRadius]' started.
+Test Case '-[MaestroAppTests.TopologyLabelPlacementTests testPrefilterIncludesObstacleBeyondCandidateCenterSearchRadius]' passed (0.001 seconds).
+Test Case '-[MaestroAppTests.TopologyLabelPlacementTests testReverseAndParallelCaptionsReserveSeparateRectanglesDeterministically]' started.
+Test Case '-[MaestroAppTests.TopologyLabelPlacementTests testReverseAndParallelCaptionsReserveSeparateRectanglesDeterministically]' passed (0.001 seconds).
+Test Case '-[MaestroAppTests.TopologyLabelPlacementTests testSameRowProjectCaptionAvoidsBoth58PointHeaderCards]' started.
+Test Case '-[MaestroAppTests.TopologyLabelPlacementTests testSameRowProjectCaptionAvoidsBoth58PointHeaderCards]' passed (0.001 seconds).
+Test Case '-[MaestroAppTests.TopologyLabelPlacementTests testSameRowSessionCaptionWiderThan45PointGapFindsFreeSpace]' started.
+Test Case '-[MaestroAppTests.TopologyLabelPlacementTests testSameRowSessionCaptionWiderThan45PointGapFindsFreeSpace]' passed (0.001 seconds).
+Test Suite 'TopologyLabelPlacementTests' passed at 2026-10-04 21:31:23.105.
+	 Executed 6 tests, with 0 failures (0 unexpected) in 0.005 (0.006) seconds
+Test Suite 'TranscriptSelectionTests' started at 2026-10-04 21:31:23.105.
+Test Case '-[MaestroAppTests.TranscriptSelectionTests testBackgroundReadForUnselectedAIsRejectedWithoutInvalidatingB]' started.
+Test Case '-[MaestroAppTests.TranscriptSelectionTests testBackgroundReadForUnselectedAIsRejectedWithoutInvalidatingB]' passed (0.002 seconds).
+Test Case '-[MaestroAppTests.TranscriptSelectionTests testOldACompletionPreservesPendingBAndOnlyBPublishes]' started.
+Test Case '-[MaestroAppTests.TranscriptSelectionTests testOldACompletionPreservesPendingBAndOnlyBPublishes]' passed (0.001 seconds).
+Test Case '-[MaestroAppTests.TranscriptSelectionTests testOldAErrorDoesNotPublishUnderBOrClearBSpinner]' started.
+Test Case '-[MaestroAppTests.TranscriptSelectionTests testOldAErrorDoesNotPublishUnderBOrClearBSpinner]' passed (0.001 seconds).
+Test Case '-[MaestroAppTests.TranscriptSelectionTests testSelectionImmediatelyClearsPreviousTranscriptAndError]' started.
+Test Case '-[MaestroAppTests.TranscriptSelectionTests testSelectionImmediatelyClearsPreviousTranscriptAndError]' passed (0.001 seconds).
+Test Suite 'TranscriptSelectionTests' passed at 2026-10-04 21:31:23.111.
+	 Executed 4 tests, with 0 failures (0 unexpected) in 0.005 (0.006) seconds
+Test Suite 'MaestroAppTests.xctest' passed at 2026-10-04 21:31:23.111.
+	 Executed 118 tests, with 0 failures (0 unexpected) in 0.568 (0.595) seconds
+Test Suite 'All tests' passed at 2026-10-04 21:31:23.111.
+	 Executed 118 tests, with 0 failures (0 unexpected) in 0.568 (0.596) seconds
+2026-10-04 21:31:23.399 xcodebuild[65316:38691146] [MT] IDETestOperationsObserverDebug: 6.328 elapsed -- Testing started completed.
+2026-10-04 21:31:23.399 xcodebuild[65316:38691146] [MT] IDETestOperationsObserverDebug: 0.000 sec, +0.000 sec -- start
+2026-10-04 21:31:23.399 xcodebuild[65316:38691146] [MT] IDETestOperationsObserverDebug: 6.328 sec, +6.328 sec -- end
+
+Test session results, code coverage, and logs:
+	/tmp/CodexMaestroSessionCircuitFinal20261004.xcresult
+
+** TEST SUCCEEDED **
+
+Testing started

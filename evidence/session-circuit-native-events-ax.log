@@ -1,0 +1,76 @@
+The following is a diff from the previous accessibility tree for Window: "Codex Maestro" with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.
+Removed element IDs: 61-63, 65-67, 69-119, 168-169, 181-191
+~					56 radio button Description: 작업 회로, Value: 0
+~					57 radio button Description: 이벤트 기록, Value: 1
++				193 scroll area Secondary Actions: Scroll Up, Scroll Down
++					194 list
++						195 row (selectable) 제목 없는 세션, 과거 하위 세션 · 현재 turn 참여 미확인, 미확인
++						196 row (selectable) 제목 없는 세션, 과거 하위 세션 · 현재 turn 참여 미확인, 미확인
++						197 row (selectable) 제목 없는 세션, 과거 하위 세션 · 현재 turn 참여 미확인, 미확인
++						198 row (selectable) 제목 없는 세션, 과거 하위 세션 · 현재 turn 참여 미확인, 미확인
++						199 row (selectable) 오후 5:19, 세션 메타데이터, 공개 저장 기록, 원시 항목 1, 미확인
++						200 row (selectable) 오후 6:04, thread_settings_applied, 공개 저장 기록, 원시 항목 476, 미확인
++						201 row (selectable) 오후 6:04, thread_settings_applied, 공개 저장 기록, 원시 항목 477, 미확인
++						202 row (selectable) 오후 6:04, thread_settings_applied, 공개 저장 기록, 원시 항목 478, 미확인
++						203 row (selectable) 오후 6:04, thread_settings_applied, 공개 저장 기록, 원시 항목 479, 미확인
++						204 row (selectable) 오후 6:05, thread_settings_applied, 공개 저장 기록, 원시 항목 504, 미확인
++						205 row (selectable) 오후 6:30, thread_settings_applied, 공개 저장 기록, 원시 항목 842, 미확인
++						206 row (selectable) 오후 7:21, thread_settings_applied, 공개 저장 기록, 원시 항목 1,335, 미확인
++						207 row (selectable) 오후 8:27, thread_settings_applied, 공개 저장 기록, 원시 항목 2,842, 미확인
++						208 row (selectable) 오후 11:04, thread_settings_applied, 공개 저장 기록, 원시 항목 6,218, 미확인
++						209 row (selectable) 오후 11:13, thread_settings_applied, 공개 저장 기록, 원시 항목 6,379, 미확인
++						210 row (selectable) 오후 11:35, thread_settings_applied, 공개 저장 기록, 원시 항목 6,500, 미확인
++						211 row (selectable) 오후 11:55, thread_settings_applied, 공개 저장 기록, 원시 항목 6,883, 미확인
++						212 row (selectable) 오후 11:55, thread_settings_applied, 공개 저장 기록, 원시 항목 6,884, 미확인
++						213 row (selectable) 오후 11:59, thread_settings_applied, 공개 저장 기록, 원시 항목 6,945, 미확인
++						214 row (selectable) 오전 12:50, thread_settings_applied, 공개 저장 기록, 원시 항목 7,565, 미확인
++						215 row (selectable) 오전 12:52, thread_settings_applied, 공개 저장 기록, 원시 항목 7,598, 미확인
++						216 row (selectable) 오전 12:55, thread_settings_applied, 공개 저장 기록, 원시 항목 7,655, 미확인
++						217 row (selectable) 오전 1:08, thread_settings_applied, 공개 저장 기록, 원시 항목 7,684, 미확인
++						218 row (selectable) 오전 9:35, thread_settings_applied, 공개 저장 기록, 원시 항목 9,387, 미확인
++						219 row (selectable) 오전 9:38, thread_settings_applied, 공개 저장 기록, 원시 항목 9,402, 미확인
++						220 row (selectable) 오전 10:00, thread_settings_applied, 공개 저장 기록, 원시 항목 9,504, 미확인
++						221 row (selectable) 오전 10:02, thread_settings_applied, 공개 저장 기록, 원시 항목 9,533, 미확인
++						222 row (selectable) 오전 10:02, thread_settings_applied, 공개 저장 기록, 원시 항목 9,534, 미확인
++						223 row (selectable) 오전 10:09, thread_settings_applied, 공개 저장 기록, 원시 항목 9,611, 미확인
++						224 row (selectable) 오전 10:28, thread_settings_applied, 공개 저장 기록, 원시 항목 9,805, 미확인
++						225 row (selectable) 오후 4:43, thread_settings_applied, 공개 저장 기록, 원시 항목 10,305, 미확인
++						226 row (selectable) 오후 5:15, thread_settings_applied, 공개 저장 기록, 원시 항목 10,441, 미확인
++						227 row (selectable) 오후 6:26, thread_settings_applied, 공개 저장 기록, 원시 항목 10,514, 미확인
++						228 row (selectable) 오후 8:33, thread_settings_applied, 공개 저장 기록, 원시 항목 11,257, 미확인
++						229 row (selectable) 오후 8:33, thread_settings_applied, 공개 저장 기록, 원시 항목 11,258, 미확인
++						230 row (selectable) 오후 8:33, turn 시작 기록, 기록된 시작 · 현재 실행 여부는 IPC와 별도, 원시 항목 11,259, 미확인
++						231 row (selectable) 오후 8:33, developer 지침, 공개 저장 기록, 원시 항목 11,260, 미확인
++						232 row (selectable) 오후 8:33, world_state, 공개 저장 기록, 원시 항목 11,261, 미확인
++						233 row (selectable) 오후 8:33, 저장된 turn 컨텍스트, 공개 저장 기록, 원시 항목 11,262, 미확인
++						234 row (selectable) 오후 8:33, 사용자 프롬프트, 구현 해주세요, 원시 항목 11,263, 기록 있음
++						235 row (selectable) 오후 8:33, 사용자 프롬프트, 구현 해주세요, 원시 항목 11,264, 기록 있음
++						236 row (selectable) 오후 8:33, 공개 진행 보고, 세션 상세의 동적 회로를 네이티브 앱에 구현하겠습니다. 현재 변경 상태와 기존 기록·세션 모델을 먼저 확인한 뒤, 작업 연결과 토큰 계측 모델, 회로 화면, 실시간 갱신을 연결하겠습니다. 기존 기록 지도와 판단 입력의 계약도 함께 검증하겠습니다., 원시 항목 11,265, 기록 있음
++						237 row (selectable) 오후 8:33, 공개 진행 보고, 세션 상세의 동적 회로를 네이티브 앱에 구현하겠습니다. 현재 변경 상태와 기존 기록·세션 모델을 먼저 확인한 뒤, 작업 연결과 토큰 계측 모델, 회로 화면, 실시간 갱신을 연결하겠습니다. 기존 기록 지도와 판단 입력의 계약도 함께 검증하겠습니다., 원시 항목 11,266, 기록 있음
++						238 row (selectable) 오후 8:33, exec, native 상태 completed · 결과 미수신 · 성공 여부 미확인, 원시 항목 11,267, 결과 미수신
++						239 row (selectable) 오후 8:33, 직접 기록한 토큰 계측, 공개 저장 기록, 원시 항목 11,268, 미확인
++						240 row (selectable) 오후 8:33, /bin/zsh -lc git status --short; rg --files -g 'AGENTS.md' -g '!evidence/**' -g '!design-previews/**' -g 'Pack, 반환 수신 · 성공 근거 있음, 원시 항목 11,269, 성공 근거 있음
++						241 row (selectable) 오후 8:33, /bin/zsh -lc git status --short; rg --files -g 'AGENTS.md' -g '!evidence/**' -g '!design-previews/**' -g 'Pack, 반환 수신 · 성공 근거 있음, 원시 항목 11,269, 성공 근거 있음
++						242 row (selectable) 오후 8:33, /bin/zsh -lc git status --short; rg --files -g 'AGENTS.md' -g '!evidence/**' -g '!design-previews/**' -g 'Pack · 결과, 반환 수신 · 성공 근거 있음, 원시 항목 11,269, 성공 근거 있음
++						243 row (selectable) 오후 8:33, exec, 반환 수신 · 성공 여부 미확인, 원시 항목 11,270, 반환 수신
++						244 row (selectable) 오후 8:33, 호출 결과 · call_g30VL6zLSRgYDL9uTxLeeLJ8, 반환 수신 · 성공 여부 미확인, 원시 항목 11,270, 미확인
++						245 row (selectable) 오후 8:33, 직접 기록한 토큰 계측, 공개 저장 기록, 원시 항목 11,271, 미확인
++						246 row (selectable) 오후 8:33, 비공개 reasoning 메타데이터, 본문·암호화 payload를 표시하지 않습니다., 원시 항목 11,272, 미확인
++						247 row (selectable) 오후 8:33, 비공개 reasoning 메타데이터, 본문·암호화 payload를 표시하지 않습니다., 원시 항목 11,273, 미확인
++						248 row (selectable) 오후 8:33, 공개 진행 보고, Swift 코드 탐색에는 Swift Intelligence 스킬을 사용하겠습니다. 데이터 수집과 화면 작업은 병렬로 진행하되, 먼저 공통 모델 계약과 파일 담당 범위를 정해 충돌을 피하겠습니다., 원시 항목 11,274, 기록 있음
++						249 row (selectable) 오후 8:33, 공개 진행 보고, Swift 코드 탐색에는 Swift Intelligence 스킬을 사용하겠습니다. 데이터 수집과 화면 작업은 병렬로 진행하되, 먼저 공통 모델 계약과 파일 담당 범위를 정해 충돌을 피하겠습니다., 원시 항목 11,275, 기록 있음
++						250 row (selectable) 오후 8:33, exec, native 상태 completed · 결과 미수신 · 성공 여부 미확인, 원시 항목 11,276, 결과 미수신
++						251 row (selectable) 오후 8:33, /bin/zsh -lc cat /Users/oozoofrog/.codex/plugins/cache/codex-skills/swift-intelligence/0.1.0+codex.20260904035, 반환 수신 · 성공 근거 있음, 원시 항목 11,277, 성공 근거 있음
++						252 row (selectable) 오후 8:33, /bin/zsh -lc cat /Users/oozoofrog/.codex/plugins/cache/codex-skills/swift-intelligence/0.1.0+codex.20260904035, 반환 수신 · 성공 근거 있음, 원시 항목 11,277, 성공 근거 있음
++						253 row (selectable) 오후 8:33, /bin/zsh -lc cat /Users/oozoofrog/.codex/plugins/cache/codex-skills/swift-intelligence/0.1.0+codex.20260904035 · 결과, 반환 수신 · 성공 근거 있음, 원시 항목 11,277, 성공 근거 있음
++						254 row (selectable) 오후 8:33, /bin/zsh -lc rg -n '^public (struct|enum|class|actor)|^    (public |private )?(func|var|let|struct|enum)|^(@Ma, 반환 수신 · 성공 근거 있음, 원시 항목 11,278, 성공 근거 있음
++					255 scroll bar (settable, float) 0
++						256 value indicator (settable, float) 0
++						257 increment arrow button
++						258 decrement arrow button
++						259 increment page button
++						260 decrement page button
++				261 text 1,836개 상태 관찰 · 1 / 31 페이지
++				262 button (disabled) 이전
++				263 button 다음
+The focused UI element is 0 standard window Codex Maestro, ID: maestro, Secondary Actions: Raise

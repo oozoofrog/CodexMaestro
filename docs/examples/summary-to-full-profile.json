@@ -1,0 +1,135 @@
+{
+  "id": "030803C9-35C2-4E9A-86C5-D5A6912B7030",
+  "name": "요약 선택 후 원문 검증",
+  "revision": 1,
+  "model": "jev-latest",
+  "plan": {
+    "stages": [
+      {
+        "id": "choose",
+        "dependencies": [],
+        "state": {
+          "$ref": "/input"
+        },
+        "questions": [
+          {
+            "id": "record",
+            "revision": 1,
+            "criteriaRevision": 1,
+            "spec": {
+              "type": "choice",
+              "instructions": "state.goal을 판단하는 데 가장 필요한 자료를 state.candidates에서 선택하세요.",
+              "criteria": {
+                "$ref": "/input/candidates"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "verify",
+        "dependencies": [
+          "choose"
+        ],
+        "state": {
+          "goal": {
+            "$ref": "/input/goal"
+          },
+          "selected": {
+            "$lookup": {
+              "source": {
+                "$ref": "/input/candidates"
+              },
+              "key": {
+                "$ref": "/steps/choose/answers/record/choice"
+              }
+            }
+          }
+        },
+        "materialIDs": {
+          "$ref": "/steps/choose/answers/record/choice"
+        },
+        "questions": [
+          {
+            "id": "relevance",
+            "revision": 1,
+            "criteriaRevision": 1,
+            "spec": {
+              "type": "score",
+              "instructions": "state.evidence의 본문이 state.base.goal과 얼마나 관련 있습니까?",
+              "criteria": [
+                "관련 없음 또는 근거 없음",
+                "부분 관련",
+                "직접 관련"
+              ]
+            }
+          },
+          {
+            "id": "constraints",
+            "revision": 1,
+            "criteriaRevision": 1,
+            "spec": {
+              "type": "noul",
+              "instructions": "state.evidence의 본문에 state.base.goal에 적용되는 명시적인 제약이 있습니까?"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "composition": {
+    "candidates": [
+      {
+        "id": "selected-record",
+        "value": {
+          "$lookup": {
+            "source": {
+              "$ref": "/input/candidates"
+            },
+            "key": {
+              "$ref": "/steps/choose/answers/record/choice"
+            }
+          }
+        },
+        "axes": [
+          {
+            "answer": {
+              "stage": "verify",
+              "question": "relevance"
+            },
+            "weight": 1
+          }
+        ],
+        "required": []
+      }
+    ],
+    "labels": [
+      {
+        "label": "명시적인 제약 포함",
+        "when": {
+          "predicate": {
+            "_0": {
+              "lhs": {
+                "$ref": "/steps/verify/answers/constraints/noul"
+              },
+              "comparison": "greaterOrEqual",
+              "rhs": 0.8
+            }
+          }
+        }
+      }
+    ],
+    "selections": [
+      {
+        "answer": {
+          "stage": "choose",
+          "question": "record"
+        },
+        "values": {
+          "$ref": "/input/candidates"
+        }
+      }
+    ],
+    "bindings": []
+  }
+}

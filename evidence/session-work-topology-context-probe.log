@@ -1,0 +1,21 @@
+Context read: session; sessions: 1; archived: 0
+Graph: 11456 nodes, 14092 edges
+Node kind session: 1; records: 0
+Node kind group: 7; records: 10597
+Node kind message: 463; records: 463
+Node kind instruction: 103; records: 103
+Node kind tool: 12; records: 1319
+Node kind toolCall: 1319; records: 1319
+Node kind toolResult: 1319; records: 1319
+Node kind skill: 24; records: 0
+Node kind plugin: 3; records: 0
+Node kind metadata: 4571; records: 4570
+Node kind usage: 2808; records: 2808
+Node kind compaction: 15; records: 15
+Node kind file: 811; records: 0
+Coverage: 1 sources; records: 10597; bytes: 101965570; issues: 0
+Coverage status complete: 1 sources
+Observed tool groups: 12; tool calls: 1319; tool results: 1319
+Usage label recorded cumulative catalog usage: 1 samples
+Usage label recorded token telemetry: 2808 samples
+Read-only recorded evidence; no current model-input or tool-availability claim

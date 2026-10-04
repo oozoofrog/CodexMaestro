@@ -1,0 +1,33 @@
+PARITY_PASS name=noul-omitted-instructions-valid-criteria serverStatus=200 local=accepted model=jev-1.13.0
+PARITY_PASS name=noul-null-instructions-valid-criteria serverStatus=200 local=accepted model=jev-1.13.0
+PARITY_PASS name=noul-no-definition serverStatus=400 local=rejected detail=판단 설정 오류: /questions/q/instructions: Noul에는 비어 있지 않은 지시문 또는 null이 아닌 true·false 기준 설명이 필요합니다.
+PARITY_PASS name=noul-null-definition serverStatus=400 local=rejected detail=판단 설정 오류: /questions/q/instructions: Noul에는 비어 있지 않은 지시문 또는 null이 아닌 true·false 기준 설명이 필요합니다.
+PARITY_PASS name=noul-empty-instructions serverStatus=400 local=rejected detail=판단 설정 오류: /questions/q/instructions: Noul에는 비어 있지 않은 지시문 또는 null이 아닌 true·false 기준 설명이 필요합니다.
+PARITY_PASS name=noul-empty-object-instructions serverStatus=400 local=rejected detail=판단 설정 오류: /questions/q/instructions: Noul에는 비어 있지 않은 지시문 또는 null이 아닌 true·false 기준 설명이 필요합니다.
+PARITY_PASS name=noul-empty-array-instructions serverStatus=400 local=rejected detail=판단 설정 오류: /questions/q/instructions: Noul에는 비어 있지 않은 지시문 또는 null이 아닌 true·false 기준 설명이 필요합니다.
+PARITY_PASS name=noul-null-instructions-empty-criteria serverStatus=400 local=rejected detail=판단 설정 오류: /questions/q/instructions: Noul에는 비어 있지 않은 지시문 또는 null이 아닌 true·false 기준 설명이 필요합니다.
+PARITY_PASS name=noul-null-instructions-null-outcomes serverStatus=400 local=rejected detail=판단 설정 오류: /questions/q/instructions: Noul에는 비어 있지 않은 지시문 또는 null이 아닌 true·false 기준 설명이 필요합니다.
+PARITY_PASS name=noul-instructions-null-criteria serverStatus=200 local=accepted model=jev-1.13.0
+PARITY_PASS name=noul-instructions-empty-criteria serverStatus=200 local=accepted model=jev-1.13.0
+PARITY_PASS name=noul-whitespace-instructions serverStatus=200 local=accepted model=jev-1.13.0
+PARITY_PASS name=choice-omitted-instructions serverStatus=200 local=accepted model=jev-1.13.0
+PARITY_PASS name=score-omitted-instructions serverStatus=200 local=accepted model=jev-1.13.0
+PARITY_PASS name=score-null-level serverStatus=422 local=rejected detail=판단 설정 오류: /questions/q/criteria/0: Score 단계는 문자열·객체·배열이어야 합니다. 단계 자체의 null·숫자·불리언은 지원하지 않습니다.
+PARITY_PASS name=score-nested-null serverStatus=200 local=accepted model=jev-1.13.0
+PARITY_PASS name=score-scalar-level serverStatus=422 local=rejected detail=판단 설정 오류: /questions/q/criteria/0: Score 단계는 문자열·객체·배열이어야 합니다. 단계 자체의 null·숫자·불리언은 지원하지 않습니다.
+PARITY_PASS name=score-level-count-0 serverStatus=422 local=rejected detail=판단 설정 오류: /questions/q/criteria: Score에는 순서가 있는 1–10개의 단계 배열이 필요합니다.
+PARITY_PASS name=score-level-count-1 serverStatus=200 local=accepted model=jev-1.13.0
+PARITY_PASS name=score-level-count-2 serverStatus=200 local=accepted model=jev-1.13.0
+PARITY_PASS name=score-level-count-10 serverStatus=200 local=accepted model=jev-1.13.0
+PARITY_PASS name=score-level-count-11 serverStatus=400 local=rejected detail=판단 설정 오류: /questions/q/criteria: Score에는 순서가 있는 1–10개의 단계 배열이 필요합니다.
+PARITY_PASS name=choice-option-count-0 serverStatus=400 local=rejected detail=판단 설정 오류: /questions/q/criteria: Choice에는 1–255개의 선택지 객체가 필요합니다.
+PARITY_PASS name=choice-option-count-1 serverStatus=200 local=accepted model=jev-1.13.0
+PARITY_PASS name=choice-option-count-255 serverStatus=200 local=accepted model=jev-1.13.0
+PARITY_PASS name=choice-option-count-256 serverStatus=400 local=rejected detail=판단 설정 오류: /questions/q/criteria: Choice에는 1–255개의 선택지 객체가 필요합니다.
+PARITY_PASS name=noul-empty-outcome-descriptions serverStatus=200 local=accepted model=jev-1.13.0
+PARITY_PASS name=noul-empty-structured-outcomes serverStatus=200 local=accepted model=jev-1.13.0
+PARITY_PASS name=noul-outcome-nested-null-object serverStatus=200 local=accepted model=jev-1.13.0
+PARITY_PASS name=noul-outcome-nested-null-array serverStatus=200 local=accepted model=jev-1.13.0
+PARITY_PASS name=noul-false-description-only serverStatus=200 local=accepted model=jev-1.13.0
+PARITY_PASS name=noul-whitespace-outcome serverStatus=200 local=accepted model=jev-1.13.0
+PARITY_COMPLETED observations=32 accepted=19 rejected=13 failures=0 networkCalls=0 credentialReads=0

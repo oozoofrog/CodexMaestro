@@ -1,0 +1,12 @@
+The following is a diff from the previous accessibility tree for Window: "Codex Maestro" with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.
+Removed element IDs: 64-71, 73-105
+~				61 text 5개 기록 · 5개 표시
++				175 button 전체 작업 회로
+~				62 scroll area Description: 작업 회로 · 5개 노드, Secondary Actions: Scroll Left, Scroll Right, Scroll Up, Scroll Down
++					176 button Description: cua_repl.js, MCP 실행, 성공 근거 있음, 관찰 기록, turn 01a106b0-8c2e-7700-8a0e-6e50131e3474, Help: 반환 수신 · 성공 근거 있음
++					177 button Description: 비공개 reasoning 메타데이터, 기타 기록, 미확인, 관찰 기록, turn 01a106b0-8c2e-7700-8a0e-6e50131e3474, Help: 본문·암호화 payload를 표시하지 않습니다.
++					178 button Description: cua_repl.js · 결과, 호출 결과, 성공 근거 있음, 관찰 기록, turn 01a106b0-8c2e-7700-8a0e-6e50131e3474, Help: 반환 수신 · 성공 근거 있음
++					179 button Description: 호출 결과 · call_GijCZW1ohXt55w6n4wVJDPGG, 호출 결과, 미확인, 관찰 기록, turn 01a106b0-8c2e-7700-8a0e-6e50131e3474, Help: 반환 수신 · 성공 여부 미확인
+~					112 scroll bar (settable, float) 0.9039301310043668
+~						113 value indicator (settable, float) 0.9039301310043668
+The focused UI element is 0 standard window Codex Maestro, ID: maestro, Secondary Actions: Raise

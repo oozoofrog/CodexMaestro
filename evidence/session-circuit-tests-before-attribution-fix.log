@@ -1,0 +1,607 @@
+Building for debugging...
+[1 / 3]
+[2 / 4] MaestroCore
+[3 / 5] MaestroCore
+[9 / 11] CodexMaestro-product
+[22 / 24] CodexMaestro-product
+[26 / 29] MaestroCore
+[29 / 29] CodexMaestro-product
+[33 / 35] MaestroProbe-product
+[35 / 35] MaestroProbe-product
+[40 / 52] MaestroCoreTests-product
+[53 / 71] CodexMaestro
+[56 / 71] CodexMaestro
+[58 / 71] CodexMaestro
+[59 / 71] CodexMaestro
+[60 / 71] MaestroCoreTests-product
+[65 / 76] CodexMaestro
+[67 / 76] CodexMaestro
+[72 / 81] CodexMaestro
+[75 / 80] MaestroAppTests-product
+[88 / 93] MaestroAppTests-product
+[90 / 93] MaestroAppTests-product
+[92 / 95] MaestroAppTests-product
+[94 / 98] MaestroAppTests-product
+Build complete! (11.87초)
+Test Suite 'All tests' started at 2026-10-04 21:15:03.639.
+Test Suite 'MaestroCoreTests.xctest' started at 2026-10-04 21:15:03.640.
+Test Suite 'ArchivedContextCatalogTests' started at 2026-10-04 21:15:03.640.
+Test Case '-[MaestroCoreTests.ArchivedContextCatalogTests testDefaultCatalogExcludesArchiveAndContextCatalogIncludesMappedArchivedSessions]' started.
+Test Case '-[MaestroCoreTests.ArchivedContextCatalogTests testDefaultCatalogExcludesArchiveAndContextCatalogIncludesMappedArchivedSessions]' passed (0.005 seconds).
+Test Suite 'ArchivedContextCatalogTests' passed at 2026-10-04 21:15:03.645.
+	 Executed 1 test, with 0 failures (0 unexpected) in 0.005 (0.005) seconds
+Test Suite 'ConnectionActionPersistenceTests' started at 2026-10-04 21:15:03.645.
+Test Case '-[MaestroCoreTests.ConnectionActionPersistenceTests testEditsPreserveConfigurationAndClearMovedExecutionRecipientAndDeleteCleansUp]' started.
+Test Case '-[MaestroCoreTests.ConnectionActionPersistenceTests testEditsPreserveConfigurationAndClearMovedExecutionRecipientAndDeleteCleansUp]' passed (0.000 seconds).
+Test Case '-[MaestroCoreTests.ConnectionActionPersistenceTests testLegacyDecodingAndVersionThreeDiskRoundTrip]' started.
+Test Case '-[MaestroCoreTests.ConnectionActionPersistenceTests testLegacyDecodingAndVersionThreeDiskRoundTrip]' passed (0.001 seconds).
+Test Case '-[MaestroCoreTests.ConnectionActionPersistenceTests testLegacySkillDecodeNormalizesWithoutChangingRoutingOrPromptBytes]' started.
+Test Case '-[MaestroCoreTests.ConnectionActionPersistenceTests testLegacySkillDecodeNormalizesWithoutChangingRoutingOrPromptBytes]' passed (0.000 seconds).
+Test Case '-[MaestroCoreTests.ConnectionActionPersistenceTests testNormalizationSuppliesOnlyLegacyEmptyPromptAndClearsObsoleteMetadataForFourFunctions]' started.
+Test Case '-[MaestroCoreTests.ConnectionActionPersistenceTests testNormalizationSuppliesOnlyLegacyEmptyPromptAndClearsObsoleteMetadataForFourFunctions]' passed (0.000 seconds).
+Test Case '-[MaestroCoreTests.ConnectionActionPersistenceTests testNormalizedLegacyActionDiskRoundTripDropsManualBindingAndPreservesOriginalText]' started.
+Test Case '-[MaestroCoreTests.ConnectionActionPersistenceTests testNormalizedLegacyActionDiskRoundTripDropsManualBindingAndPreservesOriginalText]' passed (0.001 seconds).
+Test Suite 'ConnectionActionPersistenceTests' passed at 2026-10-04 21:15:03.647.
+	 Executed 5 tests, with 0 failures (0 unexpected) in 0.002 (0.002) seconds
+Test Suite 'ConnectionTests' started at 2026-10-04 21:15:03.647.
+Test Case '-[MaestroCoreTests.ConnectionTests testExistingVersionOneWorkspaceDecodesWithoutProjectLinks]' started.
+Test Case '-[MaestroCoreTests.ConnectionTests testExistingVersionOneWorkspaceDecodesWithoutProjectLinks]' passed (0.000 seconds).
+Test Case '-[MaestroCoreTests.ConnectionTests testMalformedProjectLinksDoNotDecodeAsEmpty]' started.
+Test Case '-[MaestroCoreTests.ConnectionTests testMalformedProjectLinksDoNotDecodeAsEmpty]' passed (0.000 seconds).
+Test Case '-[MaestroCoreTests.ConnectionTests testProjectLinksPersistAlongsideSessionLinksAndPrivateDrafts]' started.
+Test Case '-[MaestroCoreTests.ConnectionTests testProjectLinksPersistAlongsideSessionLinksAndPrivateDrafts]' passed (0.001 seconds).
+Test Case '-[MaestroCoreTests.ConnectionTests testProjectLinkUpdatePreservesIdentityAndDoesNotLoseDataOnFailure]' started.
+Test Case '-[MaestroCoreTests.ConnectionTests testProjectLinkUpdatePreservesIdentityAndDoesNotLoseDataOnFailure]' passed (0.000 seconds).
+Test Case '-[MaestroCoreTests.ConnectionTests testProjectLinkValidationIsDirectedAndPurposeSpecific]' started.
+Test Case '-[MaestroCoreTests.ConnectionTests testProjectLinkValidationIsDirectedAndPurposeSpecific]' passed (0.000 seconds).
+Test Case '-[MaestroCoreTests.ConnectionTests testSessionLinkUpdateRejectsCollisionWithoutRemovingOriginal]' started.
+Test Case '-[MaestroCoreTests.ConnectionTests testSessionLinkUpdateRejectsCollisionWithoutRemovingOriginal]' passed (0.000 seconds).
+Test Suite 'ConnectionTests' passed at 2026-10-04 21:15:03.649.
+	 Executed 6 tests, with 0 failures (0 unexpected) in 0.001 (0.001) seconds
+Test Suite 'ContextTopologyLoaderTests' started at 2026-10-04 21:15:03.649.
+Test Case '-[MaestroCoreTests.ContextTopologyLoaderTests testDeferredSQLiteBodyUsesThreadAndItemIdentityAndSharedInstructionEdges]' started.
+Test Case '-[MaestroCoreTests.ContextTopologyLoaderTests testDeferredSQLiteBodyUsesThreadAndItemIdentityAndSharedInstructionEdges]' passed (0.005 seconds).
+Test Case '-[MaestroCoreTests.ContextTopologyLoaderTests testLoadsEveryRecordWithLazyExactBodyAndActualTelemetry]' started.
+Test Case '-[MaestroCoreTests.ContextTopologyLoaderTests testLoadsEveryRecordWithLazyExactBodyAndActualTelemetry]' passed (0.068 seconds).
+Test Case '-[MaestroCoreTests.ContextTopologyLoaderTests testMalformedRolloutPreservesPartialCoverageAndStreamsSQLiteFallback]' started.
+Test Case '-[MaestroCoreTests.ContextTopologyLoaderTests testMalformedRolloutPreservesPartialCoverageAndStreamsSQLiteFallback]' passed (0.003 seconds).
+Test Case '-[MaestroCoreTests.ContextTopologyLoaderTests testMissingEvidenceAndCurrentAncestorInstructionsRemainExplicit]' started.
+Test Case '-[MaestroCoreTests.ContextTopologyLoaderTests testMissingEvidenceAndCurrentAncestorInstructionsRemainExplicit]' passed (0.001 seconds).
+Test Case '-[MaestroCoreTests.ContextTopologyLoaderTests testOnlyRecognizedTelemetryContributesUsage]' started.
+Test Case '-[MaestroCoreTests.ContextTopologyLoaderTests testOnlyRecognizedTelemetryContributesUsage]' passed (0.002 seconds).
+Test Case '-[MaestroCoreTests.ContextTopologyLoaderTests testPathHeavyRecordedOutputKeepsAllEvidenceAndLinearReferenceDiscovery]' started.
+Test Case '-[MaestroCoreTests.ContextTopologyLoaderTests testPathHeavyRecordedOutputKeepsAllEvidenceAndLinearReferenceDiscovery]' passed (0.454 seconds).
+Test Case '-[MaestroCoreTests.ContextTopologyLoaderTests testProjectHierarchyAndEmptyProjectRootInstructions]' started.
+Test Case '-[MaestroCoreTests.ContextTopologyLoaderTests testProjectHierarchyAndEmptyProjectRootInstructions]' passed (0.003 seconds).
+Test Case '-[MaestroCoreTests.ContextTopologyLoaderTests testProjectScopeIncludesArchivedMembersAndExcludesOtherProjects]' started.
+Test Case '-[MaestroCoreTests.ContextTopologyLoaderTests testProjectScopeIncludesArchivedMembersAndExcludesOtherProjects]' passed (0.002 seconds).
+Test Case '-[MaestroCoreTests.ContextTopologyLoaderTests testReasoningIsSanitizedInPreviewAndDeferredBody]' started.
+Test Case '-[MaestroCoreTests.ContextTopologyLoaderTests testReasoningIsSanitizedInPreviewAndDeferredBody]' passed (0.002 seconds).
+Test Case '-[MaestroCoreTests.ContextTopologyLoaderTests testToolChildrenNormalizeRepeatedCallsAndClassifyInstructionsAndUsage]' started.
+Test Case '-[MaestroCoreTests.ContextTopologyLoaderTests testToolChildrenNormalizeRepeatedCallsAndClassifyInstructionsAndUsage]' passed (0.003 seconds).
+Test Suite 'ContextTopologyLoaderTests' passed at 2026-10-04 21:15:04.190.
+	 Executed 10 tests, with 0 failures (0 unexpected) in 0.541 (0.542) seconds
+Test Suite 'CoreTests' started at 2026-10-04 21:15:04.191.
+Test Case '-[MaestroCoreTests.CoreTests testCatalogReadsAllSessionsAndExplicitProjectMembershipWithoutWriting]' started.
+Test Case '-[MaestroCoreTests.CoreTests testCatalogReadsAllSessionsAndExplicitProjectMembershipWithoutWriting]' passed (0.003 seconds).
+Test Case '-[MaestroCoreTests.CoreTests testDirectedLinksAndPersistenceRoundTrip]' started.
+Test Case '-[MaestroCoreTests.CoreTests testDirectedLinksAndPersistenceRoundTrip]' passed (0.001 seconds).
+Test Case '-[MaestroCoreTests.CoreTests testFramesSurviveFragmentationAndCoalescing]' started.
+Test Case '-[MaestroCoreTests.CoreTests testFramesSurviveFragmentationAndCoalescing]' passed (0.000 seconds).
+Test Case '-[MaestroCoreTests.CoreTests testLiveStatusPatchesAndWaitingFlags]' started.
+Test Case '-[MaestroCoreTests.CoreTests testLiveStatusPatchesAndWaitingFlags]' passed (0.000 seconds).
+Test Case '-[MaestroCoreTests.CoreTests testMalformedFrameRejectsAnOtherwiseValidBatch]' started.
+Test Case '-[MaestroCoreTests.CoreTests testMalformedFrameRejectsAnOtherwiseValidBatch]' passed (0.000 seconds).
+Test Case '-[MaestroCoreTests.CoreTests testMalformedFramesFailClosed]' started.
+Test Case '-[MaestroCoreTests.CoreTests testMalformedFramesFailClosed]' passed (0.000 seconds).
+Test Case '-[MaestroCoreTests.CoreTests testTranscriptUsesChronologicalTextMessagesAndBoundThreadID]' started.
+Test Case '-[MaestroCoreTests.CoreTests testTranscriptUsesChronologicalTextMessagesAndBoundThreadID]' passed (0.002 seconds).
+Test Case '-[MaestroCoreTests.CoreTests testTurnPayloadPreservesPromptAndDoesNotOverrideSessionPolicy]' started.
+Test Case '-[MaestroCoreTests.CoreTests testTurnPayloadPreservesPromptAndDoesNotOverrideSessionPolicy]' passed (0.000 seconds).
+Test Suite 'CoreTests' passed at 2026-10-04 21:15:04.197.
+	 Executed 8 tests, with 0 failures (0 unexpected) in 0.006 (0.007) seconds
+Test Suite 'DecisionContractTests' started at 2026-10-04 21:15:04.197.
+Test Case '-[MaestroCoreTests.DecisionContractTests testAllWireInputShapesAndMixedQuestions]' started.
+Test Case '-[MaestroCoreTests.DecisionContractTests testAllWireInputShapesAndMixedQuestions]' passed (0.001 seconds).
+Test Case '-[MaestroCoreTests.DecisionContractTests testFullTypedResponseAndUnknownFieldsAreRetainedWithoutExecutionExposure]' started.
+Test Case '-[MaestroCoreTests.DecisionContractTests testFullTypedResponseAndUnknownFieldsAreRetainedWithoutExecutionExposure]' passed (0.000 seconds).
+Test Case '-[MaestroCoreTests.DecisionContractTests testJSONRoundTripPreservesUnicodeLargeIntegerAndArrayOrder]' started.
+Test Case '-[MaestroCoreTests.DecisionContractTests testJSONRoundTripPreservesUnicodeLargeIntegerAndArrayOrder]' passed (0.000 seconds).
+Test Case '-[MaestroCoreTests.DecisionContractTests testMissingWrongTypeMalformedDistributionAndNoulRangeFail]' started.
+Test Case '-[MaestroCoreTests.DecisionContractTests testMissingWrongTypeMalformedDistributionAndNoulRangeFail]' passed (0.000 seconds).
+Test Case '-[MaestroCoreTests.DecisionContractTests testModelAliasesNeverProduceReproducibleCacheKeys]' started.
+Test Case '-[MaestroCoreTests.DecisionContractTests testModelAliasesNeverProduceReproducibleCacheKeys]' passed (0.000 seconds).
+Test Case '-[MaestroCoreTests.DecisionContractTests testNoulDefinitionMatchesObservedNullAndEmptyBoundaries]' started.
+Test Case '-[MaestroCoreTests.DecisionContractTests testNoulDefinitionMatchesObservedNullAndEmptyBoundaries]' passed (0.000 seconds).
+Test Case '-[MaestroCoreTests.DecisionContractTests testOnlyServiceRubricLimitsAreEnforced]' started.
+Test Case '-[MaestroCoreTests.DecisionContractTests testOnlyServiceRubricLimitsAreEnforced]' passed (0.000 seconds).
+Test Case '-[MaestroCoreTests.DecisionContractTests testOptionalInstructionsDecodeAndExplicitNullCriteriaRoundTrip]' started.
+Test Case '-[MaestroCoreTests.DecisionContractTests testOptionalInstructionsDecodeAndExplicitNullCriteriaRoundTrip]' passed (0.000 seconds).
+Test Case '-[MaestroCoreTests.DecisionContractTests testScoreLegendRejectsNullAndScalarDescriptions]' started.
+Test Case '-[MaestroCoreTests.DecisionContractTests testScoreLegendRejectsNullAndScalarDescriptions]' passed (0.000 seconds).
+Test Case '-[MaestroCoreTests.DecisionContractTests testScoreRejectsNullAndScalarLevelsWithEscapedQuestionAndIndexPath]' started.
+Test Case '-[MaestroCoreTests.DecisionContractTests testScoreRejectsNullAndScalarLevelsWithEscapedQuestionAndIndexPath]' passed (0.000 seconds).
+Test Case '-[MaestroCoreTests.DecisionContractTests testSingleLevelScoreDecodesButCannotBeNormalized]' started.
+Test Case '-[MaestroCoreTests.DecisionContractTests testSingleLevelScoreDecodesButCannotBeNormalized]' passed (0.000 seconds).
+Test Suite 'DecisionContractTests' passed at 2026-10-04 21:15:04.202.
+	 Executed 11 tests, with 0 failures (0 unexpected) in 0.004 (0.005) seconds
+Test Suite 'DecisionEngineTests' started at 2026-10-04 21:15:04.202.
+Test Case '-[MaestroCoreTests.DecisionEngineTests testBranchingAndIndependentLabelsUseExplicitRules]' started.
+Test Case '-[MaestroCoreTests.DecisionEngineTests testBranchingAndIndependentLabelsUseExplicitRules]' passed (0.001 seconds).
+Test Case '-[MaestroCoreTests.DecisionEngineTests testCancellationAndConfidenceInsufficiencyNeverBecomeSuccess]' started.
+Test Case '-[MaestroCoreTests.DecisionEngineTests testCancellationAndConfidenceInsufficiencyNeverBecomeSuccess]' passed (0.001 seconds).
+Test Case '-[MaestroCoreTests.DecisionEngineTests testChoiceCannotBeConfiguredForGlobalRankingAndNoulHasNoConfidenceGate]' started.
+Test Case '-[MaestroCoreTests.DecisionEngineTests testChoiceCannotBeConfiguredForGlobalRankingAndNoulHasNoConfidenceGate]' passed (0.000 seconds).
+Test Case '-[MaestroCoreTests.DecisionEngineTests testDifferentStatesRunInParallel]' started.
+Test Case '-[MaestroCoreTests.DecisionEngineTests testDifferentStatesRunInParallel]' passed (0.001 seconds).
+Test Case '-[MaestroCoreTests.DecisionEngineTests testEvidenceFingerprintChangeInvalidatesCacheEvenWhenSummaryIsUnchanged]' started.
+Test Case '-[MaestroCoreTests.DecisionEngineTests testEvidenceFingerprintChangeInvalidatesCacheEvenWhenSummaryIsUnchanged]' passed (0.002 seconds).
+Test Case '-[MaestroCoreTests.DecisionEngineTests testHierarchicalLookupBuildsNextCandidateSetFromPreviousChoice]' started.
+Test Case '-[MaestroCoreTests.DecisionEngineTests testHierarchicalLookupBuildsNextCandidateSetFromPreviousChoice]' passed (0.001 seconds).
+Test Case '-[MaestroCoreTests.DecisionEngineTests testHierarchyLoadsSelectedFullMaterialAndBuildsDynamicFollowupCriteria]' started.
+Test Case '-[MaestroCoreTests.DecisionEngineTests testHierarchyLoadsSelectedFullMaterialAndBuildsDynamicFollowupCriteria]' passed (0.004 seconds).
+Test Case '-[MaestroCoreTests.DecisionEngineTests testHTTPFailurePreservesRawTraceAndAPIErrorStatus]' started.
+Test Case '-[MaestroCoreTests.DecisionEngineTests testHTTPFailurePreservesRawTraceAndAPIErrorStatus]' passed (0.000 seconds).
+Test Case '-[MaestroCoreTests.DecisionEngineTests testIndivisibleLimitAndValidationFailureAreDistinct]' started.
+Test Case '-[MaestroCoreTests.DecisionEngineTests testIndivisibleLimitAndValidationFailureAreDistinct]' passed (0.000 seconds).
+Test Case '-[MaestroCoreTests.DecisionEngineTests testMissingMaterialMissingReferenceAndCyclicPlanFailBeforeInference]' started.
+Test Case '-[MaestroCoreTests.DecisionEngineTests testMissingMaterialMissingReferenceAndCyclicPlanFailBeforeInference]' passed (0.000 seconds).
+Test Case '-[MaestroCoreTests.DecisionEngineTests testPinnedVersionCacheRespectsInputRubricVersionAndAlias]' started.
+Test Case '-[MaestroCoreTests.DecisionEngineTests testPinnedVersionCacheRespectsInputRubricVersionAndAlias]' passed (0.002 seconds).
+Test Case '-[MaestroCoreTests.DecisionEngineTests testProfilePersistenceCloneExportAndCorruptionPreservation]' started.
+Test Case '-[MaestroCoreTests.DecisionEngineTests testProfilePersistenceCloneExportAndCorruptionPreservation]' passed (0.001 seconds).
+Test Case '-[MaestroCoreTests.DecisionEngineTests testReadCoverageIsPreservedWhenServiceFailsAfterMaterialLoading]' started.
+Test Case '-[MaestroCoreTests.DecisionEngineTests testReadCoverageIsPreservedWhenServiceFailsAfterMaterialLoading]' passed (0.000 seconds).
+Test Case '-[MaestroCoreTests.DecisionEngineTests testResolvedInvalidNoulDefinitionStopsBeforeHTTPAndReportsTheQuestion]' started.
+Test Case '-[MaestroCoreTests.DecisionEngineTests testResolvedInvalidNoulDefinitionStopsBeforeHTTPAndReportsTheQuestion]' passed (0.000 seconds).
+Test Case '-[MaestroCoreTests.DecisionEngineTests testReturnedModelMismatchPreventsPinnedCacheReuse]' started.
+Test Case '-[MaestroCoreTests.DecisionEngineTests testReturnedModelMismatchPreventsPinnedCacheReuse]' passed (0.001 seconds).
+Test Case '-[MaestroCoreTests.DecisionEngineTests testSameStateIndependentStagesBecomeOneMixedBatchWithoutIDCollisions]' started.
+Test Case '-[MaestroCoreTests.DecisionEngineTests testSameStateIndependentStagesBecomeOneMixedBatchWithoutIDCollisions]' passed (0.001 seconds).
+Test Case '-[MaestroCoreTests.DecisionEngineTests testServiceLimitSplitsQuestionsAndPreservesEveryStateByte]' started.
+Test Case '-[MaestroCoreTests.DecisionEngineTests testServiceLimitSplitsQuestionsAndPreservesEveryStateByte]' passed (0.004 seconds).
+Test Case '-[MaestroCoreTests.DecisionEngineTests testSingleLevelScoreIsQueryableButStaticAndDynamicRankingAreBlockedBeforeHTTP]' started.
+Test Case '-[MaestroCoreTests.DecisionEngineTests testSingleLevelScoreIsQueryableButStaticAndDynamicRankingAreBlockedBeforeHTTP]' passed (0.001 seconds).
+Test Case '-[MaestroCoreTests.DecisionEngineTests testWeightedRanksNormalizeScoresAndMandatoryRuleCannotBeCompensated]' started.
+Test Case '-[MaestroCoreTests.DecisionEngineTests testWeightedRanksNormalizeScoresAndMandatoryRuleCannotBeCompensated]' passed (0.000 seconds).
+Test Suite 'DecisionEngineTests' passed at 2026-10-04 21:15:04.223.
+	 Executed 19 tests, with 0 failures (0 unexpected) in 0.020 (0.021) seconds
+Test Suite 'DesktopBridgeTests' started at 2026-10-04 21:15:04.223.
+Test Case '-[MaestroCoreTests.DesktopBridgeTests testDesktopPatchUpdatesRuntimeStatus]' started.
+Test Case '-[MaestroCoreTests.DesktopBridgeTests testDesktopPatchUpdatesRuntimeStatus]' passed (0.001 seconds).
+Test Case '-[MaestroCoreTests.DesktopBridgeTests testDisconnectedClientRejectsSend]' started.
+Test Case '-[MaestroCoreTests.DesktopBridgeTests testDisconnectedClientRejectsSend]' passed (0.000 seconds).
+Test Case '-[MaestroCoreTests.DesktopBridgeTests testMissingOwnerNeverStartsTurn]' started.
+Test Case '-[MaestroCoreTests.DesktopBridgeTests testMissingOwnerNeverStartsTurn]' passed (0.001 seconds).
+Test Case '-[MaestroCoreTests.DesktopBridgeTests testOwnerRoutedPromptAndLiveStatusRoundTrip]' started.
+Test Case '-[MaestroCoreTests.DesktopBridgeTests testOwnerRoutedPromptAndLiveStatusRoundTrip]' passed (0.001 seconds).
+Test Suite 'DesktopBridgeTests' passed at 2026-10-04 21:15:04.226.
+	 Executed 4 tests, with 0 failures (0 unexpected) in 0.003 (0.003) seconds
+Test Suite 'IntegrationProjectionTests' started at 2026-10-04 21:15:04.226.
+Test Case '-[MaestroCoreTests.IntegrationProjectionTests testIndexedFlagsRespectReplacementInsertionAndRemovalOrder]' started.
+Test Case '-[MaestroCoreTests.IntegrationProjectionTests testIndexedFlagsRespectReplacementInsertionAndRemovalOrder]' passed (0.000 seconds).
+Test Case '-[MaestroCoreTests.IntegrationProjectionTests testInvalidProjectionPatchDoesNotPartiallyApplyEarlierPatches]' started.
+Test Case '-[MaestroCoreTests.IntegrationProjectionTests testInvalidProjectionPatchDoesNotPartiallyApplyEarlierPatches]' passed (0.000 seconds).
+Test Case '-[MaestroCoreTests.IntegrationProjectionTests testProjectFallbackRanksOnlyMatchingRootsAndUsesPathBoundaries]' started.
+Test Case '-[MaestroCoreTests.IntegrationProjectionTests testProjectFallbackRanksOnlyMatchingRootsAndUsesPathBoundaries]' passed (0.003 seconds).
+Test Case '-[MaestroCoreTests.IntegrationProjectionTests testUnrelatedConversationPatchesLeaveProjectionUnchanged]' started.
+Test Case '-[MaestroCoreTests.IntegrationProjectionTests testUnrelatedConversationPatchesLeaveProjectionUnchanged]' passed (0.000 seconds).
+Test Suite 'IntegrationProjectionTests' passed at 2026-10-04 21:15:04.229.
+	 Executed 4 tests, with 0 failures (0 unexpected) in 0.003 (0.003) seconds
+Test Suite 'NodeLinkTests' started at 2026-10-04 21:15:04.229.
+Test Case '-[MaestroCoreTests.NodeLinkTests testAllFourDirectionsPreserveTypedIdentityAndReverseRelationships]' started.
+Test Case '-[MaestroCoreTests.NodeLinkTests testAllFourDirectionsPreserveTypedIdentityAndReverseRelationships]' passed (0.000 seconds).
+Test Case '-[MaestroCoreTests.NodeLinkTests testDiskPersistencePreservesAllBucketsAndPermissions]' started.
+Test Case '-[MaestroCoreTests.NodeLinkTests testDiskPersistencePreservesAllBucketsAndPermissions]' passed (0.001 seconds).
+Test Case '-[MaestroCoreTests.NodeLinkTests testEditingAcrossEndpointCombinationsKeepsIDAndRejectsCollisionAtomically]' started.
+Test Case '-[MaestroCoreTests.NodeLinkTests testEditingAcrossEndpointCombinationsKeepsIDAndRejectsCollisionAtomically]' passed (0.000 seconds).
+Test Case '-[MaestroCoreTests.NodeLinkTests testLegacyVersionOneLoadsWithoutMigrationAndRoundTripsMixedLinks]' started.
+Test Case '-[MaestroCoreTests.NodeLinkTests testLegacyVersionOneLoadsWithoutMigrationAndRoundTripsMixedLinks]' passed (0.000 seconds).
+Test Case '-[MaestroCoreTests.NodeLinkTests testMixedLinkValidationAndMalformedStorageDoNotSilentlyDropData]' started.
+Test Case '-[MaestroCoreTests.NodeLinkTests testMixedLinkValidationAndMalformedStorageDoNotSilentlyDropData]' passed (0.000 seconds).
+Test Case '-[MaestroCoreTests.NodeLinkTests testNoteOnlyEditsRetainOrderWithinEveryStorageBucket]' started.
+Test Case '-[MaestroCoreTests.NodeLinkTests testNoteOnlyEditsRetainOrderWithinEveryStorageBucket]' passed (0.000 seconds).
+Test Suite 'NodeLinkTests' passed at 2026-10-04 21:15:04.231.
+	 Executed 6 tests, with 0 failures (0 unexpected) in 0.002 (0.002) seconds
+Test Suite 'RolloutMessagePreviewTests' started at 2026-10-04 21:15:04.231.
+Test Case '-[MaestroCoreTests.RolloutMessagePreviewTests testNonConversationRecordsAndAnalysisAreNotUsedAsPreviews]' started.
+Test Case '-[MaestroCoreTests.RolloutMessagePreviewTests testNonConversationRecordsAndAnalysisAreNotUsedAsPreviews]' passed (0.001 seconds).
+Test Case '-[MaestroCoreTests.RolloutMessagePreviewTests testReadsTheLastTextAcrossChunksAndSkipsToolsEmptyMessagesAndMalformedTail]' started.
+Test Case '-[MaestroCoreTests.RolloutMessagePreviewTests testReadsTheLastTextAcrossChunksAndSkipsToolsEmptyMessagesAndMalformedTail]' passed (0.011 seconds).
+Test Case '-[MaestroCoreTests.RolloutMessagePreviewTests testRecognizesUserAndLegacyEventsWithOrWithoutFinalNewline]' started.
+Test Case '-[MaestroCoreTests.RolloutMessagePreviewTests testRecognizesUserAndLegacyEventsWithOrWithoutFinalNewline]' passed (0.001 seconds).
+Test Suite 'RolloutMessagePreviewTests' passed at 2026-10-04 21:15:04.244.
+	 Executed 3 tests, with 0 failures (0 unexpected) in 0.013 (0.013) seconds
+Test Suite 'SessionMessagePreviewTests' started at 2026-10-04 21:15:04.244.
+Test Case '-[MaestroCoreTests.SessionMessagePreviewTests testCatalogPreviewReadLeavesBothDatabaseFilesUnchanged]' started.
+Test Case '-[MaestroCoreTests.SessionMessagePreviewTests testCatalogPreviewReadLeavesBothDatabaseFilesUnchanged]' passed (0.003 seconds).
+Test Case '-[MaestroCoreTests.SessionMessagePreviewTests testLatestConversationUsesOrdinalAndKeepsInitialPreviewSeparate]' started.
+Test Case '-[MaestroCoreTests.SessionMessagePreviewTests testLatestConversationUsesOrdinalAndKeepsInitialPreviewSeparate]' passed (0.004 seconds).
+Test Case '-[MaestroCoreTests.SessionMessagePreviewTests testMissingOrInvalidHistoryDoesNotHideSessionMetadata]' started.
+Test Case '-[MaestroCoreTests.SessionMessagePreviewTests testMissingOrInvalidHistoryDoesNotHideSessionMetadata]' passed (0.003 seconds).
+Test Case '-[MaestroCoreTests.SessionMessagePreviewTests testRolloutSuppliesLegacyPreviewAndHistoryRemainsThePrimarySource]' started.
+Test Case '-[MaestroCoreTests.SessionMessagePreviewTests testRolloutSuppliesLegacyPreviewAndHistoryRemainsThePrimarySource]' passed (0.004 seconds).
+Test Case '-[MaestroCoreTests.SessionMessagePreviewTests testThreadIDsAreBoundAndDoNotReadAnotherSession]' started.
+Test Case '-[MaestroCoreTests.SessionMessagePreviewTests testThreadIDsAreBoundAndDoNotReadAnotherSession]' passed (0.003 seconds).
+Test Case '-[MaestroCoreTests.SessionMessagePreviewTests testUnreadableLatestItemsFallBackToTheLastTextWithoutACandidateLimit]' started.
+Test Case '-[MaestroCoreTests.SessionMessagePreviewTests testUnreadableLatestItemsFallBackToTheLastTextWithoutACandidateLimit]' passed (0.034 seconds).
+Test Case '-[MaestroCoreTests.SessionMessagePreviewTests testWhitespaceAndUnicodeAreNormalizedWithoutSplittingGraphemes]' started.
+Test Case '-[MaestroCoreTests.SessionMessagePreviewTests testWhitespaceAndUnicodeAreNormalizedWithoutSplittingGraphemes]' passed (0.000 seconds).
+Test Suite 'SessionMessagePreviewTests' passed at 2026-10-04 21:15:04.295.
+	 Executed 7 tests, with 0 failures (0 unexpected) in 0.051 (0.051) seconds
+Test Suite 'SessionWorkPerformanceTests' started at 2026-10-04 21:15:04.295.
+Test Case '-[MaestroCoreTests.SessionWorkPerformanceTests testHundredMegabyteColdWarmAndAppendReadBoundaries]' started.
+Test Case '-[MaestroCoreTests.SessionWorkPerformanceTests testHundredMegabyteColdWarmAndAppendReadBoundaries]' passed (2.388 seconds).
+Test Suite 'SessionWorkPerformanceTests' passed at 2026-10-04 21:15:06.683.
+	 Executed 1 test, with 0 failures (0 unexpected) in 2.388 (2.388) seconds
+Test Suite 'SessionWorkTopologyTests' started at 2026-10-04 21:15:06.683.
+Test Case '-[MaestroCoreTests.SessionWorkTopologyTests testCancelledLoadNeverPublishesACandidateIndex]' started.
+Test Case '-[MaestroCoreTests.SessionWorkTopologyTests testCancelledLoadNeverPublishesACandidateIndex]' passed (0.132 seconds).
+Test Case '-[MaestroCoreTests.SessionWorkTopologyTests testCanonicalTaskPathSpawnAndPublicAgentMessageUseRecordedAddressing]' started.
+Test Case '-[MaestroCoreTests.SessionWorkTopologyTests testCanonicalTaskPathSpawnAndPublicAgentMessageUseRecordedAddressing]' passed (0.003 seconds).
+Test Case '-[MaestroCoreTests.SessionWorkTopologyTests testCatalogAcceptsLowercaseAndLegacySubAgentWithoutDatabaseWrites]' started.
+Test Case '-[MaestroCoreTests.SessionWorkTopologyTests testCatalogAcceptsLowercaseAndLegacySubAgentWithoutDatabaseWrites]' passed (0.007 seconds).
+Test Case '-[MaestroCoreTests.SessionWorkTopologyTests testCompleteNewlineBoundaryAndAppendOnlyPolling]' started.
+Test Case '-[MaestroCoreTests.SessionWorkTopologyTests testCompleteNewlineBoundaryAndAppendOnlyPolling]' passed (0.008 seconds).
+Test Case '-[MaestroCoreTests.SessionWorkTopologyTests testDelayedChildCatalogMappingResolvesWithoutReparsingRollout]' started.
+Test Case '-[MaestroCoreTests.SessionWorkTopologyTests testDelayedChildCatalogMappingResolvesWithoutReparsingRollout]' passed (0.003 seconds).
+Test Case '-[MaestroCoreTests.SessionWorkTopologyTests testDerivedChildAndArtifactNodesUseProducerObservationTimeAndBody]' started.
+Test Case '-[MaestroCoreTests.SessionWorkTopologyTests testDerivedChildAndArtifactNodesUseProducerObservationTimeAndBody]' passed (0.048 seconds).
+Test Case '-[MaestroCoreTests.SessionWorkTopologyTests testExplicitArtifactCollaborationAndDynamicToolProducers]' started.
+Test Case '-[MaestroCoreTests.SessionWorkTopologyTests testExplicitArtifactCollaborationAndDynamicToolProducers]' passed (0.004 seconds).
+Test Case '-[MaestroCoreTests.SessionWorkTopologyTests testIDLessStartClearsIntervalAndCurrentTurnUntilReliableBoundary]' started.
+Test Case '-[MaestroCoreTests.SessionWorkTopologyTests testIDLessStartClearsIntervalAndCurrentTurnUntilReliableBoundary]' passed (0.003 seconds).
+Test Case '-[MaestroCoreTests.SessionWorkTopologyTests testInvalidTelemetryRemainsUnknownWithCoverageEvidence]' started.
+Test Case '-[MaestroCoreTests.SessionWorkTopologyTests testInvalidTelemetryRemainsUnknownWithCoverageEvidence]' passed (0.002 seconds).
+Test Case '-[MaestroCoreTests.SessionWorkTopologyTests testLateResultsStayWithOriginalCallAndDuplicateReceiptsDoNotOverwriteDistinctOutputs]' started.
+Test Case '-[MaestroCoreTests.SessionWorkTopologyTests testLateResultsStayWithOriginalCallAndDuplicateReceiptsDoNotOverwriteDistinctOutputs]' passed (0.003 seconds).
+Test Case '-[MaestroCoreTests.SessionWorkTopologyTests testMixedPublicMessageBlocksCannotExposeNestedPrivateText]' started.
+Test Case '-[MaestroCoreTests.SessionWorkTopologyTests testMixedPublicMessageBlocksCannotExposeNestedPrivateText]' passed (0.002 seconds).
+Test Case '-[MaestroCoreTests.SessionWorkTopologyTests testNativeLifecycleUsesExactIDsAndExplicitOutcome]' started.
+Test Case '-[MaestroCoreTests.SessionWorkTopologyTests testNativeLifecycleUsesExactIDsAndExplicitOutcome]' passed (0.003 seconds).
+Test Case '-[MaestroCoreTests.SessionWorkTopologyTests testNativeRepeatedResultHistoryUsesLatestObservationTimestamp]' started.
+Test Case '-[MaestroCoreTests.SessionWorkTopologyTests testNativeRepeatedResultHistoryUsesLatestObservationTimestamp]' passed (0.004 seconds).
+Test Case '-[MaestroCoreTests.SessionWorkTopologyTests testNativeStartedEmptyOutputRemainsRunningAndReplayUsesOriginalRecord]' started.
+Test Case '-[MaestroCoreTests.SessionWorkTopologyTests testNativeStartedEmptyOutputRemainsRunningAndReplayUsesOriginalRecord]' passed (0.004 seconds).
+Test Case '-[MaestroCoreTests.SessionWorkTopologyTests testReversedSpawnResultAndCatalogPathsRecoverOnlyExplicitParticipation]' started.
+Test Case '-[MaestroCoreTests.SessionWorkTopologyTests testReversedSpawnResultAndCatalogPathsRecoverOnlyExplicitParticipation]' passed (0.003 seconds).
+Test Case '-[MaestroCoreTests.SessionWorkTopologyTests testRotationTruncationAndSourceLossInvalidateReferencesButPreserveLastSafeMetrics]' started.
+Test Case '-[MaestroCoreTests.SessionWorkTopologyTests testRotationTruncationAndSourceLossInvalidateReferencesButPreserveLastSafeMetrics]' passed (0.005 seconds).
+Test Case '-[MaestroCoreTests.SessionWorkTopologyTests testSameSizeMiddleMutationCreatesNewGeneration]' started.
+Test Case '-[MaestroCoreTests.SessionWorkTopologyTests testSameSizeMiddleMutationCreatesNewGeneration]' passed (0.004 seconds).
+Test Case '-[MaestroCoreTests.SessionWorkTopologyTests testTelemetryRetainsScopesSubsetsUnknownsAndResetSegments]' started.
+Test Case '-[MaestroCoreTests.SessionWorkTopologyTests testTelemetryRetainsScopesSubsetsUnknownsAndResetSegments]' passed (0.002 seconds).
+Test Case '-[MaestroCoreTests.SessionWorkTopologyTests testUnknownRecordsAndPrivateReasoningArePreservedWithoutPrivateText]' started.
+Test Case '-[MaestroCoreTests.SessionWorkTopologyTests testUnknownRecordsAndPrivateReasoningArePreservedWithoutPrivateText]' passed (0.003 seconds).
+Test Suite 'SessionWorkTopologyTests' passed at 2026-10-04 21:15:06.928.
+	 Executed 19 tests, with 0 failures (0 unexpected) in 0.243 (0.244) seconds
+Test Suite 'StalledPeerTests' started at 2026-10-04 21:15:06.928.
+Test Case '-[MaestroCoreTests.StalledPeerTests testBackpressuredPromptDoesNotBlockMainActorAndDisconnectUnblocksWriter]' started.
+Test Case '-[MaestroCoreTests.StalledPeerTests testBackpressuredPromptDoesNotBlockMainActorAndDisconnectUnblocksWriter]' passed (0.151 seconds).
+Test Suite 'StalledPeerTests' passed at 2026-10-04 21:15:07.079.
+	 Executed 1 test, with 0 failures (0 unexpected) in 0.151 (0.151) seconds
+Test Suite 'StreamRecoveryTests' started at 2026-10-04 21:15:07.079.
+Test Case '-[MaestroCoreTests.StreamRecoveryTests testMalformedRevisionAndIndexedPatchInvalidateAndResubscribe]' started.
+Test Case '-[MaestroCoreTests.StreamRecoveryTests testMalformedRevisionAndIndexedPatchInvalidateAndResubscribe]' passed (0.003 seconds).
+Test Suite 'StreamRecoveryTests' passed at 2026-10-04 21:15:07.082.
+	 Executed 1 test, with 0 failures (0 unexpected) in 0.003 (0.003) seconds
+Test Suite 'TypeSafeHTTPClientTests' started at 2026-10-04 21:15:07.082.
+Test Case '-[MaestroCoreTests.TypeSafeHTTPClientTests testAuthenticatedRequestAndModelListingUseDocumentedEndpoints]' started.
+Test Case '-[MaestroCoreTests.TypeSafeHTTPClientTests testAuthenticatedRequestAndModelListingUseDocumentedEndpoints]' passed (0.006 seconds).
+Test Case '-[MaestroCoreTests.TypeSafeHTTPClientTests testCancellationInterruptsRetryAfterSleep]' started.
+Test Case '-[MaestroCoreTests.TypeSafeHTTPClientTests testCancellationInterruptsRetryAfterSleep]' passed (0.001 seconds).
+Test Case '-[MaestroCoreTests.TypeSafeHTTPClientTests testHTTPValidationLocationIsReadableAndRawBytesAreRetained]' started.
+Test Case '-[MaestroCoreTests.TypeSafeHTTPClientTests testHTTPValidationLocationIsReadableAndRawBytesAreRetained]' passed (0.001 seconds).
+Test Case '-[MaestroCoreTests.TypeSafeHTTPClientTests testInvalidQuestionNeverMakesAnHTTPCall]' started.
+Test Case '-[MaestroCoreTests.TypeSafeHTTPClientTests testInvalidQuestionNeverMakesAnHTTPCall]' passed (0.000 seconds).
+Test Case '-[MaestroCoreTests.TypeSafeHTTPClientTests testMalformedResponseRetainsOriginalBytes]' started.
+Test Case '-[MaestroCoreTests.TypeSafeHTTPClientTests testMalformedResponseRetainsOriginalBytes]' passed (0.000 seconds).
+Test Case '-[MaestroCoreTests.TypeSafeHTTPClientTests testMissingKeyNeverMakesARequestAndUnauthorizedIsDistinct]' started.
+Test Case '-[MaestroCoreTests.TypeSafeHTTPClientTests testMissingKeyNeverMakesARequestAndUnauthorizedIsDistinct]' passed (0.001 seconds).
+Test Case '-[MaestroCoreTests.TypeSafeHTTPClientTests testOnlyExplicitServiceInputLimitTriggersAdjustment]' started.
+Test Case '-[MaestroCoreTests.TypeSafeHTTPClientTests testOnlyExplicitServiceInputLimitTriggersAdjustment]' passed (0.001 seconds).
+Test Case '-[MaestroCoreTests.TypeSafeHTTPClientTests testRateLimitAndOverloadRetryButValidationDoesNot]' started.
+Test Case '-[MaestroCoreTests.TypeSafeHTTPClientTests testRateLimitAndOverloadRetryButValidationDoesNot]' passed (0.001 seconds).
+Test Suite 'TypeSafeHTTPClientTests' passed at 2026-10-04 21:15:07.093.
+	 Executed 8 tests, with 0 failures (0 unexpected) in 0.011 (0.011) seconds
+Test Suite 'MaestroCoreTests.xctest' passed at 2026-10-04 21:15:07.093.
+	 Executed 114 tests, with 0 failures (0 unexpected) in 3.448 (3.454) seconds
+Test Suite 'All tests' passed at 2026-10-04 21:15:07.093.
+	 Executed 114 tests, with 0 failures (0 unexpected) in 3.448 (3.454) seconds
+SESSION_CIRCUIT_PERFORMANCE bytes=109119566 records=1025 cold_seconds=2.24296498298645 warm_seconds=0.0010439157485961914 append_seconds=0.0012319087982177734 warm_parsed=0 warm_suffix_bytes=0 append_suffix_bytes=107 process_peak_rss_bytes=145915904
+IPC_BACKPRESSURE heartbeat=0.15037975 seconds; disconnect=9.9042e-05 seconds; fixture prompt never accepted
+Test Suite 'All tests' started at 2026-10-04 21:15:07.277.
+Test Suite 'MaestroAppTests.xctest' started at 2026-10-04 21:15:07.278.
+Test Suite 'CircuitUsageSelectionTests' started at 2026-10-04 21:15:07.278.
+Test Case '-[MaestroAppTests.CircuitUsageSelectionTests testCachedAndReasoningTokensAreSubsetsAndChildOverlapMustBeKnown]' started.
+Test Case '-[MaestroAppTests.CircuitUsageSelectionTests testCachedAndReasoningTokensAreSubsetsAndChildOverlapMustBeKnown]' passed (0.000 seconds).
+Test Case '-[MaestroAppTests.CircuitUsageSelectionTests testHistoricalTurnDoesNotShowLaterOrUndatedSessionMetrics]' started.
+Test Case '-[MaestroAppTests.CircuitUsageSelectionTests testHistoricalTurnDoesNotShowLaterOrUndatedSessionMetrics]' passed (0.000 seconds).
+Test Case '-[MaestroAppTests.CircuitUsageSelectionTests testMissingChildSubsetsRemainUnknownWithinKnownInputOutputSum]' started.
+Test Case '-[MaestroAppTests.CircuitUsageSelectionTests testMissingChildSubsetsRemainUnknownWithinKnownInputOutputSum]' passed (0.000 seconds).
+Test Case '-[MaestroAppTests.CircuitUsageSelectionTests testRecentRequestRatioIsSeparateFromTurnTotals]' started.
+Test Case '-[MaestroAppTests.CircuitUsageSelectionTests testRecentRequestRatioIsSeparateFromTurnTotals]' passed (0.000 seconds).
+Test Case '-[MaestroAppTests.CircuitUsageSelectionTests testUnknownChildMetricAndOverflowCannotBecomeZeroTotal]' started.
+Test Case '-[MaestroAppTests.CircuitUsageSelectionTests testUnknownChildMetricAndOverflowCannotBecomeZeroTotal]' passed (0.000 seconds).
+Test Suite 'CircuitUsageSelectionTests' passed at 2026-10-04 21:15:07.280.
+	 Executed 5 tests, with 0 failures (0 unexpected) in 0.001 (0.001) seconds
+Test Suite 'ConnectionActionTests' started at 2026-10-04 21:15:07.280.
+Test Case '-[MaestroAppTests.ConnectionActionTests testBothExecutionSidesResolveAllFourEndpointCombinations]' started.
+Test Case '-[MaestroAppTests.ConnectionActionTests testBothExecutionSidesResolveAllFourEndpointCombinations]' passed (0.002 seconds).
+Test Case '-[MaestroAppTests.ConnectionActionTests testCommandDropCreatesRelationFirstAndReuseDoesNotSendOrMoveNodes]' started.
+Test Case '-[MaestroAppTests.ConnectionActionTests testCommandDropCreatesRelationFirstAndReuseDoesNotSendOrMoveNodes]' passed (0.000 seconds).
+Test Case '-[MaestroAppTests.ConnectionActionTests testEveryAvailableFunctionDelegatesSkillsToReceivingSessionWithoutForcedBindingOrSend]' started.
+Test Case '-[MaestroAppTests.ConnectionActionTests testEveryAvailableFunctionDelegatesSkillsToReceivingSessionWithoutForcedBindingOrSend]' passed (0.002 seconds).
+Test Case '-[MaestroAppTests.ConnectionActionTests testFailedActionSaveAndDraftSaveRestoreAllState]' started.
+Test Case '-[MaestroAppTests.ConnectionActionTests testFailedActionSaveAndDraftSaveRestoreAllState]' passed (0.005 seconds).
+Test Case '-[MaestroAppTests.ConnectionActionTests testLegacySkillReadAndSavePreservePromptBytesAndPersistNormalizedConfiguration]' started.
+Test Case '-[MaestroAppTests.ConnectionActionTests testLegacySkillReadAndSavePreservePromptBytesAndPersistNormalizedConfiguration]' passed (0.002 seconds).
+Test Case '-[MaestroAppTests.ConnectionActionTests testMissingOrUnreadableLegacySkillPathNoLongerBlocksPreparation]' started.
+Test Case '-[MaestroAppTests.ConnectionActionTests testMissingOrUnreadableLegacySkillPathNoLongerBlocksPreparation]' passed (0.001 seconds).
+Test Case '-[MaestroAppTests.ConnectionActionTests testPreparedSnapshotAndExistingDraftArePreserved]' started.
+Test Case '-[MaestroAppTests.ConnectionActionTests testPreparedSnapshotAndExistingDraftArePreserved]' passed (0.000 seconds).
+Test Case '-[MaestroAppTests.ConnectionActionTests testProjectNeverSelectsRecipientImplicitlyAndMembershipIsRevalidated]' started.
+Test Case '-[MaestroAppTests.ConnectionActionTests testProjectNeverSelectsRecipientImplicitlyAndMembershipIsRevalidated]' passed (0.000 seconds).
+Test Case '-[MaestroAppTests.ConnectionActionTests testTypedCRUDCleansUpActionAndPreservesActionOnFailedDelete]' started.
+Test Case '-[MaestroAppTests.ConnectionActionTests testTypedCRUDCleansUpActionAndPreservesActionOnFailedDelete]' passed (0.002 seconds).
+Test Suite 'ConnectionActionTests' passed at 2026-10-04 21:15:07.295.
+	 Executed 9 tests, with 0 failures (0 unexpected) in 0.015 (0.016) seconds
+Test Suite 'ConnectionDragGestureTests' started at 2026-10-04 21:15:07.295.
+Test Case '-[MaestroAppTests.ConnectionDragGestureTests test601SessionItemUpdatesInvalidateOnlyMovementNotLayoutOrStableTargetCue]' started.
+Test Case '-[MaestroAppTests.ConnectionDragGestureTests test601SessionItemUpdatesInvalidateOnlyMovementNotLayoutOrStableTargetCue]' passed (0.008 seconds).
+Test Case '-[MaestroAppTests.ConnectionDragGestureTests testConnectionControlUsesTypedCardBounds]' started.
+Test Case '-[MaestroAppTests.ConnectionDragGestureTests testConnectionControlUsesTypedCardBounds]' passed (0.000 seconds).
+Test Case '-[MaestroAppTests.ConnectionDragGestureTests testEmptyReleaseAndCancellationCannotCompleteConnection]' started.
+Test Case '-[MaestroAppTests.ConnectionDragGestureTests testEmptyReleaseAndCancellationCannotCompleteConnection]' passed (0.000 seconds).
+Test Case '-[MaestroAppTests.ConnectionDragGestureTests testGestureCapturesMovementEligibilityUntilReset]' started.
+Test Case '-[MaestroAppTests.ConnectionDragGestureTests testGestureCapturesMovementEligibilityUntilReset]' passed (0.000 seconds).
+Test Case '-[MaestroAppTests.ConnectionDragGestureTests testOverlapRejectsGrazingSelfUnavailableAndSyntheticProject]' started.
+Test Case '-[MaestroAppTests.ConnectionDragGestureTests testOverlapRejectsGrazingSelfUnavailableAndSyntheticProject]' passed (0.000 seconds).
+Test Case '-[MaestroAppTests.ConnectionDragGestureTests testOverlapUsesNearestCenterAndFrontmostTieBreakWithTypedIDs]' started.
+Test Case '-[MaestroAppTests.ConnectionDragGestureTests testOverlapUsesNearestCenterAndFrontmostTieBreakWithTypedIDs]' passed (0.000 seconds).
+Test Case '-[MaestroAppTests.ConnectionDragGestureTests testRectangleOverlapSupportsAllFourKindsWithoutPointerInsideTarget]' started.
+Test Case '-[MaestroAppTests.ConnectionDragGestureTests testRectangleOverlapSupportsAllFourKindsWithoutPointerInsideTarget]' passed (0.000 seconds).
+Test Case '-[MaestroAppTests.ConnectionDragGestureTests testTypedProjectMovementKeepsCanonicalOriginAndUnrelatedNodes]' started.
+Test Case '-[MaestroAppTests.ConnectionDragGestureTests testTypedProjectMovementKeepsCanonicalOriginAndUnrelatedNodes]' passed (0.000 seconds).
+Test Suite 'ConnectionDragGestureTests' passed at 2026-10-04 21:15:07.305.
+	 Executed 8 tests, with 0 failures (0 unexpected) in 0.009 (0.009) seconds
+Test Suite 'ConnectionManagerEndpointTests' started at 2026-10-04 21:15:07.305.
+Test Case '-[MaestroAppTests.ConnectionManagerEndpointTests testAllFourDirectionsRenderInManagerAndTypedInspectorMembership]' started.
+Test Case '-[MaestroAppTests.ConnectionManagerEndpointTests testAllFourDirectionsRenderInManagerAndTypedInspectorMembership]' passed (0.000 seconds).
+Test Case '-[MaestroAppTests.ConnectionManagerEndpointTests testEditingEndpointKindsMovesStorageBucketWithoutChangingIdentity]' started.
+Test Case '-[MaestroAppTests.ConnectionManagerEndpointTests testEditingEndpointKindsMovesStorageBucketWithoutChangingIdentity]' passed (0.000 seconds).
+Test Case '-[MaestroAppTests.ConnectionManagerEndpointTests testFailedBucketChangingEditRestoresAllStorageArrays]' started.
+Test Case '-[MaestroAppTests.ConnectionManagerEndpointTests testFailedBucketChangingEditRestoresAllStorageArrays]' passed (0.002 seconds).
+Test Case '-[MaestroAppTests.ConnectionManagerEndpointTests testManagerDraftSeedsSelectedTypedEndpointAndRespectsDirectionFilter]' started.
+Test Case '-[MaestroAppTests.ConnectionManagerEndpointTests testManagerDraftSeedsSelectedTypedEndpointAndRespectsDirectionFilter]' passed (0.000 seconds).
+Test Suite 'ConnectionManagerEndpointTests' passed at 2026-10-04 21:15:07.307.
+	 Executed 4 tests, with 0 failures (0 unexpected) in 0.003 (0.003) seconds
+Test Suite 'ConnectionStoreTests' started at 2026-10-04 21:15:07.307.
+Test Case '-[MaestroAppTests.ConnectionStoreTests testConnectionPreparationFailedSavePreservesWorkspaceSelectionAndNotice]' started.
+Test Case '-[MaestroAppTests.ConnectionStoreTests testConnectionPreparationFailedSavePreservesWorkspaceSelectionAndNotice]' passed (0.001 seconds).
+Test Case '-[MaestroAppTests.ConnectionStoreTests testCorruptWorkspaceBlocksWritesAndPreservesSourceBytes]' started.
+Test Case '-[MaestroAppTests.ConnectionStoreTests testCorruptWorkspaceBlocksWritesAndPreservesSourceBytes]' passed (0.001 seconds).
+Test Case '-[MaestroAppTests.ConnectionStoreTests testDemoPreparationRejectsConflictingDraftAndKeepsAllProjectScopeOnSuccess]' started.
+Test Case '-[MaestroAppTests.ConnectionStoreTests testDemoPreparationRejectsConflictingDraftAndKeepsAllProjectScopeOnSuccess]' passed (0.000 seconds).
+Test Case '-[MaestroAppTests.ConnectionStoreTests testFailedWritesRollBackConnectionAddsUpdatesAndDeletes]' started.
+Test Case '-[MaestroAppTests.ConnectionStoreTests testFailedWritesRollBackConnectionAddsUpdatesAndDeletes]' passed (0.003 seconds).
+Test Case '-[MaestroAppTests.ConnectionStoreTests testProjectCRUDRejectsUnavailableEndpointsAndDuplicates]' started.
+Test Case '-[MaestroAppTests.ConnectionStoreTests testProjectCRUDRejectsUnavailableEndpointsAndDuplicates]' passed (0.000 seconds).
+Test Case '-[MaestroAppTests.ConnectionStoreTests testProjectRelationDoesNotReassignSessionOrSendPrompt]' started.
+Test Case '-[MaestroAppTests.ConnectionStoreTests testProjectRelationDoesNotReassignSessionOrSendPrompt]' passed (0.000 seconds).
+Test Case '-[MaestroAppTests.ConnectionStoreTests testSessionCRUDRejectsUnavailableEndpointAndPreservesIdentity]' started.
+Test Case '-[MaestroAppTests.ConnectionStoreTests testSessionCRUDRejectsUnavailableEndpointAndPreservesIdentity]' passed (0.000 seconds).
+Test Case '-[MaestroAppTests.ConnectionStoreTests testTypedConnectionCompletionValidatesEndpointsAndReusesExistingIdentity]' started.
+Test Case '-[MaestroAppTests.ConnectionStoreTests testTypedConnectionCompletionValidatesEndpointsAndReusesExistingIdentity]' passed (0.000 seconds).
+Test Suite 'ConnectionStoreTests' passed at 2026-10-04 21:15:07.313.
+	 Executed 8 tests, with 0 failures (0 unexpected) in 0.005 (0.006) seconds
+Test Suite 'ContextInspectionTests' started at 2026-10-04 21:15:07.313.
+Test Case '-[MaestroAppTests.ContextInspectionTests testClosingContextCancelsPendingResultAndErrorIsVisible]' started.
+Test Case '-[MaestroAppTests.ContextInspectionTests testClosingContextCancelsPendingResultAndErrorIsVisible]' passed (0.001 seconds).
+Test Case '-[MaestroAppTests.ContextInspectionTests testContextReadsRejectStaleLoadsAndNeverSaveWorkspace]' started.
+Test Case '-[MaestroAppTests.ContextInspectionTests testContextReadsRejectStaleLoadsAndNeverSaveWorkspace]' passed (0.001 seconds).
+Test Case '-[MaestroAppTests.ContextInspectionTests testOptimizationPromptPreservesMeasurementAndCoverageBoundaries]' started.
+Test Case '-[MaestroAppTests.ContextInspectionTests testOptimizationPromptPreservesMeasurementAndCoverageBoundaries]' passed (0.001 seconds).
+Test Case '-[MaestroAppTests.ContextInspectionTests testOptimizationRejectsChangedMembershipAndSnapshot]' started.
+Test Case '-[MaestroAppTests.ContextInspectionTests testOptimizationRejectsChangedMembershipAndSnapshot]' passed (0.000 seconds).
+Test Case '-[MaestroAppTests.ContextInspectionTests testOptimizationRequiresExplicitProjectRecipientAndPreservesExistingDraft]' started.
+Test Case '-[MaestroAppTests.ContextInspectionTests testOptimizationRequiresExplicitProjectRecipientAndPreservesExistingDraft]' passed (0.000 seconds).
+Test Case '-[MaestroAppTests.ContextInspectionTests testOverlapChoiceSupportsAllCombinationsAndPreservesOriginsAndDrafts]' started.
+Test Case '-[MaestroAppTests.ContextInspectionTests testOverlapChoiceSupportsAllCombinationsAndPreservesOriginsAndDrafts]' passed (0.001 seconds).
+Test Case '-[MaestroAppTests.ContextInspectionTests testOverlapIsAProposalUntilChoiceAndCancellationDoesNotWrite]' started.
+Test Case '-[MaestroAppTests.ContextInspectionTests testOverlapIsAProposalUntilChoiceAndCancellationDoesNotWrite]' passed (0.000 seconds).
+Test Case '-[MaestroAppTests.ContextInspectionTests testOverlapRevalidatesTargetAndFailedSaveRestoresState]' started.
+Test Case '-[MaestroAppTests.ContextInspectionTests testOverlapRevalidatesTargetAndFailedSaveRestoresState]' passed (0.001 seconds).
+Test Case '-[MaestroAppTests.ContextInspectionTests testProjectContextIncludesHiddenMembersAndSavedRequestsWithoutWriting]' started.
+Test Case '-[MaestroAppTests.ContextInspectionTests testProjectContextIncludesHiddenMembersAndSavedRequestsWithoutWriting]' passed (0.001 seconds).
+Test Case '-[MaestroAppTests.ContextInspectionTests testProjectPositionUsesHeaderBounds]' started.
+Test Case '-[MaestroAppTests.ContextInspectionTests testProjectPositionUsesHeaderBounds]' passed (0.000 seconds).
+Test Case '-[MaestroAppTests.ContextInspectionTests testRemovedScopeIsRejectedOnLoadCompletionAndOptimizationPreparation]' started.
+Test Case '-[MaestroAppTests.ContextInspectionTests testRemovedScopeIsRejectedOnLoadCompletionAndOptimizationPreparation]' passed (0.000 seconds).
+Test Suite 'ContextInspectionTests' passed at 2026-10-04 21:15:07.319.
+	 Executed 11 tests, with 0 failures (0 unexpected) in 0.006 (0.006) seconds
+Test Suite 'DecisionWorkbenchTests' started at 2026-10-04 21:15:07.319.
+Test Case '-[MaestroAppTests.DecisionWorkbenchTests testCancelledInputLoadDoesNotLeaveSpinnerOrPublishIntoAnotherScope]' started.
+Test Case '-[MaestroAppTests.DecisionWorkbenchTests testCancelledInputLoadDoesNotLeaveSpinnerOrPublishIntoAnotherScope]' passed (0.001 seconds).
+Test Case '-[MaestroAppTests.DecisionWorkbenchTests testCorruptProfileFileBlocksWritesAndPreservesOriginalBytes]' started.
+Test Case '-[MaestroAppTests.DecisionWorkbenchTests testCorruptProfileFileBlocksWritesAndPreservesOriginalBytes]' passed (0.001 seconds).
+Test Case '-[MaestroAppTests.DecisionWorkbenchTests testDraftPersistenceFailureRollsBackWorkspaceAndSelection]' started.
+Test Case '-[MaestroAppTests.DecisionWorkbenchTests testDraftPersistenceFailureRollsBackWorkspaceAndSelection]' passed (0.001 seconds).
+Test Case '-[MaestroAppTests.DecisionWorkbenchTests testExplicitDraftPreparationCopiesExactOriginalAndProtectsExistingDraft]' started.
+Test Case '-[MaestroAppTests.DecisionWorkbenchTests testExplicitDraftPreparationCopiesExactOriginalAndProtectsExistingDraft]' passed (0.001 seconds).
+Test Case '-[MaestroAppTests.DecisionWorkbenchTests testInvalidRubricIsBlockedAtSaveAndRunWithItsProfilePath]' started.
+Test Case '-[MaestroAppTests.DecisionWorkbenchTests testInvalidRubricIsBlockedAtSaveAndRunWithItsProfilePath]' passed (0.002 seconds).
+Test Case '-[MaestroAppTests.DecisionWorkbenchTests testManualJSONLoadsLocallyAndMissingKeyNeverStartsExecution]' started.
+Test Case '-[MaestroAppTests.DecisionWorkbenchTests testManualJSONLoadsLocallyAndMissingKeyNeverStartsExecution]' passed (0.001 seconds).
+Test Case '-[MaestroAppTests.DecisionWorkbenchTests testResultStalenessTracksProfileManualJSONAndDraftChanges]' started.
+Test Case '-[MaestroAppTests.DecisionWorkbenchTests testResultStalenessTracksProfileManualJSONAndDraftChanges]' passed (0.001 seconds).
+Test Case '-[MaestroAppTests.DecisionWorkbenchTests testSaveCloneReuseAndDefinitionVersionsArePreservedWithoutCredentials]' started.
+Test Case '-[MaestroAppTests.DecisionWorkbenchTests testSaveCloneReuseAndDefinitionVersionsArePreservedWithoutCredentials]' passed (0.002 seconds).
+Test Case '-[MaestroAppTests.DecisionWorkbenchTests testUnknownHandlerWrongDestinationAndStaleResultCannotPrepareDraft]' started.
+Test Case '-[MaestroAppTests.DecisionWorkbenchTests testUnknownHandlerWrongDestinationAndStaleResultCannotPrepareDraft]' passed (0.001 seconds).
+Test Suite 'DecisionWorkbenchTests' passed at 2026-10-04 21:15:07.328.
+	 Executed 9 tests, with 0 failures (0 unexpected) in 0.009 (0.009) seconds
+Test Suite 'LongRowTopologyTests' started at 2026-10-04 21:15:07.328.
+Test Case '-[MaestroAppTests.LongRowTopologyTests testAdjacentSameRowRelationKeepsSideAnchorsAndMixedTopsUseTypedHeights]' started.
+Test Case '-[MaestroAppTests.LongRowTopologyTests testAdjacentSameRowRelationKeepsSideAnchorsAndMixedTopsUseTypedHeights]' passed (0.000 seconds).
+Test Case '-[MaestroAppTests.LongRowTopologyTests testNonAdjacentProjectsInBothDirectionsAvoidMiddleHeader]' started.
+Test Case '-[MaestroAppTests.LongRowTopologyTests testNonAdjacentProjectsInBothDirectionsAvoidMiddleHeader]' passed (0.001 seconds).
+Test Case '-[MaestroAppTests.LongRowTopologyTests testNonAdjacentSessionsInBothDirectionsAvoidWatchAndProjectHeaders]' started.
+Test Case '-[MaestroAppTests.LongRowTopologyTests testNonAdjacentSessionsInBothDirectionsAvoidWatchAndProjectHeaders]' passed (0.002 seconds).
+Test Case '-[MaestroAppTests.LongRowTopologyTests testSmallSessionPlacementOffsetsKeepLongCorridorClearInBothDirections]' started.
+Test Case '-[MaestroAppTests.LongRowTopologyTests testSmallSessionPlacementOffsetsKeepLongCorridorClearInBothDirections]' passed (0.013 seconds).
+Test Suite 'LongRowTopologyTests' passed at 2026-10-04 21:15:07.345.
+	 Executed 4 tests, with 0 failures (0 unexpected) in 0.016 (0.016) seconds
+Test Suite 'MixedTopologyTests' started at 2026-10-04 21:15:07.345.
+Test Case '-[MaestroAppTests.MixedTopologyTests testDraggingSessionWithSharedProjectIDMovesOnlyTypedIncidentEdges]' started.
+Test Case '-[MaestroAppTests.MixedTopologyTests testDraggingSessionWithSharedProjectIDMovesOnlyTypedIncidentEdges]' passed (0.000 seconds).
+Test Case '-[MaestroAppTests.MixedTopologyTests testFourEndpointCombinationsPreserveDirectionAndNamespaces]' started.
+Test Case '-[MaestroAppTests.MixedTopologyTests testFourEndpointCombinationsPreserveDirectionAndNamespaces]' passed (0.000 seconds).
+Test Case '-[MaestroAppTests.MixedTopologyTests testLongMixedEdgeAndReverseStayOutsideInterveningDesignAndBridgeCards]' started.
+Test Case '-[MaestroAppTests.MixedTopologyTests testLongMixedEdgeAndReverseStayOutsideInterveningDesignAndBridgeCards]' passed (0.001 seconds).
+Test Case '-[MaestroAppTests.MixedTopologyTests testMixedCaptionAvoidsBothCardSizesAndFilteredEndpointIsOmitted]' started.
+Test Case '-[MaestroAppTests.MixedTopologyTests testMixedCaptionAvoidsBothCardSizesAndFilteredEndpointIsOmitted]' passed (0.000 seconds).
+Test Case '-[MaestroAppTests.MixedTopologyTests testMixedHighlightingFindsIncomingAndOutgoingTypedNeighbors]' started.
+Test Case '-[MaestroAppTests.MixedTopologyTests testMixedHighlightingFindsIncomingAndOutgoingTypedNeighbors]' passed (0.000 seconds).
+Test Case '-[MaestroAppTests.MixedTopologyTests testMixedSameColumnArrowsUseProjectAndSessionSideBoundariesInBothDirections]' started.
+Test Case '-[MaestroAppTests.MixedTopologyTests testMixedSameColumnArrowsUseProjectAndSessionSideBoundariesInBothDirections]' passed (0.000 seconds).
+Test Suite 'MixedTopologyTests' passed at 2026-10-04 21:15:07.347.
+	 Executed 6 tests, with 0 failures (0 unexpected) in 0.002 (0.002) seconds
+Test Suite 'NodeConnectionSelectionTests' started at 2026-10-04 21:15:07.347.
+Test Case '-[MaestroAppTests.NodeConnectionSelectionTests testConnectionIconThenTargetClickCreatesAllEndpointCombinationsWithoutSending]' started.
+Test Case '-[MaestroAppTests.NodeConnectionSelectionTests testConnectionIconThenTargetClickCreatesAllEndpointCombinationsWithoutSending]' passed (0.000 seconds).
+Test Case '-[MaestroAppTests.NodeConnectionSelectionTests testMixedConnectionsPreserveSessionMembershipDraftsAndExecutionState]' started.
+Test Case '-[MaestroAppTests.NodeConnectionSelectionTests testMixedConnectionsPreserveSessionMembershipDraftsAndExecutionState]' passed (0.000 seconds).
+Test Case '-[MaestroAppTests.NodeConnectionSelectionTests testRelatedEmptyProjectsRemainVisibleAndFiltersDoNotLeakOtherProjectNodes]' started.
+Test Case '-[MaestroAppTests.NodeConnectionSelectionTests testRelatedEmptyProjectsRemainVisibleAndFiltersDoNotLeakOtherProjectNodes]' passed (0.000 seconds).
+Test Suite 'NodeConnectionSelectionTests' passed at 2026-10-04 21:15:07.348.
+	 Executed 3 tests, with 0 failures (0 unexpected) in 0.001 (0.001) seconds
+Test Suite 'PerformanceTests' started at 2026-10-04 21:15:07.348.
+Test Case '-[MaestroAppTests.PerformanceTests test601SessionGroupingTimingSample]' started.
+Test Case '-[MaestroAppTests.PerformanceTests test601SessionGroupingTimingSample]' passed (0.082 seconds).
+Test Case '-[MaestroAppTests.PerformanceTests test601SessionsExpandedGroupingPreservesEverySessionExactlyOnce]' started.
+Test Case '-[MaestroAppTests.PerformanceTests test601SessionsExpandedGroupingPreservesEverySessionExactlyOnce]' passed (0.012 seconds).
+Test Case '-[MaestroAppTests.PerformanceTests testCollapsedCardsRetainLiveAndSelectedAndExpansionIsLossless]' started.
+Test Case '-[MaestroAppTests.PerformanceTests testCollapsedCardsRetainLiveAndSelectedAndExpansionIsLossless]' passed (0.007 seconds).
+Test Case '-[MaestroAppTests.PerformanceTests testDragObservationDoesNotInvalidateCatalogLayoutDependencies]' started.
+Test Case '-[MaestroAppTests.PerformanceTests testDragObservationDoesNotInvalidateCatalogLayoutDependencies]' passed (0.007 seconds).
+Test Case '-[MaestroAppTests.PerformanceTests testProjectOrderingMatchesRunningThenFirstSessionAcross601Items]' started.
+Test Case '-[MaestroAppTests.PerformanceTests testProjectOrderingMatchesRunningThenFirstSessionAcross601Items]' passed (0.010 seconds).
+Test Suite 'PerformanceTests' passed at 2026-10-04 21:15:07.467.
+	 Executed 5 tests, with 0 failures (0 unexpected) in 0.119 (0.119) seconds
+Test Suite 'ProjectInspectorSelectionTests' started at 2026-10-04 21:15:07.467.
+Test Case '-[MaestroAppTests.ProjectInspectorSelectionTests testLateSessionTranscriptCannotPublishUnderProjectInspector]' started.
+Test Case '-[MaestroAppTests.ProjectInspectorSelectionTests testLateSessionTranscriptCannotPublishUnderProjectInspector]' passed (0.000 seconds).
+Test Case '-[MaestroAppTests.ProjectInspectorSelectionTests testPreparedConnectionReturnsFromProjectInspectorToReceivingSessionWithAllProjectsVisible]' started.
+Test Case '-[MaestroAppTests.ProjectInspectorSelectionTests testPreparedConnectionReturnsFromProjectInspectorToReceivingSessionWithAllProjectsVisible]' passed (0.000 seconds).
+Test Case '-[MaestroAppTests.ProjectInspectorSelectionTests testProjectNodeSelectionPreservesCatalogScopeAndSessionDrafts]' started.
+Test Case '-[MaestroAppTests.ProjectInspectorSelectionTests testProjectNodeSelectionPreservesCatalogScopeAndSessionDrafts]' passed (0.000 seconds).
+Test Case '-[MaestroAppTests.ProjectInspectorSelectionTests testUnassignedInspectorMatchesGroupingTotalsAndDirectionalLinkMembership]' started.
+Test Case '-[MaestroAppTests.ProjectInspectorSelectionTests testUnassignedInspectorMatchesGroupingTotalsAndDirectionalLinkMembership]' passed (0.000 seconds).
+Test Suite 'ProjectInspectorSelectionTests' passed at 2026-10-04 21:15:07.468.
+	 Executed 4 tests, with 0 failures (0 unexpected) in 0.001 (0.002) seconds
+Test Suite 'SessionWorkLayoutTests' started at 2026-10-04 21:15:07.468.
+Test Case '-[MaestroAppTests.SessionWorkLayoutTests testAllGroupMembersAndEdgesRemainAccessible]' started.
+Test Case '-[MaestroAppTests.SessionWorkLayoutTests testAllGroupMembersAndEdgesRemainAccessible]' passed (0.000 seconds).
+Test Case '-[MaestroAppTests.SessionWorkLayoutTests testEveryLifecycleObservationHasItsOwnSelectableRow]' started.
+Test Case '-[MaestroAppTests.SessionWorkLayoutTests testEveryLifecycleObservationHasItsOwnSelectableRow]' passed (0.000 seconds).
+Test Case '-[MaestroAppTests.SessionWorkLayoutTests testFailedAndPendingExecutionsDoNotDisappearIntoCompletedGroup]' started.
+Test Case '-[MaestroAppTests.SessionWorkLayoutTests testFailedAndPendingExecutionsDoNotDisappearIntoCompletedGroup]' passed (0.000 seconds).
+Test Case '-[MaestroAppTests.SessionWorkLayoutTests testLargeCircuitRetainsAllRelationsAndMeasuresProjectionRouting]' started.
+Test Case '-[MaestroAppTests.SessionWorkLayoutTests testLargeCircuitRetainsAllRelationsAndMeasuresProjectionRouting]' passed (0.016 seconds).
+Test Case '-[MaestroAppTests.SessionWorkLayoutTests testLargeExpandedGroupPagesWithoutLosingConstituents]' started.
+Test Case '-[MaestroAppTests.SessionWorkLayoutTests testLargeExpandedGroupPagesWithoutLosingConstituents]' passed (0.011 seconds).
+Test Case '-[MaestroAppTests.SessionWorkLayoutTests testRoutingAvoidsEveryUnrelatedNodeAtActualPanelWidths]' started.
+Test Case '-[MaestroAppTests.SessionWorkLayoutTests testRoutingAvoidsEveryUnrelatedNodeAtActualPanelWidths]' passed (0.009 seconds).
+Test Case '-[MaestroAppTests.SessionWorkLayoutTests testStatusSelectionAndTelemetryDoNotChangeRoutingGeometry]' started.
+Test Case '-[MaestroAppTests.SessionWorkLayoutTests testStatusSelectionAndTelemetryDoNotChangeRoutingGeometry]' passed (0.000 seconds).
+Test Suite 'SessionWorkLayoutTests' passed at 2026-10-04 21:15:07.506.
+	 Executed 7 tests, with 0 failures (0 unexpected) in 0.037 (0.037) seconds
+Test Suite 'SessionWorkStoreTests' started at 2026-10-04 21:15:07.506.
+Test Case '-[MaestroAppTests.SessionWorkStoreTests testAncestorBackRestoresObservationSelection]' started.
+Test Case '-[MaestroAppTests.SessionWorkStoreTests testAncestorBackRestoresObservationSelection]' passed (0.001 seconds).
+Test Case '-[MaestroAppTests.SessionWorkStoreTests testArchivedChildLookupAndBackRestoreParentSelectionAndBody]' started.
+Test Case '-[MaestroAppTests.SessionWorkStoreTests testArchivedChildLookupAndBackRestoreParentSelectionAndBody]' passed (0.001 seconds).
+Test Case '-[MaestroAppTests.SessionWorkStoreTests testChildMetricsStayInParentScopeAndLateResultsAreRejectedAfterNavigation]' started.
+Test Case '-[MaestroAppTests.SessionWorkStoreTests testChildMetricsStayInParentScopeAndLateResultsAreRejectedAfterNavigation]' passed (0.001 seconds).
+Test Case '-[MaestroAppTests.SessionWorkStoreTests testCloseCancelsPendingArchivedCatalogLookup]' started.
+Test Case '-[MaestroAppTests.SessionWorkStoreTests testCloseCancelsPendingArchivedCatalogLookup]' passed (0.000 seconds).
+Test Case '-[MaestroAppTests.SessionWorkStoreTests testCloseCancelsPollingAndRejectsLateGraph]' started.
+Test Case '-[MaestroAppTests.SessionWorkStoreTests testCloseCancelsPollingAndRejectsLateGraph]' passed (0.040 seconds).
+Test Case '-[MaestroAppTests.SessionWorkStoreTests testLazyBodyRejectsOldSelectionAndCloseResults]' started.
+Test Case '-[MaestroAppTests.SessionWorkStoreTests testLazyBodyRejectsOldSelectionAndCloseResults]' passed (0.001 seconds).
+Test Case '-[MaestroAppTests.SessionWorkStoreTests testObservationBodyRaceAndUndatedObservationRemainInspectable]' started.
+Test Case '-[MaestroAppTests.SessionWorkStoreTests testObservationBodyRaceAndUndatedObservationRemainInspectable]' passed (0.000 seconds).
+Test Case '-[MaestroAppTests.SessionWorkStoreTests testObservationDetailIsIndependentFromReplayAndRegularSelectionClearsIt]' started.
+Test Case '-[MaestroAppTests.SessionWorkStoreTests testObservationDetailIsIndependentFromReplayAndRegularSelectionClearsIt]' passed (0.000 seconds).
+Test Case '-[MaestroAppTests.SessionWorkStoreTests testPendingReadDoesNotOverwriteNewIPCState]' started.
+Test Case '-[MaestroAppTests.SessionWorkStoreTests testPendingReadDoesNotOverwriteNewIPCState]' passed (0.000 seconds).
+Test Case '-[MaestroAppTests.SessionWorkStoreTests testPinnedTurnSelectionAndReplayRemainSeparateFromLiveRefresh]' started.
+Test Case '-[MaestroAppTests.SessionWorkStoreTests testPinnedTurnSelectionAndReplayRemainSeparateFromLiveRefresh]' passed (0.001 seconds).
+Test Case '-[MaestroAppTests.SessionWorkStoreTests testReceivingTurnIncludesOnlyExactLateReceiptAndPriorCall]' started.
+Test Case '-[MaestroAppTests.SessionWorkStoreTests testReceivingTurnIncludesOnlyExactLateReceiptAndPriorCall]' passed (0.000 seconds).
+Test Case '-[MaestroAppTests.SessionWorkStoreTests testRecordMapRoundTripPreservesInspectionAndWorkspace]' started.
+Test Case '-[MaestroAppTests.SessionWorkStoreTests testRecordMapRoundTripPreservesInspectionAndWorkspace]' passed (0.001 seconds).
+Test Case '-[MaestroAppTests.SessionWorkStoreTests testRejectedDraftPreparationPreservesOpenCircuitAndDraft]' started.
+Test Case '-[MaestroAppTests.SessionWorkStoreTests testRejectedDraftPreparationPreservesOpenCircuitAndDraft]' passed (0.000 seconds).
+Test Case '-[MaestroAppTests.SessionWorkStoreTests testReplayProjectsObservedSummaryAndExactBodyReference]' started.
+Test Case '-[MaestroAppTests.SessionWorkStoreTests testReplayProjectsObservedSummaryAndExactBodyReference]' passed (0.000 seconds).
+Test Case '-[MaestroAppTests.SessionWorkStoreTests testScopeSwitchRejectsOldErrorWithoutClearingNewSpinner]' started.
+Test Case '-[MaestroAppTests.SessionWorkStoreTests testScopeSwitchRejectsOldErrorWithoutClearingNewSpinner]' passed (0.000 seconds).
+Test Case '-[MaestroAppTests.SessionWorkStoreTests testSourceFailureAndDisconnectPreserveLastUsageAndStopSignals]' started.
+Test Case '-[MaestroAppTests.SessionWorkStoreTests testSourceFailureAndDisconnectPreserveLastUsageAndStopSignals]' passed (0.000 seconds).
+Test Case '-[MaestroAppTests.SessionWorkStoreTests testSourceReplacementCannotRetargetSelectedObservation]' started.
+Test Case '-[MaestroAppTests.SessionWorkStoreTests testSourceReplacementCannotRetargetSelectedObservation]' passed (0.000 seconds).
+Test Case '-[MaestroAppTests.SessionWorkStoreTests testSuccessfulDraftPreparationClosesCircuitAndShowsRecipient]' started.
+Test Case '-[MaestroAppTests.SessionWorkStoreTests testSuccessfulDraftPreparationClosesCircuitAndShowsRecipient]' passed (0.001 seconds).
+Test Case '-[MaestroAppTests.SessionWorkStoreTests testUnavailableCoverageRetainsGraphWithoutRestoringLiveAnimation]' started.
+Test Case '-[MaestroAppTests.SessionWorkStoreTests testUnavailableCoverageRetainsGraphWithoutRestoringLiveAnimation]' passed (0.000 seconds).
+Test Case '-[MaestroAppTests.SessionWorkStoreTests testUnknownCurrentBoundaryDoesNotSelectPriorKnownPrompt]' started.
+Test Case '-[MaestroAppTests.SessionWorkStoreTests testUnknownCurrentBoundaryDoesNotSelectPriorKnownPrompt]' passed (0.000 seconds).
+Test Suite 'SessionWorkStoreTests' passed at 2026-10-04 21:15:07.557.
+	 Executed 20 tests, with 0 failures (0 unexpected) in 0.050 (0.051) seconds
+Test Suite 'TopologyDesignTests' started at 2026-10-04 21:15:07.557.
+Test Case '-[MaestroAppTests.TopologyDesignTests testProjectNodeSelectionKeeps601SessionGraphScopeAndSavedCoordinates]' started.
+Test Case '-[MaestroAppTests.TopologyDesignTests testProjectNodeSelectionKeeps601SessionGraphScopeAndSavedCoordinates]' passed (0.007 seconds).
+Test Suite 'TopologyDesignTests' passed at 2026-10-04 21:15:07.564.
+	 Executed 1 test, with 0 failures (0 unexpected) in 0.007 (0.007) seconds
+Test Suite 'TopologyLabelPlacementTests' started at 2026-10-04 21:15:07.564.
+Test Case '-[MaestroAppTests.TopologyLabelPlacementTests testBlockedSearchReturnsNoCaptionInsteadOfCoveringNode]' started.
+Test Case '-[MaestroAppTests.TopologyLabelPlacementTests testBlockedSearchReturnsNoCaptionInsteadOfCoveringNode]' passed (0.000 seconds).
+Test Case '-[MaestroAppTests.TopologyLabelPlacementTests testCaptionAvoidsInterveningSyncCardWhenPreferredLocationIsObstructed]' started.
+Test Case '-[MaestroAppTests.TopologyLabelPlacementTests testCaptionAvoidsInterveningSyncCardWhenPreferredLocationIsObstructed]' passed (0.000 seconds).
+Test Case '-[MaestroAppTests.TopologyLabelPlacementTests testPrefilterIncludesObstacleBeyondCandidateCenterSearchRadius]' started.
+Test Case '-[MaestroAppTests.TopologyLabelPlacementTests testPrefilterIncludesObstacleBeyondCandidateCenterSearchRadius]' passed (0.000 seconds).
+Test Case '-[MaestroAppTests.TopologyLabelPlacementTests testReverseAndParallelCaptionsReserveSeparateRectanglesDeterministically]' started.
+Test Case '-[MaestroAppTests.TopologyLabelPlacementTests testReverseAndParallelCaptionsReserveSeparateRectanglesDeterministically]' passed (0.000 seconds).
+Test Case '-[MaestroAppTests.TopologyLabelPlacementTests testSameRowProjectCaptionAvoidsBoth58PointHeaderCards]' started.
+Test Case '-[MaestroAppTests.TopologyLabelPlacementTests testSameRowProjectCaptionAvoidsBoth58PointHeaderCards]' passed (0.000 seconds).
+Test Case '-[MaestroAppTests.TopologyLabelPlacementTests testSameRowSessionCaptionWiderThan45PointGapFindsFreeSpace]' started.
+Test Case '-[MaestroAppTests.TopologyLabelPlacementTests testSameRowSessionCaptionWiderThan45PointGapFindsFreeSpace]' passed (0.000 seconds).
+Test Suite 'TopologyLabelPlacementTests' passed at 2026-10-04 21:15:07.565.
+	 Executed 6 tests, with 0 failures (0 unexpected) in 0.001 (0.001) seconds
+Test Suite 'TranscriptSelectionTests' started at 2026-10-04 21:15:07.565.
+Test Case '-[MaestroAppTests.TranscriptSelectionTests testBackgroundReadForUnselectedAIsRejectedWithoutInvalidatingB]' started.
+Test Case '-[MaestroAppTests.TranscriptSelectionTests testBackgroundReadForUnselectedAIsRejectedWithoutInvalidatingB]' passed (0.001 seconds).
+Test Case '-[MaestroAppTests.TranscriptSelectionTests testOldACompletionPreservesPendingBAndOnlyBPublishes]' started.
+Test Case '-[MaestroAppTests.TranscriptSelectionTests testOldACompletionPreservesPendingBAndOnlyBPublishes]' passed (0.000 seconds).
+Test Case '-[MaestroAppTests.TranscriptSelectionTests testOldAErrorDoesNotPublishUnderBOrClearBSpinner]' started.
+Test Case '-[MaestroAppTests.TranscriptSelectionTests testOldAErrorDoesNotPublishUnderBOrClearBSpinner]' passed (0.000 seconds).
+Test Case '-[MaestroAppTests.TranscriptSelectionTests testSelectionImmediatelyClearsPreviousTranscriptAndError]' started.
+Test Case '-[MaestroAppTests.TranscriptSelectionTests testSelectionImmediatelyClearsPreviousTranscriptAndError]' passed (0.000 seconds).
+Test Suite 'TranscriptSelectionTests' passed at 2026-10-04 21:15:07.567.
+	 Executed 4 tests, with 0 failures (0 unexpected) in 0.001 (0.002) seconds
+Test Suite 'MaestroAppTests.xctest' passed at 2026-10-04 21:15:07.567.
+	 Executed 114 tests, with 0 failures (0 unexpected) in 0.284 (0.289) seconds
+Test Suite 'All tests' passed at 2026-10-04 21:15:07.567.
+	 Executed 114 tests, with 0 failures (0 unexpected) in 0.284 (0.289) seconds
+PERFORMANCE_SAMPLE 601 sessions, 200 grouped layout preparations: 0.075502125 seconds; no rendering/FPS claim
+SESSION_CIRCUIT_GEOMETRY nodes=1001 relations=1000 collapsed_seconds=0.0025529861450195312 expanded_page_seconds=0.0121079683303833 expanded_visible=26 routed=25 scope=projection_layout_routing_not_render_fps
+􀟈  Test run started.
+􀄵  Testing Library Version: 2084
+􀄵  Target Platform: arm64e-apple-macos14.0
+􁁛  Test run with 0 tests in 0 suites passed after 0.001 seconds.
+􀟈  Test run started.
+􀄵  Testing Library Version: 2084
+􀄵  Target Platform: arm64e-apple-macos14.0
+􁁛  Test run with 0 tests in 0 suites passed after 0.001 seconds.

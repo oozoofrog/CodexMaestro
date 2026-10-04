@@ -1,0 +1,16 @@
+{
+  "model" : "jev-latest",
+  "questions" : {
+    "noul" : {
+      "instructions" : "state에 실제 사용자 자료가 아닌 검증용 합성 자료라는 표시가 있습니까?",
+      "type" : "noul"
+    }
+  },
+  "state" : [
+    {
+      "source" : "검증용 합성 자료"
+    },
+    "배열의 순서 1",
+    "배열의 순서 2"
+  ]
+}

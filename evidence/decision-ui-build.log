@@ -1,0 +1,81 @@
+Building for debugging...
+[Pre-planning 1 / 183]
+[Planning deferred tasks]
+[1 / 1]
+[8 / 24] MaestroCore
+[12 / 28] MaestroCore
+[20 / 35] MaestroProbe-product
+[22 / 39] MaestroProbe-product
+[23 / 39] MaestroCore
+[35 / 55] CodexMaestro
+[36 / 55] MaestroCore
+[39 / 67] CodexMaestro
+error: SwiftCompile normal arm64 /Volumes/eyedisk/develop/CodexMaestro/Sources/CodexMaestro/DecisionResultView.swift failed with a nonzero exit code. Command line:     cd /Volumes/eyedisk/develop
+    builtin-SwiftPerFileCompile DecisionResultView.swift
+/Volumes/eyedisk/develop/CodexMaestro/Sources/CodexMaestro/DecisionResultView.swift:69:5: error: '@State' can only be applied to a 'var' declaration with a simple name (from macro 'State ')
+67 |     let catalog: CodexCatalog
+68 |     let demo: Bool
+69 |     @State private var left: [TranscriptMessage] = [], right: [TranscriptMessage] = []
+   |     `- error: '@State' can only be applied to a 'var' declaration with a simple name (from macro 'State ')
+70 |     @State private var error: String?
+71 |     @Environment(\.dismiss) private var dismiss
+
+/Volumes/eyedisk/develop/CodexMaestro/Sources/CodexMaestro/DecisionResultView.swift:69:5: error: '@State' can only be applied to a 'var' declaration with a simple name (from macro 'State ')
+67 |     let catalog: CodexCatalog
+68 |     let demo: Bool
+69 |     @State private var left: [TranscriptMessage] = [], right: [TranscriptMessage] = []
+   |     `- error: '@State' can only be applied to a 'var' declaration with a simple name (from macro 'State ')
+70 |     @State private var error: String?
+71 |     @Environment(\.dismiss) private var dismiss
+
+/Volumes/eyedisk/develop/CodexMaestro/Sources/CodexMaestro/DecisionResultView.swift:69:24: error: accessor macro 'State()' can only apply to a single variable
+67 |     let catalog: CodexCatalog
+68 |     let demo: Bool
+69 |     @State private var left: [TranscriptMessage] = [], right: [TranscriptMessage] = []
+   |                        `- error: accessor macro 'State()' can only apply to a single variable
+70 |     @State private var error: String?
+71 |     @Environment(\.dismiss) private var dismiss
+
+/Volumes/eyedisk/develop/CodexMaestro/Sources/CodexMaestro/DecisionResultView.swift:69:56: error: accessor macro 'State()' can only apply to a single variable
+67 |     let catalog: CodexCatalog
+68 |     let demo: Bool
+69 |     @State private var left: [TranscriptMessage] = [], right: [TranscriptMessage] = []
+   |                                                        `- error: accessor macro 'State()' can only apply to a single variable
+70 |     @State private var error: String?
+71 |     @Environment(\.dismiss) private var dismiss
+
+/Volumes/eyedisk/develop/CodexMaestro/Sources/CodexMaestro/DecisionResultView.swift:18:112: error: static property 'orange' requires the types 'HierarchicalShapeStyle' and 'Color' be equivalent
+16 |         GroupBox {
+17 |             VStack(alignment: .leading, spacing: 12) {
+18 |                 HStack { Text(status.label).font(.headline).foregroundStyle(status == .succeeded ? .primary : .orange); Spacer(); Text("\(result.usage.input_tokens) 입력 · \(result.usage.output_tokens) 출력 tokens").font(.caption).foregroundStyle(.secondary) }
+   |                                                                                                                `- error: static property 'orange' requires the types 'HierarchicalShapeStyle' and 'Color' be equivalent
+19 |                 if let detail = result.detail { Text(detail).font(.callout).textSelection(.enabled) }
+20 |                 if status == .stale { Text("입력 또는 Profile이 변경되었습니다. 현재 입력을 불러온 뒤 다시 실행하세요.").font(.callout) }
+
+SwiftUI.ShapeStyle:2:11: note: where 'Self' = 'HierarchicalShapeStyle'
+ 1 | @available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
+ 2 | extension ShapeStyle where Self == Color {
+   |           `- note: where 'Self' = 'HierarchicalShapeStyle'
+ 3 |     @export(implementation) public static var red: Color { get }
+ 4 |     @export(implementation) public static var orange: Color { get }
+
+/Volumes/eyedisk/develop/CodexMaestro/Sources/CodexMaestro/DecisionResultView.swift:18:112: error: member 'orange' in 'HierarchicalShapeStyle' produces result of type 'Color', but context expects 'HierarchicalShapeStyle'
+16 |         GroupBox {
+17 |             VStack(alignment: .leading, spacing: 12) {
+18 |                 HStack { Text(status.label).font(.headline).foregroundStyle(status == .succeeded ? .primary : .orange); Spacer(); Text("\(result.usage.input_tokens) 입력 · \(result.usage.output_tokens) 출력 tokens").font(.caption).foregroundStyle(.secondary) }
+   |                                                                                                                `- error: member 'orange' in 'HierarchicalShapeStyle' produces result of type 'Color', but context expects 'HierarchicalShapeStyle'
+19 |                 if let detail = result.detail { Text(detail).font(.callout).textSelection(.enabled) }
+20 |                 if status == .stale { Text("입력 또는 Profile이 변경되었습니다. 현재 입력을 불러온 뒤 다시 실행하세요.").font(.callout) }
+
+/Volumes/eyedisk/develop/CodexMaestro/Sources/CodexMaestro/DecisionResultView.swift:79:27: error: cannot assign to property: 'self' is immutable
+77 |         }.padding(16).frame(width: 1050, height: 720).task {
+78 |             do {
+79 |                 if demo { left = [.init(id: "a", role: "assistant", text: comparison.source.preview)]; right = [.init(id: "b", role: "assistant", text: comparison.target.preview)] }
+   |                           `- error: cannot assign to property: 'self' is immutable
+80 |                 else {
+81 |                     let catalog = catalog, a = comparison.source.id, b = comparison.target.id
+Failed frontend command:
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swift-frontend -frontend -c /Volumes/eyedisk/develop/CodexMaestro/Sources/CodexMaestro/CodexMaestroApp.swift /Volumes/eyedisk/develop/CodexMaestro/Sources/CodexMaestro/ConnectionActionStore.swift /Volumes/eyedisk/develop/CodexMaestro/Sources/CodexMaestro/ConnectionActionView.swift /Volumes/eyedisk/develop/CodexMaestro/Sources/CodexMaestro/ContextDemoTopology.swift /Volumes/eyedisk/develop/CodexMaestro/Sources/CodexMaestro/ContextInspectionStore.swift /Volumes/eyedisk/develop/CodexMaestro/Sources/CodexMaestro/ContextTopologyView.swift /Volumes/eyedisk/develop/CodexMaestro/Sources/CodexMaestro/DecisionBindings.swift /Volumes/eyedisk/develop/CodexMaestro/Sources/CodexMaestro/DecisionCredentials.swift /Volumes/eyedisk/develop/CodexMaestro/Sources/CodexMaestro/DecisionProfileEditors.swift -primary-file /Volumes/eyedisk/develop/CodexMaestro/Sources/CodexMaestro/DecisionResultView.swift /Volumes/eyedisk/develop/CodexMaestro/Sources/CodexMaestro/DecisionWorkbenchStore.swift /Volumes/eyedisk/develop/CodexMaestro/Sources/CodexMaestro/DecisionWorkbenchView.swift /Volumes/eyedisk/develop/CodexMaestro/Sources/CodexMaestro/MaestroStore.swift /Volumes/eyedisk/develop/CodexMaestro/Sources/CodexMaestro/OverlapActionView.swift /Volumes/eyedisk/develop/CodexMaestro/Sources/CodexMaestro/PerformanceFixture.swift /Volumes/eyedisk/develop/CodexMaestro/Sources/CodexMaestro/ProjectConnections.swift /Volumes/eyedisk/develop/CodexMaestro/Sources/CodexMaestro/SessionInspector.swift /Volumes/eyedisk/develop/CodexMaestro/Sources/CodexMaestro/Theme.swift /Volumes/eyedisk/develop/CodexMaestro/Sources/CodexMaestro/TopologyCanvas.swift /Volumes/eyedisk/develop/CodexMaestro/Sources/CodexMaestro/WorkspaceView.swift -emit-dependencies-path /Volumes/eyedisk/develop/CodexMaestro/.build/out/Intermediates.noindex/CodexMaestro.build/Debug/CodexMaestro-p.build/Objects-normal/arm64/DecisionResultView.d -emit-const-values-path /Volumes/eyedisk/develop/CodexMaestro/.build/out/Intermediates.noindex/CodexMaestro.build/Debug/CodexMaestro-p.build/Objects-normal/arm64/DecisionResultView.swiftconstvalues -emit-reference-dependencies-path /Volumes/eyedisk/develop/CodexMaestro/.build/out/Intermediates.noindex/CodexMaestro.build/Debug/CodexMaestro-p.build/Objects-normal/arm64/DecisionResultView.swiftdeps -serialize-diagnostics-path /Volumes/eyedisk/develop/CodexMaestro/.build/out/Intermediates.noindex/CodexMaestro.build/Debug/CodexMaestro-p.build/Objects-normal/arm64/DecisionResultView.dia -target arm64-apple-macos26.0 -disable-cross-import-overlay-search -load-resolved-plugin /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib/swift/host/plugins/libFoundationMacros.dylib\#/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/bin/swift-plugin-server\#FoundationMacros -load-resolved-plugin /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib/swift/host/plugins/libObservationMacros.dylib\#/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/bin/swift-plugin-server\#ObservationMacros -load-resolved-plugin /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib/swift/host/plugins/libPreviewsMacros.dylib\#/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/bin/swift-plugin-server\#PreviewsMacros -load-resolved-plugin /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib/swift/host/plugins/libSwiftMacros.dylib\#/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/bin/swift-plugin-server\#SwiftMacros -load-resolved-plugin /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib/swift/host/plugins/libSwiftUIMacros.dylib\#/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/bin/swift-plugin-server\#SwiftUIMacros -disable-implicit-swift-modules -Xcc -fno-implicit-modules -Xcc -fno-implicit-module-maps -explicit-swift-module-map-file /Volumes/eyedisk/develop/CodexMaestro/.build/out/Intermediates.noindex/CodexMaestro.build/Debug/CodexMaestro-p.build/Objects-normal/arm64/CodexMaestro-dependencies-1.json -Xllvm -aarch64-use-tbi -enable-objc-interop -stack-check -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX27.0.sdk -I /Volumes/eyedisk/develop/CodexMaestro/.build/out/Products/Debug -Isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib -F /Volumes/eyedisk/develop/CodexMaestro/.build/out/Products/Debug/PackageFrameworks -F /Volumes/eyedisk/develop/CodexMaestro/.build/out/Products/Debug -F /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks -module-cache-path /Volumes/eyedisk/develop/CodexMaestro/.build/out/Intermediates.noindex/SwiftExplicitPrecompiledModules -no-color-diagnostics -Xcc -fno-color-diagnostics -enable-testing -g -debug-info-format\=dwarf -dwarf-version\=5 -swift-version 6 -Onone -D SWIFT_PACKAGE -D DEBUG -D Xcode -serialize-debugging-options -enable-experimental-feature DebugDescriptionMacro -empty-abi-descriptor -validate-clang-modules-once -clang-build-session-file /Volumes/eyedisk/develop/CodexMaestro/.build/out/ModuleCache.noindex/Session.modulevalidation -Xcc -working-directory -Xcc /Volumes/eyedisk/develop -enable-anonymous-context-mangled-names -file-compilation-dir /Volumes/eyedisk/develop -Xcc -fmodule-map-file\=/Volumes/eyedisk/develop/CodexMaestro/Sources/CSQLite/module.modulemap -Xcc -D_LIBCPP_HARDENING_MODE\=_LIBCPP_HARDENING_MODE_DEBUG -Xcc -ivfsstatcache -Xcc /Volumes/eyedisk/develop/CodexMaestro/.build/out/SDKStatCaches.noindex/macosx27.0-26A425-80c5bbf1d171475443272936d42f90a37231f6df4def33e022ae2eb8f782df1a.sdkstatcache -Xcc -fmodules-prune-interval\=86400 -Xcc -fmodules-prune-after\=345600 -Xcc -I/Volumes/eyedisk/develop/CodexMaestro/.build/out/Products/Debug/include -Xcc -I/Volumes/eyedisk/develop/CodexMaestro/.build/out/Intermediates.noindex/CodexMaestro.build/Debug/CodexMaestro-p.build/DerivedSources-normal/arm64 -Xcc -I/Volumes/eyedisk/develop/CodexMaestro/.build/out/Intermediates.noindex/CodexMaestro.build/Debug/CodexMaestro-p.build/DerivedSources/arm64 -Xcc -I/Volumes/eyedisk/develop/CodexMaestro/.build/out/Intermediates.noindex/CodexMaestro.build/Debug/CodexMaestro-p.build/DerivedSources -Xcc -DSWIFT_PACKAGE -Xcc -DDEBUG\=1 -no-auto-bridging-header-chaining -module-name CodexMaestro -package-name codexmaestro -const-gather-protocols-file /Volumes/eyedisk/develop/CodexMaestro/.build/out/Intermediates.noindex/CodexMaestro.build/Debug/CodexMaestro-p.build/Objects-normal/arm64/CodexMaestro_const_extract_protocols.json -disable-clang-spi -clang-target arm64-apple-macos27.0 -target-sdk-version 27.0 -target-sdk-name macosx27.0 -in-process-plugin-server-path /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/libSwiftInProcPluginServer.dylib -parse-as-library -o /Volumes/eyedisk/develop/CodexMaestro/.build/out/Intermediates.noindex/CodexMaestro.build/Debug/CodexMaestro-p.build/Objects-normal/arm64/DecisionResultView.o -debug-module-path /Volumes/eyedisk/develop/CodexMaestro/.build/out/Intermediates.noindex/CodexMaestro.build/Debug/CodexMaestro-p.build/Objects-normal/arm64/CodexMaestro.swiftmodule -index-unit-output-path /CodexMaestro.build/Debug/CodexMaestro-p.build/Objects-normal/arm64/DecisionResultView.o -index-store-path /Volumes/eyedisk/develop/CodexMaestro/.build/out -index-system-modules
+[40 / 77] CodexMaestro-product
+error: Build failed
+error: fatalError

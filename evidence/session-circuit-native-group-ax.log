@@ -1,0 +1,21 @@
+The following is a diff from the previous accessibility tree for Window: "Codex Maestro" with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.
+Removed element IDs: 123-131, 167
+~				61 text 1,325개 기록 · 46개 표시
+~				62 scroll area Description: 작업 회로 · 46개 노드, Secondary Actions: Scroll Left, Scroll Right, Scroll Up, Scroll Down
+~					77 button Description: 토큰 계측 · 341개, 토큰 계측, 접힌 구성원 341개, 관찰 기록, turn 01a106b0-8c2e-7700-8a0e-6e50131e3474, Help: 공개 저장 기록
++					169 button Description: js, 도구 호출, 결과·입력 대기, 관찰 기록, turn 01a106b0-8c2e-7700-8a0e-6e50131e3474, Help: 호출 확인 · 결과 미수신
++					170 text 지침·컨텍스트 · 8개 접힌 구성원 8개 · 원본 ID와 연결을 보존합니다.
++					171 button 구성원 회로 펼치기
++					172 list Secondary Actions: AXScrollToTop, AXScrollToBottom
++						173 button developer 지침, 미확인
++						174 button 저장된 turn 컨텍스트, 미확인
++						175 button developer 지침, 미확인
++						176 button developer 지침, 미확인
++						177 button 저장된 turn 컨텍스트, 미확인
++						178 button developer 지침, 미확인
++						179 button developer 지침, 미확인
++						180 button 저장된 turn 컨텍스트, 미확인
+~					141 text 입력 캐시 입력 출력 메인 최근 입력 / 한도 22,503,303 22,143,616 69,313 29.4% 캐시 입력 포함 입력의 일부 추론 출력 20,397 포함 입력 75,993 / 한도 258,400 점유율 아님 비율 계측 오후 9:35:27
+~				142 text 현재 기록 · 1,171개 이벤트 시각
+~				146 slider (settable, float) Description: 기록 재생 위치, Value: 1170, Details: 1,171 / 1,171
+The focused UI element is 0 standard window Codex Maestro, ID: maestro, Secondary Actions: Raise

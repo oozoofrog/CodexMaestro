@@ -1,0 +1,71 @@
+{
+  "credentialInEvidence" : false,
+  "inputTokens" : 1746,
+  "observations" : [
+    {
+      "answer" : {
+        "noul" : 0.41999999999999998,
+        "type" : "noul"
+      },
+      "elapsedMs" : 185,
+      "model" : "jev-1.13.0",
+      "name" : "noul-empty-outcome-descriptions",
+      "status" : 200
+    },
+    {
+      "answer" : {
+        "noul" : 0.38,
+        "type" : "noul"
+      },
+      "elapsedMs" : 204,
+      "model" : "jev-1.13.0",
+      "name" : "noul-empty-structured-outcomes",
+      "status" : 200
+    },
+    {
+      "answer" : {
+        "noul" : 0.42999999999999999,
+        "type" : "noul"
+      },
+      "elapsedMs" : 210,
+      "model" : "jev-1.13.0",
+      "name" : "noul-outcome-nested-null-object",
+      "status" : 200
+    },
+    {
+      "answer" : {
+        "noul" : 0.39000000000000001,
+        "type" : "noul"
+      },
+      "elapsedMs" : 197,
+      "model" : "jev-1.13.0",
+      "name" : "noul-outcome-nested-null-array",
+      "status" : 200
+    },
+    {
+      "answer" : {
+        "noul" : 0.41999999999999998,
+        "type" : "noul"
+      },
+      "elapsedMs" : 177,
+      "model" : "jev-1.13.0",
+      "name" : "noul-false-description-only",
+      "status" : 200
+    },
+    {
+      "answer" : {
+        "noul" : 0.42999999999999999,
+        "type" : "noul"
+      },
+      "elapsedMs" : 201,
+      "model" : "jev-1.13.0",
+      "name" : "noul-whitespace-outcome",
+      "status" : 200
+    }
+  ],
+  "observedAt" : "2026-10-04T01:36:55Z",
+  "outputTokens" : 120,
+  "rejections" : 0,
+  "successes" : 6,
+  "syntheticInputOnly" : true
+}

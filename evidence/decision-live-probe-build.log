@@ -1,0 +1,9 @@
+/tmp/CodexMaestroLiveDecisionProbe.swift:13:71: warning: 'kSecUseAuthenticationUIFail' was deprecated in macOS 11.0: Instead of kSecUseAuthenticationUI, use kSecUseAuthenticationContext and set LAContext.interactionNotAllowed property [#DeprecatedDeclaration]
+11 |                                    kSecReturnData as String: true,
+12 |                                    kSecMatchLimit as String: kSecMatchLimitOne,
+13 |                                    kSecUseAuthenticationUI as String: kSecUseAuthenticationUIFail]
+   |                                                                       `- warning: 'kSecUseAuthenticationUIFail' was deprecated in macOS 11.0: Instead of kSecUseAuthenticationUI, use kSecUseAuthenticationContext and set LAContext.interactionNotAllowed property [#DeprecatedDeclaration]
+14 |         var item: CFTypeRef?
+15 |         let status = SecItemCopyMatching(query as CFDictionary, &item)
+
+[#DeprecatedDeclaration]: <https://docs.swift.org/compiler/documentation/diagnostics/deprecated-declaration>

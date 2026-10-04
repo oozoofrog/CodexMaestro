@@ -1,0 +1,13 @@
+{
+  "model" : "jev-latest",
+  "questions" : {
+    "q" : {
+      "criteria" : {
+        "item_0" : "Synthetic record"
+      },
+      "instructions" : "Choose item_0, the explicitly synthetic record.",
+      "type" : "choice"
+    }
+  },
+  "state" : "Synthetic verification record. The record is marked synthetic and permits reading only."
+}

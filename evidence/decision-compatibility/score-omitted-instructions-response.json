@@ -1,0 +1,1 @@
+{"model":"jev-1.13.0","answers":{"q":{"type":"score","score":1.0,"confidence":1.0,"legend":{"0":"No synthetic marker","1":"Explicit synthetic marker"},"probabilities":{"0":0.0,"1":1.0}}},"usage":{"input_tokens":299,"output_tokens":17}}

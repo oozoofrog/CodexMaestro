@@ -1,0 +1,660 @@
+{
+  "credentialInEvidence" : false,
+  "inputTokens" : 9299,
+  "observations" : [
+    {
+      "answer" : {
+        "noul" : 0.83999999999999997,
+        "type" : "noul"
+      },
+      "elapsedMs" : 203,
+      "model" : "jev-1.13.0",
+      "name" : "noul-omitted-instructions-valid-criteria",
+      "status" : 200
+    },
+    {
+      "answer" : {
+        "noul" : 0.84999999999999998,
+        "type" : "noul"
+      },
+      "elapsedMs" : 203,
+      "model" : "jev-1.13.0",
+      "name" : "noul-null-instructions-valid-criteria",
+      "status" : 200
+    },
+    {
+      "detail" : "Noul question must have criteria or instructions: q",
+      "elapsedMs" : 139,
+      "name" : "noul-no-definition",
+      "status" : 400
+    },
+    {
+      "detail" : "Noul question must have criteria or instructions: q",
+      "elapsedMs" : 145,
+      "name" : "noul-null-definition",
+      "status" : 400
+    },
+    {
+      "detail" : "Noul question must have criteria or instructions: q",
+      "elapsedMs" : 156,
+      "name" : "noul-empty-instructions",
+      "status" : 400
+    },
+    {
+      "detail" : "Noul question must have criteria or instructions: q",
+      "elapsedMs" : 141,
+      "name" : "noul-empty-object-instructions",
+      "status" : 400
+    },
+    {
+      "detail" : "Noul question must have criteria or instructions: q",
+      "elapsedMs" : 140,
+      "name" : "noul-empty-array-instructions",
+      "status" : 400
+    },
+    {
+      "detail" : "Noul question must have criteria or instructions: q",
+      "elapsedMs" : 141,
+      "name" : "noul-null-instructions-empty-criteria",
+      "status" : 400
+    },
+    {
+      "detail" : "Noul question must have criteria or instructions: q",
+      "elapsedMs" : 140,
+      "name" : "noul-null-instructions-null-outcomes",
+      "status" : 400
+    },
+    {
+      "answer" : {
+        "noul" : 0.98999999999999999,
+        "type" : "noul"
+      },
+      "elapsedMs" : 260,
+      "model" : "jev-1.13.0",
+      "name" : "noul-instructions-null-criteria",
+      "status" : 200
+    },
+    {
+      "answer" : {
+        "noul" : 0.98999999999999999,
+        "type" : "noul"
+      },
+      "elapsedMs" : 220,
+      "model" : "jev-1.13.0",
+      "name" : "noul-instructions-empty-criteria",
+      "status" : 200
+    },
+    {
+      "answer" : {
+        "noul" : 0.5,
+        "type" : "noul"
+      },
+      "elapsedMs" : 208,
+      "model" : "jev-1.13.0",
+      "name" : "noul-whitespace-instructions",
+      "status" : 200
+    },
+    {
+      "answer" : {
+        "choice" : "synthetic",
+        "confidence" : 1,
+        "probabilities" : {
+          "actual" : 0,
+          "synthetic" : 1
+        },
+        "type" : "choice"
+      },
+      "elapsedMs" : 212,
+      "model" : "jev-1.13.0",
+      "name" : "choice-omitted-instructions",
+      "status" : 200
+    },
+    {
+      "answer" : {
+        "confidence" : 1,
+        "legend" : {
+          "0" : "No synthetic marker",
+          "1" : "Explicit synthetic marker"
+        },
+        "probabilities" : {
+          "0" : 0,
+          "1" : 1
+        },
+        "score" : 1,
+        "type" : "score"
+      },
+      "elapsedMs" : 215,
+      "model" : "jev-1.13.0",
+      "name" : "score-omitted-instructions",
+      "status" : 200
+    },
+    {
+      "detail" : [
+        {
+          "input" : null,
+          "loc" : [
+            "body",
+            "questions",
+            "q",
+            "score",
+            "criteria",
+            0,
+            "str"
+          ],
+          "msg" : "Input should be a valid string",
+          "type" : "string_type"
+        },
+        {
+          "input" : null,
+          "loc" : [
+            "body",
+            "questions",
+            "q",
+            "score",
+            "criteria",
+            0,
+            "dict[any,any]"
+          ],
+          "msg" : "Input should be a valid dictionary",
+          "type" : "dict_type"
+        },
+        {
+          "input" : null,
+          "loc" : [
+            "body",
+            "questions",
+            "q",
+            "score",
+            "criteria",
+            0,
+            "list[any]"
+          ],
+          "msg" : "Input should be a valid list",
+          "type" : "list_type"
+        }
+      ],
+      "elapsedMs" : 160,
+      "name" : "score-null-level",
+      "status" : 422
+    },
+    {
+      "answer" : {
+        "confidence" : 1,
+        "legend" : {
+          "0" : {
+            "example" : null,
+            "level" : "No marker"
+          },
+          "1" : {
+            "examples" : [
+              null,
+              "synthetic"
+            ],
+            "level" : "Explicit marker"
+          }
+        },
+        "probabilities" : {
+          "0" : 0,
+          "1" : 1
+        },
+        "score" : 1,
+        "type" : "score"
+      },
+      "elapsedMs" : 218,
+      "model" : "jev-1.13.0",
+      "name" : "score-nested-null",
+      "status" : 200
+    },
+    {
+      "detail" : [
+        {
+          "input" : 0,
+          "loc" : [
+            "body",
+            "questions",
+            "q",
+            "score",
+            "criteria",
+            0,
+            "str"
+          ],
+          "msg" : "Input should be a valid string",
+          "type" : "string_type"
+        },
+        {
+          "input" : 0,
+          "loc" : [
+            "body",
+            "questions",
+            "q",
+            "score",
+            "criteria",
+            0,
+            "dict[any,any]"
+          ],
+          "msg" : "Input should be a valid dictionary",
+          "type" : "dict_type"
+        },
+        {
+          "input" : 0,
+          "loc" : [
+            "body",
+            "questions",
+            "q",
+            "score",
+            "criteria",
+            0,
+            "list[any]"
+          ],
+          "msg" : "Input should be a valid list",
+          "type" : "list_type"
+        }
+      ],
+      "elapsedMs" : 156,
+      "name" : "score-scalar-level",
+      "status" : 422
+    },
+    {
+      "detail" : [
+        {
+          "ctx" : {
+            "actual_length" : 0,
+            "field_type" : "List",
+            "min_length" : 1
+          },
+          "input" : [
+
+          ],
+          "loc" : [
+            "body",
+            "questions",
+            "q",
+            "score",
+            "criteria"
+          ],
+          "msg" : "List should have at least 1 item after validation, not 0",
+          "type" : "too_short"
+        }
+      ],
+      "elapsedMs" : 147,
+      "name" : "score-level-count-0",
+      "status" : 422
+    },
+    {
+      "answer" : {
+        "confidence" : 1,
+        "legend" : {
+          "0" : "Synthetic marker clarity level 0 of 1."
+        },
+        "probabilities" : {
+          "0" : 1
+        },
+        "score" : 0,
+        "type" : "score"
+      },
+      "elapsedMs" : 283,
+      "model" : "jev-1.13.0",
+      "name" : "score-level-count-1",
+      "status" : 200
+    },
+    {
+      "answer" : {
+        "confidence" : 0.94999999999999996,
+        "legend" : {
+          "0" : "Synthetic marker clarity level 0 of 1.",
+          "1" : "Synthetic marker clarity level 1 of 1."
+        },
+        "probabilities" : {
+          "0" : 0.029999999999999999,
+          "1" : 0.96999999999999997
+        },
+        "score" : 0.96999999999999997,
+        "type" : "score"
+      },
+      "elapsedMs" : 237,
+      "model" : "jev-1.13.0",
+      "name" : "score-level-count-2",
+      "status" : 200
+    },
+    {
+      "answer" : {
+        "confidence" : 0.85999999999999999,
+        "legend" : {
+          "0" : "Synthetic marker clarity level 0 of 9.",
+          "1" : "Synthetic marker clarity level 1 of 9.",
+          "2" : "Synthetic marker clarity level 2 of 9.",
+          "3" : "Synthetic marker clarity level 3 of 9.",
+          "4" : "Synthetic marker clarity level 4 of 9.",
+          "5" : "Synthetic marker clarity level 5 of 9.",
+          "6" : "Synthetic marker clarity level 6 of 9.",
+          "7" : "Synthetic marker clarity level 7 of 9.",
+          "8" : "Synthetic marker clarity level 8 of 9.",
+          "9" : "Synthetic marker clarity level 9 of 9."
+        },
+        "probabilities" : {
+          "0" : 0,
+          "1" : 0.01,
+          "2" : 0,
+          "3" : 0.01,
+          "4" : 0.01,
+          "5" : 0.01,
+          "6" : 0.01,
+          "7" : 0.02,
+          "8" : 0.050000000000000003,
+          "9" : 0.88
+        },
+        "score" : 8.6400000000000006,
+        "type" : "score"
+      },
+      "elapsedMs" : 202,
+      "model" : "jev-1.13.0",
+      "name" : "score-level-count-10",
+      "status" : 200
+    },
+    {
+      "detail" : "Too many score levels. Must have at most 10 levels.",
+      "elapsedMs" : 148,
+      "name" : "score-level-count-11",
+      "status" : 400
+    },
+    {
+      "detail" : "Choice question must have at least one choice: q",
+      "elapsedMs" : 153,
+      "name" : "choice-option-count-0",
+      "status" : 400
+    },
+    {
+      "answer" : {
+        "choice" : "item_0",
+        "confidence" : 1,
+        "probabilities" : {
+          "item_0" : 1
+        },
+        "type" : "choice"
+      },
+      "elapsedMs" : 212,
+      "model" : "jev-1.13.0",
+      "name" : "choice-option-count-1",
+      "status" : 200
+    },
+    {
+      "answer" : {
+        "choice" : "item_0",
+        "confidence" : 1,
+        "probabilities" : {
+          "item_0" : 1,
+          "item_1" : 0,
+          "item_2" : 0,
+          "item_3" : 0,
+          "item_4" : 0,
+          "item_5" : 0,
+          "item_6" : 0,
+          "item_7" : 0,
+          "item_8" : 0,
+          "item_9" : 0,
+          "item_10" : 0,
+          "item_11" : 0,
+          "item_12" : 0,
+          "item_13" : 0,
+          "item_14" : 0,
+          "item_15" : 0,
+          "item_16" : 0,
+          "item_17" : 0,
+          "item_18" : 0,
+          "item_19" : 0,
+          "item_20" : 0,
+          "item_21" : 0,
+          "item_22" : 0,
+          "item_23" : 0,
+          "item_24" : 0,
+          "item_25" : 0,
+          "item_26" : 0,
+          "item_27" : 0,
+          "item_28" : 0,
+          "item_29" : 0,
+          "item_30" : 0,
+          "item_31" : 0,
+          "item_32" : 0,
+          "item_33" : 0,
+          "item_34" : 0,
+          "item_35" : 0,
+          "item_36" : 0,
+          "item_37" : 0,
+          "item_38" : 0,
+          "item_39" : 0,
+          "item_40" : 0,
+          "item_41" : 0,
+          "item_42" : 0,
+          "item_43" : 0,
+          "item_44" : 0,
+          "item_45" : 0,
+          "item_46" : 0,
+          "item_47" : 0,
+          "item_48" : 0,
+          "item_49" : 0,
+          "item_50" : 0,
+          "item_51" : 0,
+          "item_52" : 0,
+          "item_53" : 0,
+          "item_54" : 0,
+          "item_55" : 0,
+          "item_56" : 0,
+          "item_57" : 0,
+          "item_58" : 0,
+          "item_59" : 0,
+          "item_60" : 0,
+          "item_61" : 0,
+          "item_62" : 0,
+          "item_63" : 0,
+          "item_64" : 0,
+          "item_65" : 0,
+          "item_66" : 0,
+          "item_67" : 0,
+          "item_68" : 0,
+          "item_69" : 0,
+          "item_70" : 0,
+          "item_71" : 0,
+          "item_72" : 0,
+          "item_73" : 0,
+          "item_74" : 0,
+          "item_75" : 0,
+          "item_76" : 0,
+          "item_77" : 0,
+          "item_78" : 0,
+          "item_79" : 0,
+          "item_80" : 0,
+          "item_81" : 0,
+          "item_82" : 0,
+          "item_83" : 0,
+          "item_84" : 0,
+          "item_85" : 0,
+          "item_86" : 0,
+          "item_87" : 0,
+          "item_88" : 0,
+          "item_89" : 0,
+          "item_90" : 0,
+          "item_91" : 0,
+          "item_92" : 0,
+          "item_93" : 0,
+          "item_94" : 0,
+          "item_95" : 0,
+          "item_96" : 0,
+          "item_97" : 0,
+          "item_98" : 0,
+          "item_99" : 0,
+          "item_100" : 0,
+          "item_101" : 0,
+          "item_102" : 0,
+          "item_103" : 0,
+          "item_104" : 0,
+          "item_105" : 0,
+          "item_106" : 0,
+          "item_107" : 0,
+          "item_108" : 0,
+          "item_109" : 0,
+          "item_110" : 0,
+          "item_111" : 0,
+          "item_112" : 0,
+          "item_113" : 0,
+          "item_114" : 0,
+          "item_115" : 0,
+          "item_116" : 0,
+          "item_117" : 0,
+          "item_118" : 0,
+          "item_119" : 0,
+          "item_120" : 0,
+          "item_121" : 0,
+          "item_122" : 0,
+          "item_123" : 0,
+          "item_124" : 0,
+          "item_125" : 0,
+          "item_126" : 0,
+          "item_127" : 0,
+          "item_128" : 0,
+          "item_129" : 0,
+          "item_130" : 0,
+          "item_131" : 0,
+          "item_132" : 0,
+          "item_133" : 0,
+          "item_134" : 0,
+          "item_135" : 0,
+          "item_136" : 0,
+          "item_137" : 0,
+          "item_138" : 0,
+          "item_139" : 0,
+          "item_140" : 0,
+          "item_141" : 0,
+          "item_142" : 0,
+          "item_143" : 0,
+          "item_144" : 0,
+          "item_145" : 0,
+          "item_146" : 0,
+          "item_147" : 0,
+          "item_148" : 0,
+          "item_149" : 0,
+          "item_150" : 0,
+          "item_151" : 0,
+          "item_152" : 0,
+          "item_153" : 0,
+          "item_154" : 0,
+          "item_155" : 0,
+          "item_156" : 0,
+          "item_157" : 0,
+          "item_158" : 0,
+          "item_159" : 0,
+          "item_160" : 0,
+          "item_161" : 0,
+          "item_162" : 0,
+          "item_163" : 0,
+          "item_164" : 0,
+          "item_165" : 0,
+          "item_166" : 0,
+          "item_167" : 0,
+          "item_168" : 0,
+          "item_169" : 0,
+          "item_170" : 0,
+          "item_171" : 0,
+          "item_172" : 0,
+          "item_173" : 0,
+          "item_174" : 0,
+          "item_175" : 0,
+          "item_176" : 0,
+          "item_177" : 0,
+          "item_178" : 0,
+          "item_179" : 0,
+          "item_180" : 0,
+          "item_181" : 0,
+          "item_182" : 0,
+          "item_183" : 0,
+          "item_184" : 0,
+          "item_185" : 0,
+          "item_186" : 0,
+          "item_187" : 0,
+          "item_188" : 0,
+          "item_189" : 0,
+          "item_190" : 0,
+          "item_191" : 0,
+          "item_192" : 0,
+          "item_193" : 0,
+          "item_194" : 0,
+          "item_195" : 0,
+          "item_196" : 0,
+          "item_197" : 0,
+          "item_198" : 0,
+          "item_199" : 0,
+          "item_200" : 0,
+          "item_201" : 0,
+          "item_202" : 0,
+          "item_203" : 0,
+          "item_204" : 0,
+          "item_205" : 0,
+          "item_206" : 0,
+          "item_207" : 0,
+          "item_208" : 0,
+          "item_209" : 0,
+          "item_210" : 0,
+          "item_211" : 0,
+          "item_212" : 0,
+          "item_213" : 0,
+          "item_214" : 0,
+          "item_215" : 0,
+          "item_216" : 0,
+          "item_217" : 0,
+          "item_218" : 0,
+          "item_219" : 0,
+          "item_220" : 0,
+          "item_221" : 0,
+          "item_222" : 0,
+          "item_223" : 0,
+          "item_224" : 0,
+          "item_225" : 0,
+          "item_226" : 0,
+          "item_227" : 0,
+          "item_228" : 0,
+          "item_229" : 0,
+          "item_230" : 0,
+          "item_231" : 0,
+          "item_232" : 0,
+          "item_233" : 0,
+          "item_234" : 0,
+          "item_235" : 0,
+          "item_236" : 0,
+          "item_237" : 0,
+          "item_238" : 0,
+          "item_239" : 0,
+          "item_240" : 0,
+          "item_241" : 0,
+          "item_242" : 0,
+          "item_243" : 0,
+          "item_244" : 0,
+          "item_245" : 0,
+          "item_246" : 0,
+          "item_247" : 0,
+          "item_248" : 0,
+          "item_249" : 0,
+          "item_250" : 0,
+          "item_251" : 0,
+          "item_252" : 0,
+          "item_253" : 0,
+          "item_254" : 0
+        },
+        "type" : "choice"
+      },
+      "elapsedMs" : 244,
+      "model" : "jev-1.13.0",
+      "name" : "choice-option-count-255",
+      "status" : 200
+    },
+    {
+      "detail" : "Too many choices. Must have at most 255 choices.",
+      "elapsedMs" : 195,
+      "name" : "choice-option-count-256",
+      "status" : 400
+    }
+  ],
+  "observedAt" : "2026-10-04T01:32:32Z",
+  "outputTokens" : 2960,
+  "rejections" : 13,
+  "successes" : 13,
+  "syntheticInputOnly" : true
+}

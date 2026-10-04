@@ -1,0 +1,33 @@
+The following is a diff from the previous accessibility tree for Window: "Codex Maestro" with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.
+Removed element IDs: 120
+~				119 scroll area Secondary Actions: Scroll Up, Scroll Down
++					151 text MCP 실행 · 44개 접힌 구성원 44개 · 원본 ID와 연결을 보존합니다.
++					152 button 구성원 회로 펼치기
++					153 list Secondary Actions: AXScrollToTop, AXScrollToBottom
++						154 button swift-intelligence.swift_xcode_schemes, 반환 수신
++						155 button swift-intelligence.swift_references, 반환 수신
++						156 button codex_app.read_thread, 성공 근거 있음
++						157 button codex_app.list_threads, 성공 근거 있음
++						158 button codex_app.read_thread, 성공 근거 있음
++						159 button cua_repl.js, 성공 근거 있음
++						160 button cua_repl.js, 성공 근거 있음
++						161 button swift-intelligence.swift_xcode_schemes, 반환 수신
++						162 button cua_repl.js, 성공 근거 있음
++						163 button cua_repl.js, 성공 근거 있음
++						164 button cua_repl.js, 성공 근거 있음
++						165 button cua_repl.js, 성공 근거 있음
++						166 button cua_repl.js, 성공 근거 있음
++						167 button cua_repl.js, 성공 근거 있음
++						168 button cua_repl.js, 성공 근거 있음
++						169 button cua_repl.js, 성공 근거 있음
++						170 button cua_repl.js, 성공 근거 있음
++						171 button cua_repl.js, 성공 근거 있음
++						172 button cua_repl.js, 성공 근거 있음
++					173 scroll bar (settable, float) 0
++						174 value indicator (settable, float) 0
++						175 increment arrow button
++						176 decrement arrow button
++						177 increment page button
++						178 decrement page button
+~		131 image Description: 새로 고침, Help: 갱신 오후 9:54:43, ID: arrow.clockwise
+The focused UI element is 0 standard window Codex Maestro, ID: maestro, Secondary Actions: Raise
